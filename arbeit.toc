@@ -2,23 +2,24 @@
 \contentsline {section}{\numberline {1}Introduction}{1}{section.1}
 \contentsline {section}{\numberline {2}Theory}{3}{section.2}
 \contentsline {subsection}{\numberline {2.1}Requirements}{3}{subsection.2.1}
-\contentsline {subsection}{\numberline {2.2}Basic Theory about a TOF instrument}{3}{subsection.2.2}
-\contentsline {subsubsection}{\numberline {2.2.1}Ion-source}{4}{subsubsection.2.2.1}
-\contentsline {section}{\numberline {3}Setup}{5}{section.3}
-\contentsline {subsection}{\numberline {3.1}NIM Instrument}{5}{subsection.3.1}
-\contentsline {subsubsection}{\numberline {3.1.1}Prototype}{5}{subsubsection.3.1.1}
-\contentsline {subsubsection}{\numberline {3.1.2}Protoflight Model}{5}{subsubsection.3.1.2}
-\contentsline {subsection}{\numberline {3.2}Test facilities/ Test Tools}{5}{subsection.3.2}
-\contentsline {section}{\numberline {4}Experiments}{7}{section.4}
-\contentsline {subsection}{\numberline {4.1}Reflectron}{7}{subsection.4.1}
-\contentsline {subsubsection}{\numberline {4.1.1}Measurement Principle}{8}{subsubsection.4.1.1}
-\contentsline {subsubsection}{\numberline {4.1.2}Discussion}{8}{subsubsection.4.1.2}
-\contentsline {subsection}{\numberline {4.2}CASYMIR-D/-E}{8}{subsection.4.2}
-\contentsline {subsection}{\numberline {4.3}Simulations}{8}{subsection.4.3}
-\contentsline {subsection}{\numberline {4.4}Pulser}{8}{subsection.4.4}
-\contentsline {subsection}{\numberline {4.5}Detector Tests}{8}{subsection.4.5}
-\contentsline {subsection}{\numberline {4.6}Ionoptics}{8}{subsection.4.6}
-\contentsline {section}{\numberline {5}Conclusion}{9}{section.5}
-\contentsline {section}{\numberline {6}Outlook}{11}{section.6}
-\contentsline {section}{References}{12}{section*.6}
-\contentsline {section}{\numberline {7}Appendix}{13}{section.7}
+\contentsline {subsection}{\numberline {2.2}Basic Theory about a TOF masspectrometry}{3}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}Ion Optical Design, NIM specific elements}{3}{subsection.2.3}
+\contentsline {subsubsection}{\numberline {2.3.1}Ion-source}{3}{subsubsection.2.3.1}
+\contentsline {section}{\numberline {3}Setup}{4}{section.3}
+\contentsline {subsection}{\numberline {3.1}NIM Instrument}{4}{subsection.3.1}
+\contentsline {subsubsection}{\numberline {3.1.1}Prototype}{4}{subsubsection.3.1.1}
+\contentsline {subsubsection}{\numberline {3.1.2}Protoflight Model}{4}{subsubsection.3.1.2}
+\contentsline {subsection}{\numberline {3.2}Test facilities/ Test Tools}{4}{subsection.3.2}
+\contentsline {section}{\numberline {4}Experiments}{6}{section.4}
+\contentsline {subsection}{\numberline {4.1}Reflectron}{6}{subsection.4.1}
+\contentsline {subsubsection}{\numberline {4.1.1}Measurement Principle}{7}{subsubsection.4.1.1}
+\contentsline {subsubsection}{\numberline {4.1.2}Discussion}{7}{subsubsection.4.1.2}
+\contentsline {subsection}{\numberline {4.2}CASYMIR-D/-E}{7}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}Simulations}{7}{subsection.4.3}
+\contentsline {subsection}{\numberline {4.4}Pulser}{7}{subsection.4.4}
+\contentsline {subsection}{\numberline {4.5}Detector Tests}{7}{subsection.4.5}
+\contentsline {subsection}{\numberline {4.6}Ionoptics}{7}{subsection.4.6}
+\contentsline {section}{\numberline {5}Conclusion}{8}{section.5}
+\contentsline {section}{\numberline {6}Outlook}{10}{section.6}
+\contentsline {section}{References}{11}{section*.6}
+\contentsline {section}{\numberline {7}Appendix}{12}{section.7}

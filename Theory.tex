@@ -4,7 +4,15 @@
 	\subsection{Requirements}
 	% Mass, performance, Power consumption. (See latest references. Part of the introduction?)
 	
-	\subsection{Basic Theory about a TOF instrument}
+	\subsection{Basic Theory about a TOF masspectrometry} % Allgemeine Theorie
+	This chapter explains the function of a TOF instruments. A TOF mass spectrometer consists of, an ion-source, a mass analyser and a detector.\\
+	In the ion source, the ions are produced and get all accelerated to the same energy.
+	
+	This is achieved by applying a high voltage pulse on the grid. % include a picture of a sample source.
+	Depending on the initial position and velocity of the particles, they get a different amount of energy because they don't spend the same amount of time in the extraction field. These processes have a direct impact on the mass resolution. % Which?
+	
+	
+	\subsection{Ion Optical Design, NIM specific elements} % ion source efficienies, reflectron double focusing, detector reflection of signal, signal matching. Density enhancement
 	A time of flight mass spectrometer consists of, an ion-source, a mass analyser and a detector.\\
 	
 	\begin{figure}[htb] % Noch schauen, ob das noch verschoben wird.
@@ -16,9 +24,10 @@
 
 	%First overview and then go into the details.
 	The NIM instrument is able to measure neutrals and ions. Neutral particles get ionised by electron ionisation. A filament is heated up until it emits electron. Ions enter the ion source directly.  % Noch genaue Formulierung nachschauen.
-	All ions then get accelerated to the same energy and fly through the mass analyser. Light particles fly faster through the spectrometer than heavier ones. The different particle species arrive at different times at the detector. To enlarge the flight distance, an ion-mirror, which reflects the ions and leads them back to the detector. The used detector is a MCP detector. %Explain a little bit in more detail.
+	All ions then get accelerated to the same energy and fly through the mass analyser. Light particles fly faster through the spectrometer than heavier ones. The different particle species arrive at different times at the detector. To enlarge the flight distance, an ion-mirror, which reflects the ions and leads them back to the detector. The used detector is a MCP detector. % Explain a little bit in more detail.
 	
 		\subsubsection{Ion-source}
+		% More detailed explanation about the NIM ion source, function of the different specific electrodes. Or explain it later in detail when discussing the simulations in detail.
 		To calculate the number of ions produced in the ion source we use:
 		\begin{equation}
 		I_{ion} = \beta\cdot Q_{ion}\cdot L\cdot n\cdot I_{em}
