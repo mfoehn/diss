@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6800 64-bit) (preloaded format=pdflatex 2018.9.3)  24 FEB 2020 16:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6800 64-bit) (preloaded format=pdflatex 2018.9.3)  27 FEB 2020 20:41
 entering extended mode
 **./arbeit.tex
 (arbeit.tex
@@ -2112,7 +2112,7 @@ LaTeX Font Info:    Try loading font information for OT1+ptm on input line 63.
 ("C:\Users\foehn\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\ot1ptm.fd"
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
-<Bilder/logo-uni.jpg, id=102, 129.1224pt x 99.61215pt>
+<Bilder/logo-uni.jpg, id=118, 129.1224pt x 99.61215pt>
 File: Bilder/logo-uni.jpg Graphic file (type jpg)
 <use Bilder/logo-uni.jpg>
 Package pdftex.def Info: Bilder/logo-uni.jpg  used on input line 67.
@@ -2158,32 +2158,38 @@ l.158 	\newpage
                 [2] (Theory.tex
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <14.4> not available
 (Font)              Font shape `OT1/phv/b/n' tried instead on input line 4.
+ [3]
+Overfull \hbox (2.9851pt too wide) in paragraph at lines 29--30
+\OT1/ptm/m/n/12 In this sec-tion we dis-cuss the cal-ib-ra-tion of the mass axi
+s. Ac-cord-ing to Eq.[] the mass/charge
+ []
 
-Underfull \hbox (badness 10000) in paragraph at lines 14--15
+
+Underfull \hbox (badness 10000) in paragraph at lines 65--66
 
  []
 
-<Bilder/NIM_Sketch.png, id=173, 3103.595pt x 3808.2275pt>
+<Bilder/NIM_Sketch.png, id=213, 3103.595pt x 3808.2275pt>
 File: Bilder/NIM_Sketch.png Graphic file (type png)
 <use Bilder/NIM_Sketch.png>
-Package pdftex.def Info: Bilder/NIM_Sketch.png  used on input line 18.
+Package pdftex.def Info: Bilder/NIM_Sketch.png  used on input line 69.
 (pdftex.def)             Requested size: 284.52756pt x 349.11766pt.
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <8> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 19.
-) [3] (Setup.tex) [4 <./Bilder/NIM_Sketch.png>] [5
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 70.
+[4]) [5 <./Bilder/NIM_Sketch.png>] (Setup.tex) [6] [7
 
 ] (Experiments.tex
 Underfull \hbox (badness 10000) in paragraph at lines 13--16
 
  []
 
-<Bilder/reflectron_Prototype1.jpg, id=202, 301.6068pt x 165.7392pt>
+<Bilder/reflectron_Prototype1.jpg, id=245, 301.6068pt x 165.7392pt>
 File: Bilder/reflectron_Prototype1.jpg Graphic file (type jpg)
 <use Bilder/reflectron_Prototype1.jpg>
 Package pdftex.def Info: Bilder/reflectron_Prototype1.jpg  used on input line 2
 0.
 (pdftex.def)             Requested size: 212.86151pt x 116.97511pt.
-<Bilder/reflectron_flight.JPG, id=203, 367.8543pt x 281.3712pt>
+<Bilder/reflectron_flight.JPG, id=246, 367.8543pt x 281.3712pt>
 File: Bilder/reflectron_flight.JPG Graphic file (type jpg)
 <use Bilder/reflectron_flight.JPG>
 Package pdftex.def Info: Bilder/reflectron_flight.JPG  used on input line 24.
@@ -2193,12 +2199,12 @@ Overfull \hbox (2.54399pt too wide) in paragraph at lines 18--26
 []$[]$ $[]$ 
  []
 
-<Messungen/SimRepPosU.png, id=204, 774.7344pt x 592.8549pt>
+<Messungen/SimRepPosU.png, id=247, 774.7344pt x 592.8549pt>
 File: Messungen/SimRepPosU.png Graphic file (type png)
 <use Messungen/SimRepPosU.png>
 Package pdftex.def Info: Messungen/SimRepPosU.png  used on input line 77.
 (pdftex.def)             Requested size: 225.63268pt x 172.6653pt.
-<Messungen/SimRepPosImax.png, id=205, 639.8304pt x 520.5849pt>
+<Messungen/SimRepPosImax.png, id=248, 639.8304pt x 520.5849pt>
 File: Messungen/SimRepPosImax.png Graphic file (type png)
 <use Messungen/SimRepPosImax.png>
 Package pdftex.def Info: Messungen/SimRepPosImax.png  used on input line 81.
@@ -2211,19 +2217,19 @@ Overfull \hbox (2.54398pt too wide) in paragraph at lines 75--83
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) [6 <./Bilder/reflectron_Prototype1.jpg> <./Bilder/reflectron_flight.JPG>]
-[7 <./Messungen/SimRepPosU.png> <./Messungen/SimRepPosImax.png>]
-(Conclusion.tex) [8
+) [8 <./Bilder/reflectron_Prototype1.jpg> <./Bilder/reflectron_flight.JPG>]
+[9 <./Messungen/SimRepPosU.png> <./Messungen/SimRepPosImax.png>]
+(Conclusion.tex) [10
 
-] [9] (Outlook.tex) [10] (arbeit.bbl) [11
+] [11] (Outlook.tex) [12] (arbeit.bbl) [13
 
 ] (Appendix.tex)
-[12
+[14
 
-] [13
+] [15
 
-] [14]
-<MSc_Masterarbeit_erklaerung.pdf, id=249, 597.45204pt x 845.1575pt>
+] [16]
+<MSc_Masterarbeit_erklaerung.pdf, id=292, 597.45204pt x 845.1575pt>
 File: MSc_Masterarbeit_erklaerung.pdf Graphic file (type pdf)
 <use MSc_Masterarbeit_erklaerung.pdf>
 Package pdftex.def Info: MSc_Masterarbeit_erklaerung.pdf  used on input line 20
@@ -2234,7 +2240,7 @@ File: MSc_Masterarbeit_erklaerung.pdf Graphic file (type pdf)
 Package pdftex.def Info: MSc_Masterarbeit_erklaerung.pdf  used on input line 20
 2.
 (pdftex.def)             Requested size: 597.45058pt x 845.15544pt.
-<MSc_Masterarbeit_erklaerung.pdf, id=252, page=1, 597.45204pt x 845.1575pt>
+<MSc_Masterarbeit_erklaerung.pdf, id=295, page=1, 597.45204pt x 845.1575pt>
 File: MSc_Masterarbeit_erklaerung.pdf Graphic file (type pdf)
 <use MSc_Masterarbeit_erklaerung.pdf, page 1>
 Package pdftex.def Info: MSc_Masterarbeit_erklaerung.pdf , page1 used on input 
@@ -2260,41 +2266,46 @@ File: MSc_Masterarbeit_erklaerung.pdf Graphic file (type pdf)
 Package pdftex.def Info: MSc_Masterarbeit_erklaerung.pdf , page1 used on input 
 line 202.
 (pdftex.def)             Requested size: 597.47792pt x 845.19412pt.
- [15 <./MSc_Masterarbeit_erklaerung.pdf>]
+ [17 <./MSc_Masterarbeit_erklaerung.pdf>]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 204.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 204.
  (arbeit.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 204.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 204.
 Package rerunfilecheck Info: File `arbeit.out' has not changed.
-(rerunfilecheck)             Checksum: B34398C64A23081B72479FFB795679C6;1486.
+(rerunfilecheck)             Checksum: 107469899AE3DEBA6451328A930CAD0E;1781.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 204.
  ) 
 Here is how much of TeX's memory you used:
- 38949 strings out of 492973
- 753442 string characters out of 3126693
+ 38974 strings out of 492973
+ 753820 string characters out of 3126693
  886523 words of memory out of 3000000
- 42134 multiletter control sequences out of 15000+200000
- 618182 words of font info for 114 fonts, out of 3000000 for 9000
+ 42145 multiletter control sequences out of 15000+200000
+ 618540 words of font info for 115 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  64i,18n,77p,9136b,912s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Users/foehn/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-rm.en
-c}{C:/Users/foehn/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-maths
-y.enc}{C:/Users/foehn/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-m
-athit.enc}{C:/Users/foehn/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/bas
-e/8r.enc}<C:/Users/foehn/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/l
-m/lmmi12.pfb><C:/Users/foehn/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publ
-ic/lm/lmmi8.pfb><C:/Users/foehn/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/p
-ublic/lm/lmr12.pfb><C:/Users/foehn/AppData/Local/Programs/MiKTeX 2.9/fonts/type
-1/public/lm/lmss12.pfb><C:/Users/foehn/AppData/Local/Programs/MiKTeX 2.9/fonts/
-type1/public/lm/lmsy10.pfb><C:/Users/foehn/AppData/Local/Programs/MiKTeX 2.9/fo
-nts/type1/urw/helvetic/uhvb8a.pfb><C:/Users/foehn/AppData/Local/Programs/MiKTeX
- 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Users/foehn/AppData/Local/Programs
-/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Users/foehn/AppData/Local/Prog
-rams/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb>
-Output written on arbeit.pdf (23 pages, 1567526 bytes).
+{C:/Users/foehn/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-maths
+y.enc}{C:/Users/foehn/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-r
+m.enc}{C:/Users/foehn/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-m
+athit.enc}{C:/Users/foehn/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/
+lm-mathex.enc}{C:/Users/foehn/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips
+/base/8r.enc}<C:/Users/foehn/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publ
+ic/amsfonts/cm/cmmi12.pfb><C:/Users/foehn/AppData/Local/Programs/MiKTeX 2.9/fon
+ts/type1/public/lm/lmex10.pfb><C:/Users/foehn/AppData/Local/Programs/MiKTeX 2.9
+/fonts/type1/public/lm/lmmi12.pfb><C:/Users/foehn/AppData/Local/Programs/MiKTeX
+ 2.9/fonts/type1/public/lm/lmmi8.pfb><C:/Users/foehn/AppData/Local/Programs/MiK
+TeX 2.9/fonts/type1/public/lm/lmr12.pfb><C:/Users/foehn/AppData/Local/Programs/
+MiKTeX 2.9/fonts/type1/public/lm/lmr6.pfb><C:/Users/foehn/AppData/Local/Program
+s/MiKTeX 2.9/fonts/type1/public/lm/lmr8.pfb><C:/Users/foehn/AppData/Local/Progr
+ams/MiKTeX 2.9/fonts/type1/public/lm/lmss12.pfb><C:/Users/foehn/AppData/Local/P
+rograms/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><C:/Users/foehn/AppData/Loc
+al/Programs/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Users/foehn/AppD
+ata/Local/Programs/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Users/foe
+hn/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Users
+/foehn/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb>
+Output written on arbeit.pdf (25 pages, 1629892 bytes).
 PDF statistics:
- 349 PDF objects out of 1000 (max. 8388607)
- 56 named destinations out of 1000 (max. 500000)
- 255 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 408 PDF objects out of 1000 (max. 8388607)
+ 69 named destinations out of 1000 (max. 500000)
+ 287 words of extra memory for PDF output out of 10000 (max. 10000000)
 
