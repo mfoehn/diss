@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6800 64-bit) (preloaded format=pdflatex 2018.9.3)  27 FEB 2020 20:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6800 64-bit) (preloaded format=pdflatex 2018.9.3)  28 MAY 2020 11:12
 entering extended mode
 **./arbeit.tex
 (arbeit.tex
@@ -2112,7 +2112,7 @@ LaTeX Font Info:    Try loading font information for OT1+ptm on input line 63.
 ("C:\Users\foehn\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\ot1ptm.fd"
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
-<Bilder/logo-uni.jpg, id=118, 129.1224pt x 99.61215pt>
+<Bilder/logo-uni.jpg, id=126, 129.1224pt x 99.61215pt>
 File: Bilder/logo-uni.jpg Graphic file (type jpg)
 <use Bilder/logo-uni.jpg>
 Package pdftex.def Info: Bilder/logo-uni.jpg  used on input line 67.
@@ -2158,38 +2158,32 @@ l.158 	\newpage
                 [2] (Theory.tex
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <14.4> not available
 (Font)              Font shape `OT1/phv/b/n' tried instead on input line 4.
- [3]
-Overfull \hbox (2.9851pt too wide) in paragraph at lines 29--30
-\OT1/ptm/m/n/12 In this sec-tion we dis-cuss the cal-ib-ra-tion of the mass axi
-s. Ac-cord-ing to Eq.[] the mass/charge
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 65--66
+ [3] [4]
+Underfull \hbox (badness 10000) in paragraph at lines 100--101
 
  []
 
-<Bilder/NIM_Sketch.png, id=213, 3103.595pt x 3808.2275pt>
+<Bilder/NIM_Sketch.png, id=233, 3103.595pt x 3808.2275pt>
 File: Bilder/NIM_Sketch.png Graphic file (type png)
 <use Bilder/NIM_Sketch.png>
-Package pdftex.def Info: Bilder/NIM_Sketch.png  used on input line 69.
+Package pdftex.def Info: Bilder/NIM_Sketch.png  used on input line 104.
 (pdftex.def)             Requested size: 284.52756pt x 349.11766pt.
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <8> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 70.
-[4]) [5 <./Bilder/NIM_Sketch.png>] (Setup.tex) [6] [7
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 105.
+[5 <./Bilder/NIM_Sketch.png>]) [6] (Setup.tex) [7] [8
 
 ] (Experiments.tex
 Underfull \hbox (badness 10000) in paragraph at lines 13--16
 
  []
 
-<Bilder/reflectron_Prototype1.jpg, id=245, 301.6068pt x 165.7392pt>
+<Bilder/reflectron_Prototype1.jpg, id=260, 301.6068pt x 165.7392pt>
 File: Bilder/reflectron_Prototype1.jpg Graphic file (type jpg)
 <use Bilder/reflectron_Prototype1.jpg>
 Package pdftex.def Info: Bilder/reflectron_Prototype1.jpg  used on input line 2
 0.
 (pdftex.def)             Requested size: 212.86151pt x 116.97511pt.
-<Bilder/reflectron_flight.JPG, id=246, 367.8543pt x 281.3712pt>
+<Bilder/reflectron_flight.JPG, id=261, 367.8543pt x 281.3712pt>
 File: Bilder/reflectron_flight.JPG Graphic file (type jpg)
 <use Bilder/reflectron_flight.JPG>
 Package pdftex.def Info: Bilder/reflectron_flight.JPG  used on input line 24.
@@ -2199,37 +2193,37 @@ Overfull \hbox (2.54399pt too wide) in paragraph at lines 18--26
 []$[]$ $[]$ 
  []
 
-<Messungen/SimRepPosU.png, id=247, 774.7344pt x 592.8549pt>
+<Messungen/SimRepPosU.png, id=262, 774.7344pt x 592.8549pt>
 File: Messungen/SimRepPosU.png Graphic file (type png)
 <use Messungen/SimRepPosU.png>
-Package pdftex.def Info: Messungen/SimRepPosU.png  used on input line 77.
+Package pdftex.def Info: Messungen/SimRepPosU.png  used on input line 78.
 (pdftex.def)             Requested size: 225.63268pt x 172.6653pt.
-<Messungen/SimRepPosImax.png, id=248, 639.8304pt x 520.5849pt>
+<Messungen/SimRepPosImax.png, id=263, 639.8304pt x 520.5849pt>
 File: Messungen/SimRepPosImax.png Graphic file (type png)
 <use Messungen/SimRepPosImax.png>
-Package pdftex.def Info: Messungen/SimRepPosImax.png  used on input line 81.
+Package pdftex.def Info: Messungen/SimRepPosImax.png  used on input line 82.
 (pdftex.def)             Requested size: 200.09033pt x 162.79358pt.
 
-Overfull \hbox (2.54398pt too wide) in paragraph at lines 75--83
+Overfull \hbox (2.54398pt too wide) in paragraph at lines 76--84
 []$[]$ $[]$ 
  []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) [8 <./Bilder/reflectron_Prototype1.jpg> <./Bilder/reflectron_flight.JPG>]
-[9 <./Messungen/SimRepPosU.png> <./Messungen/SimRepPosImax.png>]
-(Conclusion.tex) [10
+[9 <./Bilder/reflectron_Prototype1.jpg> <./Bilder/reflectron_flight.JPG>])
+[10 <./Messungen/SimRepPosU.png> <./Messungen/SimRepPosImax.png>]
+(Conclusion.tex) [11
 
-] [11] (Outlook.tex) [12] (arbeit.bbl) [13
+] [12] (Outlook.tex) [13] (arbeit.bbl) [14
 
 ] (Appendix.tex)
-[14
+[15
 
-] [15
+] [16
 
-] [16]
-<MSc_Masterarbeit_erklaerung.pdf, id=292, 597.45204pt x 845.1575pt>
+] [17]
+<MSc_Masterarbeit_erklaerung.pdf, id=308, 597.45204pt x 845.1575pt>
 File: MSc_Masterarbeit_erklaerung.pdf Graphic file (type pdf)
 <use MSc_Masterarbeit_erklaerung.pdf>
 Package pdftex.def Info: MSc_Masterarbeit_erklaerung.pdf  used on input line 20
@@ -2240,7 +2234,7 @@ File: MSc_Masterarbeit_erklaerung.pdf Graphic file (type pdf)
 Package pdftex.def Info: MSc_Masterarbeit_erklaerung.pdf  used on input line 20
 2.
 (pdftex.def)             Requested size: 597.45058pt x 845.15544pt.
-<MSc_Masterarbeit_erklaerung.pdf, id=295, page=1, 597.45204pt x 845.1575pt>
+<MSc_Masterarbeit_erklaerung.pdf, id=311, page=1, 597.45204pt x 845.1575pt>
 File: MSc_Masterarbeit_erklaerung.pdf Graphic file (type pdf)
 <use MSc_Masterarbeit_erklaerung.pdf, page 1>
 Package pdftex.def Info: MSc_Masterarbeit_erklaerung.pdf , page1 used on input 
@@ -2266,21 +2260,28 @@ File: MSc_Masterarbeit_erklaerung.pdf Graphic file (type pdf)
 Package pdftex.def Info: MSc_Masterarbeit_erklaerung.pdf , page1 used on input 
 line 202.
 (pdftex.def)             Requested size: 597.47792pt x 845.19412pt.
- [17 <./MSc_Masterarbeit_erklaerung.pdf>]
+ [18 <./MSc_Masterarbeit_erklaerung.pdf>]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 204.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 204.
  (arbeit.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 204.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 204.
-Package rerunfilecheck Info: File `arbeit.out' has not changed.
-(rerunfilecheck)             Checksum: 107469899AE3DEBA6451328A930CAD0E;1781.
+
+
+Package rerunfilecheck Warning: File `arbeit.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `arbeit.out':
+(rerunfilecheck)             Before: 7357790E00E3BC5328B9D4B656D509C0;1941
+(rerunfilecheck)             After:  4A3C0DE8120A80A556C6DF51B7877276;1948.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 204.
  ) 
 Here is how much of TeX's memory you used:
- 38974 strings out of 492973
- 753820 string characters out of 3126693
- 886523 words of memory out of 3000000
- 42145 multiletter control sequences out of 15000+200000
+ 38981 strings out of 492973
+ 753928 string characters out of 3126693
+ 887523 words of memory out of 3000000
+ 42149 multiletter control sequences out of 15000+200000
  618540 words of font info for 115 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  64i,18n,77p,9136b,912s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -2303,9 +2304,9 @@ al/Programs/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Users/foehn/AppD
 ata/Local/Programs/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Users/foe
 hn/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Users
 /foehn/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb>
-Output written on arbeit.pdf (25 pages, 1629892 bytes).
+Output written on arbeit.pdf (26 pages, 1634616 bytes).
 PDF statistics:
- 408 PDF objects out of 1000 (max. 8388607)
- 69 named destinations out of 1000 (max. 500000)
- 287 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 423 PDF objects out of 1000 (max. 8388607)
+ 72 named destinations out of 1000 (max. 500000)
+ 303 words of extra memory for PDF output out of 10000 (max. 10000000)
 

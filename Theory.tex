@@ -6,13 +6,15 @@
 	
 	\subsection{Basic Theory about a TOF masspectrometry} % Allgemeine Theorie
 	
+	% Priciples kann immernoch weiter ausgearbeitet werden falls nötig.
 	\subsubsection{Principle} % Noch Referenzen auf Vorlesung einfügen. Evt. noch Bild eifügen von Ionen an versch. Startpositionen.
 	This chapter explains the function of a TOF instruments. A TOF mass spectrometer consists of, an ion-source, a mass analyser and a detector. The mass analyser has an ion-mirror which increases the flight distance of the ions by keeping the instrument on a certain length. A longer flight distance increases the mass resolution of the instrument.\\% Mention that later.
-	In the ion source, the ions are produced. An electric field in the source generated such that ions get trapped in it. Then ions get accelerated by applying a high voltage pulse on the extraction grid. If the pulse width is long enough that all ions leave the source during the time the pulse is applied, the ions get all the same amount of energy W
+	In the ion source, the ions are produced. An electric field in the source is generated such that ions get trapped in it. Then ions get accelerated by applying a high voltage pulse on the extraction grid. \textcolor{red}{Include a Graphic of the IS and draw a sample electric field to explain how the extraction pulse (the door to open) works.}
+	If the pulse width is long enough that all ions leave the source during the time the pulse is applied, the ions get all the same amount of energy W
 	\begin{equation}
 		W = \int_{0}^{s_0}q_0 E_s ds = q_0 U_0
 	\end{equation}
-	With $s_0$ the distance the ions get accelerated, in our case 1\si{\milli\metre} which is half the height of the ion source, $q_0$ the elementary charge, $E_s$ the applied electric field and $U_0$ the voltage applied on the extraction grid. This energy is equal to the kinetic energy the ions have after leaving the ion-source
+	With $s_0$ the distance the ions get accelerated, in our case 1\si{\milli\metre} which is half the height of the ion source, $q_0$ the elementary charge, $E_s$ the applied electric field strength and $U_0$ the voltage applied on the extraction grid. This energy is equal to the kinetic energy the ions have after leaving the ion-source
 	\begin{equation}
 		q_0 U_0 = \frac{1}{2}m v^2
 	\end{equation}
@@ -23,43 +25,76 @@
 	\end{equation}
 	With $t$ the time of flight and $s$ the flight distance. Therefore, $m/q_0$ is proportional to $t^2$.\\
 	Ions starting at different positions also get a different amount of energy. Ions starting closer to the extraction grid will get less energy than ions further away from the grid. At a certain point after the source, the ions with higher energy have overtaken the slower ions. This point is at around $2\cdot s_0$ which corresponds to a very short flight distance. To shift this focal point onto to the detector, additional fields after the ion-source are applied.\\
-	The ions have different thermal energies. Therefore ions of the same mass and starting at the same distance from the extraction grid will not have all the same energy when they leave the ion source. This energy spread leads to a difference in their velocity and to different flight times. This energy spread can be partially compensated by an ion-mirror also referred to as reflectron (Fig.\,\ref{fig:NIMSketch}). Ions with a higher energy will penetrate deeper into the ion-mirror and have a bigger flight path than ions with less energy. Therefore, the ion-mirror is able to compensate the different start energies of the ions. In the worst case scenario we have one particle flying toward the extraction grid and the other particle flying with the same velocity in the opposite direction. The second particle gets decelerated and has to turn in the source. When it reached its initial position, it has the same amount of energy as the first particle. But it will always be behind the first particle by a constant time it needed to turn around and reach its initial position. To minimize this effect, one has to minimise the distance of the ionisation region or increase the voltage of the HV pulse. But a smaller ion source means less ions and therefore less signal. Increasing the HV pulse results in bigger electronic noise at the start of the spectrum. The biggest impact is there on the light particles such as $H$ or $H_{2}$. Therefore, one has to make a trade-off. % Evt. noch Effekte etwas besser ausführen.
+	The ions have different thermal energies. Therefore ions of the same mass and the the same starting position will not have all the same energy when they leave the ion source. This energy spread leads to a difference in their velocity and to different flight times. This energy spread can be partially compensated by an ion-mirror also referred to as reflectron (Fig.\,\ref{fig:NIMSketch}). Ions with a higher energy will penetrate deeper into the ion-mirror and have a bigger flight path than ions with less energy. Therefore, the ion-mirror is able to compensate the different start energies of the ions. In the worst case scenario we have one particle flying toward the extraction grid and the other particle flying with the same velocity in the opposite direction. The second particle gets decelerated and has to turn in the source. When it reached its initial position, it has the same amount of energy as the first particle. But it will always be behind the first particle by a constant time delay needed to turn around and reach its initial position. To minimize this effect, one has to minimise the distance of the ionisation region or increase the voltage of the HV pulse. A smaller ion source means less ions and therefore less signal. Increasing the HV pulse results in bigger electronic noise at the start of the spectrum and fast species such as hydrogen of helium are lost in the noise. % Evt. noch Effekte etwas besser ausführen.
 
 	\subsubsection{Mass Calibration}
-	In this section we discuss the calibration of the mass axis. According to Eq.\,\eqref{eq:m/q} the mass/\,charge is proportional to the square of time. By rearranging Eq.\,\eqref{eq:m/q}
+	In this section we discuss the calibration of the mass axis. According to Eq.\,\eqref{eq:m/q} the $m/q_0$ is proportional to the square of time. By rearranging Eq.\,\eqref{eq:m/q} $m$ is:
 	\begin{equation}
 		m = 2 q_0 U_0 \frac{t^2}{s^2}
 		\label{eq:mass_Calib_pre}
 	\end{equation}
-	Take together all parameter which remain constant to one single constant:
+	Take together all parameters which remain constant to one single constant: % Write a bit better
 	\begin{equation}
 		C = \frac{2 q_0 U_0 }{s^2} 
 	\end{equation}
-	and considering the time scale has a constant offset $t_0$, equation \eqref{eq:mass_Calib_pre} results in
+	and considering the time scale has a constant offset $t_0$, equation \eqref{eq:mass_Calib_pre} results in % Split the two ts. It is not acctually the same.
 	\begin{equation}
 		m = C(t-t_0)^2
 		\label{eq:mass_Calib}
 	\end{equation}
 	In this equation there are two free parameters, $C$ and $t_0$. To calibrate a mass spectrum at least two species appearing in the spectrum have to be known to solve this equation for the two parameters.
+	% []Scherer 1999]
 	
-	
-	\subsubsection{Mass resolution}
-	According to bla % Ref.
-	the mass resolution is:
+	\subsubsection{Mass resolution} % Bild einfügen, wie die Mass Resolution berechnet wird.
+	The mass resolution is calculated as follows. According to Eq.\ref{eq:mass_Calib} $m$ is:
+	\begin{align*}
+		m &= c\cdot t^2\\
+		\frac{dm}{dt} &= 2ct\\
+		dm &= 2ct\cdot dt\\
+		\frac{m}{dm} &= \frac{ct^2}{2ct\cdot dt}
+	\end{align*}
+	% Source down to here is from the lecture.
+	Resulting in:
 	\begin{equation}
-		\frac{m}{\Delta m} = \frac{t}{2 \Delta t}
+		\frac{m}{\Delta m} = \frac{t}{2 \Delta t} = \frac{\mu_t}{2 FWHM_t}
+		\label{eq:mass_res}
 	\end{equation}
-	
-	\subsubsection{Sensitivity}
+	With $\mu_t$ the centre of the mass peak in the time domain and $FWHM_t$ the full width at half maximum. The $FWHM_t$ depends on several parameters. For example the turn around time of the particles, the energy spread resulting from different starting positions of the particles relative to the extraction grid, spread in thermal energy. The reflectron is able to compensate for the energy spread by a certain amount. % Maybe explain that a bit further
+	There are also limitations of the instrument itself. For example the performance of the pulser which will be discussed later in Chap. bla.
+	\begin{comment}
+		Resolution limitations:
+		Pulser:
+		Turn around time
+		Different starting positions (discussed a little bit further above)
+		Reflectron: Not ideal energy focusing -> spread
+		Thermic energy -> spread
+		instrument limitations: not perfect pulser pulse. discussion of Pulser follows maybe a bit later.
+		peak width of the single ions measured with the detector. Peak width of 1 peak is b< a factor 10 smaller than the actual peak in the mass spectrum.
+	\end{comment}
+	% Mass resolution is independant from the actual mass
+	% Last part of the formula is from Stefans thesis.
 	
 	% Then continue with the calculation of the mass resolution and the calibration of the mass scale (evt. Reference further explanation how the software it acctually does (keep it short, only extend it if further nessecary)).
+		
+	\subsubsection{Sensitivity an SNR}
+	
+	\begin{comment}
+		SNR
+		[Wells 2011]
+	\end{comment}
+	
+	\begin{comment}
+		Sensitivity
+		
+	\end{comment}
 	
 	% SNR, Sensitivity
 	
 	% Uncertainty cause by the 'Umkehrzeit'. Distance between 2 and 3 is always the same and depends on Uth
 	
-	% Include a schematics of the ion source with the different states/ effects.
-	% include a picture of a sample source.
+	% Include a schematics of the ion source with the different states/ effects.	
+
+
 	
 	\subsection{Ion Optical Design, NIM specific elements} % ion source efficienies, reflectron double focusing, detector reflection of signal, signal matching. Density enhancement
 	A time of flight mass spectrometer consists of, an ion-source, a mass analyser and a detector.\\
