@@ -1,16 +1,16 @@
 % !TEX root = arbeit.tex
 \section{Theory}
-
+	Add a Chapter about electric fields?/ Basis for the simulations?
 	\subsection{Requirements}
 	% Mass, performance, Power consumption. (See latest references. Part of the introduction?)
 	
-	\subsection{Basic Theory about a TOF masspectrometry} % Allgemeine Theorie
+	\subsection{Basic Theory about TOF Masspectrometry} % Allgemeine Theorie
 	
 	% Priciples kann immernoch weiter ausgearbeitet werden falls nötig.
 	\subsubsection{Principle} % Noch Referenzen auf Vorlesung einfügen. Evt. noch Bild eifügen von Ionen an versch. Startpositionen.
 	This chapter explains the function of a TOF instruments. A TOF mass spectrometer consists of, an ion-source, a mass analyser and a detector. The mass analyser has an ion-mirror which increases the flight distance of the ions by keeping the instrument on a certain length. A longer flight distance increases the mass resolution of the instrument.\\% Mention that later.
 	In the ion source, the ions are produced. An electric field in the source is generated such that ions get trapped in it. Then ions get accelerated by applying a high voltage pulse on the extraction grid. \textcolor{red}{Include a Graphic of the IS and draw a sample electric field to explain how the extraction pulse (the door to open) works.}
-	If the pulse width is long enough that all ions leave the source during the time the pulse is applied, the ions get all the same amount of energy W
+	If the pulse width is long enough that all ions leave the source during the time the pulse is applied, the ions get all the same amount of energy $W$
 	\begin{equation}
 		W = \int_{0}^{s_0}q_0 E_s ds = q_0 U_0
 	\end{equation}
@@ -43,7 +43,7 @@
 		\label{eq:mass_Calib}
 	\end{equation}
 	In this equation there are two free parameters, $C$ and $t_0$. To calibrate a mass spectrum at least two species appearing in the spectrum have to be known to solve this equation for the two parameters.
-	% []Scherer 1999]
+	% [Scherer 1999]
 	
 	\subsubsection{Mass resolution} % Bild einfügen, wie die Mass Resolution berechnet wird.
 	The mass resolution is calculated as follows. According to Eq.\ref{eq:mass_Calib} $m$ is:
@@ -76,7 +76,22 @@
 	
 	% Then continue with the calculation of the mass resolution and the calibration of the mass scale (evt. Reference further explanation how the software it acctually does (keep it short, only extend it if further nessecary)).
 		
-	\subsubsection{Sensitivity an SNR}
+	\subsubsection{Signal-to-Noise Ratio and Sensitivity}
+	
+	\textbf{SNR}\\ % Write a bit more detailed. What does background corrected mean? Subtraction of the baseline if it is elevated.
+	The SNR is defined as the ratio of the background corrected peak amplitude $I^{max}_P$ and the standard deviation of the base line $std(I_b)$ \cite{Agilent_TechNote_SNR}, \cite{Master_Meyer}: % Thechnical Note Agilent and Masterarbeit Stefan.
+	\begin{equation}
+		SNR = \frac{I^{max}_P}{std(I_b)}
+		\label{eq:SNR}
+	\end{equation}
+	A high mass resolution improves also the signal-to-noise ratio. By better focusing the ions in the time frame, the peak gets narrower. The area under the peak corresponds to the number of ions. If the number of ions and therefore the area under the curve stays the same, a narrower peak implicates an increase in signal height and therefore in a higher SNR.\\ % In other mass spectrometers (such as sector magnets) an increase in mass resolution results in a reduction of the phase space and therefore in a loss of signal intensity.
+	\\
+	\textbf{Sensitivity} \\ % Really include this chapter? Because it is only an estimation of the actual performance of the instrument. If it is included, do a proper derivation of the formula!!
+	The sensitivity $n_{lim}$ is the actual detection limit of the sensor. It is defined as the amount of gas detected by the instrument $n_{det}$ over the amount of ions entering the instrument $n_{p}$ times the signal intensity measured by the instrument $I_{sig}$
+	\begin{equation}
+		n_{lim} = \frac{n_p \cdot I_{sig}}{n_{det}}
+	\end{equation}
+	
 	
 	\begin{comment}
 		SNR
@@ -96,7 +111,9 @@
 
 
 	
-	\subsection{Ion Optical Design, NIM specific elements} % ion source efficienies, reflectron double focusing, detector reflection of signal, signal matching. Density enhancement
+	\subsection{Ion Optical Design, NIM specific elements} % Inspiration from the arguments of the paper. Titel noch anpassen. Theorieteil fortlaufend hinzufügen. Ion source efficienies, reflectron double focusing, detector reflection of signal, signal matching. Density enhancement.
+	% Hier das Design allgemein halten. Erst in Kapitel 'Setup' auf die Designdetails eingehen. Discuss important theory parts here and just give a short summary in the corresponding experimental parts when the theory is used.
+	
 	A time of flight mass spectrometer consists of, an ion-source, a mass analyser and a detector.\\
 	
 	\begin{figure}[htb] % Noch schauen, ob das noch verschoben wird.
@@ -110,16 +127,32 @@
 	The NIM instrument is able to measure neutrals and ions. Neutral particles get ionised by electron ionisation. A filament is heated up until it emits electron. Ions enter the ion source directly.  % Noch genaue Formulierung nachschauen.
 	All ions then get accelerated to the same energy and fly through the mass analyser. Light particles fly faster through the spectrometer than heavier ones. The different particle species arrive at different times at the detector. To enlarge the flight distance, an ion-mirror, which reflects the ions and leads them back to the detector. The used detector is a MCP detector. % Explain a little bit in more detail.
 	
-		\subsubsection{Ion-source}
-		% More detailed explanation about the NIM ion source, function of the different specific electrodes. Or explain it later in detail when discussing the simulations in detail.
+		\subsubsection{Ion Storage capability}
+		% Take arguments from the paper + after a certain time, the space charge of the ions overcomes the trapping potential of the electron beam. At this point, the ions are no longer holded by the potential and leak out of the ion-source. Add space charge calculation.
+		
+	
+		\subsubsection{Peak Analysis Statistics}
+		% See notes from the paper and make a detailed Analysis/ description of the method.
+		% A/mbar alias A/ #cm^3 is a instrument specific constant. Determine it for NIM.
+		
+		\subsubsection{Pressure calibration of the NIM Sensor}
+		% More detailed explanation about the NIM ion source, function of the different specific electrodes. Or explain it later in detail when discussing the simulations in detail. See paper as a guide line. Especially for the ion storage part.
+		
 		To calculate the number of ions produced in the ion source we use:
 		\begin{equation}
 		I_{ion} = \beta\cdot Q_{ion}\cdot L\cdot n\cdot I_{em}
 		\end{equation}
-		With $\beta$ the extraction efficiency which is 1, % Noch schauen auf welchen Wert wir diese setzen wollen. 1= sehr gute Quelle, 0.01 = 1mus/100mus = Pulslänge Pulser/ Länge 1 Zyklus. Noch diskutieren, welche Werte beta haben kann oder einfach etwas setzen? Da die ersten Messresultate gut sind, würde ich eher auf 1 setzen.
-		$L$ as the effective ionising path in our case 4~\si{\milli\metre}, $n$ the particle density, $I_{em}$ the electron emission current from the filament and $Q_{ion}$ the ionising cross section. The cross sections of species used in our calibration can be found in table % Ref. auf Tabelle und nur auf Stefans Diss verweisen oder die 4 Originalpaper zusammen suchen.
+		With $\beta$ the extraction efficiency which is 1, % Noch schauen auf welchen Wert wir diese setzen wollen. 1= sehr gute Quelle, 0.01 = 1mus/100mus = Pulslänge Pulser/ Länge 1 Zyklus. Noch diskutieren, welche Werte beta haben kann oder einfach etwas setzen? Da die ersten Messresultate gut sind, würde ich eher auf 1 setzen. Abschätzung? Auf Unterschiede beim Spannungsset hinweisen -> beeinflusst beta massgeblich.
+		$L$ as the effective ionising path in our case 4~\si{\milli\metre}, $n$ the particle density, $I_{em}$ the electron emission current from the filament and $Q_{ion}$ the ionising cross section. The cross sections of species used in our calibration can be found in table % Ref. auf Tabelle und nur auf Stefans Diss verweisen oder die 4 Originalpaper zusammen suchen. Tabelle einfügen.
+		
+		\subsubsection{Filament Power Calculation}
 		
 		
+		\subsubsection{Detector Gain}
+		% Explain as far as it is needed for the analysis of the detector results. Predictions, extrapolations on how the detector UMCP depends on UStack. Have a look on how big this calculation is and may put it to the detector results in the experiments chapter.
+		
+
+
 		
 		% Reference: Bieler Diss 2012, Wurz 2011, Scherer 1999, Meyer 2013 Data Analysis, Wells 2011
 		% Ionisation efficiency
