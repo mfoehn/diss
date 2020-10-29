@@ -1,3 +1,51 @@
-This is BibTeX, Version 0.99dThe top-level auxiliary file: arbeit.aux
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: arbeit.aux
+Reallocating 'name_of_file' (item size: 1) to 9 items.
 The style file: abbrvnat.bst
+Reallocating 'name_of_file' (item size: 1) to 8 items.
 Database file #1: Quellen.bib
+Warning--empty year in Agilent_TechNote_SNR
+Warning--empty year in Agilent_TechNote_SNR
+You've used 5 entries,
+            2773 wiz_defined-function locations,
+            618 strings with 5298 characters,
+and the built_in function-call counts, 1511 in all, are:
+= -- 112
+> -- 50
+< -- 5
++ -- 20
+- -- 15
+* -- 82
+:= -- 252
+add.period$ -- 16
+call.type$ -- 5
+change.case$ -- 15
+chr.to.int$ -- 5
+cite$ -- 12
+duplicate$ -- 100
+empty$ -- 161
+format.name$ -- 20
+if$ -- 308
+int.to.chr$ -- 1
+int.to.str$ -- 1
+missing$ -- 10
+newline$ -- 34
+num.names$ -- 20
+pop$ -- 63
+preamble$ -- 1
+purify$ -- 15
+quote$ -- 0
+skip$ -- 58
+stack$ -- 0
+substring$ -- 10
+swap$ -- 5
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 30
+warning$ -- 2
+while$ -- 15
+width$ -- 0
+write$ -- 68
+(There were 2 warnings)

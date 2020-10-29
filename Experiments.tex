@@ -1,14 +1,18 @@
 % !TEX root = arbeit.tex
-\section{Experiments}
+\section{Experiments} \label{sec:Exp}
+	The tests described in this chapter include tests of the different components of the NIM instrument such as laboratory tests of the flight antechamber tested on the Prototype or the flight ion-mirror. The part of Chapter \ref{sec:Exp} includes manly test with the prototype, later on tests with the PFM and follow.
+
 % In zeitlicher Reihenfolgen auflisten, damit man sieht, zu welchem Zeitpunkt man mit welchen Teilen gearbeitet hat.
 % In this section, all the different test (lab and simulations) are listed. As far as possible in their chronolocial order because between some lab tests there were simulations to improve the instrument before testing the redesigned instrument.
 
 % Fügt ein PDF ein, nummeriert nach dem PDF normal weiter.
 %\includepdf[pages=-]{Report_Thermofoil_UV_Masterarbeit.pdf}
 
+% Section über Detector? haben wir ja nicht wirklich etwas gemacht. Diode durch 2 Widerstände ersetzt. -> Spannungsfestigkeit. Verlauf der Überschläge. Unterschiedliche Skizzen.
+
 	In this section, the different tests are described to develop the NIM instrument. Different parts of the instrument were tested to improve the instrument.
-%------------------------------------------------------------------------------------
-	\subsection{Reflectron}
+%-----------------------------------------------------------------------------------
+	\subsection{Ion-Mirror}
 	
 	The NIM prototype reflectron was exchanged through the flight like reflectron, which was tested. The NIM prototype reflectron consisted of 12 ring electrodes connected with each other with resistors in between them. On the first, 5th and 12th electrode, a voltage can be applied. With the different resistors, a linear voltage gradient in the reflectron is generated.\\ % Noch besser formulieren.
 	The flight reflectron consists of a ceramic tube with two resistance spirals on its inner walls. There are three electrodes, where the voltage can be applied. The electrodes are connected via resistance spirals with each other. The two reflectrons can be seen in Fig.\,\ref{fig:ExpRefl}. This kind of reflectron was also used in the RTOF mass spectrometer which flied in ROSINA \cite{Diss_Scherer} and the in the NGMS \cite{Diss_Hofer}. \\ % Evt. noch etwas schöner und weiter ausführen. Strahlungsfestigkeit musste getestet werden. Report? Paper? Diss?
@@ -17,11 +21,11 @@
 	\begin{figure}[h]
 		\begin{subfigure}{0.5\textwidth}
 			\centering
-			\includegraphics[width = 0.95\textwidth]{Bilder/reflectron_Prototype1.jpg}
+			\includegraphics[width = 0.95\textwidth]{Experiments/reflectron_Prototype1.jpg}
 		\end{subfigure}
 		\begin{subfigure}{0.5\textwidth}
 			\centering
-			\includegraphics[width = 0.85\textwidth]{Bilder/reflectron_flight.JPG}
+			\includegraphics[width = 0.85\textwidth]{Experiments/reflectron_flight.JPG}
 		\end{subfigure}
 		\caption{Left: Prototype reflectron with ringelectrodes. Right: Flight reflectron}
 		\label{fig:ExpRefl}
@@ -51,19 +55,26 @@
 
 	
 	
-		
+	
 	\subsection{Prototype CASYMIR-D/-E}
 	% CASYMIR-D? Erst wenn man intensitätsproblem mit ante chamber gelöst hat :/. CASYMIR-E-Kampagne.
+	% Kurzfassung?
 	
 %-----------------------------------------------------------------------------------------
-	\subsection{Simulations} % Maybe an other arrangement of the Simulations chaper. See whicht simulations are performed how far any in which order they have to be to be comprehendible.
+	\subsection{Simulations}
+	
+	During development, the mounting of the HV lenses was adapted. Simulations had to be done because as a result of the changed form of the lenses, the voltage set also changed. In this case, the voltage ranges increase by about blabla volts. These new higher ranges challenged the design of the supply electronics because the electronics has a limited amount of space. % Look up the details. Explanation with the electric fields?
+	
+	%\textcolor{red}{\textbf{Simulations of the adaption of the mounting of the electrodes has to come before the experiments with the PFM although the PFM structure is explained before.}}
+	
+	% Maybe an other arrangement of the Simulations chaper. See whicht simulations are performed how far any in which order they have to be to be comprehendible.
 	
 	% Evt. in einem eigenen Kapitel? Schauen, welchen Einfluss es dann jeweis auf die Hardware hatte. -> Elektronik setzt Spannungsranges, beschreiben, dass man da iterieren musste um das optimale Simulationsspannungsset zu finden mit den Grenzen, welche die Elektronik uns für die jeweiligen Elektroden gibt. -> vgl. mit den Messungen vom PFM.
 	% Neusimulationen mit neuen Grenzen für die HV. -> die Resultate dieser Simulationen. Als Folgen davon wurden die Grenzen für die HV neu definiert. Schauen, wie man das am besten auseinander nimmt :/.
 
+	% Change of the mounting of the IS lenses -> change in voltages
+
 	% Pulsersimulationen -> Kriterien für Andy für das Pulserdesign. Ab wann wir einen Einbruch in der Massenauflösung haben. (Worddokument wo die einzelnen Bilder zusammengestellt sind?)
-	
-	
 	
 	% Filament repeller simulation tests. Noch Graphiken einmal einfügen. Die wichtigsten.
 	% Um herauszufinden, wie wichtig die Position des Filaments ist.
@@ -75,11 +86,11 @@
 	\begin{figure}[h]
 		\begin{subfigure}{0.53\textwidth}
 			\centering
-			\includegraphics[width= 0.95\textwidth]{Messungen/SimRepPosU.png}
+			\includegraphics[width= 0.95\textwidth]{Experiments/SimRepPosU.png}
 		\end{subfigure}
 		\begin{subfigure}{0.47\textwidth}
 			\centering
-			\includegraphics[width= 0.95\textwidth]{Messungen/SimRepPosImax.png}
+			\includegraphics[width= 0.95\textwidth]{Experiments/SimRepPosImax.png}
 		\end{subfigure}
 		\caption{Left: The filament repeller voltage to reach the maximum electron intensity over the volume of the neutral particles. Right: Electron intensity normed on the intensity at position 0.} % Noch Graphik wie Intensität bei den versch. Pos abfällt.
 		\label{fig:ExpSimRep}
@@ -88,7 +99,7 @@
 	\subsection{Filament decision}
 	% Ranking criterion -> Explanation, see electronics book. constant power of one filament -> resistance variies over time. Vgl. Diss Rico.
 
-%-------------------------------------------------------------------------------------
+%------------------------------------------------------------------------------------
 	\subsection{Pulser}
 	% Simulations with different rise times and their influence on the mass spectrum.
 	% Test with lab pulser, wavelab pulser -> compare their properties and their performance.
@@ -100,12 +111,52 @@
 	
 	
 	\subsection{Detector Tests}
-	% Plot off the gain curves of the detector in its different states. flat, folded, folded in the wolfram copper shealding (for 1 detector. Not the flight detector). If there should be any time, redo the errorcalculation correctly (error from the calculation of the area under the peak = charge and of the conversion factor when using a different discriminator level).
+	% Also show different signal heights/ forms? Defect diode, functioning diode, resistor? Full gain curve is only possible for functioning diode (tests to be done) and resistor (plot already included).
+	The following chapter describes improvements of the mechanical and electrical design of the NIM PFM detector and tests performed with different versions. Most of the tests were performed in the Pumpstand nr.2 (Chapter \ref{subsubsec:SetFacPumpst}) and a few were done with the detector in the sensor Proto Flight Model (PFM) or in the sensor flight spare model (FS).\\
+	% Leave this part here as it is a description of the process we were working on. Describe the adaption of the meachanical design of the detector housing, the consequence that we inserted a resistor instead of an anode. Pros and Cons of the Anode vs. the resistor?
+	% Description of the housing and problems related to it -> investigation, improvements.
+	The detector suffered repeatedly discharges causing a failure of the diode, which is one of the key components of the detector. This lead to a redesign of the detector housing and to an exchange of the diode through a resistor, because the resistor is more robust concerning discharges. % Include an electrical schema. May a zoom of the other one laready included in the setup chapter (as soon as it is finished). Explanation about how a diode works? Talk with JoGa maybe. Explain main hypothesis why it died repeatedly?
+	The discharges could be eliminated by a redesign of the detector housing. % Vgl. Fig. of the 2 housing designs (start and end) and explain them.
+	Fig.bla left shows an earlier version of the detector housing and Fig. bla right shows the design of the current flight detector.
+	Basically, the MCPs lay on a border about 1 mm above the anode. % Check distance
+	A diode generates an additional voltage difference between the MCP backside and the anode to accelerate the electrons from the MCP backside towards the anode. Between this border and the MCP is the contact lug which is connected to the high voltage rail. On top of the upper MCP is the contact lug to connected to the corresponding voltage rail. On top of that is a bushing and a sort of screw. When tightening the screw, the bushing presses uniformly on the MCPs. In the old design, the thread for the screw was cut down to the boarder on which the MCPs lay. When assembling the whole stack, the MCPs often cant in the thread. Another challenge lay in tightening of the screw. When the screw was too loose, the top and the bottom contact lug had no reliable contact to the MCPs. When applying a high voltage over the whole MCP stack, the gap acts as an additional resistor over which the voltage build up resulting in a discharge between the corresponding electrode and the MCP. The discharge can propagate through the whole MCP stack and damage the diode and the capacitors. When the screw was tighten too much, the MCPs broke as they consist of lead glass and are very delicate in the mechanical point of view. As a consequence, the screw thread was cut less deep down and an additional boarder was made on which the bushing was pressed by the screw to make the assembly of the detector easier. In addition, the diode was exchanged through a resistor because the resistor is more robust in regards to the discharges. Due to the uncertainty in the manufacturing process of the detector housing, spacer rings are added between the bushing and the MCP to really close the gap. Due to that uncertainty, the number of rings needed for each detector has to be determined by trial.
+	% Insert a Figure of the housing. Further explanation of the design
+	% free play = thechnisch für Spiel
+	% Circuit diagram with both options diode and resistor. Ref for that statement?
+	% Upgrade SNp6.
+	
+	% Explanation of the different meas Figs.
+	% Detector with broken anode is detector EM4. Look if there are any specifications. Seems to have most probable the same configuration as the other detectors. -> Sufficient for the data analysis but it would be good to have the datasheet.
+	Fig. bla shows the signal shapes of different detector configurations beginning with the shape of a detector with a broken diode. The other two figures show the signal shape of a detector with a functioning diode and a functioning resistor. The most remarkable feature is that the signal height of the detector is much smaller and much broader that the signal shape of the other two configurations. In addition, the first overshoot is much lager due to the impedance mismatch caused by the broken diode. A broken diode gets conductive and therefore the potential at the MCP backside is equal to the potential of the anode. The electrons are not additionally accelerated and therefore the resulting signal is smaller than the signal with a functioning diode.\\
+	Fig.\ref{fig:SN4p54p7Gain} shows the gain curves of two potential FS detectors both in the configuration with a 10\,\si{\mega\ohm} resistor instead of a diode. 
+	% Other parameters to analyse? Pulse width of the 3 configurations? Overshoot? Can that really be calculated out of the data? Impedance match based on the overshoot.
+	\begin{figure}
+		\begin{subfigure}{.5\textwidth}
+			\centering
+			\includegraphics[width=0.9\textwidth]{Bilder/Gain_Curves_SN4p5_4p7.png}
+		\end{subfigure}
+		\begin{subfigure}{.5\textwidth}
+			\centering
+			\includegraphics[width=0.9\textwidth]{Bilder/SN4p7_discharge.png}
+		\end{subfigure}
+		\caption{Left: Gain curves of two NIM PFM detectors. The difference in gain is because for each measurement curve, a different set of MCPs was used. Right: Gain curves of a folded NIM PFM detector. The lower gain curve was recorded after a discharge at an MCP voltage of 1.8\si{\kilo\volt}.}
+		\label{fig:SN4p54p7Gain}
+	\end{figure}
+	% Discussion about the discharge behaviour in regards to gain. Are there any values? Something with free electrons destroying the inner coating of the MCP channels. Only a rough estimate needed.
+	% Explanation of the fit model in theory part. -> Maike if there is any theory about that topic specifically.	
+	
+	% ROSETTA? When was a resistor latest used? Have a look if there is a space for sort of improvements of the sensor. If it is part of the experiments of of the thery part...
+	% Explain, which measurements were made with which MCPs, describe how the discharge influences the signal. How much of the signal we loose in this specific measurement. Literature references?
+	% Description of the current measurement of the detector with the laboratory electronics attached and then the calculation of the MCP voltage. State clearly under with circumstances the calculation with this method is possible and under which it is not (ion current, which is falsely taken into account)
+	% Precise can we estimate the numbr of ions/ the partial pressure of the gas?
+	% Describe, how far we tried to approximate the voltage.
+	
+	% Plot off the gain curves of the detector in its different states. flat, folded, folded in the wolfram copper shealding.
 	% Measuring settings. Turn the drift voltage up to -2.5 kV and then slowly increase the anode voltage to the value you want to measure. The gain is calculated with the software by doing a Simpson 3/8 integration of the peak = Q. (Look in the lab book for the proper calculation)
-	% Maybe there is time to redo the tests with the real PFM detector.
+	% Maybe there is time to redo the tests with the real PFM detector (XD wär schön. Leider nein). (Die Resultate sind nicht so vollständig wie die von der einen anderen Messung. Messung mit einem Zwillingsdetektor und von diesem auf den Flugdetektor schliessen. -> evt. schöne Graphik).
 	
 	
-%----------------------------------------------------------------------------------------
+%-----------------------------------------------------------------------------------
 	\subsection{Ionoptics}
 	\subsubsection{Voltage Optimisation}
 	Two types of electrical lenses. positive and negative voltage lenses. positive and negative voltage lenses have the same effect. In negative voltage lenses, the particles fly faster = shorter time-of-flight. This results in a better mass resolution.\\

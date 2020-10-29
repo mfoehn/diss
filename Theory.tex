@@ -1,16 +1,16 @@
 % !TEX root = arbeit.tex
 \section{Theory}
-
+	Add a Chapter about electric fields?/ Basis for the simulations?
 	\subsection{Requirements}
 	% Mass, performance, Power consumption. (See latest references. Part of the introduction?)
 	
-	\subsection{Basic Theory about a TOF masspectrometry} % Allgemeine Theorie
+	\subsection{Basic Theory about TOF Masspectrometry} % Allgemeine Theorie
 	
 	% Priciples kann immernoch weiter ausgearbeitet werden falls nötig.
 	\subsubsection{Principle} % Noch Referenzen auf Vorlesung einfügen. Evt. noch Bild eifügen von Ionen an versch. Startpositionen.
 	This chapter explains the function of a TOF instruments. A TOF mass spectrometer consists of, an ion-source, a mass analyser and a detector. The mass analyser has an ion-mirror which increases the flight distance of the ions by keeping the instrument on a certain length. A longer flight distance increases the mass resolution of the instrument.\\% Mention that later.
 	In the ion source, the ions are produced. An electric field in the source is generated such that ions get trapped in it. Then ions get accelerated by applying a high voltage pulse on the extraction grid. \textcolor{red}{Include a Graphic of the IS and draw a sample electric field to explain how the extraction pulse (the door to open) works.}
-	If the pulse width is long enough that all ions leave the source during the time the pulse is applied, the ions get all the same amount of energy W
+	If the pulse width is long enough that all ions leave the source during the time the pulse is applied, the ions get all the same amount of energy $W$
 	\begin{equation}
 		W = \int_{0}^{s_0}q_0 E_s ds = q_0 U_0
 	\end{equation}
@@ -43,7 +43,7 @@
 		\label{eq:mass_Calib}
 	\end{equation}
 	In this equation there are two free parameters, $C$ and $t_0$. To calibrate a mass spectrum at least two species appearing in the spectrum have to be known to solve this equation for the two parameters.
-	% []Scherer 1999]
+	% [Scherer 1999]
 	
 	\subsubsection{Mass resolution} % Bild einfügen, wie die Mass Resolution berechnet wird.
 	The mass resolution is calculated as follows. According to Eq.\ref{eq:mass_Calib} $m$ is:
@@ -76,7 +76,22 @@
 	
 	% Then continue with the calculation of the mass resolution and the calibration of the mass scale (evt. Reference further explanation how the software it acctually does (keep it short, only extend it if further nessecary)).
 		
-	\subsubsection{Sensitivity an SNR}
+	\subsubsection{Signal-to-Noise Ratio and Sensitivity}
+	
+	\textbf{SNR}\\ % Write a bit more detailed. What does background corrected mean? Subtraction of the baseline if it is elevated.
+	The SNR is defined as the ratio of the background corrected peak amplitude $I^{max}_P$ and the standard deviation of the base line $std(I_b)$ \cite{Agilent_TechNote_SNR}, \cite{Master_Meyer}: % Thechnical Note Agilent and Masterarbeit Stefan.
+	\begin{equation}
+		SNR = \frac{I^{max}_P}{std(I_b)}
+		\label{eq:SNR}
+	\end{equation}
+	A high mass resolution improves also the signal-to-noise ratio. By better focusing the ions in the time frame, the peak gets narrower. The area under the peak corresponds to the number of ions. If the number of ions and therefore the area under the curve stays the same, a narrower peak implicates an increase in signal height and therefore in a higher SNR.\\ % In other mass spectrometers (such as sector magnets) an increase in mass resolution results in a reduction of the phase space and therefore in a loss of signal intensity.
+	\\
+	\textbf{Sensitivity} \\ % Really include this chapter? Because it is only an estimation of the actual performance of the instrument. If it is included, do a proper derivation of the formula!!
+	The sensitivity $n_{lim}$ is the actual detection limit of the sensor. It is defined as the amount of gas detected by the instrument $n_{det}$ over the amount of ions entering the instrument $n_{p}$ times the signal intensity measured by the instrument $I_{sig}$
+	\begin{equation}
+		n_{lim} = \frac{n_p \cdot I_{sig}}{n_{det}}
+	\end{equation}
+	
 	
 	\begin{comment}
 		SNR
@@ -96,7 +111,9 @@
 
 
 	
-	\subsection{Ion Optical Design, NIM specific elements} % ion source efficienies, reflectron double focusing, detector reflection of signal, signal matching. Density enhancement
+	\subsection{Ion Optical Design, NIM specific elements} % Inspiration from the arguments of the paper. Titel noch anpassen. Theorieteil fortlaufend hinzufügen. Ion source efficienies, reflectron double focusing, detector reflection of signal, signal matching. Density enhancement.
+	% Hier das Design allgemein halten. Erst in Kapitel 'Setup' auf die Designdetails eingehen. Discuss important theory parts here and just give a short summary in the corresponding experimental parts when the theory is used.
+	
 	A time of flight mass spectrometer consists of, an ion-source, a mass analyser and a detector.\\
 	
 	\begin{figure}[htb] % Noch schauen, ob das noch verschoben wird.
@@ -110,15 +127,155 @@
 	The NIM instrument is able to measure neutrals and ions. Neutral particles get ionised by electron ionisation. A filament is heated up until it emits electron. Ions enter the ion source directly.  % Noch genaue Formulierung nachschauen.
 	All ions then get accelerated to the same energy and fly through the mass analyser. Light particles fly faster through the spectrometer than heavier ones. The different particle species arrive at different times at the detector. To enlarge the flight distance, an ion-mirror, which reflects the ions and leads them back to the detector. The used detector is a MCP detector. % Explain a little bit in more detail.
 	
-		\subsubsection{Ion-source}
-		% More detailed explanation about the NIM ion source, function of the different specific electrodes. Or explain it later in detail when discussing the simulations in detail.
+		\subsubsection{Ion Storage capability}
+		% Take arguments from the paper + after a certain time, the space charge of the ions overcomes the trapping potential of the electron beam. At this point, the ions are no longer holded by the potential and leak out of the ion-source. Add space charge calculation.
+		
+	
+		\subsubsection{Peak Analysis Statistics}
+		% See notes from the paper and make a detailed Analysis/ description of the method.
+		% A/mbar alias A/ #cm^3 is a instrument specific constant. Determine it for NIM.
+		
+		\subsubsection{Pressure calibration of the NIM Sensor}
+		% More detailed explanation about the NIM ion source, function of the different specific electrodes. Or explain it later in detail when discussing the simulations in detail. See paper as a guide line. Especially for the ion storage part.
+		
 		To calculate the number of ions produced in the ion source we use:
 		\begin{equation}
 		I_{ion} = \beta\cdot Q_{ion}\cdot L\cdot n\cdot I_{em}
 		\end{equation}
-		With $\beta$ the extraction efficiency which is 1, % Noch schauen auf welchen Wert wir diese setzen wollen. 1= sehr gute Quelle, 0.01 = 1mus/100mus = Pulslänge Pulser/ Länge 1 Zyklus. Noch diskutieren, welche Werte beta haben kann oder einfach etwas setzen? Da die ersten Messresultate gut sind, würde ich eher auf 1 setzen.
-		$L$ as the effective ionising path in our case 4~\si{\milli\metre}, $n$ the particle density, $I_{em}$ the electron emission current from the filament and $Q_{ion}$ the ionising cross section. The cross sections of species used in our calibration can be found in table % Ref. auf Tabelle und nur auf Stefans Diss verweisen oder die 4 Originalpaper zusammen suchen.
+		With $\beta$ the extraction efficiency which is 1, % Noch schauen auf welchen Wert wir diese setzen wollen. 1= sehr gute Quelle, 0.01 = 1mus/100mus = Pulslänge Pulser/ Länge 1 Zyklus. Noch diskutieren, welche Werte beta haben kann oder einfach etwas setzen? Da die ersten Messresultate gut sind, würde ich eher auf 1 setzen. Abschätzung? Auf Unterschiede beim Spannungsset hinweisen -> beeinflusst beta massgeblich.
+		$L$ as the effective ionising path in our case 4~\si{\milli\metre}, $n$ the particle density, $I_{em}$ the electron emission current from the filament and $Q_{ion}$ the ionising cross section. The cross sections of species used in our calibration can be found in table % Ref. auf Tabelle und nur auf Stefans Diss verweisen oder die 4 Originalpaper zusammen suchen. Tabelle einfügen.
 		
+		
+		\subsubsection{Detector Parameters} % All relevant parameters
+		% Detection efficiency geometry depended. Particles hitting the glass structure instead of the hole are lost.
+		% Gain
+		% dead time, R, C, number of channels. Calculation of the number of channels out of the data sheet (Diss Maike) charging behaviour.
+		% Summary of what is all discussed in this chapter.
+		
+		In this section we calculated some important parameters of the detector such as the dead time and the gain. % And further values if needed.
+		
+		\textbf{Dead time}\\
+		
+		\begin{figure}[h]
+			\centering
+			\includegraphics[width=.4\textwidth]{Bilder/MCP_hex.jpg}
+			\caption{MCP honeycomb structure}
+			\label{fig:MCPhex} % Ref. Maike Diss
+		\end{figure}
+		
+		The number $N$ of channels of an MCP is active area $A_{act}$ of the MCP divided by the area of one channels $A_{hex}$. The MCP has a honeycomb like structure (Fig.\ref{fig:MCPhex}). Thus, the area of one channel is the area of a hexagon:
+		\begin{equation}
+			N = \frac{A_{act}}{A_{hex}} = \frac{2\cdot\pi r^2_{act}}{\sqrt{3}p^2}
+		\end{equation}
+		$r_{act}$ is the radius of the active area of the MCP which is for the MCPs we used 8\,\si{\milli\meter} and p is the distance between the centres of two channels which is 6\,\si{\micro\meter}. This results in about $1.6\cdot10^6$ channels.\\
+		The resistance of a single channel is the resistance of the whole MCP plate $R_{MCP}$ times the number of channels $N$:
+		\begin{equation}
+			R_{ch} = R_{MCP}\cdot N
+		\end{equation}
+		Its resistance depends on the voltage applied over the plate. For a nominal voltage of 1000\,\si{\volt} the $R_{MCP}$ is \~70\,\si{\mega\ohm} resulting in channel resistance of about $10^{14}$\,\si{\ohm}.\\
+		The concerning the capacitance of the MCPs, the MCPs consist of two materials: the structure (grey) consists of a type of lead glass and the hole, whichcan be approximated with vacuum (white) (Fig.\ref{fig:MCPhex}). The structure area is hexagon $A^{hex}_{ch}$ minus the area of the channel hole $A^{hole}_{ch}$. This results in a capacitance of one channel $C_{ch}$ of:
+		\begin{equation}
+			C_{ch} = \frac{\epsilon_0  (\epsilon_r \cdot (A^{hex}_{ch} - A^{hole}_{ch})+ A^{hole}_{ch})}{l_{ch}}
+		\end{equation}
+		With $\epsilon_0$ the vacuum permittivity, $\epsilon_r$ the relative permittivity of lead glass and $l_{ch}$ the MCP thickness which is 0.3\,\si{\milli\meter} for the MCPs we used. The relative electric permittivity depends strong on the conditions under which the material is used for example under which voltage, frequency or temperature the MCPs are used. Furthermore, the manufacturer does not give details about the material characteristics as it is a company secret. [Neuland, 2016] made a literature search and found values between 6 and 20 for $\epsilon_r$. % Neuland Diss
+		This results in a capacity of 5\,\si{\atto\farad} per channel. The dead time of a single MCP channel is the channel resistance $R_{ch}$ times the channel capacitance $C_{ch}$:
+		\begin{equation}
+			\tau = R_{ch}\cdot C_{ch}
+		\end{equation}
+		This results in a dead time of 500\,\si{\micro\second}. A typical waveform has a duration of about 100\,\si{\micro\second}. When a ion hits a channel, this channel would be blind for the next five waveforms. With the $1.6\cdot10^6$ channels and assuming a uniform distribution of particles on the MCP surface, saturation is assumed at particle rates higher than $10^9$ particles/\si{\second}. % Do we really want to have this in? Because saturation really starts at 10^6 #/sec already due to other effects.
+		\begin{equation}
+			U(t) = U_0\cdot(1- e^{-t/\tau})
+		\end{equation}
+		It is the time needed to recharge a single channel to approximately 63\% of its original charge. After $5\tau$ 99\% of the original charge is replenished. % Is only half true. Only under the assumption that all of the charge is extracted out of the MCP. May later further discussion and revision.
+		
+		% Atempt to calculate the acctual voltage drop of the MCP voltage in dependence of the count rate by taking into account the capacitorloading curve and the option of a possible paralyzability of the detector
+		% Summary Diss Maike. Weekend
+		
+		% Dependence of the gain of one single ions? Distribution?...
+		\begin{comment}
+			1 particle with tau as the dead time. Voltage of 1 channel when 1 particle hits the channel. We assume, that we do not get into saturation. At what particle rate does the voltage start to break down. When a particle hits the channel when the voltage is not full replenished, it empties the channel again.
+			For a first approximation, wait for 5*tau until 99% of the voltage is recovered.
+			Uch(tion) = U_0\cdot(1- e^{-tion/\tau}) % tion is the time when an ion triggers a signal.
+			Assumption of this formula is that one ion empties the hole channel -> it extracts alls the current in the channel -> all ions should have the same amount of current = the same gain.
+			
+			1.6*10^6 particles/second -> 1#/6*10^-7 sec.
+			
+			ion arriving rate is constant and the ions distributed homogenious over the MCP plate
+					
+			tZero = countRate % time which resets your voltage to 0V of the channel.
+			t_rate = 5*tau.
+			Umcp = sum(Uch)/#Channels
+			
+			Temporal the count rate is much higher than the value averaged over 1 sec. -> The gain will drop within one spectrum but will recover to a certain amount until the next spectrum. This calculation look at total paralyzability.
+			
+			See Simulations by Maike for the whole calculation -> also the gain drop is displayed there. Just summarize it here because it is interesting :) and it also gives sort of an approximation of the voltage drop.
+			-> Weekend
+			
+		\end{comment}
+
+		\textbf{Gain}\\
+		% Check all variables, if it is consistent. Finish this chapter properly
+		The following derivation is strongly based on the lecture notes of [Wurz, 2017] % Include Ref.
+		When an incoming particle hits the MCP channel wall there is a certain chance that it ejects an electron out of the channel wall. By applying an electric field $E$ over the MCP plate, this electron gets accelerated until it hits the opposite wall, where it ejects more electrons:
+		\begin{equation}
+			E = \frac{U_{MCP}}{l} = \frac{F}{q_0} = \frac{a m_e}{q_0}
+		\end{equation}
+		With $U_{MCP}$ the voltage applied over the MCP, $l$ the channel length, $F$ the force applied on the electron, $q_0$ the elementary charge and $m_e$ the mass of the electron. The acceleration of the electron is:		
+		\begin{equation}
+			a = \frac{U_{MCP}\cdot q_0}{l\cdot m_e}
+		\end{equation}
+		The distance $s$ an electron travels along the channel until it reaches the channel wall is:
+		\begin{equation}
+			s = \frac{1}{2}at^2 = \frac{U_{MCP}\cdot q_0\cdot t^2}{l\cdot m_e\cdot 2}
+			\label{eq:DetGainChFlightDist}
+		\end{equation}
+		With $t$ the flight time of an electron until it hits the wall again. Assuming the initial velocity $v_{init}$ of the initial secondary electron is perpendicular to the channel wall, the flight distance until it hits the opposite channel wall is the channel diameter $d$. $t$ can be written as:
+		\begin{equation}
+			t = \frac{d}{v_{init}}
+			\label{eq:DetGainChFlightTime}
+		\end{equation}
+		$v_{init}$ can be derived out of the electron's initial kinetic energy $U_{init}$:
+		\begin{equation}
+			U_{init} = \frac{1}{2}m_e v_{init}^2 \rightarrow v_{init} = \sqrt{\frac{2U_{init}}{m_e}}
+			\label{eq:DetGainEkin}
+		\end{equation}
+		In inserting Eq.\eqref{eq:DetGainChFlightTime} and Eq.\eqref{eq:DetGainEkin} in Eq.\eqref{eq:DetGainChFlightDist} leads to:
+		\begin{equation}
+			s = \frac{q_0 \cdot U_{MCP}\cdot d^2}{l\cdot 4U_{init}}
+			\label{eq:DetGainDistECh}
+		\end{equation}
+		The energy $U_c$ the electron gains during the flight time $t$ is:
+		\begin{align}
+			U_c = &q_0 Es = q_0\cdot \frac{U_{MCP}}{l}\cdot\frac{q_0\cdot U_{MCP}\cdot d^2}{l\cdot 4 U_{init}}\\
+			= &q_0^2 \frac{U_{MCP}^2\cdot d^2}{l^2\cdot 4U_{init}}
+		\end{align}
+		The secondary electron emission coefficient $\delta$ is proportional to the square root of the energy $U_c$:
+		\begin{equation}
+			\delta = A\cdot \sqrt{U_c} = A\cdot \frac{q_0 U_{MCP}\cdot d}{2 \sqrt{U_{init}}\cdot l}
+			\label{eq:DetGainDelta}
+		\end{equation}
+		With $A$ a fit constant. After $n$ collisions, the gain $G_{ch}$ of one channel is:
+		\begin{equation}
+			G_{ch} = \delta^{n} = \delta^{l/s}
+		\end{equation}
+		The number of collisions is the channel length $l$ divided by the distance an electron flies within the channel before it hits the channel wall and ejects more electrons $s$. Inserting now Eq.\eqref{eq:DetGainDelta} and Eq.\eqref{eq:DetGainDistECh} leads to:
+		% alpha = l/d. Ref to [Wiza,1979] as the original formula is from him!!!
+		\begin{equation}
+			G_{ch} = \left(A\cdot\frac{q_0 U_{MCP} \cdot d}{2\sqrt{U_{init}}\cdot l}\right)^{\frac{4U_{init}}{q_0 U_{MCP}}\left(\frac{l}{d}\right)^2}
+		\end{equation}
+		By writing the channel length to diameter ratio $\frac{l}{d}$ as $\alpha$ and expressing the electrons initial energy $U_{init}$ in [eV], the equation turns into:
+		\begin{equation}
+			G_{ch} = \left(A\frac{U_{MCP}}{2\alpha\sqrt{U_{init}}}\right)^{\frac{4\cdot U_{init}\cdot\alpha^2}{U_{MCP}}}
+		\end{equation}
+		With $A$ in approximately 0.2 $\left(\frac{C}{V}\right)^{1/2}$, % Ref. to Wiza
+		$U_{MCP}$ in [V], $\alpha$ is a dimensionless number and $U_{init}$ in the range of a few [eV].
+
+
+		
+		% Explain as far as it is needed for the analysis of the detector results. Predictions, extrapolations on how the detector UMCP depends on UStack. Not quite clear which model we have to take for what reasons. Why a quadratic funtion at all. What other model will be more justified... Hmm... Have a look on how big this calculation is and may put it to the detector results in the experiments chapter.
+		
+		% Calculation of the detector current is part of the setup as there is a picture of the PS #2 and the cooresponding explanation of the measurement.
+		% Include the circuit diagram of the detector. Explanation of the different components? Maybe? Change from diode to resistor? Reasons? (more robust but voltage over MCPs is not so easy to derive anymore)
 		
 		
 		% Reference: Bieler Diss 2012, Wurz 2011, Scherer 1999, Meyer 2013 Data Analysis, Wells 2011
@@ -130,6 +287,11 @@
 		% Sensitivity estimation. Nessesary? If so, part of SNR discussion.
 		% MCP detector. Gain calculation. How the detecotr works. Didn't do anything for further developement...
 		% Antchamber. Explanation of closed and open source. Field of view. Densitiy enhancement.
+		
+		\subsubsection{Filament Power Calculation}
+		
+		
+		
 	
 	
 \begin{comment}
