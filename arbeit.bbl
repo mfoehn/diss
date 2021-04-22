@@ -1,4 +1,4 @@
-\begin{thebibliography}{5}
+\begin{thebibliography}{6}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -35,5 +35,12 @@ S.~Scherer.
 \newblock \emph{Design of a high-performance Reflect:ron Time-of-Flight mass
   spectrometer for space applications}.
 \newblock Universität Bern, 1999.
+
+\bibitem[van Essen and Heerens(1976)]{molFlowTubeTransm_Essen1976}
+D.~van Essen and W.~C. Heerens.
+\newblock On the transmission probability for molecular gas flow through a
+  tube.
+\newblock \emph{Journal of Vacuum Science and Technology}, 13\penalty0
+  (6):\penalty0 1183 -- 1187, 1976.
 
 \end{thebibliography}

@@ -13,7 +13,7 @@
 	In this section, the different tests are described to develop the NIM instrument. Different parts of the instrument were tested to improve the instrument.
 %-----------------------------------------------------------------------------------
 	\subsection{Ion-Mirror}
-	
+	% Test of subcomponents.
 	The NIM prototype reflectron was exchanged through the flight like reflectron, which was tested. The NIM prototype reflectron consisted of 12 ring electrodes connected with each other with resistors in between them. On the first, 5th and 12th electrode, a voltage can be applied. With the different resistors, a linear voltage gradient in the reflectron is generated.\\ % Noch besser formulieren.
 	The flight reflectron consists of a ceramic tube with two resistance spirals on its inner walls. There are three electrodes, where the voltage can be applied. The electrodes are connected via resistance spirals with each other. The two reflectrons can be seen in Fig.\,\ref{fig:ExpRefl}. This kind of reflectron was also used in the RTOF mass spectrometer which flied in ROSINA \cite{Diss_Scherer} and the in the NGMS \cite{Diss_Hofer}. \\ % Evt. noch etwas schöner und weiter ausführen. Strahlungsfestigkeit musste getestet werden. Report? Paper? Diss?
 	Therefore, the two reflectrons are from the electrical point of view the same.\\ % Oder kommt das erst bei der Auswertung?
@@ -45,14 +45,8 @@
 	
 	Exchange of the reflectron. Messdaten und Auswertung. Spannungssets vergleichen. Vortrag zusammenschreiben. Plots von dort nehmen und noch etwas besser beschreiben.
 	(Plot-Axis, enlarge the exponent of the 10^11 e-/ns)
-		
-		
-		
-		
-		
+						
 	\end{comment}
-	
-
 	
 	
 	
@@ -60,7 +54,7 @@
 	% CASYMIR-D? Erst wenn man intensitätsproblem mit ante chamber gelöst hat :/. CASYMIR-E-Kampagne.
 	% Kurzfassung?
 	
-%-----------------------------------------------------------------------------------------
+%--------------------------------------------------------------------------------
 	\subsection{Simulations}
 	
 	During development, the mounting of the HV lenses was adapted. Simulations had to be done because as a result of the changed form of the lenses, the voltage set also changed. In this case, the voltage ranges increase by about blabla volts. These new higher ranges challenged the design of the supply electronics because the electronics has a limited amount of space. % Look up the details. Explanation with the electric fields?
@@ -111,6 +105,7 @@
 	
 	
 	\subsection{Detector Tests}
+	% FS IsoArea. Variation of the MCP gain an observation how the SNR and IsoArea change. \\titania.unibe.ch\UserHomes\foehn\MyDocuments\PhD\Messungen\FS\ firstOpti\MCP_Gain.opj
 	% Also show different signal heights/ forms? Defect diode, functioning diode, resistor? Full gain curve is only possible for functioning diode (tests to be done) and resistor (plot already included).
 	The following chapter describes improvements of the mechanical and electrical design of the NIM PFM detector and tests performed with different versions. Most of the tests were performed in the Pumpstand nr.2 (Chapter \ref{subsubsec:SetFacPumpst}) and a few were done with the detector in the sensor Proto Flight Model (PFM) or in the sensor flight spare model (FS).\\
 	% Leave this part here as it is a description of the process we were working on. Describe the adaption of the meachanical design of the detector housing, the consequence that we inserted a resistor instead of an anode. Pros and Cons of the Anode vs. the resistor?
@@ -161,6 +156,97 @@
 	\subsubsection{Voltage Optimisation}
 	Two types of electrical lenses. positive and negative voltage lenses. positive and negative voltage lenses have the same effect. In negative voltage lenses, the particles fly faster = shorter time-of-flight. This results in a better mass resolution.\\
 	Aim in the lab is to get two different voltage sets. One for positive voltages to not stress the equipment and one with negative voltage lenses to reach the maximal performance of the instrument. -> Tests showed no significant better mass resolution. A more detailed data analysis has to be made. % data in folder: \\titania\UserHomes\foehn\My Documents\PhD\Messungen\PFM\CASYMIR-C\nMode_voltageSet_Comparison_200430 
+	
+	\subsection{Instrument performance tests}
+		% At the end, make a comparison of the discussion of the different instruments as mass resolution, SNR as far as possible.
+		\subsubsection{Prototype} % Final results. Only shpw best mass resolution achieved. May revere to Stefan's Diss. With the Prototype there were mainly componenets tests. Only discussion of the antechamber performance if it is not discussed in the chapter above.
+		\subsubsection{PFM} % Include here the paper because it give a very good overview over the results conducted with it.
+		\subsubsection{FS} % Include here the final results of the FS of this year with lab and flight electronics. Discussion about that subject, see PFM paper.
+		% Laboratory and flight electronics are part of the same chapter because with the fligh electronics the only thing worth to discuss is the mass resolution because the signal intensity is still very low. Discuss the SNR graphics with Peter and then finalize this part of the chapter.
+		
+		% Look up the conditions for the description.
+		\textbf{Ion Storage two different velocities}\\ % Ref. to Abplanalp paper.
+		Ion storage is very crucial for a time of flight mass spectrometer because every ion generated and not stored in the ion source is lost and can generate additional electrical noise on the detector signal line. In this test the ion storage behaviour of the ion source was analysed for thermal and neutral mode for hydrogen and krypton with velocities of 2\,\si{\kilo\meter\per\second} and 4\,\si{\kilo\meter\per\second}. The emission current was varied from 20 to 600\,\si{\micro\ampere}. Ion storage of positive ions in x- and y- direction is supported by the negative potential generated by the electron beam. Two ring electrodes with a positive voltage applied generate a positive potential ring to trap generated ions in y- and z- direction (Fig.\ref{fig:ExpFSFlightSenIonStorIS}). For emission currents from 20 to 600\,\si{\micro\ampere} according to \underline{\textbf{formula bla}} the negative potential in the centre of the electron beam is -0.08-(-2.59)\,\si{\volt}. % Derivation of the formula to calculate the potential in the electron beam.
+		Fig.\ref{fig:ExpFSFlightSenIonStor} left shows the ion storage behaviour of the ion source of hydrogen and right the ion storage behaviour of krypton. In case of no ion storage, the relationship between the electron emission current I\textsubscript{em} and the signal intensity is linear. In case of ion storage there is a quadratic relationship between I\textsubscript{em} and the signal intensity. When measuring with the thermal mode, the particles get slowed down until they have energies in the range of 0.01\,\si{\electronvolt} and are therefore easy to trap in the potential field. In neutral mode particles enter the ionisation region directly. The kinetic energy of hydrogen for velocities between 2-4\,\si{\kilo\metre\per\sec} is 0.07-0.27\,\si{\electronvolt}. It can therefore easy be trapped in the potential field by the electron beam and the potential of the ring electrode already with very emission currents as low as 20\,\si{\micro\ampere}.\\
+		The kinetic energy of \textsuperscript{84}Kr for the same velocities is 2.8-11.2\,\si{\electronvolt}. This energy exceeds the potential of the centre of the electron beam and the ions are therefore more difficult to trap with only the electron beam. The ions are kept in the middle of the ionisation region with the positive potential ring. According to Fig.\,\ref{fig:ExpFSFlightSenIonStor} ion storage for \textsuperscript{84}Kr starts to dominate at emission currents of 100\,\si{\micro\ampere}.
+		%Therefore there is no difference in the measured intensities for hydrogen when it enters with 2 or 4\,\si{\kilo\meter\per\second}.\\		
+		In thermal mode, an increase in beam velocity leads to an increase in signal intensity due to the density enhancement effect \textcolor{red}{(Ref.)}. Therefore a higher signal intensity is expected in thermal mode for 4\,\si{\kilo\meter\per\second} compared to 2\,\si{\kilo\meter\per\second}. 
+		Like the in PFM, the FS shows a nice ion storage behaviour. For krypton ion storage just starts at an emission current of 100\,\si{\micro\ampere} where hydrogen is stored already at lower emission currents due its lower kinetic energy at the same beam velocity.
+		
+		\begin{figure}[h]
+			\centering
+			\includegraphics[width = 0.8\textwidth]{Experiments/FiL_IS_elBeam_Storage.png}
+			\caption{Ion storage source with sample voltage set applied to the electrodes. In light blue are the potential lines and in dark blue a simulated electron beam.}
+			\label{fig:ExpFSFlightSenIonStorIS}
+		\end{figure}
+		
+		
+		\begin{figure}[h] % Ion storage. Exchange Graphics as soon as discussed with Peter how to proper show the results.
+			\begin{subfigure}{0.5\textwidth}
+				\centering
+				\includegraphics[width = \textwidth]{Experiments/FSLabIonStorageH2.png}
+			\end{subfigure}
+			\begin{subfigure}{0.5\textwidth}
+				\centering
+				\includegraphics[width = \textwidth]{Experiments/FSLabIonStorageKr84.png}
+			\end{subfigure}
+			\caption{Ion storage measurement with the flight spare sensor but with laboratory electronics attached for H$_2$ and $^{84}$Kr for two different gas velocities.}
+			\label{fig:ExpFSFlightSenIonStor}
+		\end{figure}
+
+		% Detector behaviour test in FS sensor. Formula derivation is in the theory part with the proper detrivation.
+		% No saturation observed. 
+
+		\textbf{Mass resolution and Signal-to-Noise Ratio}\\
+		According to the requirements stated in (Ref.) % See paper
+		the required mass resolution for neutral mode is 500 and for thermal mode it is 1000 m/dm but to be able to distinguish between different masses at unit masses of 1000\,u NIM has to have a mass resolution of 1000. Otherwise NIM the different unit masses cannot be distinguished. Fig.\,\ref{fig:ExpFSFlightSenMassRes} show two spectra recorded with the NIM flight sensor with laboratory electronics attached with an electron emission current of 100\,\si{\micro\ampere}. With a mass resolution of 708 for neutral gas mode NIM fulfils the requirements. In thermal gas mode the highest mass resolution achieved was 830 m/$\Delta$m which comes close to the requirements. Fig.\,\ref{fig:ExpFSFlightElMassRes} show the mass spectra recorded with the NIM flight sensor with the flight electronics attached. The electron emission current was 200\,\si{\micro\ampere} the highest mass resolution achieved at the current state is 490 m/$\Delta$m for neutral gas mode and 462 m/$\Delta$m for thermal mode. Fig.\,\ref{fig:ExpFSFlightElK78} shows a mass spectrum recorded in thermal mode with an emission current of 300\,\si{\micro\ampere} the $^{78}$Kr peak is clearly visible. The signal to noise ratio for the spectra recorded with the flight electronics is very low compared to the SNR for the spectra recorded with the laboratory electronics. We also observe noisy part wandering between the single spectra. There is a significant part of repetitive noise appearing not always at the same position in the spectrum. With a proper noise filter this noise can be detected and significantly reduced without affecting the mass signal peaks. For future work, there is a lot of potential for improving the spectrum by proper analysing the noise and writing filters to suppress the noise.\\
+		Fig.\,\ref{fig:ExpFSFlightSenSNR} shows a mass spectrum recorded with the flight sensor with the laboratory electronics attached. The highest SNR achieved was $6\cdot10^{5}$ and therefore almost 6 decades. % Explanation why the 6 decades are required.
+		The mass peaks 355\,u, 390\,u and 429\,u are some oil components with water adducts coming from the used turbo pumps of the test facility. 415\,u is an artefact coming from the background subtraction algorithm. The artefact peak is also wider then the other surrounding mass peaks.
+		
+		\begin{figure}[h]
+			\begin{subfigure}{0.5\textwidth}
+				\centering
+				\includegraphics[width = \textwidth]{Experiments/FSLabthMode.png}
+			\end{subfigure}
+			\begin{subfigure}{0.5\textwidth}
+				\centering
+				\includegraphics[width = \textwidth]{Experiments/FSLabnMode.png}
+			\end{subfigure}
+			\caption{Mass spectra measured with the flight spare sensor with the laboratory electronics electronics attached. Left: with thermal gas mode Right: neutral mode.}
+			\label{fig:ExpFSFlightSenMassRes}
+		\end{figure}
+
+		% Mark the noisy part for better description to explain that
+		% conditions: nMode UMCP: 1950 V. P = 1.03e-8 mbar 20H2:1Kr
+		%			thMode UMCP = 1950 V. P = 6.05e-8 mbar
+		\begin{figure}[h]
+			\begin{subfigure}{0.5\textwidth}
+				\centering
+				\includegraphics[width = \textwidth]{Experiments/FSthMode200uA.png}
+			\end{subfigure}
+			\begin{subfigure}{0.5\textwidth}
+				\centering
+				\includegraphics[width = \textwidth]{Experiments/FSnMode200uA.png}
+			\end{subfigure}
+			\caption{Mass spectra measured with the flight spare instrument with the flight electronics attached. Filament emission current was 200 \si{\micro\ampere}. Left: with thermal gas mode Right: neutral mode.}
+			\label{fig:ExpFSFlightElMassRes}
+		\end{figure}
+		
+		\begin{figure} % Point out at that picture that the Kr 78 isotope is clearly visible.
+			\centering
+			\includegraphics[width = 0.6\textwidth]{Experiments/FS_thMode300uA.png}
+			\caption{Mass spectra measured with the flight spare instrument with the flight electronics attached. Filament emission current was 300 \si{\micro\ampere}.}
+			\label{fig:ExpFSFlightElK78}
+		\end{figure}
+		
+		% SNR 600 uA emission current. Rest gas Ptot = 1.6e-9 mbar, UMCPeff = 1.8 kV. Name the gas peaks. Peaks around 200 u are not mercury because the isotopic ratio does not match the pattern.
+		\begin{figure}[h]
+			\centering
+			\includegraphics[width = 0.7\textwidth]{Experiments/FSLabSNRRestGasPressCal.png}
+			\caption{SNR plot for the flight spare sensor but with laboratory electronics attached at a chamber pressure of 1.5$\cdot10^{-9}$\si{\milli\bar}.}
+			\label{fig:ExpFSFlightSenSNR}
+		\end{figure}
+	
 	
 	
 	

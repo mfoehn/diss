@@ -1,5 +1,6 @@
 % !TEX root = arbeit.tex
 \section{Theory}
+% Plain theory. Depelopments and discussion about that is part of the experiment chapter. Setup is the description of the facilities and how the test stand and measurements were setup
 	Add a Chapter about electric fields?/ Basis for the simulations?
 	\subsection{Requirements}
 	% Mass, performance, Power consumption. (See latest references. Part of the introduction?)
@@ -75,7 +76,7 @@
 	% Last part of the formula is from Stefans thesis.
 	
 	% Then continue with the calculation of the mass resolution and the calibration of the mass scale (evt. Reference further explanation how the software it acctually does (keep it short, only extend it if further nessecary)).
-		
+	
 	\subsubsection{Signal-to-Noise Ratio and Sensitivity}
 	
 	\textbf{SNR}\\ % Write a bit more detailed. What does background corrected mean? Subtraction of the baseline if it is elevated.
@@ -108,7 +109,10 @@
 	% Uncertainty cause by the 'Umkehrzeit'. Distance between 2 and 3 is always the same and depends on Uth
 	
 	% Include a schematics of the ion source with the different states/ effects.	
-
+	\subsubsection{Statistical Peak Analysis}
+	% See notes from the paper and make a detailed Analysis/ description of the method.
+	% A/mbar alias A/ #cm^3 is a instrument specific constant. Determine it for NIM.
+	
 
 	
 	\subsection{Ion Optical Design, NIM specific elements} % Inspiration from the arguments of the paper. Titel noch anpassen. Theorieteil fortlaufend hinzufügen. Ion source efficienies, reflectron double focusing, detector reflection of signal, signal matching. Density enhancement.
@@ -127,17 +131,91 @@
 	The NIM instrument is able to measure neutrals and ions. Neutral particles get ionised by electron ionisation. A filament is heated up until it emits electron. Ions enter the ion source directly.  % Noch genaue Formulierung nachschauen.
 	All ions then get accelerated to the same energy and fly through the mass analyser. Light particles fly faster through the spectrometer than heavier ones. The different particle species arrive at different times at the detector. To enlarge the flight distance, an ion-mirror, which reflects the ions and leads them back to the detector. The used detector is a MCP detector. % Explain a little bit in more detail.
 	
+		\subsubsection{Filament Power Calculation}
+		% See Diss Lukas and do the same calcultation. Make an approximation where the flight filaments should end up with the power. Do the same calculaiton also for the FS filaments. May also for the others?
+		% Also mention the importance of the filament position or does it make more sense if this whole part is in the Experiment part, thus there is only an phenomenological description of the behaviour?
+		% Record also of the heating current. It strongly depends on the voltage set. But maybe we see a dendency of the behaviour over time with the uncertainty factor of the voltage set. -> have a look at the data.
+		
 		\subsubsection{Ion Storage capability}
 		% Take arguments from the paper + after a certain time, the space charge of the ions overcomes the trapping potential of the electron beam. At this point, the ions are no longer holded by the potential and leak out of the ion-source. Add space charge calculation.
+		% Calculation of the potential in the electron beam with pictures.
 		
-	
-		\subsubsection{Peak Analysis Statistics}
-		% See notes from the paper and make a detailed Analysis/ description of the method.
-		% A/mbar alias A/ #cm^3 is a instrument specific constant. Determine it for NIM.
+		
+		\subsubsection{Density enhancement}
+		% Make sort of a theoretical analysis of the different parameters and extend the model from Peter with the conducivity of the tube.
+		% Remove the whole calculation about the flux because the only thing counting is the geometry factor correcting for the different entrance holes. The 'w' originates from that paper for the calculation.
+		
+		In the following chapter the density enhancement model is extended by a geometric factor depending on the conductivity of the two entrance holes of the antechamber, the exit hole which leads into the ionisation region and the entrance slit where particles enter the ionisation region directly. We start from the general formula of the molecular-flow conductance $C_0$:
+		\begin{equation}
+			C_0 = A\bar{v}/4
+			\label{eq:theoMolFlowCondC0}
+		\end{equation}
+		with $A$ the cross-section of the opening and $\bar{v}$ the average velocity of the molecules. This formula is only valid in case the length of the tube is close to zero. Otherwise, the transmission probability $w$ has to be added resulting in:
+		\begin{equation}
+			C = C_0 \cdot w
+			\label{eq:theoMolFlowCondCEff}
+		\end{equation}
+		The transmission probability depends on the length-to-diameter ratio $L/R$ of the tube. The flow conductance has units [\si{\cubic\meter\per\second}]. There are different approximations discussed to determine this factor in the paper of \cite{molFlowTubeTransm_Essen1976}. The paper also gives a list with the factor of different values of $L/R$.\\
+		The particle flux rate $F$ with unit [\si{\per\second}] through an opening is conductance times the particle density $n$ in [\si{\cubic\meter}]:
+		\begin{equation}
+			F = C\cdot n
+		\end{equation}
+		The incoming $F_{antIn}$ and out-flowing $F_{antOut}$ flux rates of the antechamber have to be equal resulting in:
+		\begin{align}
+			F_{aIn} &= F_{aOut}\\
+			C_{aIn}\cdot n_{res} &= C_{aOut} \cdot n_{ant}
+			\label{eq:condFluxEq}
+		\end{align}
+		With $C_{aIn}$ the total conductance of the particle entrance holes for particles entering the antechamber. When assuming that all particles enter the antechamber through one of the two entrance holes perpendicular to the hole surface, $C_{aIn}$ is equal to the conductance one entrance hole $C_{aHi}$. $n_{res}$ is the particle density of the test gas outside the instrument, $C_{aOut}$ is the total conductance of all exist holes through which the particles can leave the antechamber. $n_{ant}$ is the number density in the antechamber. Rearranging Eq.\eqref{eq:condFluxEq} $n_{ant}$ results in:
+		\begin{equation}
+			n_{ant} = \frac{C_{aIn}\cdot n_{res}}{C_{aOut}}
+		\end{equation}
+		The total conductance of all exit holes $C_{aOut}$ is the sum of the conductance of the two entrance holes $C_{aHo}$ and the conductance of the hole connecting the antechamber with the ionisation region $C_{aIs}$. The flux rate $F_{ant}$ from the antechamber to the ionization region is:
+		\begin{align}
+			F_{ant} &= C_{aIs} \cdot n_{ant} \nonumber \\
+					&= \frac{C_{aIs}\cdot C_{aIn}\cdot n_{res}}{C_{aOut}} \nonumber \\
+					&= \frac{C_{aIs}\cdot C_{aIn}\cdot n_{res}}{2\,C_{aHo} + C_{aIs}}
+			\label{eq:CondFluxAnt}
+		\end{align}
+		The following list provides the equations for the different conductances of the holes of the antechamber:
+		\begin{align*}
+			C_{aHi} 	&=\frac{A_{aH}\cdot v_{sc}}{4}\\
+			C_{aHo} 	&=\frac{A_{aH}\cdot v_{therm}}{4}\\
+			C_{aIs} 	&=\frac{A_{aIs}\cdot v_{therm}\cdot w}{4}\\
+		\end{align*}
+		% Varliable declaration
+		With $A_{aH}$ the area of one of the two entrance holes of the antechamber, $v_{sc}$ the spacecraft velocity, $v_{therm}$ the velocity of the particles in the antechamber which is the velocity they have when they are thermalised. $A_{aIs}$ the area of the hole connecting the antechamber with the ionization region $w$ is the transmission probability of the particles depending on the tube diameter and the tube are of the tube connecting the antechamber with the ionization region. $C_{ent}$ is the conductance of the entrance slit and $A_{ent}$ is the area of the entrance slit through which the particles fly. The height of that area is the height of the entrance slit and the width is the width of the inner grid pull grid because in neutral gas mode only ions generated over that grid are effectively pulled into the instrument.\\		
+		When inserting the different conductances into equation \eqref{eq:CondFluxAnt}, the flux rate from the antechamber becomes:
+		\begin{align}
+			F_{ant} = \frac{A_{aIs}\cdot w\cdot A_{aHi}\cdot v_{sc}\cdot n_{res}}{2\cdot A_{aHi} +A_{aIs}\cdot w}
+			\label{eq:condAntEff}
+		\end{align}
+		The flux rate in the ionisation region
+		The density enhancement formula can be used to calculate the difference in signal intensity when measuring in thermal mode compared to when we measure with the neutral gas mode. The particle density $n_{res}$ outside the instrument is equal to the particle density in the ionization region when measuring only with the entrance slit because a shutter between the antechamber and the ionization region stops particles entering the ionization region coming from the antechamber. This results in the following formula: %Ref. Peter
+		\begin{align*}
+			\frac{n_{cs}}{n_{os}} &= \sqrt{\frac{T_a}{T_s}}\cdot\frac{F(S)\cdot k\cdot \sin^2(\frac{\omega}{2})\cdot \cos^2(\frac{\omega}{2})}{1-k\cdot \cos^2(\frac{\omega}{2})}\frac{r_{aIs}^2\cdot w}{2\cdot r_{aHi}^2 + r_{aIs}^2\cdot w}\\
+			F(S) &= e^{-S^2} + \pi^{1/2}\cdot S\cdot(1 + {\rm erf}(S)))\\
+			S &= v_{sc}\cdot \cos(\chi)\cdot \sqrt{\frac{m}{2k_B T_a}}
+		\end{align*}
+		
+		
+		% Have a look if there are usable results. Prototype has not so good graphics and for the PFM there are still good results missing.
+		% Also with reference to the phenomena we observe when shooting with the beam on the structure of the entrance. How far can we explain that in the theoretical point of view? -> search
+		% If cluding that part, take the new angles of the antechamber holes into account. Have a look how the angles change the formula. This cannot be measured directly in the lab.  Until a certain amount. See how far we can go. Beam is not wide enough for such tests. The angle into the entrance does not change. But the angle into the antechamber, leading to a different amount of gas flowing into the antechamber. -> simple cos function.
+		
+		%\subsubsection{Motor Flow Calculation}
+		% Is there a possibility to calculate the efficiency of the shutter motor? May ask Peter or Daniele for inspiration about on what the flow depends on. Particle density, pathlength of the particles they have to travel until they reach the ion source -> damping factor. -> fluid dynamics calculations. How did that work again :/.
+		
+		\subsubsection{Pulser}
+		% Short explanation how the pulse shape influences the mass resolution. Mabe this will be part of another chapter in case we don't have enough material about that. Have a look at the measurements if there is something we have to explain in the Theory part.
 		
 		\subsubsection{Pressure calibration of the NIM Sensor}
+		% This chapter comes after the calculation of the detector gain because the gain of the detector is part of the pressure calculation. Proper error estimation of the paramaeters as far as possible.
 		% More detailed explanation about the NIM ion source, function of the different specific electrodes. Or explain it later in detail when discussing the simulations in detail. See paper as a guide line. Especially for the ion storage part.
 		
+		
+		
+		\textcolor{red}{see also density enhancement book for that derivation!!!}
 		To calculate the number of ions produced in the ion source we use:
 		\begin{equation}
 		I_{ion} = \beta\cdot Q_{ion}\cdot L\cdot n\cdot I_{em}
@@ -145,12 +223,15 @@
 		With $\beta$ the extraction efficiency which is 1, % Noch schauen auf welchen Wert wir diese setzen wollen. 1= sehr gute Quelle, 0.01 = 1mus/100mus = Pulslänge Pulser/ Länge 1 Zyklus. Noch diskutieren, welche Werte beta haben kann oder einfach etwas setzen? Da die ersten Messresultate gut sind, würde ich eher auf 1 setzen. Abschätzung? Auf Unterschiede beim Spannungsset hinweisen -> beeinflusst beta massgeblich.
 		$L$ as the effective ionising path in our case 4~\si{\milli\metre}, $n$ the particle density, $I_{em}$ the electron emission current from the filament and $Q_{ion}$ the ionising cross section. The cross sections of species used in our calibration can be found in table % Ref. auf Tabelle und nur auf Stefans Diss verweisen oder die 4 Originalpaper zusammen suchen. Tabelle einfügen.
 		
+		\textcolor{red}{Write something about the radiation shielding concept? Or just make a reference to the paper because it gives an overview over the concept as far as it is necessary.}
 		
-		\subsubsection{Detector Parameters} % All relevant parameters
+		\subsubsection{Detector Parameters} % Clean up this chapter when finalizing the detector chapter. Finalize the tehory part and the explanation of the workmanship of the detector housing.
+		% All relevant parameters
 		% Detection efficiency geometry depended. Particles hitting the glass structure instead of the hole are lost.
 		% Gain
-		% dead time, R, C, number of channels. Calculation of the number of channels out of the data sheet (Diss Maike) charging behaviour.
-		% Summary of what is all discussed in this chapter.
+		% dead time, R, C, number of channels. Calculation of the number of channels out of the data sheet (Diss Maike) charging behaviour. Is this really needed for the analysis I do? I case I should have to test with the FS, it would be nice to include that calculation and the timing resulting out from that. Otherwise it is just a nice part of theory but is not used for anything. Set up something, just that the chapter is completed (sort of).
+		% Any discussion about the peak width? Can we tell something about that according to theory or is it just random? No clear relationship. If should only depend on the pressure in the detector, but the pressure only influences the number of counts and not the peakform.
+		% Compare the performance of the diode with the performance of the resistor. Depending on the results, find arguments..		
 		
 		In this section we calculated some important parameters of the detector such as the dead time and the gain. % And further values if needed.
 		
@@ -172,7 +253,7 @@
 		\begin{equation}
 			R_{ch} = R_{MCP}\cdot N
 		\end{equation}
-		Its resistance depends on the voltage applied over the plate. For a nominal voltage of 1000\,\si{\volt} the $R_{MCP}$ is \~70\,\si{\mega\ohm} resulting in channel resistance of about $10^{14}$\,\si{\ohm}.\\
+		Its resistance depends on the voltage applied over the plate. For a nominal voltage of 1000\,\si{\volt} the $R_{MCP}$ is $\sim$70\,\si{\mega\ohm} resulting in channel resistance of about $10^{14}$\,\si{\ohm}.\\
 		The concerning the capacitance of the MCPs, the MCPs consist of two materials: the structure (grey) consists of a type of lead glass and the hole, whichcan be approximated with vacuum (white) (Fig.\ref{fig:MCPhex}). The structure area is hexagon $A^{hex}_{ch}$ minus the area of the channel hole $A^{hole}_{ch}$. This results in a capacitance of one channel $C_{ch}$ of:
 		\begin{equation}
 			C_{ch} = \frac{\epsilon_0  (\epsilon_r \cdot (A^{hex}_{ch} - A^{hole}_{ch})+ A^{hole}_{ch})}{l_{ch}}
@@ -257,6 +338,7 @@
 		With $A$ a fit constant. After $n$ collisions, the gain $G_{ch}$ of one channel is:
 		\begin{equation}
 			G_{ch} = \delta^{n} = \delta^{l/s}
+			\label{eq:detGainDel}
 		\end{equation}
 		The number of collisions is the channel length $l$ divided by the distance an electron flies within the channel before it hits the channel wall and ejects more electrons $s$. Inserting now Eq.\eqref{eq:DetGainDelta} and Eq.\eqref{eq:DetGainDistECh} leads to:
 		% alpha = l/d. Ref to [Wiza,1979] as the original formula is from him!!!
@@ -267,9 +349,9 @@
 		\begin{equation}
 			G_{ch} = \left(A\frac{U_{MCP}}{2\alpha\sqrt{U_{init}}}\right)^{\frac{4\cdot U_{init}\cdot\alpha^2}{U_{MCP}}}
 		\end{equation}
-		With $A$ in approximately 0.2 $\left(\frac{C}{V}\right)^{1/2}$, % Ref. to Wiza
-		$U_{MCP}$ in [V], $\alpha$ is a dimensionless number and $U_{init}$ in the range of a few [eV].
-
+		With $A$ in approximately 0.2 $\left(\frac{1}{eV}\right)^{1/2}$, % Ref. to Wiza
+		$U_{MCP}$ in [eV], $\alpha$ is a dimensionless number and $U_{init}$ in the range of a few [eV].
+		% cite here Wiza as done in Stefans diss
 
 		
 		% Explain as far as it is needed for the analysis of the detector results. Predictions, extrapolations on how the detector UMCP depends on UStack. Not quite clear which model we have to take for what reasons. Why a quadratic funtion at all. What other model will be more justified... Hmm... Have a look on how big this calculation is and may put it to the detector results in the experiments chapter.
@@ -288,7 +370,6 @@
 		% MCP detector. Gain calculation. How the detecotr works. Didn't do anything for further developement...
 		% Antchamber. Explanation of closed and open source. Field of view. Densitiy enhancement.
 		
-		\subsubsection{Filament Power Calculation}
 		
 		
 		
