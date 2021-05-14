@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.7) (preloaded format=pdflatex 2020.8.5)  22 APR 2021 12:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.7) (preloaded format=pdflatex 2020.8.5)  14 MAY 2021 10:46
 entering extended mode
 **./arbeit.tex
 (arbeit.tex
@@ -1599,37 +1599,37 @@ s
 (arbeit.aux)
 \openout1 = `arbeit.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for LGR/cmr/m/n on input line 61.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for LGR/cmr/m/n on input line 63.
 LaTeX Font Info:    Trying to load font information for LGR+cmr on input line 6
-1.
+3.
 
 (C:\Users\foehn\AppData\Local\Programs\MiKTeX\tex/latex/cbfonts-fd\lgrcmr.fd
 File: lgrcmr.fd 2017/07/29 v1.2 Greek European Computer Regular
 )
-LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    ... okay on input line 63.
 LaTeX Font Info:    Trying to load font information for OT1+phv on input line 6
-1.
+3.
 
 (C:\Users\foehn\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1phv.fd
 File: ot1phv.fd 2020/03/25 scalable font definitions for OT1/phv.
 )
-Package tocbasic Info: usage of `tocbibind' detected on input line 61.
+Package tocbasic Info: usage of `tocbibind' detected on input line 63.
 
 
 Package tocbasic Warning: `tocbibind' redefinition of `\listoffigures'
@@ -1643,9 +1643,9 @@ Package tocbasic Warning: `tocbibind' redefinition of `\listoftables'
 (tocbasic)                Note: Loading `tocbibind' without option `notlot'
 (tocbasic)                can break several features of `tocbasic'.
 
-Package scrbase Info: activating UKenglish \contentsname on input line 61.
-Package scrbase Info: activating UKenglish \listfigurename on input line 61.
-Package scrbase Info: activating UKenglish \listtablename on input line 61.
+Package scrbase Info: activating UKenglish \contentsname on input line 63.
+Package scrbase Info: activating UKenglish \listfigurename on input line 63.
+Package scrbase Info: activating UKenglish \listtablename on input line 63.
 
 (C:\Users\foehn\AppData\Local\Programs\MiKTeX\tex/latex/translator\translator-b
 asic-dictionary-English.dict
@@ -1692,10 +1692,10 @@ Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 )
 \c@lstlisting=\count356
-Package hyperref Info: Link coloring OFF on input line 61.
-LaTeX Info: Redefining \ref on input line 61.
-LaTeX Info: Redefining \pageref on input line 61.
-LaTeX Info: Redefining \nameref on input line 61.
+Package hyperref Info: Link coloring OFF on input line 63.
+LaTeX Info: Redefining \ref on input line 63.
+LaTeX Info: Redefining \pageref on input line 63.
+LaTeX Info: Redefining \nameref on input line 63.
 
 (arbeit.out) (arbeit.out)
 \@outlinefile=\write4
@@ -1708,7 +1708,7 @@ Class scrartcl Info: loading recommended package `bookmark'.
 (scrartcl)           `bookmarkpackage=false' before \begin{document} and
 (scrartcl)           you can avoid this message adding:
 (scrartcl)             \usepackage{bookmark}
-(scrartcl)           before \begin{document} on input line 61.
+(scrartcl)           before \begin{document} on input line 63.
 
 (C:\Users\foehn\AppData\Local\Programs\MiKTeX\tex/latex/bookmark\bookmark.sty
 Package: bookmark 2019/12/03 v1.28 PDF bookmarks (HO)
@@ -1721,60 +1721,60 @@ e 168.
 \BKM@id=\count357
 ))
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 6
-1.
+3.
  (C:\Users\foehn\AppData\Local\Programs\MiKTeX\tex/latex/lm\ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OML+lmm on input line 6
-1.
+3.
 
 (C:\Users\foehn\AppData\Local\Programs\MiKTeX\tex/latex/lm\omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
-61.
+63.
 
 (C:\Users\foehn\AppData\Local\Programs\MiKTeX\tex/latex/lm\omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
-61.
+63.
 
 (C:\Users\foehn\AppData\Local\Programs\MiKTeX\tex/latex/lm\omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 61.
+(Font)              <12> on input line 63.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 61.
+(Font)              <8> on input line 63.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 61.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 61.
+(Font)              <6> on input line 63.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 63.
 
 
 (C:\Users\foehn\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 61.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 63.
 
 
 (C:\Users\foehn\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Trying to load font information for OT1+lmss on input line 
-61.
+63.
 
 (C:\Users\foehn\AppData\Local\Programs\MiKTeX\tex/latex/lm\ot1lmss.fd
 File: ot1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OT1+lmtt on input line 
-61.
+63.
 
 (C:\Users\foehn\AppData\Local\Programs\MiKTeX\tex/latex/lm\ot1lmtt.fd
 File: ot1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 6
-3.
+5.
 
 (C:\Users\foehn\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
@@ -1782,7 +1782,7 @@ File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 <Bilder/logo-uni.jpg, id=6, 129.1224pt x 99.61215pt>
 File: Bilder/logo-uni.jpg Graphic file (type jpg)
 <use Bilder/logo-uni.jpg>
-Package pdftex.def Info: Bilder/logo-uni.jpg  used on input line 67.
+Package pdftex.def Info: Bilder/logo-uni.jpg  used on input line 69.
 (pdftex.def)             Requested size: 112.03273pt x 86.43083pt.
 
 [1
@@ -1796,12 +1796,12 @@ ni.jpg>] [2] [1] [2] (arbeit.toc [3])
 same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.155 	\newpage
+l.157 	\newpage
                 [1]pdfTeX warning (ext4): destination with the same identifier 
 (name{page.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.158 	\newpage
+l.160 	\newpage
                 [2] (Theory.tex [3] [4]
 Underfull \hbox (badness 10000) in paragraph at lines 87--92
 
@@ -1817,29 +1817,45 @@ File: Bilder/NIM_Sketch.png Graphic file (type png)
 <use Bilder/NIM_Sketch.png>
 Package pdftex.def Info: Bilder/NIM_Sketch.png  used on input line 125.
 (pdftex.def)             Requested size: 284.52756pt x 349.11766pt.
-[5] [6 <./Bilder/NIM_Sketch.png>] [7]
-Underfull \hbox (badness 10000) in paragraph at lines 238--239
+[5] [6 <./Bilder/NIM_Sketch.png>]
+<Bilder/theoIonStorPartDens.png, id=194, 2785.2858pt x 1995.01335pt>
+File: Bilder/theoIonStorPartDens.png Graphic file (type png)
+<use Bilder/theoIonStorPartDens.png>
+Package pdftex.def Info: Bilder/theoIonStorPartDens.png  used on input line 189
+.
+(pdftex.def)             Requested size: 313.69029pt x 224.68806pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[7]
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 2
+19.
+ (C:\Users\foehn\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1ptm.fd
+File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
+)
+[8 <./Bilder/theoIonStorPartDens.png>] [9]
+Underfull \hbox (badness 10000) in paragraph at lines 277--278
 
  []
 
-[8]
-<Bilder/MCP_hex.jpg, id=209, 198.99344pt x 125.21782pt>
+<Bilder/MCP_hex.jpg, id=232, 198.99344pt x 125.21782pt>
 File: Bilder/MCP_hex.jpg Graphic file (type jpg)
 <use Bilder/MCP_hex.jpg>
-Package pdftex.def Info: Bilder/MCP_hex.jpg  used on input line 242.
+Package pdftex.def Info: Bilder/MCP_hex.jpg  used on input line 281.
 (pdftex.def)             Requested size: 179.24963pt x 112.79816pt.
 LaTeX Font Info:    Trying to load font information for TS1+phv on input line 2
-51.
- (C:\Users\foehn\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1phv.fd
+90.
+(C:\Users\foehn\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1phv.fd
 File: ts1phv.fd 2020/03/25 scalable font definitions for TS1/phv.
 )
-[9 <./Bilder/MCP_hex.jpg>] [10]) [11] (Setup.tex
+[10 <./Bilder/MCP_hex.jpg>] [11]) [12] (Setup.tex
 
-LaTeX Warning: Reference `subsubsec:setupProto' on page 12 undefined on input l
+LaTeX Warning: Reference `subsubsec:setupProto' on page 13 undefined on input l
 ine 5.
 
 
-LaTeX Warning: Reference `subsubsec:setupPFM' on page 12 undefined on input lin
+LaTeX Warning: Reference `subsubsec:setupPFM' on page 13 undefined on input lin
 e 5.
 
 
@@ -1852,7 +1868,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 55--56
 
  []
 
-<Setup/Prototype_IS_sim.jpg, id=256, 446.29562pt x 251.99905pt>
+<Setup/Prototype_IS_sim.jpg, id=279, 446.29562pt x 251.99905pt>
 File: Setup/Prototype_IS_sim.jpg Graphic file (type jpg)
 <use Setup/Prototype_IS_sim.jpg>
 Package pdftex.def Info: Setup/Prototype_IS_sim.jpg  used on input line 59.
@@ -1860,7 +1876,7 @@ Package pdftex.def Info: Setup/Prototype_IS_sim.jpg  used on input line 59.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Setup/PFM_IS_sim.png, id=259, 360.3864pt x 131.5314pt>
+<Setup/PFM_IS_sim.png, id=282, 360.3864pt x 131.5314pt>
 File: Setup/PFM_IS_sim.png Graphic file (type png)
 <use Setup/PFM_IS_sim.png>
 Package pdftex.def Info: Setup/PFM_IS_sim.png  used on input line 66.
@@ -1868,12 +1884,12 @@ Package pdftex.def Info: Setup/PFM_IS_sim.png  used on input line 66.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Setup/Proto_FilEl_sim.jpg, id=260, 154.3366pt x 108.7262pt>
+<Setup/Proto_FilEl_sim.jpg, id=283, 154.3366pt x 108.7262pt>
 File: Setup/Proto_FilEl_sim.jpg Graphic file (type jpg)
 <use Setup/Proto_FilEl_sim.jpg>
 Package pdftex.def Info: Setup/Proto_FilEl_sim.jpg  used on input line 74.
 (pdftex.def)             Requested size: 190.45702pt x 134.1787pt.
-<Setup/PFM_FilEl_sim.jpg, id=261, 151.6064pt x 109.3686pt>
+<Setup/PFM_FilEl_sim.jpg, id=284, 151.6064pt x 109.3686pt>
 File: Setup/PFM_FilEl_sim.jpg Graphic file (type jpg)
 <use Setup/PFM_FilEl_sim.jpg>
 Package pdftex.def Info: Setup/PFM_FilEl_sim.jpg  used on input line 78.
@@ -1886,7 +1902,7 @@ Overfull \hbox (2.54399pt too wide) in paragraph at lines 72--80
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Setup/Prototype_Reflectron_sim.jpg, id=262, 446.29562pt x 228.3505pt>
+<Setup/Prototype_Reflectron_sim.jpg, id=285, 446.29562pt x 228.3505pt>
 File: Setup/Prototype_Reflectron_sim.jpg Graphic file (type jpg)
 <use Setup/Prototype_Reflectron_sim.jpg>
 Package pdftex.def Info: Setup/Prototype_Reflectron_sim.jpg  used on input line
@@ -1895,7 +1911,7 @@ Package pdftex.def Info: Setup/Prototype_Reflectron_sim.jpg  used on input line
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Setup/Prototype_Detector_sim.jpg, id=265, 200.77025pt x 215.62524pt>
+<Setup/Prototype_Detector_sim.jpg, id=288, 200.77025pt x 215.62524pt>
 File: Setup/Prototype_Detector_sim.jpg Graphic file (type jpg)
 <use Setup/Prototype_Detector_sim.jpg>
 Package pdftex.def Info: Setup/Prototype_Detector_sim.jpg  used on input line 9
@@ -1904,7 +1920,7 @@ Package pdftex.def Info: Setup/Prototype_Detector_sim.jpg  used on input line 9
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Setup/Prototype_totPic.jpg, id=268, 446.34679pt x 343.39613pt>
+<Setup/Prototype_totPic.jpg, id=291, 446.34679pt x 343.39613pt>
 File: Setup/Prototype_totPic.jpg Graphic file (type jpg)
 <use Setup/Prototype_totPic.jpg>
 Package pdftex.def Info: Setup/Prototype_totPic.jpg  used on input line 100.
@@ -1912,7 +1928,7 @@ Package pdftex.def Info: Setup/Prototype_totPic.jpg  used on input line 100.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Setup/PFM_in_calib_Setup.JPG, id=271, 5203.44pt x 3468.96pt>
+<Setup/PFM_in_calib_Setup.JPG, id=294, 5203.44pt x 3468.96pt>
 File: Setup/PFM_in_calib_Setup.JPG Graphic file (type jpg)
 <use Setup/PFM_in_calib_Setup.JPG>
 Package pdftex.def Info: Setup/PFM_in_calib_Setup.JPG  used on input line 107.
@@ -1925,14 +1941,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 134--136
 
  []
 
-[12]
-<Bilder/Galerie_Setup/Pumpstand2_midres.png, id=279, 3011.25pt x 4013.99625pt>
+[13]
+<Bilder/Galerie_Setup/Pumpstand2_midres.png, id=302, 3011.25pt x 4013.99625pt>
 File: Bilder/Galerie_Setup/Pumpstand2_midres.png Graphic file (type png)
 <use Bilder/Galerie_Setup/Pumpstand2_midres.png>
 Package pdftex.def Info: Bilder/Galerie_Setup/Pumpstand2_midres.png  used on in
 put line 156.
 (pdftex.def)             Requested size: 179.25305pt x 238.93068pt.
-<Bilder/Galerie_Setup/Pumpstand_PSOszi.png, id=280, 4129.71428pt x 3097.28572pt
+<Bilder/Galerie_Setup/Pumpstand_PSOszi.png, id=303, 4129.71428pt x 3097.28572pt
 >
 File: Bilder/Galerie_Setup/Pumpstand_PSOszi.png Graphic file (type png)
 <use Bilder/Galerie_Setup/Pumpstand_PSOszi.png>
@@ -1957,24 +1973,24 @@ Underfull \hbox (badness 10000) in paragraph at lines 170--171
 
  []
 
-[13 <./Setup/Prototype_IS_sim.jpg> <./Setup/PFM_IS_sim.png>] [14 <./Setup/Proto
+[14 <./Setup/Prototype_IS_sim.jpg> <./Setup/PFM_IS_sim.png>] [15 <./Setup/Proto
 _FilEl_sim.jpg> <./Setup/PFM_FilEl_sim.jpg> <./Setup/Prototype_Reflectron_sim.j
-pg>]) [15 <./Setup/Prototype_Detector_sim.jpg>] [16 <./Setup/Prototype_totPic.j
-pg> <./Setup/PFM_in_calib_Setup.JPG>] [17 <./Bilder/Galerie_Setup/Pumpstand2_mi
-dres.png> <./Bilder/Galerie_Setup/Pumpstand_PSOszi.png>] [18
+pg>]) [16 <./Setup/Prototype_Detector_sim.jpg>] [17 <./Setup/Prototype_totPic.j
+pg> <./Setup/PFM_in_calib_Setup.JPG>] [18 <./Bilder/Galerie_Setup/Pumpstand2_mi
+dres.png> <./Bilder/Galerie_Setup/Pumpstand_PSOszi.png>] [19
 
 ] (Experiments.tex
 Underfull \hbox (badness 10000) in paragraph at lines 17--20
 
  []
 
-<Experiments/reflectron_Prototype1.jpg, id=329, 301.6068pt x 165.7392pt>
+<Experiments/reflectron_Prototype1.jpg, id=352, 301.6068pt x 165.7392pt>
 File: Experiments/reflectron_Prototype1.jpg Graphic file (type jpg)
 <use Experiments/reflectron_Prototype1.jpg>
 Package pdftex.def Info: Experiments/reflectron_Prototype1.jpg  used on input l
 ine 24.
 (pdftex.def)             Requested size: 212.86151pt x 116.97511pt.
-<Experiments/reflectron_flight.JPG, id=330, 367.8543pt x 281.3712pt>
+<Experiments/reflectron_flight.JPG, id=353, 367.8543pt x 281.3712pt>
 File: Experiments/reflectron_flight.JPG Graphic file (type jpg)
 <use Experiments/reflectron_flight.JPG>
 Package pdftex.def Info: Experiments/reflectron_flight.JPG  used on input line 
@@ -1985,14 +2001,14 @@ Overfull \hbox (2.54399pt too wide) in paragraph at lines 22--30
 []$[]$ $[]$ 
  []
 
-[19 <./Experiments/reflectron_Prototype1.jpg> <./Experiments/reflectron_flight.
+[20 <./Experiments/reflectron_Prototype1.jpg> <./Experiments/reflectron_flight.
 JPG>]
-<Experiments/SimRepPosU.png, id=338, 774.7344pt x 592.8549pt>
+<Experiments/SimRepPosU.png, id=361, 774.7344pt x 592.8549pt>
 File: Experiments/SimRepPosU.png Graphic file (type png)
 <use Experiments/SimRepPosU.png>
 Package pdftex.def Info: Experiments/SimRepPosU.png  used on input line 83.
 (pdftex.def)             Requested size: 225.63268pt x 172.6653pt.
-<Experiments/SimRepPosImax.png, id=339, 639.8304pt x 520.5849pt>
+<Experiments/SimRepPosImax.png, id=362, 639.8304pt x 520.5849pt>
 File: Experiments/SimRepPosImax.png Graphic file (type png)
 <use Experiments/SimRepPosImax.png>
 Package pdftex.def Info: Experiments/SimRepPosImax.png  used on input line 87.
@@ -2002,14 +2018,14 @@ Overfull \hbox (2.54398pt too wide) in paragraph at lines 81--89
 []$[]$ $[]$ 
  []
 
-[20 <./Experiments/SimRepPosU.png> <./Experiments/SimRepPosImax.png>]
-<Bilder/Gain_Curves_SN4p5_4p7.png, id=348, 622.9674pt x 519.6213pt>
+[21 <./Experiments/SimRepPosU.png> <./Experiments/SimRepPosImax.png>]
+<Bilder/Gain_Curves_SN4p5_4p7.png, id=371, 622.9674pt x 519.6213pt>
 File: Bilder/Gain_Curves_SN4p5_4p7.png Graphic file (type png)
 <use Bilder/Gain_Curves_SN4p5_4p7.png>
 Package pdftex.def Info: Bilder/Gain_Curves_SN4p5_4p7.png  used on input line 1
 31.
 (pdftex.def)             Requested size: 201.65755pt x 168.20097pt.
-<Bilder/SN4p7_discharge.png, id=349, 642.7212pt x 519.6213pt>
+<Bilder/SN4p7_discharge.png, id=372, 642.7212pt x 519.6213pt>
 File: Bilder/SN4p7_discharge.png Graphic file (type png)
 <use Bilder/SN4p7_discharge.png>
 Package pdftex.def Info: Bilder/SN4p7_discharge.png  used on input line 135.
@@ -2019,160 +2035,165 @@ Overfull \hbox (2.54399pt too wide) in paragraph at lines 129--137
 []$[]$ $[]$ 
  []
 
-[21] [22 <./Bilder/Gain_Curves_SN4p5_4p7.png> <./Bilder/SN4p7_discharge.png>]
-<Experiments/FiL_IS_elBeam_Storage.png, id=367, 582.67688pt x 304.13625pt>
+[22] [23 <./Bilder/Gain_Curves_SN4p5_4p7.png> <./Bilder/SN4p7_discharge.png>]
+<Experiments/FiL_IS_elBeam_Storage.png, id=391, 582.67688pt x 304.13625pt>
 File: Experiments/FiL_IS_elBeam_Storage.png Graphic file (type png)
 <use Experiments/FiL_IS_elBeam_Storage.png>
 Package pdftex.def Info: Experiments/FiL_IS_elBeam_Storage.png  used on input l
-ine 178.
+ine 177.
 (pdftex.def)             Requested size: 358.50612pt x 187.13316pt.
-<Experiments/FSLabIonStorageH2.png, id=368, 774.7344pt x 592.8549pt>
+<Experiments/FSLabIonStorageH2.png, id=392, 774.7344pt x 592.8549pt>
 File: Experiments/FSLabIonStorageH2.png Graphic file (type png)
 <use Experiments/FSLabIonStorageH2.png>
 Package pdftex.def Info: Experiments/FSLabIonStorageH2.png  used on input line 
-187.
+186.
 (pdftex.def)             Requested size: 224.06548pt x 171.46216pt.
-<Experiments/FSLabIonStorageKr84.png, id=369, 774.7344pt x 592.8549pt>
+<Experiments/FSLabIonStorageKr84.png, id=393, 774.7344pt x 592.8549pt>
 File: Experiments/FSLabIonStorageKr84.png Graphic file (type png)
 <use Experiments/FSLabIonStorageKr84.png>
 Package pdftex.def Info: Experiments/FSLabIonStorageKr84.png  used on input lin
-e 191.
+e 190.
 (pdftex.def)             Requested size: 224.06548pt x 171.46216pt.
 
-Overfull \hbox (2.54399pt too wide) in paragraph at lines 185--193
+Overfull \hbox (2.54399pt too wide) in paragraph at lines 184--192
 []$[]$ $[]$ 
  []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[23 <./Experiments/FiL_IS_elBeam_Storage.png>]
-<Experiments/FSLabthMode.png, id=382, 1066.7353pt x 639.89063pt>
+[24 <./Experiments/FiL_IS_elBeam_Storage.png>]
+<Experiments/FSLabthMode.png, id=406, 1066.7353pt x 639.89063pt>
 File: Experiments/FSLabthMode.png Graphic file (type png)
 <use Experiments/FSLabthMode.png>
-Package pdftex.def Info: Experiments/FSLabthMode.png  used on input line 209.
+Package pdftex.def Info: Experiments/FSLabthMode.png  used on input line 208.
 (pdftex.def)             Requested size: 224.06548pt x 134.40051pt.
-<Experiments/FSLabnMode.png, id=383, 1066.7353pt x 639.89063pt>
+<Experiments/FSLabnMode.png, id=407, 1066.7353pt x 639.89063pt>
 File: Experiments/FSLabnMode.png Graphic file (type png)
 <use Experiments/FSLabnMode.png>
-Package pdftex.def Info: Experiments/FSLabnMode.png  used on input line 213.
+Package pdftex.def Info: Experiments/FSLabnMode.png  used on input line 212.
 (pdftex.def)             Requested size: 224.06548pt x 134.40051pt.
 
-Overfull \hbox (2.54399pt too wide) in paragraph at lines 207--215
+Overfull \hbox (2.54399pt too wide) in paragraph at lines 206--214
 []$[]$ $[]$ 
  []
 
-<Experiments/FSthMode200uA.png, id=384, 632.3625pt x 474.27188pt>
+<Experiments/FSthMode200uA.png, id=408, 632.3625pt x 474.27188pt>
 File: Experiments/FSthMode200uA.png Graphic file (type png)
 <use Experiments/FSthMode200uA.png>
-Package pdftex.def Info: Experiments/FSthMode200uA.png  used on input line 225.
+Package pdftex.def Info: Experiments/FSthMode200uA.png  used on input line 224.
 
 (pdftex.def)             Requested size: 224.06548pt x 168.04565pt.
-<Experiments/FSnMode200uA.png, id=385, 632.3625pt x 474.27188pt>
+<Experiments/FSnMode200uA.png, id=409, 632.3625pt x 474.27188pt>
 File: Experiments/FSnMode200uA.png Graphic file (type png)
 <use Experiments/FSnMode200uA.png>
-Package pdftex.def Info: Experiments/FSnMode200uA.png  used on input line 229.
+Package pdftex.def Info: Experiments/FSnMode200uA.png  used on input line 228.
 (pdftex.def)             Requested size: 224.06548pt x 168.04565pt.
 
-Overfull \hbox (2.54399pt too wide) in paragraph at lines 223--231
+Overfull \hbox (2.54399pt too wide) in paragraph at lines 222--230
 []$[]$ $[]$ 
  []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Experiments/FS_thMode300uA.png, id=386, 632.3625pt x 474.27188pt>
+<Experiments/FS_thMode300uA.png, id=410, 632.3625pt x 474.27188pt>
 File: Experiments/FS_thMode300uA.png Graphic file (type png)
 <use Experiments/FS_thMode300uA.png>
-Package pdftex.def Info: Experiments/FS_thMode300uA.png  used on input line 237
+Package pdftex.def Info: Experiments/FS_thMode300uA.png  used on input line 236
 .
 (pdftex.def)             Requested size: 268.8813pt x 201.66057pt.
-<Experiments/FSLabSNRRestGasPressCal.png, id=387, 632.3625pt x 474.27188pt>
+<Experiments/FSLabSNRRestGasPressCal.png, id=411, 632.3625pt x 474.27188pt>
 File: Experiments/FSLabSNRRestGasPressCal.png Graphic file (type png)
 <use Experiments/FSLabSNRRestGasPressCal.png>
 Package pdftex.def Info: Experiments/FSLabSNRRestGasPressCal.png  used on input
- line 245.
+ line 244.
 (pdftex.def)             Requested size: 313.69029pt x 235.26826pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) [24 <./Experiments/FSLabIonStorageH2.png> <./Experiments/FSLabIonStorageKr84.
+) [25 <./Experiments/FSLabIonStorageH2.png> <./Experiments/FSLabIonStorageKr84.
 png> <./Experiments/FSLabthMode.png (PNG copy)> <./Experiments/FSLabnMode.png (
-PNG copy)>] [25 <./Experiments/FSthMode200uA.png (PNG copy)> <./Experiments/FSn
+PNG copy)>] [26 <./Experiments/FSthMode200uA.png (PNG copy)> <./Experiments/FSn
 Mode200uA.png (PNG copy)> <./Experiments/FS_thMode300uA.png (PNG copy)>]
-[26 <./Experiments/FSLabSNRRestGasPressCal.png (PNG copy)>] (Conclusion.tex)
-[27
+[27 <./Experiments/FSLabSNRRestGasPressCal.png (PNG copy)>] (Conclusion.tex)
+[28
 
-] [28] (Outlook.tex) [29] (arbeit.bbl) [30
+] [29] (Outlook.tex) [30] (arbeit.bbl
+Underfull \hbox (badness 10000) in paragraph at lines 48--51
+[]\OT1/ptm/m/n/12 M. W[]uest, D. S. Evans, and R. von Steiger.
+ []
 
-] (Appendix.tex) [31
+) [31
 
-] [32
+] (Appendix.tex) [32
 
-]
-[33]
-<MSc_Masterarbeit_erklaerung.pdf, id=433, 597.45204pt x 845.1575pt>
+] [33
+
+] [34]
+<MSc_Masterarbeit_erklaerung.pdf, id=458, 597.45204pt x 845.1575pt>
 File: MSc_Masterarbeit_erklaerung.pdf Graphic file (type pdf)
 <use MSc_Masterarbeit_erklaerung.pdf>
 Package pdftex.def Info: MSc_Masterarbeit_erklaerung.pdf  used on input line 20
-3.
+5.
 (pdftex.def)             Requested size: 597.45058pt x 845.15544pt.
 File: MSc_Masterarbeit_erklaerung.pdf Graphic file (type pdf)
 <use MSc_Masterarbeit_erklaerung.pdf>
 Package pdftex.def Info: MSc_Masterarbeit_erklaerung.pdf  used on input line 20
-3.
+5.
 (pdftex.def)             Requested size: 597.45058pt x 845.15544pt.
-<MSc_Masterarbeit_erklaerung.pdf, id=436, page=1, 597.45204pt x 845.1575pt>
+<MSc_Masterarbeit_erklaerung.pdf, id=461, page=1, 597.45204pt x 845.1575pt>
 File: MSc_Masterarbeit_erklaerung.pdf Graphic file (type pdf)
 <use MSc_Masterarbeit_erklaerung.pdf, page 1>
 Package pdftex.def Info: MSc_Masterarbeit_erklaerung.pdf , page1 used on input 
-line 203.
+line 205.
 (pdftex.def)             Requested size: 597.45058pt x 845.15544pt.
 File: MSc_Masterarbeit_erklaerung.pdf Graphic file (type pdf)
 <use MSc_Masterarbeit_erklaerung.pdf, page 1>
 Package pdftex.def Info: MSc_Masterarbeit_erklaerung.pdf , page1 used on input 
-line 203.
+line 205.
 (pdftex.def)             Requested size: 597.47792pt x 845.19412pt.
 File: MSc_Masterarbeit_erklaerung.pdf Graphic file (type pdf)
 <use MSc_Masterarbeit_erklaerung.pdf, page 1>
 Package pdftex.def Info: MSc_Masterarbeit_erklaerung.pdf , page1 used on input 
-line 203.
+line 205.
 (pdftex.def)             Requested size: 597.47792pt x 845.19412pt.
 File: MSc_Masterarbeit_erklaerung.pdf Graphic file (type pdf)
 <use MSc_Masterarbeit_erklaerung.pdf, page 1>
 Package pdftex.def Info: MSc_Masterarbeit_erklaerung.pdf , page1 used on input 
-line 203.
+line 205.
 (pdftex.def)             Requested size: 597.47792pt x 845.19412pt.
 File: MSc_Masterarbeit_erklaerung.pdf Graphic file (type pdf)
 <use MSc_Masterarbeit_erklaerung.pdf, page 1>
 Package pdftex.def Info: MSc_Masterarbeit_erklaerung.pdf , page1 used on input 
-line 203.
+line 205.
 (pdftex.def)             Requested size: 597.47792pt x 845.19412pt.
- [34 <./MSc_Masterarbeit_erklaerung.pdf>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 205.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 205.
- (arbeit.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 205.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 205.
+ [35 <./MSc_Masterarbeit_erklaerung.pdf>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 207.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 207.
+
+(arbeit.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 207.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 207.
 Package rerunfilecheck Info: File `arbeit.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 205.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 207.
  ) 
 Here is how much of TeX's memory you used:
- 32931 strings out of 481225
- 646288 string characters out of 2906175
+ 32985 strings out of 481225
+ 647238 string characters out of 2906175
  1006657 words of memory out of 3000000
- 47664 multiletter control sequences out of 15000+200000
- 603167 words of font info for 108 fonts, out of 3000000 for 9000
+ 47701 multiletter control sequences out of 15000+200000
+ 603988 words of font info for 110 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  68i,18n,81p,10652b,1215s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/foehn/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.en
-c}{C:/Users/foehn/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.en
 c}{C:/Users/foehn/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}{C
+:/Users/foehn/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc}{C
 :/Users/foehn/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathex.enc}{C
 :/Users/foehn/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/Use
 rs/foehn/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pf
@@ -2192,9 +2213,9 @@ s/foehn/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/U
 sers/foehn/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb><C
 :/Users/foehn/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C
 :/Users/foehn/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb>
-Output written on arbeit.pdf (43 pages, 13675396 bytes).
+Output written on arbeit.pdf (44 pages, 15623435 bytes).
 PDF statistics:
- 697 PDF objects out of 1000 (max. 8388607)
- 152 named destinations out of 1000 (max. 500000)
- 485 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 723 PDF objects out of 1000 (max. 8388607)
+ 164 named destinations out of 1000 (max. 500000)
+ 490 words of extra memory for PDF output out of 10000 (max. 10000000)
 

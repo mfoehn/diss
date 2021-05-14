@@ -7,45 +7,46 @@ Reallocating 'name_of_file' (item size: 1) to 8 items.
 Database file #1: Quellen.bib
 Warning--empty year in Agilent_TechNote_SNR
 Warning--empty year in Agilent_TechNote_SNR
-You've used 6 entries,
+Warning--empty publisher in DensEnhan_Wurz_07
+You've used 7 entries,
             2773 wiz_defined-function locations,
-            627 strings with 5512 characters,
-and the built_in function-call counts, 2003 in all, are:
-= -- 160
-> -- 71
+            632 strings with 5671 characters,
+and the built_in function-call counts, 2411 in all, are:
+= -- 189
+> -- 101
 < -- 6
-+ -- 27
-- -- 21
-* -- 123
-:= -- 324
-add.period$ -- 19
-call.type$ -- 6
-change.case$ -- 20
-chr.to.int$ -- 6
-cite$ -- 14
-duplicate$ -- 120
-empty$ -- 205
-format.name$ -- 29
-if$ -- 412
++ -- 37
+- -- 30
+* -- 159
+:= -- 389
+add.period$ -- 22
+call.type$ -- 7
+change.case$ -- 25
+chr.to.int$ -- 7
+cite$ -- 17
+duplicate$ -- 141
+empty$ -- 238
+format.name$ -- 39
+if$ -- 494
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 11
-newline$ -- 39
-num.names$ -- 24
-pop$ -- 71
+missing$ -- 13
+newline$ -- 44
+num.names$ -- 28
+pop$ -- 87
 preamble$ -- 1
-purify$ -- 19
+purify$ -- 24
 quote$ -- 0
-skip$ -- 74
+skip$ -- 88
 stack$ -- 0
-substring$ -- 49
-swap$ -- 6
+substring$ -- 51
+swap$ -- 7
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 41
-warning$ -- 2
-while$ -- 20
+type$ -- 47
+warning$ -- 3
+while$ -- 23
 width$ -- 0
-write$ -- 81
-(There were 2 warnings)
+write$ -- 92
+(There were 3 warnings)

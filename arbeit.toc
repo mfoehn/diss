@@ -11,31 +11,31 @@
 \contentsline {subsection}{\numberline {2.3}Ion Optical Design, NIM specific elements}{5}{subsection.2.3}%
 \contentsline {subsubsection}{\numberline {2.3.1}Filament Power Calculation}{6}{subsubsection.2.3.1}%
 \contentsline {subsubsection}{\numberline {2.3.2}Ion Storage capability}{6}{subsubsection.2.3.2}%
-\contentsline {subsubsection}{\numberline {2.3.3}Density enhancement}{6}{subsubsection.2.3.3}%
-\contentsline {subsubsection}{\numberline {2.3.4}Pulser}{8}{subsubsection.2.3.4}%
-\contentsline {subsubsection}{\numberline {2.3.5}Pressure calibration of the NIM Sensor}{8}{subsubsection.2.3.5}%
-\contentsline {subsubsection}{\numberline {2.3.6}Detector Parameters}{8}{subsubsection.2.3.6}%
-\contentsline {section}{\numberline {3}Setup}{12}{section.3}%
-\contentsline {subsection}{\numberline {3.1}NIM Sensor Models}{12}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}Test facilities/ Test Tools}{12}{subsection.3.2}%
-\contentsline {subsubsection}{\numberline {3.2.1}Pumpstand nr. 2}{13}{subsubsection.3.2.1}%
-\contentsline {section}{\numberline {4}Experiments}{19}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Ion-Mirror}{19}{subsection.4.1}%
-\contentsline {subsubsection}{\numberline {4.1.1}Measurement Principle}{20}{subsubsection.4.1.1}%
-\contentsline {subsubsection}{\numberline {4.1.2}Discussion}{20}{subsubsection.4.1.2}%
-\contentsline {subsection}{\numberline {4.2}Prototype CASYMIR-D/-E}{20}{subsection.4.2}%
-\contentsline {subsection}{\numberline {4.3}Simulations}{20}{subsection.4.3}%
-\contentsline {subsection}{\numberline {4.4}Filament decision}{20}{subsection.4.4}%
-\contentsline {subsection}{\numberline {4.5}Pulser}{20}{subsection.4.5}%
-\contentsline {subsection}{\numberline {4.6}Detector Tests}{20}{subsection.4.6}%
-\contentsline {subsection}{\numberline {4.7}Ionoptics}{21}{subsection.4.7}%
-\contentsline {subsubsection}{\numberline {4.7.1}Voltage Optimisation}{21}{subsubsection.4.7.1}%
-\contentsline {subsection}{\numberline {4.8}Instrument performance tests}{22}{subsection.4.8}%
-\contentsline {subsubsection}{\numberline {4.8.1}Prototype}{22}{subsubsection.4.8.1}%
-\contentsline {subsubsection}{\numberline {4.8.2}PFM}{22}{subsubsection.4.8.2}%
-\contentsline {subsubsection}{\numberline {4.8.3}FS}{22}{subsubsection.4.8.3}%
-\contentsline {section}{\numberline {5}Conclusion}{27}{section.5}%
-\contentsline {section}{\numberline {6}Outlook}{29}{section.6}%
-\contentsline {section}{References}{30}{section*.22}%
-\contentsline {section}{\numberline {7}Appendix}{31}{section.7}%
+\contentsline {subsubsection}{\numberline {2.3.3}Density enhancement Model}{8}{subsubsection.2.3.3}%
+\contentsline {subsubsection}{\numberline {2.3.4}Pulser}{10}{subsubsection.2.3.4}%
+\contentsline {subsubsection}{\numberline {2.3.5}Pressure calibration of the NIM Sensor}{10}{subsubsection.2.3.5}%
+\contentsline {subsubsection}{\numberline {2.3.6}Detector Parameters}{10}{subsubsection.2.3.6}%
+\contentsline {section}{\numberline {3}Setup}{13}{section.3}%
+\contentsline {subsection}{\numberline {3.1}NIM Sensor Models}{13}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Test facilities/ Test Tools}{13}{subsection.3.2}%
+\contentsline {subsubsection}{\numberline {3.2.1}Pumpstand nr. 2}{14}{subsubsection.3.2.1}%
+\contentsline {section}{\numberline {4}Experiments}{20}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Ion-Mirror}{20}{subsection.4.1}%
+\contentsline {subsubsection}{\numberline {4.1.1}Measurement Principle}{21}{subsubsection.4.1.1}%
+\contentsline {subsubsection}{\numberline {4.1.2}Discussion}{21}{subsubsection.4.1.2}%
+\contentsline {subsection}{\numberline {4.2}Prototype CASYMIR-D/-E}{21}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Simulations}{21}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}Filament decision}{21}{subsection.4.4}%
+\contentsline {subsection}{\numberline {4.5}Pulser}{21}{subsection.4.5}%
+\contentsline {subsection}{\numberline {4.6}Detector Tests}{21}{subsection.4.6}%
+\contentsline {subsection}{\numberline {4.7}Ionoptics}{22}{subsection.4.7}%
+\contentsline {subsubsection}{\numberline {4.7.1}Voltage Optimisation}{22}{subsubsection.4.7.1}%
+\contentsline {subsection}{\numberline {4.8}Instrument performance tests}{23}{subsection.4.8}%
+\contentsline {subsubsection}{\numberline {4.8.1}Prototype}{23}{subsubsection.4.8.1}%
+\contentsline {subsubsection}{\numberline {4.8.2}PFM}{23}{subsubsection.4.8.2}%
+\contentsline {subsubsection}{\numberline {4.8.3}FS}{23}{subsubsection.4.8.3}%
+\contentsline {section}{\numberline {5}Conclusion}{28}{section.5}%
+\contentsline {section}{\numberline {6}Outlook}{30}{section.6}%
+\contentsline {section}{References}{31}{section*.23}%
+\contentsline {section}{\numberline {7}Appendix}{32}{section.7}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

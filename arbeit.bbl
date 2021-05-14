@@ -1,4 +1,4 @@
-\begin{thebibliography}{6}
+\begin{thebibliography}{7}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -42,5 +42,11 @@ D.~van Essen and W.~C. Heerens.
   tube.
 \newblock \emph{Journal of Vacuum Science and Technology}, 13\penalty0
   (6):\penalty0 1183 -- 1187, 1976.
+
+\bibitem[{W{\"u}est} et~al.(2007){W{\"u}est}, {Evans}, and {von
+  Steiger}]{DensEnhan_Wurz_07}
+M.~{W{\"u}est}, D.~S. {Evans}, and R.~{von Steiger}.
+\newblock \emph{{Calibration of Particle Instruments in Space Physics}}.
+\newblock 2007.
 
 \end{thebibliography}
