@@ -7,6 +7,11 @@
 	
 	\subsection{Basic Theory about TOF Masspectrometry} % Allgemeine Theorie
 	
+	% Ionisation efficiency
+	% Time focusing?
+	% SNR definition. Picture?
+	% Sensitivity estimation. Nessesary? If so, part of SNR discussion. Not used in the experiments explained so far...	
+	
 	% Priciples kann immernoch weiter ausgearbeitet werden falls nötig.
 	\subsubsection{Principle} % Noch Referenzen auf Vorlesung einfügen. Evt. noch Bild eifügen von Ionen an versch. Startpositionen.
 	This chapter explains the function of a TOF instruments. A TOF mass spectrometer consists of, an ion-source, a mass analyser and a detector. The mass analyser has an ion-mirror which increases the flight distance of the ions by keeping the instrument on a certain length. A longer flight distance increases the mass resolution of the instrument.\\% Mention that later.
@@ -117,6 +122,7 @@
 	
 	\subsection{Ion Optical Design, NIM specific elements} % Inspiration from the arguments of the paper. Titel noch anpassen. Theorieteil fortlaufend hinzufügen. Ion source efficienies, reflectron double focusing, detector reflection of signal, signal matching. Density enhancement.
 	% Hier das Design allgemein halten. Erst in Kapitel 'Setup' auf die Designdetails eingehen. Discuss important theory parts here and just give a short summary in the corresponding experimental parts when the theory is used.
+	% Explain here as far a necessary what the function of the different subcomponents are (reflectron to increase the flight distance,...).
 	
 	A time of flight mass spectrometer consists of, an ion-source, a mass analyser and a detector.\\
 	
@@ -136,9 +142,7 @@
 		% Also mention the importance of the filament position or does it make more sense if this whole part is in the Experiment part, thus there is only an phenomenological description of the behaviour?
 		% Record also of the heating current. It strongly depends on the voltage set. But maybe we see a tendency of the behaviour over time with the uncertainty factor of the voltage set. -> have a look at the data.
 		
-		\subsubsection{Ion Storage capability}
-		% Take arguments from the paper + after a certain time, the space charge of the ions overcomes the trapping potential of the electron beam. At this point, the ions are no longer holded by the potential and leak out of the ion-source. Add space charge calculation.
-		% Calculation of the potential in the electron beam with pictures. Reference to lecture notes.
+		\subsubsection{Ion Storage capability}\label{chap:IonStor}
 		Ion storage of positive ions is achieved by the negative potential of the electron beam. In the following section, the potential in the centre of the electron beam is calculated. The electron emission current $I_{em}$ is:
 		\begin{equation}
 			I_{em} = n_e q_0 v\pi R_e^2
@@ -186,39 +190,57 @@
 	
 		\begin{figure}[h]
 			\centering
-			\includegraphics[width= 0.7\textwidth]{Bilder/theoIonStorPartDens.png}
+			\includegraphics[width= 0.7\textwidth]{Bilder/particleDensEnh.png}
 			\caption{Schematics of the antechamber and the ionisation region.}
 			\label{fig:thAntIs}
 		\end{figure}
 		\notes{Adapt antechamber figure}
 		
-		\subsubsection{Density enhancement Model} % Geometry calculation?
-		% Amplification factor of the neutral gas mode is only possible with a simulation because the derivation is very complicated
-		% Explain the whole model, start to vary different parameters and explain the different flyby scenarios accoring to André with the influx of the gas accoring to the angle.
+		\subsubsection{Density enhancement Model}\label{subsubsec:Densenhan}
+		\begin{table}
+			\begin{center}
+				\begin{tabular}{|l r |l r |l r|}
+					\hline
+					$T_a$ 	& 295 K	& $r_{aHi}$	& 2.5\, mm	& $\chi$	& 0\degree \\
+					$T_s$ 	& 320 K & $r_{aIs}$ & 2\, mm	& $\theta_0$& 30\degree\\	
+					$k$		&	1	& $v_{sc}$	& 2.5\, km/s& $m$		& 18 u\\
+					$a$		& 0.22	&			&			&			&	\\
+					\hline
+				\end{tabular}
+			\end{center}
+			\caption{Values used for the variation of the different variables of the antechamber Eq.\,\eqref{eq:thDensEnhan}.}
+			\label{tab:thDensEnhan}
+		\end{table}
 		
-		% Have a look with we discuss here the design and later in the experiment chapter just make a reference to that chapter why the signal intensity is so much lower. (Because this calculation was not done for the new design).
-		% Justification of why exactly the holes were chosen at that angular position. Proper description of the basic principle and what is taken into account by the basic structure of the formula so far. Add the geometry and the angular shift.
-		% exchange graphic. Adapt it continuously.
-		% Theoretical plot of n_cs/c_os (v). Will be changed as soon as it is clear which temperatures have to be used.
-		% Include the different plot an vary different parameters to show the influence. What do we write about it? Hmm...
-		% Plot n_cs/ c_os (\chi)
-		
-		
-		NIM has an open source entrance where neutral particles and ions enter the ionisation region directly and a closed source entrance where particles enter the ionization region after being thermalized in an antechamber. In this chapter the signal amplification factor of the closed source entrance through the antechamber is determined. The density enhancement model described in \cite{DensEnhan_Wurz_07} is used and adapted for the geometry of NIM's antechamber resulting in:
+		NIM has an open source entrance where neutral particles and ions enter the ionisation region directly and a closed source entrance where particles enter the ionization region after being thermalized in an antechamber. In this chapter the signal amplification factor of the closed source entrance through the antechamber is determined. The density enhancement model described in \cite{DensEnhan_Wurz_07} is used and adapted for the geometry of NIM's antechamber. The particle density $n_{cs}$ in the ionization region is:
 		\begin{align}
-			\label{eq:thDensEnhanNcs}
-			n_{cs} &= n_a\sqrt{\frac{T_a}{T_s}}\cdot\frac{k\cdot \sin^2\big(\frac{\omega}{2}\big)\cdot \cos^2\big(\frac{\omega}{2}\big)\cdot \big(F(S_1)+ F(S_2)\big)}{1-k\cdot \cos^2\big(\frac{\omega}{2}\big)}\frac{r_{aIs}^2\cdot a}{2\cdot r_{aHi}^2 + r_{aIs}^2\cdot a}\\
-			F(S_i)) &= e^{-S_i^2} + \pi^{1/2}\cdot S_i\cdot\big(1 + {\rm erf}(S_i)\big)\\
-			S_i &= 
+			n_{cs} &= n_a\sqrt{\frac{T_a}{T_s}}\cdot\frac{k\cdot \sin^2\big(\frac{\omega}{2}\big)\cdot \cos^2\big(\frac{\omega}{2}\big)}{1-k\cdot \cos^2\big(\frac{\omega}{2}\big)}\frac{\big(F(S_1)+ F(S_2)\big)}{2} \frac{r_{aIs}^2\cdot a}{2\cdot r_{aHi}^2 + r_{aIs}^2\cdot a} \label{eq:thDensEnhan}\\
+			F(S_i)) &= e^{-S_i^2} + \pi^{1/2}\cdot S_i\cdot\big(1 + {\rm erf}(S_i)\big) \label{eq:F(S)}
+		\end{align}
+		% cos(chi) = cos(theta_0)cos(theta) +- sin(theta_0)sind(theta)cos(phi)
+		With $n_a$ is the particle density of the gas outside the instrument. For the tests in the laboratory $n_a$ is the particle density of then neutral gas beam, in flight it is the particle density of the moons atmosphere. In space $T_a$ is the temperature of the ambient gas and in the laboratory it is the temperature of the neutral particle beam. $T_s$ is the temperature of the antechamber. $k$ is the probability of a particle being re-emitted after colliding with the antechambers inner surface during thermalization and is close to 1 because otherwise the particles would be absorbed.\\
+		$\Omega$ is the total solid angle summing up all openings through which particles enter the antechamber. NIM has two entrance holes with the same hole diameter and therefore the total solid angle $\Omega$ is the sum of the two solid angles of the entrance holes $\Omega'$:
+		\begin{equation}
+			\Omega = 2\cdot\Omega'
+		\end{equation}
+		All openings into the antechamber have a circular shape therefore, the solid angle $\Omega$ is replaced by an angle $\omega$ in the x-z-plane to simplify the equation \cite{Hedin_1964}. 
+		\begin{align}
+			2\pi(1- \cos(\omega)) &= 2\cdot 2\pi(1- \cos(\omega'))\\
+			\cos(\omega) &= 2\cos(\omega') -1\\
+			\omega &= \cos^{-1}(2\cos(\omega') -1)
+		\end{align}
+		$\omega'$ is the half angle of one entrance hole (Fig.\,\ref{fig:thAntIs}).\\
+		$S_i$ in Eq.\,\eqref{eq:F(S)} is the speed ratio along the normal axis of the entrance hole:
+		\begin{equation}
+			S_i = 
 			\begin{cases}
 				0, & \cos(\chi \pm \theta_0) < 0\\
 				v_{sc}\cdot \cos(\chi + \theta_0)\cdot \sqrt{\frac{m}{2k_B T_a}}, & i=1\\
 				v_{sc}\cdot \cos(\chi - \theta_0)\cdot \sqrt{\frac{m}{2k_B T_a}}, & i=2
 			\end{cases}
-		\end{align}
-		\notes{-17°C, +26°C, consider the position of the entrance holes. The variation of w only holds as long as the holes do not overlap. Vary w in a rang that there is no overlap for the positions. How much variation do we have with the current geometry?... theta0 is 30° in our geometry}\\
-		$n_cs$ is the particle density in the ionization region coming from the antechamber. $n_a$ is the particle density of the test gas outside the instrument. For test in the laboratory $n_a$ is the particle density of then neutral gas beam, in flight it is the particle density of the moons atmosphere. To determine the amplification factor $n_a$ is set to 1. In space $T_a$ is the temperature of the ambient gas and in the laboratory it is the temperature of the neutral particle beam. $T_s$ is the temperature of the antechamber. $k$ is the probability of a particle being re-emitted after colliding with the antechambers inner surface during thermalization and is close to 1. $\omega$ is the cone half-angle of the entrance hole (Fig.\,\ref{fig:thAntIs}). $S_i$ is the speed ratio along the normal axis of the entrance hole with $v_{sc}$ the spacecraft velocity or the velocity of the neutral gas beam relative to the antechamber. $m$ is the average particle mass of the test gas and $k_B$ is the Boltzmann constant. $\chi$ is the angle of the test gas relative to the x-axis of the instrument and $\theta_0$ is the angle between the x-axis and the axis normal of the entrance hole. $\chi \pm \theta_0$ in the $S_i$ term is the angle between the normal axis of the entrance hole and the gas in flux direction. $\chi \pm \theta_0$ has to be between $\pm 90\degree$ to enter the antechamber which implies that $\cos(\chi \pm \theta_0)$ cannot have negative values. $i=1$ is the index one of the two entrance hole and $i=2$ is the index of the other entrance hole.\\ 
-		The antechamber has three openings for the gas to flow out of the antechamber. The last term in Eq.\,\eqref{eq:thDensEnhanNcs} gives the ratio of how many particle leave the antechamber through the hole connecting the antechamber with the ionization region compared to the amount of particles leaving the antechamber through the two entrance holes. The radius of the entrance holes is $r_{aHi}$ and the radius of the hole connecting the antechamber with the ionization region is $r_{aIs}$. This term takes the molecular flow conductance of the different holes into account. The molecular-flow conductance of a thermalized gas is $C_0$:
+		\end{equation}
+		with $v_{sc}$ the velocity of the neutral gas beam relative to the antechamber corresponding to the spacecraft velocity, $m$ the average particle mass of the gas and $k_B$ the Boltzmann constant. $\chi$ is the angle of the test gas relative to the x-axis of the instrument and $\theta_0$ is the angle between the x-axis and the axis normal of the entrance hole. $\chi \pm \theta_0$ is the angle between the normal axis of the entrance hole and the gas influx direction. $\chi \pm \theta_0$ has to be between $\pm 90\degree$ to enter the antechamber which implies that $\cos(\chi \pm \theta_0)$ cannot have negative values. $i=1$ is the index of one of the two entrance hole and $i=2$ is the index of the other entrance hole.\\ 
+		The antechamber has three openings for the gas to flow out of the antechamber. The last term in Eq.\,\eqref{eq:thDensEnhan} gives the ratio of how many particle leave the antechamber through the hole connecting the antechamber with the ionization region compared to the amount of particles leaving the antechamber through the two entrance holes. The radius of the entrance holes is $r_{aHi}$ and the radius of the hole connecting the antechamber with the ionization region is $r_{aIs}$. This term takes the molecular flow conductance of the different holes into account. The molecular-flow conductance of a thermalized gas is $C_0$:
 		\begin{equation}
 			C_0 = A\bar{v}/4
 			\label{eq:theoMolFlowCondC0}
@@ -228,25 +250,183 @@
 			C = C_0 \cdot a
 			\label{eq:theoMolFlowCondCEff}
 		\end{equation}
-		The transmission probability depends on the length-to-diameter ratio $L/R$ of the opening. The flow conductance has units [\si{\cubic\meter\per\second}]. There are different approximations discussed to determine this factor in the paper of \cite{molFlowTubeTransm_Essen1976}. The paper also gives values of $a$ for different length-to-diameter ratios $L/R$ of the opening. For the two gas entrance openings of the antechamber $a$ is 1 because they have a sharp edge and therefore the length of the opening is close to zero. The opening between the antechamber and the entrance has a length-to-diameter ratio of 8 resulting in a $a$ of 0.23. The amount of gas flowing through this opening relative to the total outflow is:
+		The transmission probability depends on the length-to-diameter ratio $L/R$ of the opening. The flow conductance has units [\si{\cubic\meter\per\second}]. There are different approximations discussed to determine this factor in the paper of \cite{molFlowTubeTransm_Essen1976}. The paper also gives values of $a$ for different length-to-diameter ratios $L/R$ of the opening. For the two gas entrance openings of the antechamber $a$ is 1 because they have a sharp edge and therefore the length of the opening is close to zero. The opening between the antechamber and the entrance has a length-to-diameter ratio of 8 resulting in a $a$ of 0.23.	The amount of gas flowing through this opening relative to the total outflow is:
+		\begin{align}
+			G_{open} & = \frac{C_{aIs}}{C_{aIs} + 2\cdot C_{aHi}} \label{eq:GAntOpen}\\
+			G_{open} & = \frac{\frac{r_{aIs}^2\cdot a\cdot \bar{v}}{4}}{\frac{r_{aIs}^2\cdot a\cdot \bar{v}}{4} + 2\frac{r_{aHi}^2\cdot \bar{v}}{4}}\\
+			G_{open} &= \frac{r_{aIs}^2\cdot a}{r_{aIs}^2\cdot a + 2\cdot r_{aHi}^2}
+		\end{align}
+		With $r_{aIs} = 2\,\si{\milli\meter}$ and $r_{aHi} = 2.5\,\si{\milli\meter}$ resulting in $G_{open} = 0.067$ meaning that about 6.7\% of all particles entering the antechamber actually reach the ionization region due to losses of the geometry.\\
+		In the following section the different parameters of the density enhancement equation Eq.\,\eqref{eq:thDensEnhan} were varied to determine their influence. For this analysis the particle density in the ionization region $n_{cs}$ was divided by the particle density of the test gas $n_a$ outside of the antechamber and $n_a$ was set 1 to get the amplification factor of the antechamber. For this analysis the parameters were set according to table \ref{tab:thDensEnhan} if not otherwise mentioned. The temperatures are the values used in the laboratory. For the particle velocity I used 2.5\,\si{\kilo\meter\per\sec} because it is velocity of the spacecraft in Ganymede orbit and the velocity at which most of the measurements will be done.\\
+				
+		The first parameter which was varied was the gas temperature $T_a$. This temperature can be varied between 0 and 1000\,\si{\kelvin} without significantly influencing the gain of the antechamber as it can be seen in Fig.\,\ref{th:densEnhTaTs}. When looking closer, a slight increase in gain is observed with increasing temperature.\\
+		The temperature of the antechamber $T_s$ has a bigger impact on the gain. Ideally this temperature should be as low as possible to slow down the particles when they hit the chamber walls. When the temperature of the antechamber is too low, the gas condenses at the antechamber walls. Therefore the antechamber is kept at temperatures higher than -17\,\si{\degreeCelsius} during measurements to avoid condensation.\\
+		\notes{Rewrite captions.}
+		\begin{figure}[h!] % T_a T_s
+			\centering
+			\includegraphics[width= .7\textwidth]{Bilder/Ta_Ts.png}
+			\caption{Gain $n_{cs}/n_a$ of the antechamber one time varying the ambient gas temperature $T_a$ and one time varying the antechamber wall temperature $T_s$ according to Eq.\eqref{eq:thDensEnhan}.}
+			\label{th:densEnhTaTs}
+		\end{figure}
+		The next parameter is the radius $r_{aIs}$ of the hole connecting the antechamber with the ionisation region. When the hole gets bigger, also the amount of gas flowing into the ionisation region increases as it can be seen in Fig.\,\ref{th:densEnhraHiraIs}. The radius of the entrance holes $r_{aHi}$ should be small to reach a high gain. This has two reasons: When the entrance holes are big compared to the hole connecting the antechamber with the ionisation region, a big amount of gas flows out through the entrance holes. The size of the entrance holes has also an impact on the opening angle $\omega$. In the first designs of such antechambers, the ionisation and counting of the particles happened in the antechamber itself \cite{Hedin_1964}. Therefore the antechamber needed only one opening. Our instrument has two entrances for particles. One to measure them directly without any interaction with the instrument surface (open-source channel) and a closed-source entrance through the antechamber to amplify the signal. Due to the flyby trajectories of the space craft the antechamber has to entrance holes with angle $\theta_0 = 30\degree$ relative to the x-axis of the instrument.\notes{Rewrite}
+		When having only one big entrance hole, the gas gets easily reflected and leaves the antechamber before being counted in the antechamber. Therefore a small opening is favoured over a big opening. From that perspective, the biggest gain is achieved when the radius of the entrance hole is 0 ergo the entrance hole is closed. That's the limitation of Eq.\,\eqref{eq:thDensEnhan} is. It does not take into account that at a certain radius of the opening, the gain should decrease because not enough particles enter the chamber to get amplified.\\
+		\begin{figure}[h!] % raHi raIs
+			\centering
+			\includegraphics[width= .7\textwidth]{Bilder/raHi_raIs.png}
+			\caption{Gain $n_{cs}/n_a$ of the antechamber as a function of the entrance hole radius $r_{aHi}$ and the radius connecting the antechamber with the ionisation region $r_{aIs}$.}
+			\label{th:densEnhraHiraIs}
+		\end{figure}
+		It is very important to take materials with a high particle reflection coefficient $k$ for the coating of the antechamber' s inner surface. The particle reflection coefficient gives the probability of a particle being re-emitted when hitting the surface thus this value has to be close to 1. For our antechamber we used gold because it is electrically conductive preventing the surface from charging in the strong radiation field of Jupiter and it is chemically inert and thus there is a low probability of building chemical bonds with the test gas. Fig.\,\ref{th:densEnhk} shows the amplification of the antechamber in dependence of $k$. When changing $k$ by 1\textperthousand\, this already has a huge impact on the amplification. The impact of $k$ also depends on $\omega$. A small $\omega$ implies a big surface area with which the particles can interact before leaving the antechamber. The more interactions with the antechamber surface are possible, the bigger is the influence of $k$. For our antechamber $\omega$ is about 5.06\,\si{\degree} which is very small and therefore a small change in $k$ has a big impact on the gain.\\
+		\begin{figure}[h!] % k
+			\centering
+			\includegraphics[width= .7\textwidth]{Bilder/k.png}
+			\caption{Gain $n_{cs}/n_a$ of the antechamber in dependence of the particle reflection coefficient $k$.}
+			\label{th:densEnhk}
+		\end{figure}
+		Fig\ref{th:densEnhm} shows the amplification of the antechamber in dependence of the particles unit mass\,[u]. The figure shows that particles with higher unit mass get amplified more and are therefore easier to detect.\\
+		\begin{figure}[h!] % mass
+			\centering
+			\includegraphics[width= .7\textwidth]{Bilder/m.png}
+			\caption{Gain $n_{cs}/n_a$ of the antechamber in dependence of the particle mass $m$.}
+			\label{th:densEnhm}
+		\end{figure}
+		Fig.\,\ref{th:densEnhvelo} shows the amplification of the antechamber in dependence of the spacecraft velocity for different species. We expect H\textsubscript{2}O and different radiolysis radiolysis products such as H\textsubscript{2}, O\textsubscript{2} or HO. Absorption lines in the near infrared recorded by the Near Infrared Mapping Spectrometer (NIMS) on board of the Galileo spacecraft indicate CO\textsubscript{2} bond to other solid materials in the soil. Sulphur is part of the plasma. The sulphur compounds are therefore a result of the ion bombardment on the moons surface. Sulphur reacts with water resulting in various different compounds such as sulphur dioxide (SO\textsubscript{2}) or sulphuric acid (H\textsubscript{2}SO\textsubscript{4}) \cite{Collins_2014}. \notes{include Audrey's paper if it gets finished in time.}
+		Fig.\,\ref{th:densEnhvelo} shows that with increasing flyby velocity, the particles get more amplified. Species with higher masses are stronger amplified than light particles as it was already shown also in Fig.\,\ref{th:densEnhm}.\\
+		\begin{figure}[h!] % velocity
+			\centering
+			\includegraphics[width= .7\textwidth]{Bilder/velocity.png}
+			\caption{Gain $n_{cs}/n_a$ of the antechamber in dependence of the spacecraft velocity $v_{sc}$ for different species expected in the moons atmospheres.}
+			\label{th:densEnhvelo}
+		\end{figure}
+		Fig.\,\ref{th:densEnhChiTheta} shows the amplification in dependence of different particle influx angles $\chi$. $\chi$ is measured in the x-/y- plane (Fig.\,\ref{fig:thAntIs}). The function was evaluated for different positions of the entrance holes. The minimal angle the two entrance hole can be apart from each other without overlapping is 3.6\si{\degree}. The holes of the PFM are at $\theta_0 = \pm30\,\si{\degree}$. With that configuration the biggest signal intensity is measured with a spacecraft ramp direction of 0\si{\degree}. When the two holes are at $\pm$60\si{\degree} it results in a plateau between $\pm$60\,\si{\degree} and also a wider angular range at which NIM is sensitive. This is an interesting feature under certain circumstance. For our purpose it is unnecessary because the spacecraft blocs the field of view (FoV) for angles bigger than 100\degree (see also Chap.\,\ref{subsubsec:Calfly}).
+		\begin{figure}[h!] % chi theat
+			\centering
+			\includegraphics[width= .8\textwidth]{Bilder/Chi_theta0.png}
+			\caption{Gain $n_{cs}/n_a$ of the antechamber in dependence of the gas influx direction $\chi$ for different positions of the two entrance holes $\theta_0$. $\theta_0=30\degree$ is the position of the holes in flight configuration.}
+			\label{th:densEnhChiTheta}
+		\end{figure}
+		
+		
+		\subsubsection{Callisto Flyby}\label{subsubsec:Calfly}
+	
+		\begin{figure}[h!]
+			\centering
+			\includegraphics[width=.8\textwidth]{Bilder/Callisto_flyby_schematic.png}
+			\caption{Schematics of one of the flybys at Jupiter's moon Callisto.}
+			\label{fig:CalflybySchem}
+		\end{figure}
+				
+		\begin{figure}[h!]
+			\centering
+			\includegraphics[width = .7\textwidth]{Bilder/NIM_pointing_2031JAN15185200.png}
+			\caption{Fourth Callisto flyby of trajectory 141a \cite{SOC_Crema3p2} 1\,h before closest approach 15'600\,km away from Callisto.}
+			\label{fig:FlybyCal1852}
+		\end{figure}
+		\begin{figure}[h!]
+			\centering
+			\includegraphics[width = .7\textwidth]{Bilder/NIM_pointing_2031JAN15194200.png}
+			\caption{Fourth Callisto flyby of trajectory 141a \cite{SOC_Crema3p2} 10\,min before closest approach 1'560\,km away from Callisto.}
+			\label{fig:FlybyCal1942}
+		\end{figure}
+		\begin{figure}[h!]
+			\centering
+			\includegraphics[width = .7\textwidth]{Bilder/NIM_pointing_2031JAN15194700.png}
+			\caption{Fourth Callisto flyby of trajectory 141a \cite{SOC_Crema3p2} 5\,min before closest approach 580\,km away from Callisto.}
+			\label{fig:FlybyCal1947}
+		\end{figure}
+		\begin{figure}[h!]
+			\centering
+			\includegraphics[width = .7\textwidth]{Bilder/NIM_pointing_2031JAN15195200_tilt.png}
+			\caption{Fourth Callisto flyby of trajectory 141a \cite{SOC_Crema3p2} closest approach 200\,km away from Callisto with the solar panels oriented toward the sun to maximizes power generation of the spacecraft.}
+			\label{fig:FlybyCal1952sol}
+		\end{figure}
+		\begin{figure}[h!]
+			\centering
+			\includegraphics[width = .7\textwidth]{Bilder/NIM_pointing_2031JAN15195200.png}
+			\caption{Fourth Callisto flyby of trajectory 141a \cite{SOC_Crema3p2} closest approach 200\,km away from Callisto.}
+			\label{fig:FlybyCal1952}
+		\end{figure}
+		\begin{figure}[h!]
+			\centering
+			\includegraphics[width = .7\textwidth]{Bilder/NIM_pointing_2031JAN15195700.png}
+			\caption{Fourth Callisto flyby of trajectory 141a \cite{SOC_Crema3p2} 5\,min after closest approach 640\,km away from Callisto.}
+			\label{fig:FlybyCal1957}
+		\end{figure}
+		Fig.\,\ref{fig:FlybyCal1852}\,- Fig.\,\ref{fig:FlybyCal1957} show the changing FoV of the NIM instrument at different times during the fourth Callisto flyby of trajectory 141a \cite{SOC_Crema3p2}. The reference coordinate system for these graphics is the ecliptic coordinate system. During the flyby, the spacecraft changes its orientation in reference to that coordinate system leading to a distortion of the different objects in the figures. The entrance holes of the antechamber are blue circles, the FoVs of the entrance holes are marked as dashed blue lines, the entrance slit is the blue band with the sinusoidal shape. The solar panels and the antenna which bloc part of the FoV of NIM are marked in red. The gas inflow direction is marked as an orang star. Fig.\,\ref{fig:FlybyCal1852} shows the FoV 1\,h before closest approach 15'600\,km above Callisto's surface. The gas inflow direction is in between the two entrance holes. The black doted line on the moons surface marks the day/night separation line. As the spacecraft moves closer to the moon, the gas inflow direction moves towards the entrance slit. 5\,min before closest approach, NIM changes from thermal to neutral mode (Fig.\,\ref{fig:FlybyCal1947}) to be ready for the neutral mode measurements. At this time, the gas inflow direction is still in the FoV of the antechamber. The time window for measuring with the neutral gas mode is very narrow. Already 5\,min after closest approach, the gas inflow direction is below the FoV of the neutral gas channel (Fig.\,\ref{fig:FlybyCal1957}). Therefore, the time to switch from thermal to neutral mode has to be very short to minimize the number of lost measurements. These measurements are very crucial because the closer the spacecraft gets to the moon's surface, the higher is the exospheric pressure and therefore the signal intensity.\\
+		The spacecraft structure blocs angles higher than 100\si{\degree}. The gas striking the spacecraft sputters particles from the spacecraft's surface. NIM is not able to determine if these particles are part of the moons exosphere of if they originate from the spacecraft. When the gas inflow direction reaches angles higher than 100\si{\degree} NIM starts measuring background. The solar panels are adjusted perpendicular to the sun to maximize power generation. 10\,min before closest approach, the solar panels are tilted to leave open the FoV of NIM to measure with the neutral gas mode. In case the solar panels would stay perpendicular to the sun, the gas would graze the surface of the solar panel as it is shown in Fig.\,\ref{fig:FlybyCal1952sol}. Fig.\,\ref{fig:FlybyCal1952} shows the same scenario but with the solar panels tilted to leave open NIM's FoV of the neutral gas channel.\\
+		Fig.\,\ref{fig:densEnhChiFlyby} shows the gain of the antechamber with the total FoV of the two entrance holes marked as red area $\pm$30\degree around the position of the two entrance holes. The orange stars mark the gas inflow direction for the various scenarios mentioned before.
+		\begin{figure}[h!]
+			\centering
+			\includegraphics[width=.8\textwidth]{Bilder/Chi_theta0_flyby.png}
+			\caption{Gain $n_{cs}/n_a$ of the antechamber in dependence of the gas influx direction $\chi$. The blue circles mark the entrance hole positions and the red area marks the FoV of the entrance holes. The stars mark the gas influx direction from 1\,h before until 5\,min after closest approach of trajectory 141a \cite{SOC_Crema3p2}.}
+			\label{fig:densEnhChiFlyby}
+		\end{figure}
+		The main gas inflow direction varies for the different flybys. One time the gas comes from positive and one time from negative $\chi$ direction. Therefore, it was decided to make two entrance holes to allow measurements with angles different to the main direction to enlarge the FoV of the antechamber. The holes should also not be too close at the entrance because structures of the spacecraft bloc angles bigger than 100\degree and an amplification of such big angles would be useless.
+		
+		
+%----------------------------------------------------------------------------------		
+		\subsubsection{Motor Flow Calculation} \label{subsubsec:motorflow}
+		NIM has a shutter to close the entrance to the antechamber. This shutter is mounted between the ion source and the antechamber (Fig.\,\ref{fig:shutterMotor} left). When the shutter is open, the gas flows right through the hole into the ion source. When the shutter is closed, the hole moves to the side as it is indicated in Fig.\,\ref{fig:shutterMotor} right. Because the shutter does not close the gag perfectly, still a small amount of gas flows around the shutter into the ionisation region. In the following section, the geometry factor $G_{close}$ of the antechamber is determine when the shutter is closed.\\
+		\begin{figure}[h!]
+			\begin{subfigure}{0.5\textwidth}
+				\centering
+				\includegraphics[width=\textwidth]{Bilder/Shutter_sideview.png}
+			\end{subfigure}
+			\begin{subfigure}{0.5\textwidth}
+				\centering
+				\includegraphics[width=.8\textwidth]{Bilder/Shutter_topview.png}
+			\end{subfigure}
+		\caption{Shutter Motor. Left: side view with shutter open. Right: Top view with open shutter. When shutter is closing it moves to the red position.}
+		\label{fig:shutterMotor}
+		\end{figure}
+		The molecular flow conductance is:
 		\begin{equation}
-			G = \frac{r_{aIs}^2\cdot a}{2\cdot r_{aHi}^2 + r_{aIs}^2\cdot a}
+			C = \frac{A\cdot\bar{v}\cdot a}{4}
 		\end{equation}
-		With $r_{aIs} = 2\,\si{\milli\meter}$ and $r_{aHi} = 2.5\,\si{\milli\meter}$ resulting in a factor of 0.067 meaning that about 6.7\% of all particles entering the antechamber actually reach the ionization region due to losses of the geometry.
-
-		% Justification of the this formula is because of the trajectories of the space craft. Therefore, we fly along the main axis and there we only have to consider the moving angle theta.
-		% Simluated graphics discussed with Peter. Ask André about material to be prepared for the next meeting.
+		With $A$ the cross-section of the tube, $\bar{v}$ the average velocity of the thermalized gas flowing through the opening and $a$ the transmission probability depending on the length-to-diameter ratio of the tube. When the shutter is closed, the conductance of the tube $C_{tot}$ is divided into four terms. The tube length is split into three parts $C_{top}$, $C_{hole}$ and $C_{bot}$ (see Fig.\ref{fig:shutterMotor} left). In addition the gas has to flow through the small gap around the shutter. The conductance of that gap is $C_{gap}$:
+		\begin{align}
+			C_{top}  &= \frac{r_{aIs}^2\cdot\pi\cdot\bar{v}\cdot a_{top}}{4}\\
+			C_{gap}  &= \frac{2\cdot r_{aIs}\cdot \pi \cdot h_{gap}\cdot\bar{v}\cdot a_{gap}}{4}\\
+			C_{hole} &= \frac{r_{aIs}^2\cdot\pi\cdot\bar{v}\cdot a_{hole}}{4}\\
+			C_{bot}  &= \frac{r_{aIs}^2\cdot\pi\cdot\bar{v}\cdot a_{bot}}{4}\\
+		\end{align}
+		With $a_{top} = 0.73$, $a_{gap} = 0.07$, $a_{hole} = 0.67$, $a_{bot} = 0.28$ \cite{molFlowTubeTransm_Essen1976}, $r_{aIs} = 2 mm$ and $h_{gap} = 0.01 mm$. The average velocity $\bar{v}$ will cancel out later in the derivation of the geometry factor. The conductance of the tube $C_{tot}$ is:
+		\begin{equation}
+			\frac{1}{C_{tot}} = \frac{1}{C_{top}} + \frac{2}{C_{gap}} + \frac{1}{C_{hole}} + \frac{1}{C_{bot}}
+		\end{equation}
+		The conductance of one of the entrance holes of the antechamber is:
+		\begin{equation}
+			C_{aHi} = \frac{r_{aHi}^2\cdot\pi\cdot\bar{v}}{4}
+		\end{equation}
+		The geometry factor $G_{close}$ is:
+		\begin{equation}
+			G_{close} = \frac{C_{tot}}{C_{tot} + 2\cdot C_{aHi}}
+		\end{equation}
+		When the shutter is closed, $G_{close}$ is $0.11\cdot10^{-3}$. When the shutter is open, the geometry factor $G_{open}$ is $67\cdot10^{-3}$ meaning the shutter damps the signal at least by a factor 600. In this approximation we assumed that the gas will take the shortest distance between the antechamber and the ion-source. In reality it will flow around the shutter and the signal will be damped even more because with increasing distance the gas has to flow, it get damped more.\\
+		When measuring with the open source channel, a small amount of gas will enter the ion-source through the antechamber. The open source slit is in the y-/z-plane and therefore $\chi$ is 90\si{\degree} (Fig.\ref{fig:thAntIs}). When the shutter is closed, about 0.05\% of the signal originates from the antechamber.
 		
-		% Have a look if there are usable results. Prototype has not so good graphics and for the PFM there are still good results missing.
-		% Also with reference to the phenomena we observe when shooting with the beam on the structure of the entrance. How far can we explain that in the theoretical point of view? -> search
-		
-		%\subsubsection{Motor Flow Calculation} Part of this flux calculation.
-		% Estimation with the formula shown above and the theoretical coefficients. Need of the exact geometry from out construction. Area a is the average slit diameter and the distance, the shortest way into the ionisation region.
-		% paper only goes down to  an R/L ratio of 40 corresponding to a factor of 'a' of 0.059 compared to 0.225 for an R/L ratio of 8. Factor 5 gained by the damping factor but also a certain factor by the small radius.
-		\notes{Wait for answer from Michu about the flow conductance calculation of Michu. 20210503}
 		
 		\subsubsection{Pulser}
-		% Short explanation how the pulse shape influences the mass resolution. Mabe this will be part of another chapter in case we don't have enough material about that. Have a look at the measurements if there is something we have to explain in the Theory part.
+				
+		\begin{figure}[h]
+			\centering
+			\includegraphics[width=\textwidth]{Bilder/Pulser_theretical_shape.jpg}
+			\caption{Specifications for the pulse shape generated by a realistic pulser \cite{Diss_Meyer}.}
+			\label{fig:PulserTheoCurve}
+		\end{figure}
+		The high voltage pulser is used to accelerate the generated ions in the ionisation region to a certain energy. During the time when no high voltage pulse is applied, the potential has to be stable at the bias voltage to allow ion storage as previously discussed in chapter\,\ref{chap:IonStor}.\\ Fig.\,\ref{fig:PulserTheoCurve} shows a schema of a realistic high voltage pulse and Table\,\ref{tab:FlightPulserPerf} shows the characteristics of the flight pulser compared to the requirements. The fall time is the time to build up the negative high voltage. This time has to be very short to give all particles the same amount of energy. With a thickness of the ion-source of 2\,mm and a voltage of -480\,V, atomar hydrogen needs about 3\,ns to leave the source. Helium needs already 6.5\,ns. To affect as few species as possible but to set a realistic requirement, the maximum fall time of the high voltage pulse has to be smaller than about 5\,ns. The fall time of the flight pulser slightly exceeds the that value with a fall time of 5.76\,ns. Therefore it still only affects hydrogen. When applying a high voltage, the pulse overshoots its set value and drops slightly. The overshoot and the voltage drop result in a variation of the particle energy for the different species. The ringing of the high voltage, and the pulse drop of the flight pulser are within the specifications. The pulse duration has to be longer than 0.2\,\si{\micro\second} because that is the minimum time particles with masses of 1000\,u need to leave the ionisation region. With some margin, the specifications were set to 0.5\,\si{\micro\second}. The rise time to bias voltage should be smaller than 100\,ns to leave enough time for ion storage. This is well achieved with the flight pulser. The ripple of the bias voltage should be smaller than $\pm$50\,mV to generate a stable electric field for ion storage in the ionisation region during the time when the high voltage pulse is not applied. This ripple should be smaller than $\pm$50\,mV. However, the flight pulser exceeds this value. How big the impact actually is, is difficult to estimate. But due to limited choices for the different components of the pulser, this pulser is the best which we were able to produce with the available resources. A further discussion about the design decisions and the requirements for the available components can be found in \cite{Lasi_IEEE2020}.\\
+		\begin{table}[h]
+			\begin{center}
+			\begin{tabular}{m{2.2cm}|>{\centering}m{2cm}|>{\centering}m{2cm}|>{\centering}m{2.8cm}|>{\centering}m{1.7cm}|m{1.8cm}<{\centering}}
+			\hline
+							& Ringing of HV Pulse & Pulse drop at full HV & Baseline Ripple & Fall Time & Rise Time \\ \hline
+			Requirement		& $<$ 5\%  & $<$ 10\,V & $\pm$50\,mV & $<$ 5\,ns & $<$ 100\,ns\\
+			Flight Pulser	& 2.5\% & 1.9\,V & 300\,mV & 5.76\,ns & 19.7\,ns\\
+			\end{tabular}
+			\end{center}
+			\caption{Characteristics of the flight pulser compared with the requirements.}
+			\label{tab:FlightPulserPerf}
+		\end{table}
 		
 		\subsubsection{Pressure calibration of the NIM Sensor}
 		% This chapter comes after the calculation of the detector gain because the gain of the detector is part of the pressure calculation. Proper error estimation of the paramaeters as far as possible.
@@ -264,13 +444,11 @@
 		
 		\textcolor{red}{Write something about the radiation shielding concept? Or just make a reference to the paper because it gives an overview over the concept as far as it is necessary.}
 		
-		\subsubsection{Detector Parameters} % Clean up this chapter when finalizing the detector chapter. Finalize the tehory part and the explanation of the workmanship of the detector housing.
+		\subsubsection{Detector Parameters} % Clean up this chapter when finalizing the detector chapter. Finalize the theory part and the explanation of the workmanship of the detector housing.
 		% All relevant parameters
-		% Detection efficiency geometry depended. Particles hitting the glass structure instead of the hole are lost.
 		% Gain
 		% dead time, R, C, number of channels. Calculation of the number of channels out of the data sheet (Diss Maike) charging behaviour. Is this really needed for the analysis I do? I case I should have to test with the FS, it would be nice to include that calculation and the timing resulting out from that. Otherwise it is just a nice part of theory but is not used for anything. Set up something, just that the chapter is completed (sort of).
-		% Any discussion about the peak width? Can we tell something about that according to theory or is it just random? No clear relationship. If should only depend on the pressure in the detector, but the pressure only influences the number of counts and not the peakform.
-		% Compare the performance of the diode with the performance of the resistor. Depending on the results, find arguments..		
+		% Compare the performance of the diode with the performance of the resistor. Depending on the results, find arguments.. No time for that :(
 		
 		In this section we calculated some important parameters of the detector such as the dead time and the gain. % And further values if needed.
 		
@@ -279,39 +457,37 @@
 		\begin{figure}[h]
 			\centering
 			\includegraphics[width=.4\textwidth]{Bilder/MCP_hex.jpg}
-			\caption{MCP honeycomb structure}
+			\caption{MCP honeycomb structure \cite{Diss_Neuland}.}
 			\label{fig:MCPhex} % Ref. Maike Diss
 		\end{figure}
-		
-		The number $N$ of channels of an MCP is active area $A_{act}$ of the MCP divided by the area of one channels $A_{hex}$. The MCP has a honeycomb like structure (Fig.\ref{fig:MCPhex}). Thus, the area of one channel is the area of a hexagon:
+		The number of channels $N$ of an MCP is its active area $A_{act}$ divided by the area of one channel $A_{hex}$. The MCP has a honeycomb like structure (Fig.\,\ref{fig:MCPhex}). Thus, the area of one channel is the area of a hexagon:
 		\begin{equation}
 			N = \frac{A_{act}}{A_{hex}} = \frac{2\cdot\pi r^2_{act}}{\sqrt{3}p^2}
 		\end{equation}
-		$r_{act}$ is the radius of the active area of the MCP which is for the MCPs we used 8\,\si{\milli\meter} and p is the distance between the centres of two channels which is 6\,\si{\micro\meter}. This results in about $1.6\cdot10^6$ channels.\\
+		$r_{act}$ is the radius of the active area of the MCP which is for our MCPs 8\,\si{\milli\meter} and p is the distance between the centres of two channels which is 6\,\si{\micro\meter}. This results in $1.6\cdot10^6$ channels.\\
 		The resistance of a single channel is the resistance of the whole MCP plate $R_{MCP}$ times the number of channels $N$:
 		\begin{equation}
 			R_{ch} = R_{MCP}\cdot N
 		\end{equation}
-		Its resistance depends on the voltage applied over the plate. For a nominal voltage of 1000\,\si{\volt} the $R_{MCP}$ is $\sim$70\,\si{\mega\ohm} resulting in channel resistance of about $10^{14}$\,\si{\ohm}.\\
-		The concerning the capacitance of the MCPs, the MCPs consist of two materials: the structure (grey) consists of a type of lead glass and the hole, whichcan be approximated with vacuum (white) (Fig.\ref{fig:MCPhex}). The structure area is hexagon $A^{hex}_{ch}$ minus the area of the channel hole $A^{hole}_{ch}$. This results in a capacitance of one channel $C_{ch}$ of:
+		Its resistance depends on the voltage applied over the plate. For a nominal voltage of 1000\,\si{\volt} $R_{MCP}$ is $\sim$70\,\si{\mega\ohm} resulting in channel resistance of about $10^{14}$\,\si{\ohm}.\\
+		The MCPs consist of two different materials: the structure (grey) consists of a type of lead glass and the hole, which can be approximated with vacuum (white) (Fig.\ref{fig:MCPhex}). The area of the structure is equal to the area of the hexagon $A^{hex}_{ch}$ minus the area of the channel hole $A^{hole}_{ch}$. the capacitance of one channel $C_{ch}$ is:
 		\begin{equation}
 			C_{ch} = \frac{\epsilon_0  (\epsilon_r \cdot (A^{hex}_{ch} - A^{hole}_{ch})+ A^{hole}_{ch})}{l_{ch}}
 		\end{equation}
-		With $\epsilon_0$ the vacuum permittivity, $\epsilon_r$ the relative permittivity of lead glass and $l_{ch}$ the MCP thickness which is 0.3\,\si{\milli\meter} for the MCPs we used. The relative electric permittivity depends strong on the conditions under which the material is used for example under which voltage, frequency or temperature the MCPs are used. Furthermore, the manufacturer does not give details about the material characteristics as it is a company secret. [Neuland, 2016] made a literature search and found values between 6 and 20 for $\epsilon_r$. % Neuland Diss
-		This results in a capacity of 5\,\si{\atto\farad} per channel. The dead time of a single MCP channel is the channel resistance $R_{ch}$ times the channel capacitance $C_{ch}$:
+		With $\epsilon_0$ the vacuum permittivity, $\epsilon_r$ the relative permittivity of lead glass and $l_{ch}$ the MCP thickness which is 0.3\,\si{\milli\meter}. The relative electric permittivity depends strong on the conditions under which the material is used for example under which voltage, frequency or temperature the MCPs are used. Furthermore, the manufacturer does not give details about the material characteristics as it is a company secret. In \cite{Diss_Neuland} is an analysis of different values for $\epsilon_r$ found in literature. These values are between 6 and 20. With these values, the resulting capacity is 5\,\si{\atto\farad} per channel. The dead time of a single MCP channel is the channel resistance $R_{ch}$ times the channel capacitance $C_{ch}$:
 		\begin{equation}
 			\tau = R_{ch}\cdot C_{ch}
 		\end{equation}
-		This results in a dead time of 500\,\si{\micro\second}. A typical waveform has a duration of about 100\,\si{\micro\second}. When a ion hits a channel, this channel would be blind for the next five waveforms. With the $1.6\cdot10^6$ channels and assuming a uniform distribution of particles on the MCP surface, saturation is assumed at particle rates higher than $10^9$ particles/\si{\second}. % Do we really want to have this in? Because saturation really starts at 10^6 #/sec already due to other effects.
+		This results in a dead time of 500\,\si{\micro\second}. A typical waveform has a duration of about 100\,\si{\micro\second}. When an ion hits a channel, this channel would be blind for the next five waveforms. With $1.6\cdot10^6$ channels and assuming a uniform distribution of particles on the MCP surface, saturation is assumed at particle rates higher than $10^9$ particles/\si{\second}. % Do we really want to have this in? Because saturation really starts at 10^6 #/sec already due to other effects. If so, make at least a short remark to which effects.
 		\begin{equation}
 			U(t) = U_0\cdot(1- e^{-t/\tau})
 		\end{equation}
 		It is the time needed to recharge a single channel to approximately 63\% of its original charge. After $5\tau$ 99\% of the original charge is replenished. % Is only half true. Only under the assumption that all of the charge is extracted out of the MCP. May later further discussion and revision.
 		
-		% Atempt to calculate the acctual voltage drop of the MCP voltage in dependence of the count rate by taking into account the capacitorloading curve and the option of a possible paralyzability of the detector
-		% Summary Diss Maike. Weekend
 		
-		% Dependence of the gain of one single ions? Distribution?...
+		
+		% Atempt to calculate the acctual voltage drop of the MCP voltage in dependence of the count rate by taking into account the capacitorloading curve and the option of a possible paralyzability of the detector. To make that properly, a simulation would be necessary. Not relevant.
+		
 		\begin{comment}
 			1 particle with tau as the dead time. Voltage of 1 channel when 1 particle hits the channel. We assume, that we do not get into saturation. At what particle rate does the voltage start to break down. When a particle hits the channel when the voltage is not full replenished, it empties the channel again.
 			For a first approximation, wait for 5*tau until 99% of the voltage is recovered.
@@ -326,7 +502,7 @@
 			t_rate = 5*tau.
 			Umcp = sum(Uch)/#Channels
 			
-			Temporal the count rate is much higher than the value averaged over 1 sec. -> The gain will drop within one spectrum but will recover to a certain amount until the next spectrum. This calculation look at total paralyzability.
+			Temporal the count rate is much higher than the value averaged over 1 sec. -> The gain will drop within one spectrum but will recover to a certain amount until the next spectrum. This calculation looks at total paralyzability.
 			
 			See Simulations by Maike for the whole calculation -> also the gain drop is displayed there. Just summarize it here because it is interesting :) and it also gives sort of an approximation of the voltage drop.
 			-> Weekend
@@ -335,8 +511,7 @@
 
 		\textbf{Gain}\\
 		% Check all variables, if it is consistent. Finish this chapter properly
-		The following derivation is strongly based on the lecture notes of [Wurz, 2017] % Include Ref.
-		When an incoming particle hits the MCP channel wall there is a certain chance that it ejects an electron out of the channel wall. By applying an electric field $E$ over the MCP plate, this electron gets accelerated until it hits the opposite wall, where it ejects more electrons:
+		The following derivation is strongly based on the lecture notes of \cite{LecNot_Wurz2017}.	When an incoming particle hits the MCP channel wall there is a certain chance that it ejects an electron out of the channel wall. By applying an electric field $E$ over the MCP plate, this electron gets accelerated until it hits the opposite wall, where it ejects more electrons:
 		\begin{equation}
 			E = \frac{U_{MCP}}{l} = \frac{F}{q_0} = \frac{a m_e}{q_0}
 		\end{equation}
@@ -400,19 +575,11 @@
 		
 		
 		% Reference: Bieler Diss 2012, Wurz 2011, Scherer 1999, Meyer 2013 Data Analysis, Wells 2011
-		% Ionisation efficiency
-		% Description of how it works with the energies. Electric -> kinetic. Pulser. E = 1/2 mv^2 = qU
-		% Time focusing?
-		% Mass calibration t/dt -> m/dm.
-		% SNR definition. Picture?
-		% Sensitivity estimation. Nessesary? If so, part of SNR discussion.
-		% MCP detector. Gain calculation. How the detecotr works. Didn't do anything for further developement...
-		% Antchamber. Explanation of closed and open source. Field of view. Densitiy enhancement.
 		
 		
+		% MCP detector. Gain calculation. How the detecotr works. Didn't do anything for further developement. But a lot of tests on the Galerie with not so a big output. There is about 1 graph where the gain curve is actually used. So this chapter is justified.
+		% Dead time discussion is for nothing because it only shows that we do not reach the limit of our instrument. Only to show some nice calculation.
 		
-		
-	
 	
 \begin{comment}
 	

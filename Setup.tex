@@ -6,8 +6,7 @@
 	In Chap. \ref{subsec:setupTestTools} the test facilities are described. Tests with a neutrals particle beam were performed with the CASYMIR test facility at the University of Bern. % Ref.
 	% Noch STROFIO chamber erwähnen und schreiben, welche tests man in dieser Kammer machen kann.
 	% Pumpstand 2 überhaupt erwähnen? Gain Kurve mit dem einen anderen detector aufzeichnen und rein kopieren. Gibt dazu nicht viel zu schreiben.
-	
-	
+		
 	\begin{comment}
 	The goal of this chapter is to show NIM in the current lab equipment. An 'as is' state.
 	Instrument in vacuum chamber, Mechanical description. Theoretical description is in the theory part.
@@ -20,15 +19,15 @@
 	
 	\subsection{NIM Sensor Models}\label{subsec:setupInst}
 	In this chapter, the NIM Prototype and the design of the NIM ProtoFlight Model (PFM) are described. The Prototype was build by Stefan Meyer and he also designed the NIM PFM \cite{Diss_Meyer}. The tests in Chapter \ref{sec:Exp} start with the configuration of the instruments as they are stated in this chapter.\\
-	Fig.\ref{fig:SetupProtoISSim} shows the SIMION model of the Prototype ion-source Fig.\ref{fig:SetupPFMISSim} shows the ion-source of the PFM and Fig.\ref{fig:SetupFilElSim} shows the filament housing of the Prototype (left) and of the PFM (right). The PFM has seven electrodes less then the prototype to simplify the source. Manly LV electrodes were taken together (IS 1\& 2, IS 3 \& 4, IS 6 \& 7). IS 10 was removed and IS 11 was shifted towards the ionisation region. In the filament housing the filament repeller electrodes Fil 2-5 were taken together to one single repeller electrode Fil 2. The repeller electrode was splitted in 4 to compensate the filament position in case the filament was badly adjusted. For the PFM, the mounting of the filament holder was improved, therefore these 4 electrodes could be taken together to one single electrode.\\
-
+	Fig.\ref{fig:SetupProtoISSim} shows the SIMION model of the Prototype ion-source Fig.\ref{fig:SetupPFMISSim} shows the ion-source of the PFM and Fig.\ref{fig:SetupFilElSim} shows the filament housing of the Prototype (left) and of the PFM (right). The PFM has seven electrodes less then the prototype to simplify the source. Manly LV electrodes were taken together (IS 1\& 2, IS 3 \& 4, IS 6 \& 7). IS 10 was removed and IS 11 was shifted towards the ionisation region. In the filament housing the filament electron repelling electrodes Fil 2-5 were taken together to one single repeller electrode Fil 2. The repeller electrode was splitted in 4 to compensate the filament position in case the filament was badly adjusted. For the PFM, the mounting of the filament holder was improved, therefore these 4 electrodes could be taken together to one single electrode.\\
+	Fig.\ref{fig:SetupProtoReflSim} shows a schematics of the ion-mirror. The prototype ion-mirror consists of 14 ring-electrodes (R2-R15). R1 is the drift tube. Between the electrodes R4-R15 are resistors to connect the electrodes with each other to generate a linear voltage gradient when a voltage is applied at electrode R4 and R15. In addition, a voltage can be applied on electrode R8 allowing additional focusing of the ions in the ion-mirror.	The flight ion-mirror consists of a ceramic tube with two resistance spirals on its inner walls replacing electrodes R5-R7 and R9-R14. From the electrical point of view, the two ion-mirrors behave the same.
+	
 	% Comparison between the two designs/ types of the main structures.
-	% Reflectron
 	% Detector: Anode, resistor, anode is floating on MCP front. May show a simple electrical schematics of how this work. Write a fucking manual!!! That somebody else can work with the instrument from scratch. If time, write a separate document with a description!!!
 	
 	% Schematic of the whole instrument, where every electrode is named, zoom in the filament and the detector section to describe, which electrode does what there. Very short description about their funcitonallity. Make the description in one model and highlight the differences between the Prototype and the PFM. May show the zoom of both models at the same time to show the difference of the two models.
 	
-	
+	% State that for the tests at the CASYMIR test facility, the top cover of the antechamber was exchanged through one with one entrance hole at position +90°.
 	
 	% Fig.\ref{fig:SetupProtoISSim}-\ref{fig:} show the SIMION models of the Prototype ion-source, the filament housing, the ion-mirror and the detector. Fig.\ref{fig:SetupProto} shows the NIM Prototype as it was at the beginning of the measurement campaigns. Detailed cable schema and connection to the laboratory power supplies can be found in \cite{Diss_Meyer} Chap. 4.2.
 
@@ -53,21 +52,29 @@
 		\end{comment}
 		
 		\textbf{Ion-Optical System Prototype}\\
+		%\includepdf[pages=-]{Setup/NIM_schema.pdf}
+		% First description of the whole model according to the picture with all PFM electrodes and then point out the differences between the 2 designs (IS, Fil and reflectron)
+		\begin{figure}[h]
+			\centering
+			\includegraphics[width= 0.95\textwidth]{Setup/NIM_schema.pdf}
+			\caption{Schematics of NIM flight design with all electrodes marked in red.}
+			\label{fig:MINPFMTot}
+		\end{figure}
+		
 		
 		\begin{figure}[h] % Bild durch Bild mit Markierungen ersetzen
 			\centering
-			\includegraphics[width=0.9\textwidth]{Setup/Prototype_IS_sim.jpg}
+			\includegraphics[width= 0.9\textwidth]{Setup/Proto_IS_sim.png}
 			\caption{SIMION Model of the Ion-Source of the NIM Prototype \cite{Diss_Meyer}.}
 			\label{fig:SetupProtoISSim}
 		\end{figure}
 		
 		\begin{figure}[h] % Bild ersetzen. Evt noch Markierungen einfügen. IS bei den Nr. evt. noch einfügen.
 			\centering
-			\includegraphics[width=0.9\textwidth]{Setup/PFM_IS_sim.png}
+			\includegraphics[width=0.9\textwidth]{Setup/ISFlight_bearb.png}
 			\caption{SIMION Model of the Ion-Source of the NIM ProtoFlight Model.}
 			\label{fig:SetupPFMISSim}
 		\end{figure}
-	
 		\begin{figure}[h] % In Bild noch Fil 7/ Fil 4 durch IS5/ IS3 ersetzen.
 			\begin{subfigure}{0.5\textwidth}
 				\centering
@@ -83,16 +90,9 @@
 
 		\begin{figure}[h]
 			\centering
-			\includegraphics[width=0.9\textwidth]{Setup/Prototype_Reflectron_sim.jpg}
+			\includegraphics[width=0.9\textwidth]{Setup/Prototype_Reflectron_sim.png}
 			\caption{SIMION Model of the ion-mirror of the NIM Prototype \cite{Diss_Meyer}.}
 			\label{fig:SetupProtoReflSim}
-		\end{figure}
-		
-		\begin{figure}[h]
-			\centering
-			\includegraphics[width=0.4\textwidth]{Setup/Prototype_Detector_sim.jpg}
-			\caption{SIMION Model of the detector of the NIM Prototype \cite{Diss_Meyer}.}
-			\label{fig:SetupDetSim}
 		\end{figure}
 		
 		\begin{figure}[h] % Exchange reflectron through ion-mirror
@@ -112,8 +112,6 @@
 		
 		\begin{comment}
 		
-		1x new IS with declaration
-		1x comparison of the two where the two sources are overlapped
 		Take chapter Prototype and PFM together in one chapter depending on how much there is to write in the Prototype chapter.
 		PFM has more details.
 		In case of 1 Chapter, don't overlay the pictures, simply show both IS separately and mark the changes in the PFM/ Prototype pictures (IS, Fil). Reflectron make a short not about the changes. Detector stays the same. Antechamber got bigger. Shutter missing in Prototype.
@@ -144,30 +142,31 @@
 	% Short description of the setup at the PS# 2. How the late measurements with the current measurement were done.
 	
 %------------------------------------------------------------------------------------
-	%% PS#2
-		
+
 		\pagebreak
 		\subsubsection{Pumpstand nr. 2}\label{subsubsec:SetFacPumpst}
-		% Add circuit schema of the detector. Have a look how to show the MCPs and the anode. May a resistor is not the best idea.
-		This section describes the setup used to perform stand-alone tests with the NIM detector in Pumpstand nr.2 and shows how to calculate the voltage over the MCPs.\\
-		\begin{figure}[h]
-			\begin{subfigure}{.5\textwidth}
-				\centering
-				\includegraphics[width=0.8\textwidth]{Bilder/Galerie_Setup/Pumpstand2_midres.png}
-			\end{subfigure}
-			\begin{subfigure}{.5\textwidth}
-				\centering
-				\includegraphics[width=\textwidth]{Bilder/Galerie_Setup/Pumpstand_PSOszi.png}
-			\end{subfigure}
-			\caption{Left: Pumpstand nr. 2. Right: Power supply, oscilloscope and control computer for the stand-alone tests of the detector. The signal on the oscilloscope is a noise signal.}
-			\label{fig:Pumpstand2}
-		\end{figure}
-		Pumpstand nr. 2 was used to perform stand-alone tests with the different NIM detectors. The test setup consists of a vacuum chamber, a HV power supply to supply the two high voltages of the detector, an oscilloscope, a computer to remote control the oscilloscope and a HV meter (Fig. \ref{fig:Pumpstand2}).\\
 		
-		% Theory or experiments
+		% the following part may only will show up in the Appendix because its only a derivation used in the lab. Except the electrical schematics of the detector with the corrsponding Variables.
+		% Arrange Figrues as soon as there is enough text in the Setup section. At least the electric circuit should appear as close as possible in this section at the end!!!
 		% Mechanical design, design improvements, electrical design and improvements (resistor, diode, Ri adaption to supress noise). These thing should be discussed when the schema is discussed. But the schema is also needed when showing the calculation for visualisation. In worst case, show the detector schematics twice if it is inevitable.
 
-		\textcolor{red}{Fig. bla} shows the circuit diagram of the detector connected to an external power supply. The aim is to calculate the voltage over the MCPs $U_{MCP}$ in dependence of the voltage difference $U_{PSMCP}$ between the two outputs of the power supply $U_{PSA}$ (anode output of the power supply for the detector) and $U_{PSD}$ (MCP front voltage output of the power supply for the detector) as by the flight electronics the voltage $U_{PSMCP}$ and the drift voltage $U_{PSD}$ can be set.\\
+		% Where do we put the whole detector discussion in? Is that part of the measurements? Or of the Setup because it is part of the instrument. The Prototype had most certainly a diode but did never cause any problems... A comparison of the Prototype and PFM detector is unnecessary.
+		
+		% Mention something about that there are basically two different detector designs for the PFM detector from the electrical point of view and that that required an adaption of the setup to be able to calculate the voltage over the MCPs because the MCP Gain depends on the MCP voltage according to equation \notes{ref}.
+		
+		Pumpstand nr. 2 was used to perform stand-alone tests with the different NIM detectors. The test setup consists of a vacuum chamber, a HV power supply, an oscilloscope, a computer to remote control the oscilloscope and a HV meter (Fig. \ref{fig:Pumpstand2}).\\
+		We tested two different detectors from the electrical point of view.
+		
+		
+		
+		During the further development of the detector, the diode in the detector was replaced by a resistor. To compare different measurements with each other it was required to determine the current flowing through the detector to determine the voltage over the MCPs.
+		There are two different designs of the detector. One with a diode and one with a resistor
+		
+		Fig.\,\ref{fig:FlighElecSchema} shows the circuit diagram of the detector connected to an external power supply. Table\,\ref{tab:ElecSchemaVariableList} summarizes the used variables and gives a brief explanation.
+		
+		
+		the aim is to ca		
+		The aim is to calculate the voltage over the MCPs $U_{MCP}$ in dependence of the voltage difference $U_{PSMCP}$ between the two outputs of the power supply $U_{PSA}$ (anode output of the power supply for the detector) and $U_{PSD}$ (MCP front voltage output of the power supply for the detector) as by the flight electronics the voltage $U_{PSMCP}$ and the drift voltage $U_{PSD}$ can be set.\\
 		\begin{equation}
 			U_{PSMCP} = U_{PSA} - U_{PSD}
 			\label{eq:Upsmcp}
@@ -195,9 +194,53 @@
 		Solving Eq. \eqref{eq:UpsmcpTot} to $U_{MCP}$ results in:
 		\begin{align}
 			U_{MCP} =& U_{PSMCP} - U_{RM} - 2\cdot U_{Ri} - U_{RD}\\
-					=& U_{PSMCP} - U_{PSMCP} + U_{PSD} - U_A - 2\cdot I_{MCP} R_i - I_{MCP} R_D\\
-					=& (U_A - U_{PSD})\cdot(1 + \frac{2R_i + R_D}{R_M}) - U_{PSMCP}\frac{2R_i + R_D}{R_M}
+			=& U_{PSMCP} - U_{PSMCP} + U_{PSD} - U_A - 2\cdot I_{MCP} R_i - I_{MCP} R_D\\
+			=& (U_A - U_{PSD})\cdot(1 + \frac{2R_i + R_D}{R_M}) - U_{PSMCP}\frac{2R_i + R_D}{R_M}
 		\end{align}
+		
+		
+		\begin{figure}[h]
+			\begin{subfigure}{.5\textwidth}
+				\centering
+				\includegraphics[width=0.8\textwidth]{Bilder/Galerie_Setup/Pumpstand2_midres.png}
+			\end{subfigure}
+			\begin{subfigure}{.5\textwidth}
+				\centering
+				\includegraphics[width=\textwidth]{Bilder/Galerie_Setup/Pumpstand_PSOszi.png}
+			\end{subfigure}
+			\caption{Left: Pumpstand nr. 2. Right: Power supply, oscilloscope and control computer for the stand-alone tests of the detector. The signal on the oscilloscope is a noise signal.}
+			\label{fig:Pumpstand2}
+		\end{figure}
+		
+		\begin{figure}[h]
+			\centering
+			\includegraphics[width = .8\textwidth]{Bilder/Detector_elec_schema.png}
+			\caption{Electrical schematics of the NIM flight detector.}
+			\label{fig:FlighElecSchema}
+		\end{figure}
+		
+		
+		\begin{table}[h]
+			\begin{center}
+			\begin{tabular}{|m{1.5cm}|m{5.4cm}|m{1.5cm}|m{5.4cm}|}
+				\hline
+				R\textsubscript{D}& Resistor replacing the former diode & U\textsubscript{A}& Voltage on the detector anode \\
+				R\textsubscript{i} & Detector input resistor & U\textsubscript{MCP}& Voltage over the MCPs \\
+				R\textsubscript{M}& Resistor used to determine I\textsubscript{MCP} &U\textsubscript{PSA} & Anode voltage output of power supply \\
+				R\textsubscript{MCP}& MCP resistance & U\textsubscript{PSD} & Drift voltage output of power supply \\
+				R\textsubscript{T} & 50\,$\Omega$ termination & U\textsubscript{PSMCP} & Voltage difference  between U\textsubscript{PSA} and U\textsubscript{PSD} \\
+				I\textsubscript{A} & Current induced in the MCPs when an ion hits the MCPs & U\textsubscript{RD}& Voltage over R\textsubscript{D} \\
+				I\textsubscript{ion} & Ion current hitting the MCPs & U\textsubscript{Ri}& Voltage over R\textsubscript{i} \\
+				I\textsubscript{MCP} & Current flowing through the MCPs &U\textsubscript{RM}& Voltage over test resistor R\textsubscript{M}\\
+				I\textsubscript{RD} & Current flowing through R\textsubscript{D} &&\\
+				\hline
+			\end{tabular}
+			\end{center}
+			\caption{Variable list for the detector.}
+			\label{tab:ElecSchemaVariableList}
+		\end{table}
+	
+		
 		% More details
 		
 		

@@ -4,7 +4,7 @@
 \usepackage{siunitx}            % correct presentation of numbers and units
 \usepackage{lmodern}            % other caracter type
 \renewcommand{\familydefault}{\sfdefault} % man kann neue Befehle so definieren
-\newcommand{\unit}[1]{\ensuremath{\, \mathrm{#1}}}
+%\newcommand{\unit}[1]{\ensuremath{\, \mathrm{#1}}}
 \newcommand{\degree}{\ensuremath{^\circ}}
 \usepackage{amssymb, amsmath, cancel, ulem, graphicx, float, tabularx, multirow, bm}
 \usepackage{braket}     % Für QT
@@ -12,6 +12,7 @@
 \usepackage{caption}
 \usepackage{subcaption}
 \usepackage{mathtools}
+\usepackage{tablestyles}
 \usepackage{enumitem}
 \usepackage{tikz}
 \usepackage{graphicx}
@@ -34,11 +35,16 @@
 \usepackage[noabbrev]{cleveref}
 \newcommand{\sectionbreak}{\clearpage} % jedes Kapitel auf separate Seite starten
 \renewcommand{\UrlFont}{\ttfamily\footnotesize} % font size url verkleinern
-\usepackage[font=scriptsize,labelfont=bf]{caption} % setzten der Schriftgrösse von caption
-\usepackage[font=scriptsize,labelfont=bf]{subcaption} % setzten der Schriftgrösse von subcaption
+
+\usepackage[font=normalsize,labelfont=bf]{caption} % setzten der Schriftgrösse von caption
+%\usepackage[font=scriptsize,labelfont=bf]{subcaption} % setzten der Schriftgrösse von subcaption
+
+\DeclareCaptionFont{normalsize}{\normalsize\fontfamily{ptm}}
+\captionsetup{textfont={normalsize}}
+
 \usepackage{textgreek}
 \usepackage{etoolbox}
-\AtBeginEnvironment{tabular}{\normalsize} % scriptsize or tiny (ist dann aber suuuuuper klein ;))
+\AtBeginEnvironment{tabular}{\normalsize\fontfamily{ptm}\selectfont} % Setzt Schriftart auf Times NewRoman
 
 \setlength\parindent{0pt}
 \setlength{\parskip}{6pt}
@@ -59,10 +65,12 @@
 \newcommand{\notes}[1]{{\color{red}{#1}}}
 %\newcommand{\notes}[1]{} To delet all comments
 
+	
 
 \begin{document}
 \renewcommand{\arraystretch}{1.5} % Macht Abstand der einzelnen Zeilen in einer Tabelle grösser
 \fontfamily{ptm}\selectfont			% Setzt Schriftart auf Times NewRoman
+
 \begin{titlepage}
 	
 	\begin{flushright}

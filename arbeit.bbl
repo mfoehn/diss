@@ -1,9 +1,29 @@
-\begin{thebibliography}{7}
+\begin{thebibliography}{15}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Boutonnet and Varga(2017)]{SOC_Crema3p2}
+A.~Boutonnet and G.~Varga.
+\newblock \emph{JUICE- Jupiter Icy moons Explorer Consolidated Report on
+  Mission Analysis (CReMA)}, esa document jui-esoc-moc-rp-001 edition, 04 2017.
+
+\bibitem[Collins and Johnson(2014)]{Collins_2014}
+G.~Collins and T.~C. Johnson.
+\newblock \emph{Chapter 37 - Ganymede and Callisto}.
+\newblock Elsevier, 2014.
+\newblock URL \url{https://doi.org/10.1016/B978-0-12-415845-0.00037-2}.
+
+\bibitem[Graf et~al.(2004)Graf, Altweg, Balsiger, Jäckel, Kopp, Langer,
+  Luithardt, Westermann, and Wurz]{CASYMIR_Graf2004}
+S.~Graf, K.~Altweg, H.~Balsiger, A.~Jäckel, E.~Kopp, U.~Langer, W.~Luithardt,
+  C.~Westermann, and P.~Wurz.
+\newblock A cometary neutral gas simulator for gas dynamic sensor and mass
+  spectrometer calibration : Space simulations in laboratory: Experiments,
+  instrumentation, and modeling.
+\newblock \emph{Journal of Geophysical Research}, 109, 2004.
 
 \bibitem[G.Wells()]{Agilent_TechNote_SNR}
 C.~R. G.Wells, H.~Prest.
@@ -12,11 +32,29 @@ C.~R. G.Wells, H.~Prest.
 \newblock Agilent Technologies.
 \newblock \doi{5990-7651EN}.
 
+\bibitem[Hedin et~al.(1964)Hedin, Avery, and Tschetter]{Hedin_1964}
+A.~E. Hedin, C.~P. Avery, and C.~D. Tschetter.
+\newblock An analysis of spin modulation effects on data obtained with a
+  rocket-borne mass spectrometer.
+\newblock \emph{Journal of Geophysical Research}, 69\penalty0 (21):\penalty0
+  4637--4648, nov 1964.
+\newblock \doi{10.1029/jz069i021p04637}.
+\newblock URL \url{https://doi.org/10.1029%2Fjz069i021p04637}.
+
 \bibitem[Hofer(2015)]{Diss_Hofer}
 L.~Hofer.
 \newblock \emph{Development of the gas chromatograph – mass spectrometer to
   investigate volatile species in the lunar soil for the Luna-Resurs mission}.
 \newblock Universität Bern, 2015.
+
+\bibitem[Lasi et~al.(2020)Lasi, Meyer, Piazza, Lüthi, Nentwig, Gruber,
+  Brüngger, Gerber, Braccini, Tulej, Föhn, and Wurz]{Lasi_IEEE2020}
+D.~Lasi, S.~Meyer, D.~Piazza, M.~Lüthi, A.~Nentwig, M.~Gruber, S.~Brüngger,
+  M.~Gerber, S.~Braccini, M.~Tulej, M.~Föhn, and P.~Wurz.
+\newblock Decisions and trade-offs in the design of a mass spectrometer for
+  jupiter's icy moons.
+\newblock In \emph{2020 IEEE Aerospace Conference}, pages 1--20, 2020.
+\newblock \doi{10.1109/AERO47225.2020.9172784}.
 
 \bibitem[Meyer(2013)]{Master_Meyer}
 S.~Meyer.
@@ -24,11 +62,26 @@ S.~Meyer.
   for a Miniaturized Laser-Ablation Mass Spectrometer}.
 \newblock Universität Bern, 2013.
 
+\bibitem[Meyer(2015)]{Diss_Neuland}
+S.~Meyer.
+\newblock \emph{In situ mass spectrometry for planetary exploration:
+  Quantitative chemical composition measurements on planetary surfaces}.
+\newblock Universität Bern, 2015.
+
 \bibitem[Meyer(2017)]{Diss_Meyer}
 S.~Meyer.
 \newblock \emph{Development of a Neutral Gas-and Ion-Mass Spectrometer for
   Jupiter’s Moons}.
 \newblock Universität Bern, 2017.
+
+\bibitem[Meyer et~al.(2017)Meyer, Tulej, and Wurz]{Meyer_2017_ante}
+S.~Meyer, M.~Tulej, and P.~Wurz.
+\newblock Mass spectrometry of planetary exospheres at high relative velocity:
+  direct comparison of open- and closed-source measurements.
+\newblock \emph{Geoscientific Instrumentation, Methods and Data Systems},
+  6\penalty0 (1):\penalty0 1--8, 2017.
+\newblock \doi{10.5194/gi-6-1-2017}.
+\newblock URL \url{https://gi.copernicus.org/articles/6/1/2017/}.
 
 \bibitem[Scherer(1999)]{Diss_Scherer}
 S.~Scherer.
@@ -48,5 +101,9 @@ D.~van Essen and W.~C. Heerens.
 M.~{W{\"u}est}, D.~S. {Evans}, and R.~{von Steiger}.
 \newblock \emph{{Calibration of Particle Instruments in Space Physics}}.
 \newblock 2007.
+
+\bibitem[Wurz(2017)]{LecNot_Wurz2017}
+P.~Wurz.
+\newblock Lecture notes mass spectrometry and ion optics, 2017.
 
 \end{thebibliography}

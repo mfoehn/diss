@@ -8,45 +8,45 @@ Database file #1: Quellen.bib
 Warning--empty year in Agilent_TechNote_SNR
 Warning--empty year in Agilent_TechNote_SNR
 Warning--empty publisher in DensEnhan_Wurz_07
-You've used 7 entries,
+You've used 15 entries,
             2773 wiz_defined-function locations,
-            632 strings with 5671 characters,
-and the built_in function-call counts, 2411 in all, are:
-= -- 189
-> -- 101
-< -- 6
-+ -- 37
-- -- 30
-* -- 159
-:= -- 389
-add.period$ -- 22
-call.type$ -- 7
-change.case$ -- 25
-chr.to.int$ -- 7
-cite$ -- 17
-duplicate$ -- 141
-empty$ -- 238
-format.name$ -- 39
-if$ -- 494
+            688 strings with 7641 characters,
+and the built_in function-call counts, 6477 in all, are:
+= -- 527
+> -- 418
+< -- 11
++ -- 144
+- -- 129
+* -- 512
+:= -- 1039
+add.period$ -- 50
+call.type$ -- 15
+change.case$ -- 80
+chr.to.int$ -- 15
+cite$ -- 33
+duplicate$ -- 304
+empty$ -- 519
+format.name$ -- 150
+if$ -- 1325
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 13
-newline$ -- 44
-num.names$ -- 28
-pop$ -- 87
+missing$ -- 21
+newline$ -- 88
+num.names$ -- 60
+pop$ -- 202
 preamble$ -- 1
-purify$ -- 24
+purify$ -- 73
 quote$ -- 0
-skip$ -- 88
+skip$ -- 226
 stack$ -- 0
-substring$ -- 51
-swap$ -- 7
-text.length$ -- 0
+substring$ -- 126
+swap$ -- 24
+text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 47
+type$ -- 125
 warning$ -- 3
-while$ -- 23
+while$ -- 53
 width$ -- 0
-write$ -- 92
+write$ -- 201
 (There were 3 warnings)
