@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.5.28)  2 JUL 2021 15:57
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.5.28)  22 JUL 2021 16:56
 entering extended mode
 **./arbeit.tex
 (arbeit.tex
@@ -2060,223 +2060,236 @@ l.165 	\newpage
 <to be read again> 
                    \relax 
 l.168 	\newpage
-                [2] (Theory.tex [3] [4]
-Underfull \hbox (badness 10000) in paragraph at lines 92--97
+                [2] (Theory.tex
+Underfull \hbox (badness 10000) in paragraph at lines 35--37
+
+ []
+
+[3] [4]
+Underfull \hbox (badness 10000) in paragraph at lines 106--111
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 127--128
+Underfull \hbox (badness 10000) in paragraph at lines 141--142
 
  []
 
-<Bilder/NIM_Sketch.png, id=171, 3103.595pt x 3808.2275pt>
+<Bilder/NIM_Sketch.png, id=169, 3103.595pt x 3808.2275pt>
 File: Bilder/NIM_Sketch.png Graphic file (type png)
 <use Bilder/NIM_Sketch.png>
-Package pdftex.def Info: Bilder/NIM_Sketch.png  used on input line 131.
+Package pdftex.def Info: Bilder/NIM_Sketch.png  used on input line 145.
 (pdftex.def)             Requested size: 284.52756pt x 349.11766pt.
-[5] [6 <./Bilder/NIM_Sketch.png>]
-<Bilder/particleDensEnh.png, id=197, 2747.7054pt x 1995.01335pt>
+[5] [6 <./Bilder/NIM_Sketch.png>] [7]
+<Bilder/particleDensEnh.png, id=209, 2747.7054pt x 1995.01335pt>
 File: Bilder/particleDensEnh.png Graphic file (type png)
 <use Bilder/particleDensEnh.png>
-Package pdftex.def Info: Bilder/particleDensEnh.png  used on input line 193.
+Package pdftex.def Info: Bilder/particleDensEnh.png  used on input line 207.
 (pdftex.def)             Requested size: 313.69029pt x 227.73221pt.
+ [8 <./Bilder/particleDensEnh.png>]
+[9] [10]
+Underfull \hbox (badness 10000) in paragraph at lines 290--292
+
+ []
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[7] [8 <./Bilder/particleDensEnh.png>] [9]
-Underfull \hbox (badness 10000) in paragraph at lines 258--261
+Underfull \hbox (badness 10000) in paragraph at lines 293--294
 
  []
 
 LaTeX Font Info:    Trying to load font information for TS1+phv on input line 2
-63.
+96.
 (C:\Users\foehn\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1phv.fd
 File: ts1phv.fd 2020/03/25 scalable font definitions for TS1/phv.
 )
-<Bilder/Ta_Ts.png, id=245, 853.68938pt x 555.57562pt>
+<Bilder/Ta_Ts.png, id=256, 853.68938pt x 555.57562pt>
 File: Bilder/Ta_Ts.png Graphic file (type png)
 <use Bilder/Ta_Ts.png>
-Package pdftex.def Info: Bilder/Ta_Ts.png  used on input line 267.
+Package pdftex.def Info: Bilder/Ta_Ts.png  used on input line 300.
 (pdftex.def)             Requested size: 313.69029pt x 204.15251pt.
-<Bilder/raHi_raIs.png, id=251, 853.68938pt x 555.57562pt>
+<Bilder/raHi_raIs.png, id=262, 853.68938pt x 555.57562pt>
 File: Bilder/raHi_raIs.png Graphic file (type png)
 <use Bilder/raHi_raIs.png>
-Package pdftex.def Info: Bilder/raHi_raIs.png  used on input line 275.
+Package pdftex.def Info: Bilder/raHi_raIs.png  used on input line 308.
 (pdftex.def)             Requested size: 313.69029pt x 204.15251pt.
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 2
-79.
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 3
+12.
 
 (C:\Users\foehn\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 )
-<Bilder/k.png, id=253, 853.68938pt x 555.57562pt>
+<Bilder/k.png, id=264, 853.68938pt x 555.57562pt>
 File: Bilder/k.png Graphic file (type png)
 <use Bilder/k.png>
-Package pdftex.def Info: Bilder/k.png  used on input line 282.
+Package pdftex.def Info: Bilder/k.png  used on input line 315.
 (pdftex.def)             Requested size: 313.69029pt x 204.15251pt.
-<Bilder/m.png, id=255, 853.68938pt x 555.57562pt>
+<Bilder/m.png, id=266, 853.68938pt x 555.57562pt>
 File: Bilder/m.png Graphic file (type png)
 <use Bilder/m.png>
-Package pdftex.def Info: Bilder/m.png  used on input line 289.
+Package pdftex.def Info: Bilder/m.png  used on input line 322.
 (pdftex.def)             Requested size: 313.69029pt x 204.15251pt.
-<Bilder/velocity.png, id=260, 853.68938pt x 555.57562pt>
+<Bilder/velocity.png, id=271, 853.68938pt x 555.57562pt>
 File: Bilder/velocity.png Graphic file (type png)
 <use Bilder/velocity.png>
-Package pdftex.def Info: Bilder/velocity.png  used on input line 297.
+Package pdftex.def Info: Bilder/velocity.png  used on input line 330.
 (pdftex.def)             Requested size: 313.69029pt x 204.15251pt.
-<Bilder/Chi_theta0.png, id=264, 853.68938pt x 555.57562pt>
+<Bilder/Chi_theta0.png, id=275, 853.68938pt x 555.57562pt>
 File: Bilder/Chi_theta0.png Graphic file (type png)
 <use Bilder/Chi_theta0.png>
-Package pdftex.def Info: Bilder/Chi_theta0.png  used on input line 304.
+Package pdftex.def Info: Bilder/Chi_theta0.png  used on input line 337.
 (pdftex.def)             Requested size: 358.50612pt x 233.31473pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[10]
+[11] [12 <./Bilder/Ta_Ts.png (PNG copy)> <./Bilder/raHi_raIs.png (PNG copy)>]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[11 <./Bilder/Ta_Ts.png (PNG copy)>]
+[13 <./Bilder/k.png (PNG copy)>]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[12 <./Bilder/raHi_raIs.png (PNG copy)> <./Bilder/k.png (PNG copy)>] [13 <./Bil
-der/m.png (PNG copy)> <./Bilder/velocity.png (PNG copy)>]
-<Bilder/Callisto_flyby_schematic.png, id=293, 587.91644pt x 244.63396pt>
+<Bilder/Callisto_flyby_schematic.png, id=298, 587.91644pt x 244.63396pt>
 File: Bilder/Callisto_flyby_schematic.png Graphic file (type png)
 <use Bilder/Callisto_flyby_schematic.png>
 Package pdftex.def Info: Bilder/Callisto_flyby_schematic.png  used on input lin
-e 314.
+e 347.
 (pdftex.def)             Requested size: 358.50612pt x 149.17422pt.
-<Bilder/NIM_pointing_2031JAN15185200.png, id=294, 569.12625pt x 321.6015pt>
+[14 <./Bilder/m.png (PNG copy)> <./Bilder/velocity.png (PNG copy)>]
+<Bilder/NIM_pointing_2031JAN15185200.png, id=303, 569.12625pt x 321.6015pt>
 File: Bilder/NIM_pointing_2031JAN15185200.png Graphic file (type png)
 <use Bilder/NIM_pointing_2031JAN15185200.png>
 Package pdftex.def Info: Bilder/NIM_pointing_2031JAN15185200.png  used on input
- line 321.
+ line 354.
 (pdftex.def)             Requested size: 313.69029pt x 177.26903pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Bilder/NIM_pointing_2031JAN15194200.png, id=297, 572.3784pt x 324.13095pt>
+<Bilder/NIM_pointing_2031JAN15194200.png, id=306, 572.3784pt x 324.13095pt>
 File: Bilder/NIM_pointing_2031JAN15194200.png Graphic file (type png)
 <use Bilder/NIM_pointing_2031JAN15194200.png>
 Package pdftex.def Info: Bilder/NIM_pointing_2031JAN15194200.png  used on input
- line 327.
+ line 360.
 (pdftex.def)             Requested size: 313.69029pt x 177.6395pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Bilder/NIM_pointing_2031JAN15194700.png, id=300, 569.12625pt x 319.79475pt>
+<Bilder/NIM_pointing_2031JAN15194700.png, id=309, 569.12625pt x 319.79475pt>
 File: Bilder/NIM_pointing_2031JAN15194700.png Graphic file (type png)
 <use Bilder/NIM_pointing_2031JAN15194700.png>
 Package pdftex.def Info: Bilder/NIM_pointing_2031JAN15194700.png  used on input
- line 333.
+ line 366.
 (pdftex.def)             Requested size: 313.69029pt x 176.27315pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Bilder/NIM_pointing_2031JAN15195200_tilt.png, id=303, 569.12625pt x 321.6015pt
+<Bilder/NIM_pointing_2031JAN15195200_tilt.png, id=312, 569.12625pt x 321.6015pt
 >
 File: Bilder/NIM_pointing_2031JAN15195200_tilt.png Graphic file (type png)
 <use Bilder/NIM_pointing_2031JAN15195200_tilt.png>
 Package pdftex.def Info: Bilder/NIM_pointing_2031JAN15195200_tilt.png  used on 
-input line 339.
+input line 372.
 (pdftex.def)             Requested size: 313.69029pt x 177.26903pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Bilder/NIM_pointing_2031JAN15195200.png, id=306, 569.84895pt x 322.68555pt>
+<Bilder/NIM_pointing_2031JAN15195200.png, id=315, 569.84895pt x 322.68555pt>
 File: Bilder/NIM_pointing_2031JAN15195200.png Graphic file (type png)
 <use Bilder/NIM_pointing_2031JAN15195200.png>
 Package pdftex.def Info: Bilder/NIM_pointing_2031JAN15195200.png  used on input
- line 345.
+ line 378.
 (pdftex.def)             Requested size: 313.69029pt x 177.63023pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Bilder/NIM_pointing_2031JAN15195700.png, id=309, 570.2103pt x 322.3242pt>
+<Bilder/NIM_pointing_2031JAN15195700.png, id=318, 570.2103pt x 322.3242pt>
 File: Bilder/NIM_pointing_2031JAN15195700.png Graphic file (type png)
 <use Bilder/NIM_pointing_2031JAN15195700.png>
 Package pdftex.def Info: Bilder/NIM_pointing_2031JAN15195700.png  used on input
- line 351.
+ line 384.
 (pdftex.def)             Requested size: 313.69029pt x 177.32312pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Bilder/Chi_theta0_flyby.png, id=321, 854.59274pt x 555.7563pt>
+<Bilder/Chi_theta0_flyby.png, id=330, 854.59274pt x 555.7563pt>
 File: Bilder/Chi_theta0_flyby.png Graphic file (type png)
 <use Bilder/Chi_theta0_flyby.png>
-Package pdftex.def Info: Bilder/Chi_theta0_flyby.png  used on input line 360.
+Package pdftex.def Info: Bilder/Chi_theta0_flyby.png  used on input line 393.
 (pdftex.def)             Requested size: 358.50612pt x 233.14468pt.
-[14 <./Bilder/Chi_theta0.png (PNG copy)> <./Bilder/Callisto_flyby_schematic.png
->] [15 <./Bilder/NIM_pointing_2031JAN15185200.png> <./Bilder/NIM_pointing_2031J
-AN15194200.png>] [16 <./Bilder/NIM_pointing_2031JAN15194700.png> <./Bilder/NIM_
+[15 <./Bilder/Chi_theta0.png (PNG copy)> <./Bilder/Callisto_flyby_schematic.png
+>] [16 <./Bilder/NIM_pointing_2031JAN15185200.png> <./Bilder/NIM_pointing_2031J
+AN15194200.png>] [17 <./Bilder/NIM_pointing_2031JAN15194700.png> <./Bilder/NIM_
 pointing_2031JAN15195200_tilt.png>]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[17 <./Bilder/NIM_pointing_2031JAN15195200.png> <./Bilder/NIM_pointing_2031JAN1
-5195700.png>]
-<Bilder/Shutter_sideview.png, id=359, 532.99126pt x 282.93706pt>
+<Bilder/Shutter_sideview.png, id=362, 532.99126pt x 282.93706pt>
 File: Bilder/Shutter_sideview.png Graphic file (type png)
 <use Bilder/Shutter_sideview.png>
-Package pdftex.def Info: Bilder/Shutter_sideview.png  used on input line 373.
+Package pdftex.def Info: Bilder/Shutter_sideview.png  used on input line 406.
 (pdftex.def)             Requested size: 224.06548pt x 118.94499pt.
-<Bilder/Shutter_topview.png, id=360, 354.123pt x 338.2236pt>
+<Bilder/Shutter_topview.png, id=363, 363.5181pt x 347.98006pt>
 File: Bilder/Shutter_topview.png Graphic file (type png)
 <use Bilder/Shutter_topview.png>
-Package pdftex.def Info: Bilder/Shutter_topview.png  used on input line 377.
-(pdftex.def)             Requested size: 179.25305pt x 171.2067pt.
+Package pdftex.def Info: Bilder/Shutter_topview.png  used on input line 410.
+(pdftex.def)             Requested size: 179.25305pt x 171.58958pt.
 
-Overfull \hbox (2.54399pt too wide) in paragraph at lines 371--379
+Overfull \hbox (2.54399pt too wide) in paragraph at lines 404--412
 []$[]$ $[]$ 
  []
 
+[18 <./Bilder/NIM_pointing_2031JAN15195200.png> <./Bilder/NIM_pointing_2031JAN1
+5195700.png>]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[18 <./Bilder/Chi_theta0_flyby.png>] [19 <./Bilder/Shutter_sideview.png> <./Bil
+[19 <./Bilder/Chi_theta0_flyby.png>] [20 <./Bilder/Shutter_sideview.png> <./Bil
 der/Shutter_topview.png>]
-<Bilder/Pulser_theretical_shape.jpg, id=385, 446.22038pt x 234.20062pt>
+<Bilder/ShutGapSizeSigDamp.png, id=391, 639.89063pt x 426.84468pt>
+File: Bilder/ShutGapSizeSigDamp.png Graphic file (type png)
+<use Bilder/ShutGapSizeSigDamp.png>
+Package pdftex.def Info: Bilder/ShutGapSizeSigDamp.png  used on input line 453.
+
+(pdftex.def)             Requested size: 358.50612pt x 239.14862pt.
+<Bilder/Pulser_theretical_shape.jpg, id=394, 446.22038pt x 234.20062pt>
 File: Bilder/Pulser_theretical_shape.jpg Graphic file (type jpg)
 <use Bilder/Pulser_theretical_shape.jpg>
 Package pdftex.def Info: Bilder/Pulser_theretical_shape.jpg  used on input line
- 413.
+ 473.
 (pdftex.def)             Requested size: 448.13095pt x 235.20064pt.
- [20 <./Bilder/Pulser_theretical_shape.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 455--456
+ [21 <./Bilder/ShutGapSizeSigDamp.png (PNG copy)>]
+[22 <./Bilder/Pulser_theretical_shape.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 516--517
 
  []
 
-<Bilder/MCP_hex.jpg, id=398, 198.99344pt x 125.21782pt>
+<Bilder/MCP_hex.jpg, id=416, 198.99344pt x 125.21782pt>
 File: Bilder/MCP_hex.jpg Graphic file (type jpg)
 <use Bilder/MCP_hex.jpg>
-Package pdftex.def Info: Bilder/MCP_hex.jpg  used on input line 459.
+Package pdftex.def Info: Bilder/MCP_hex.jpg  used on input line 520.
 (pdftex.def)             Requested size: 179.24963pt x 112.79816pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[21] [22 <./Bilder/MCP_hex.jpg>] [23]) [24] (Setup.tex
+[23] [24 <./Bilder/MCP_hex.jpg>] [25]) [26] (Setup.tex
 
-LaTeX Warning: Reference `subsubsec:setupProto' on page 25 undefined on input l
+LaTeX Warning: Reference `subsubsec:setupProto' on page 27 undefined on input l
 ine 5.
 
 
-LaTeX Warning: Reference `subsubsec:setupPFM' on page 25 undefined on input lin
+LaTeX Warning: Reference `subsubsec:setupPFM' on page 27 undefined on input lin
 e 5.
 
 
 
 pdfTeX warning: pdflatex.exe (file ./Setup/NIM_schema.pdf): PDF inclusion: foun
 d PDF version <1.6>, but at most version <1.5> allowed
-<Setup/NIM_schema.pdf, id=457, 484.33707pt x 726.88292pt>
+<Setup/NIM_schema.pdf, id=474, 484.33707pt x 726.88292pt>
 File: Setup/NIM_schema.pdf Graphic file (type pdf)
 <use Setup/NIM_schema.pdf>
 Package pdftex.def Info: Setup/NIM_schema.pdf  used on input line 59.
@@ -2287,7 +2300,7 @@ LaTeX Warning: Float too large for page by 27.93799pt on input line 62.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Setup/Proto_IS_sim.png, id=458, 474.45255pt x 168.02776pt>
+<Setup/Proto_IS_sim.png, id=475, 474.45255pt x 168.02776pt>
 File: Setup/Proto_IS_sim.png Graphic file (type png)
 <use Setup/Proto_IS_sim.png>
 Package pdftex.def Info: Setup/Proto_IS_sim.png  used on input line 67.
@@ -2295,7 +2308,7 @@ Package pdftex.def Info: Setup/Proto_IS_sim.png  used on input line 67.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Setup/ISFlight_bearb.png, id=461, 369.2997pt x 140.2038pt>
+<Setup/ISFlight_bearb.png, id=478, 369.2997pt x 140.2038pt>
 File: Setup/ISFlight_bearb.png Graphic file (type png)
 <use Setup/ISFlight_bearb.png>
 Package pdftex.def Info: Setup/ISFlight_bearb.png  used on input line 74.
@@ -2303,12 +2316,12 @@ Package pdftex.def Info: Setup/ISFlight_bearb.png  used on input line 74.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Setup/Proto_FilEl_sim.jpg, id=462, 154.3366pt x 108.7262pt>
+<Setup/Proto_FilEl_sim.jpg, id=479, 154.3366pt x 108.7262pt>
 File: Setup/Proto_FilEl_sim.jpg Graphic file (type jpg)
 <use Setup/Proto_FilEl_sim.jpg>
 Package pdftex.def Info: Setup/Proto_FilEl_sim.jpg  used on input line 81.
 (pdftex.def)             Requested size: 190.45702pt x 134.1787pt.
-<Setup/PFM_FilEl_sim.jpg, id=463, 151.6064pt x 109.3686pt>
+<Setup/PFM_FilEl_sim.jpg, id=480, 151.6064pt x 109.3686pt>
 File: Setup/PFM_FilEl_sim.jpg Graphic file (type jpg)
 <use Setup/PFM_FilEl_sim.jpg>
 Package pdftex.def Info: Setup/PFM_FilEl_sim.jpg  used on input line 85.
@@ -2321,7 +2334,7 @@ Overfull \hbox (2.54399pt too wide) in paragraph at lines 79--87
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Setup/Prototype_Reflectron_sim.png, id=464, 451.6875pt x 157.18726pt>
+<Setup/Prototype_Reflectron_sim.png, id=481, 451.6875pt x 157.18726pt>
 File: Setup/Prototype_Reflectron_sim.png Graphic file (type png)
 <use Setup/Prototype_Reflectron_sim.png>
 Package pdftex.def Info: Setup/Prototype_Reflectron_sim.png  used on input line
@@ -2330,7 +2343,7 @@ Package pdftex.def Info: Setup/Prototype_Reflectron_sim.png  used on input line
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Setup/Prototype_totPic.jpg, id=467, 446.34679pt x 343.39613pt>
+<Setup/Prototype_totPic.jpg, id=484, 446.34679pt x 343.39613pt>
 File: Setup/Prototype_totPic.jpg Graphic file (type jpg)
 <use Setup/Prototype_totPic.jpg>
 Package pdftex.def Info: Setup/Prototype_totPic.jpg  used on input line 100.
@@ -2338,7 +2351,7 @@ Package pdftex.def Info: Setup/Prototype_totPic.jpg  used on input line 100.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Setup/PFM_in_calib_Setup.JPG, id=470, 5203.44pt x 3468.96pt>
+<Setup/PFM_in_calib_Setup.JPG, id=487, 5203.44pt x 3468.96pt>
 File: Setup/PFM_in_calib_Setup.JPG Graphic file (type jpg)
 <use Setup/PFM_in_calib_Setup.JPG>
 Package pdftex.def Info: Setup/PFM_in_calib_Setup.JPG  used on input line 107.
@@ -2351,77 +2364,72 @@ Underfull \hbox (badness 10000) in paragraph at lines 132--134
 
  []
 
-[25]
-<Bilder/Galerie_Setup/Pumpstand2_midres.png, id=479, 3011.25pt x 4013.99625pt>
+[27]
+Underfull \hbox (badness 10000) in paragraph at lines 168--170
+
+ []
+
+[28]
+<Bilder/Galerie_Setup/Pumpstand2_midres.png, id=514, 3011.25pt x 4013.99625pt>
 File: Bilder/Galerie_Setup/Pumpstand2_midres.png Graphic file (type png)
 <use Bilder/Galerie_Setup/Pumpstand2_midres.png>
 Package pdftex.def Info: Bilder/Galerie_Setup/Pumpstand2_midres.png  used on in
-put line 159.
+put line 205.
 (pdftex.def)             Requested size: 179.25305pt x 238.93068pt.
-<Bilder/Galerie_Setup/Pumpstand_PSOszi.png, id=480, 4129.71428pt x 3097.28572pt
+<Bilder/Galerie_Setup/Pumpstand_PSOszi.png, id=515, 4129.71428pt x 3097.28572pt
 >
 File: Bilder/Galerie_Setup/Pumpstand_PSOszi.png Graphic file (type png)
 <use Bilder/Galerie_Setup/Pumpstand_PSOszi.png>
 Package pdftex.def Info: Bilder/Galerie_Setup/Pumpstand_PSOszi.png  used on inp
-ut line 163.
+ut line 209.
 (pdftex.def)             Requested size: 224.06548pt x 168.01183pt.
 
-Overfull \hbox (2.54399pt too wide) in paragraph at lines 157--165
+Overfull \hbox (2.54399pt too wide) in paragraph at lines 203--211
 []$[]$ $[]$ 
  []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Bilder/Detector_elec_schema.png, id=481, 548.7264pt x 288.0288pt>
+<Bilder/Detector_elec_schema.png, id=516, 548.7264pt x 288.0288pt>
 File: Bilder/Detector_elec_schema.png Graphic file (type png)
 <use Bilder/Detector_elec_schema.png>
-Package pdftex.def Info: Bilder/Detector_elec_schema.png  used on input line 17
-1.
+Package pdftex.def Info: Bilder/Detector_elec_schema.png  used on input line 21
+7.
 (pdftex.def)             Requested size: 358.50612pt x 188.18338pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 176--177
-
- []
-
-
-Underfull \hbox (badness 1502) in paragraph at lines 185--185
+Underfull \hbox (badness 1502) in paragraph at lines 227--227
 []|\OT1/ptm/m/n/12 Resistor re-pla-cing the former
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 189--190
+Underfull \hbox (badness 10000) in paragraph at lines 231--232
 []|\OT1/ptm/m/n/12 Voltage dif-fer-ence between
  []
 
 
-Underfull \hbox (badness 4779) in paragraph at lines 192--192
+Underfull \hbox (badness 4779) in paragraph at lines 234--234
 []|\OT1/ptm/m/n/12 Current flow-ing through the
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 201--202
-
- []
-
-[26]) [27] [28 <./Setup/NIM_schema.pdf>] [29 <./Setup/Proto_IS_sim.png> <./Setu
-p/ISFlight_bearb.png> <./Setup/Proto_FilEl_sim.jpg> <./Setup/PFM_FilEl_sim.jpg>
-] [30 <./Setup/Prototype_Reflectron_sim.png> <./Setup/Prototype_totPic.jpg>]
-[31 <./Setup/PFM_in_calib_Setup.JPG> <./Bilder/Galerie_Setup/Pumpstand2_midres.
-png> <./Bilder/Galerie_Setup/Pumpstand_PSOszi.png>] [32 <./Bilder/Detector_elec
-_schema.png>] [33
+) [29] [30 <./Setup/NIM_schema.pdf>] [31 <./Setup/Proto_IS_sim.png> <./Setup/IS
+Flight_bearb.png> <./Setup/Proto_FilEl_sim.jpg> <./Setup/PFM_FilEl_sim.jpg>]
+[32 <./Setup/Prototype_Reflectron_sim.png> <./Setup/Prototype_totPic.jpg>]
+[33 <./Setup/PFM_in_calib_Setup.JPG> <./Bilder/Galerie_Setup/Pumpstand2_midres.
+png> <./Bilder/Galerie_Setup/Pumpstand_PSOszi.png>] [34 <./Bilder/Detector_elec
+_schema.png>] [35
 
 ] (Experiments.tex
-<Experiments/reflectron_Prototype1.jpg, id=559, 301.6068pt x 165.7392pt>
+<Experiments/reflectron_Prototype1.jpg, id=579, 301.6068pt x 165.7392pt>
 File: Experiments/reflectron_Prototype1.jpg Graphic file (type jpg)
 <use Experiments/reflectron_Prototype1.jpg>
 Package pdftex.def Info: Experiments/reflectron_Prototype1.jpg  used on input l
 ine 22.
 (pdftex.def)             Requested size: 212.86151pt x 116.97511pt.
-<Experiments/reflectron_flight.JPG, id=560, 367.8543pt x 281.3712pt>
+<Experiments/reflectron_flight.JPG, id=580, 367.8543pt x 281.3712pt>
 File: Experiments/reflectron_flight.JPG Graphic file (type jpg)
 <use Experiments/reflectron_flight.JPG>
 Package pdftex.def Info: Experiments/reflectron_flight.JPG  used on input line 
@@ -2432,14 +2440,14 @@ Overfull \hbox (2.54399pt too wide) in paragraph at lines 20--28
 []$[]$ $[]$ 
  []
 
-[34 <./Experiments/reflectron_Prototype1.jpg> <./Experiments/reflectron_flight.
+[36 <./Experiments/reflectron_Prototype1.jpg> <./Experiments/reflectron_flight.
 JPG>]
-<Experiments/ProtoAnte.png, id=575, 1070.3187pt x 802.9197pt>
+<Experiments/ProtoAnte.png, id=594, 1070.3187pt x 802.9197pt>
 File: Experiments/ProtoAnte.png Graphic file (type png)
 <use Experiments/ProtoAnte.png>
 Package pdftex.def Info: Experiments/ProtoAnte.png  used on input line 60.
 (pdftex.def)             Requested size: 224.06548pt x 168.07904pt.
-<Experiments/FlightAnte.png, id=576, 465.78015pt x 427.1157pt>
+<Experiments/FlightAnte.png, id=595, 465.78015pt x 427.1157pt>
 File: Experiments/FlightAnte.png Graphic file (type png)
 <use Experiments/FlightAnte.png>
 Package pdftex.def Info: Experiments/FlightAnte.png  used on input line 64.
@@ -2452,24 +2460,24 @@ Overfull \hbox (2.54399pt too wide) in paragraph at lines 58--66
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Experiments/oldAnte_ThMode.png, id=578, 494.84875pt x 275.0275pt>
+<Experiments/oldAnte_ThMode.png, id=597, 494.84875pt x 275.0275pt>
 File: Experiments/oldAnte_ThMode.png Graphic file (type png)
 <use Experiments/oldAnte_ThMode.png>
 Package pdftex.def Info: Experiments/oldAnte_ThMode.png  used on input line 74.
 
 (pdftex.def)             Requested size: 224.06548pt x 124.5292pt.
-<Experiments/oldAnte_NMode.png, id=579, 498.36188pt x 275.0275pt>
+<Experiments/oldAnte_NMode.png, id=598, 498.36188pt x 275.0275pt>
 File: Experiments/oldAnte_NMode.png Graphic file (type png)
 <use Experiments/oldAnte_NMode.png>
 Package pdftex.def Info: Experiments/oldAnte_NMode.png  used on input line 79.
 (pdftex.def)             Requested size: 224.06548pt x 123.65211pt.
-<Experiments/newAnte_ThMode.png, id=580, 488.32437pt x 275.0275pt>
+<Experiments/newAnte_ThMode.png, id=599, 488.32437pt x 275.0275pt>
 File: Experiments/newAnte_ThMode.png Graphic file (type png)
 <use Experiments/newAnte_ThMode.png>
 Package pdftex.def Info: Experiments/newAnte_ThMode.png  used on input line 84.
 
 (pdftex.def)             Requested size: 224.06548pt x 126.19524pt.
-<Experiments/newAnte_NMode.png, id=581, 506.39188pt x 282.55562pt>
+<Experiments/newAnte_NMode.png, id=600, 506.39188pt x 282.55562pt>
 File: Experiments/newAnte_NMode.png Graphic file (type png)
 <use Experiments/newAnte_NMode.png>
 Package pdftex.def Info: Experiments/newAnte_NMode.png  used on input line 89.
@@ -2487,26 +2495,26 @@ Overfull \hbox (2.54399pt too wide) in paragraph at lines 72--92
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[35]
+[37]
 
-LaTeX Warning: Text page 36 contains only floats.
+LaTeX Warning: Text page 38 contains only floats.
 
-[36 <./Experiments/ProtoAnte.png> <./Experiments/FlightAnte.png> <./Experiments
+[38 <./Experiments/ProtoAnte.png> <./Experiments/FlightAnte.png> <./Experiments
 /oldAnte_ThMode.png> <./Experiments/oldAnte_NMode.png> <./Experiments/newAnte_T
 hMode.png> <./Experiments/newAnte_NMode.png>]
-<Experiments/2D_scan_anteEntr.jpg, id=612, 574.7874pt x 288.1164pt>
+<Experiments/2D_scan_anteEntr.jpg, id=631, 574.7874pt x 288.1164pt>
 File: Experiments/2D_scan_anteEntr.jpg Graphic file (type jpg)
 <use Experiments/2D_scan_anteEntr.jpg>
 Package pdftex.def Info: Experiments/2D_scan_anteEntr.jpg  used on input line 1
 17.
 (pdftex.def)             Requested size: 448.13095pt x 224.62875pt.
- [37]
-<Experiments/2D_scan_Ant.png, id=620, 400.3758pt x 325.6968pt>
+ [39]
+<Experiments/2D_scan_Ant.png, id=639, 400.3758pt x 325.6968pt>
 File: Experiments/2D_scan_Ant.png Graphic file (type png)
 <use Experiments/2D_scan_Ant.png>
 Package pdftex.def Info: Experiments/2D_scan_Ant.png  used on input line 123.
 (pdftex.def)             Requested size: 313.69029pt x 255.19545pt.
-<Experiments/2D_scan_Entr.jpg, id=621, 520.44438pt x 235.88126pt>
+<Experiments/2D_scan_Entr.jpg, id=640, 520.44438pt x 235.88126pt>
 File: Experiments/2D_scan_Entr.jpg Graphic file (type jpg)
 <use Experiments/2D_scan_Entr.jpg>
 Package pdftex.def Info: Experiments/2D_scan_Entr.jpg  used on input line 129.
@@ -2515,25 +2523,24 @@ Package pdftex.def Info: Experiments/2D_scan_Entr.jpg  used on input line 129.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Experiments/Entrence_Proto_topview.png, id=627, 921.4425pt x 822.4326pt>
+<Experiments/Entrence_Proto_topview.png, id=646, 921.4425pt x 822.4326pt>
 File: Experiments/Entrence_Proto_topview.png Graphic file (type png)
 <use Experiments/Entrence_Proto_topview.png>
 Package pdftex.def Info: Experiments/Entrence_Proto_topview.png  used on input 
 line 137.
 (pdftex.def)             Requested size: 448.13095pt x 399.97113pt.
-[38 <./Experiments/2D_scan_anteEntr.jpg> <./Experiments/2D_scan_Ant.png>]
-[39 <./Experiments/2D_scan_Entr.jpg>] [40 <./Experiments/Entrence_Proto_topview
+[40 <./Experiments/2D_scan_anteEntr.jpg> <./Experiments/2D_scan_Ant.png>]
+[41 <./Experiments/2D_scan_Entr.jpg>] [42 <./Experiments/Entrence_Proto_topview
 .png>]
 
 LaTeX Warning: Characters dropped after `\end{comment}' on input line 201.
 
-[41]
-<Experiments/SimRepPosU.png, id=654, 774.7344pt x 592.8549pt>
+<Experiments/SimRepPosU.png, id=669, 774.7344pt x 592.8549pt>
 File: Experiments/SimRepPosU.png Graphic file (type png)
 <use Experiments/SimRepPosU.png>
 Package pdftex.def Info: Experiments/SimRepPosU.png  used on input line 231.
 (pdftex.def)             Requested size: 225.63268pt x 172.6653pt.
-<Experiments/SimRepPosImax.png, id=655, 639.8304pt x 520.5849pt>
+<Experiments/SimRepPosImax.png, id=670, 639.8304pt x 520.5849pt>
 File: Experiments/SimRepPosImax.png Graphic file (type png)
 <use Experiments/SimRepPosImax.png>
 Package pdftex.def Info: Experiments/SimRepPosImax.png  used on input line 235.
@@ -2544,7 +2551,10 @@ Overfull \hbox (2.54398pt too wide) in paragraph at lines 229--237
 []$[]$ $[]$ 
  []
 
-<Experiments/PFM_UstackUmccp_TimeEvol.png, id=656, 774.7344pt x 592.8549pt>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<Experiments/PFM_UstackUmccp_TimeEvol.png, id=671, 774.7344pt x 592.8549pt>
 File: Experiments/PFM_UstackUmccp_TimeEvol.png Graphic file (type png)
 <use Experiments/PFM_UstackUmccp_TimeEvol.png>
 Package pdftex.def Info: Experiments/PFM_UstackUmccp_TimeEvol.png  used on inpu
@@ -2558,14 +2568,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 298--301
 
  []
 
-[42 <./Experiments/SimRepPosU.png> <./Experiments/SimRepPosImax.png>]
-<Bilder/Gain_Curves_SN4p5_4p7.png, id=665, 622.9674pt x 519.6213pt>
+[43] [44 <./Experiments/SimRepPosU.png> <./Experiments/SimRepPosImax.png>]
+<Bilder/Gain_Curves_SN4p5_4p7.png, id=684, 622.9674pt x 519.6213pt>
 File: Bilder/Gain_Curves_SN4p5_4p7.png Graphic file (type png)
 <use Bilder/Gain_Curves_SN4p5_4p7.png>
 Package pdftex.def Info: Bilder/Gain_Curves_SN4p5_4p7.png  used on input line 3
 22.
 (pdftex.def)             Requested size: 201.65755pt x 168.20097pt.
-<Bilder/SN4p7_discharge.png, id=666, 642.7212pt x 519.6213pt>
+<Bilder/SN4p7_discharge.png, id=685, 642.7212pt x 519.6213pt>
 File: Bilder/SN4p7_discharge.png Graphic file (type png)
 <use Bilder/SN4p7_discharge.png>
 Package pdftex.def Info: Bilder/SN4p7_discharge.png  used on input line 326.
@@ -2575,25 +2585,24 @@ Overfull \hbox (2.54399pt too wide) in paragraph at lines 320--328
 []$[]$ $[]$ 
  []
 
-[43 <./Experiments/PFM_UstackUmccp_TimeEvol.png>] [44 <./Bilder/Gain_Curves_SN4
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[45 <./Experiments/PFM_UstackUmccp_TimeEvol.png>] [46 <./Bilder/Gain_Curves_SN4
 p5_4p7.png> <./Bilder/SN4p7_discharge.png>]
-<Experiments/FiL_IS_elBeam_Storage.png, id=684, 582.67688pt x 304.13625pt>
+<Experiments/FiL_IS_elBeam_Storage.png, id=706, 582.67688pt x 304.13625pt>
 File: Experiments/FiL_IS_elBeam_Storage.png Graphic file (type png)
 <use Experiments/FiL_IS_elBeam_Storage.png>
 Package pdftex.def Info: Experiments/FiL_IS_elBeam_Storage.png  used on input l
 ine 371.
 (pdftex.def)             Requested size: 358.50612pt x 187.13316pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<Experiments/FSLabIonStorageH2.png, id=685, 774.7344pt x 592.8549pt>
+<Experiments/FSLabIonStorageH2.png, id=707, 774.7344pt x 592.8549pt>
 File: Experiments/FSLabIonStorageH2.png Graphic file (type png)
 <use Experiments/FSLabIonStorageH2.png>
 Package pdftex.def Info: Experiments/FSLabIonStorageH2.png  used on input line 
 380.
 (pdftex.def)             Requested size: 224.06548pt x 171.46216pt.
-<Experiments/FSLabIonStorageKr84.png, id=686, 774.7344pt x 592.8549pt>
+<Experiments/FSLabIonStorageKr84.png, id=708, 774.7344pt x 592.8549pt>
 File: Experiments/FSLabIonStorageKr84.png Graphic file (type png)
 <use Experiments/FSLabIonStorageKr84.png>
 Package pdftex.def Info: Experiments/FSLabIonStorageKr84.png  used on input lin
@@ -2607,13 +2616,13 @@ Overfull \hbox (2.54399pt too wide) in paragraph at lines 378--386
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[45]
-<Experiments/FSLabthMode.png, id=698, 1066.7353pt x 639.89063pt>
+[47 <./Experiments/FiL_IS_elBeam_Storage.png>]
+<Experiments/FSLabthMode.png, id=720, 1066.7353pt x 639.89063pt>
 File: Experiments/FSLabthMode.png Graphic file (type png)
 <use Experiments/FSLabthMode.png>
 Package pdftex.def Info: Experiments/FSLabthMode.png  used on input line 402.
 (pdftex.def)             Requested size: 224.06548pt x 134.40051pt.
-<Experiments/FSLabnMode.png, id=699, 1066.7353pt x 639.89063pt>
+<Experiments/FSLabnMode.png, id=721, 1066.7353pt x 639.89063pt>
 File: Experiments/FSLabnMode.png Graphic file (type png)
 <use Experiments/FSLabnMode.png>
 Package pdftex.def Info: Experiments/FSLabnMode.png  used on input line 406.
@@ -2623,16 +2632,13 @@ Overfull \hbox (2.54399pt too wide) in paragraph at lines 400--408
 []$[]$ $[]$ 
  []
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<Experiments/FSthMode200uA.png, id=700, 632.3625pt x 474.27188pt>
+<Experiments/FSthMode200uA.png, id=722, 632.3625pt x 474.27188pt>
 File: Experiments/FSthMode200uA.png Graphic file (type png)
 <use Experiments/FSthMode200uA.png>
 Package pdftex.def Info: Experiments/FSthMode200uA.png  used on input line 418.
 
 (pdftex.def)             Requested size: 224.06548pt x 168.04565pt.
-<Experiments/FSnMode200uA.png, id=701, 632.3625pt x 474.27188pt>
+<Experiments/FSnMode200uA.png, id=723, 632.3625pt x 474.27188pt>
 File: Experiments/FSnMode200uA.png Graphic file (type png)
 <use Experiments/FSnMode200uA.png>
 Package pdftex.def Info: Experiments/FSnMode200uA.png  used on input line 422.
@@ -2645,13 +2651,13 @@ Overfull \hbox (2.54399pt too wide) in paragraph at lines 416--424
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Experiments/FS_thMode300uA.png, id=702, 632.3625pt x 474.27188pt>
+<Experiments/FS_thMode300uA.png, id=724, 632.3625pt x 474.27188pt>
 File: Experiments/FS_thMode300uA.png Graphic file (type png)
 <use Experiments/FS_thMode300uA.png>
 Package pdftex.def Info: Experiments/FS_thMode300uA.png  used on input line 430
 .
 (pdftex.def)             Requested size: 268.8813pt x 201.66057pt.
-<Experiments/FSLabSNRRestGasPressCal.png, id=703, 632.3625pt x 474.27188pt>
+<Experiments/FSLabSNRRestGasPressCal.png, id=725, 632.3625pt x 474.27188pt>
 File: Experiments/FSLabSNRRestGasPressCal.png Graphic file (type png)
 <use Experiments/FSLabSNRRestGasPressCal.png>
 Package pdftex.def Info: Experiments/FSLabSNRRestGasPressCal.png  used on input
@@ -2660,14 +2666,14 @@ Package pdftex.def Info: Experiments/FSLabSNRRestGasPressCal.png  used on input
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) [46 <./Experiments/FiL_IS_elBeam_Storage.png>] [47 <./Experiments/FSLabIonSto
-rageH2.png> <./Experiments/FSLabIonStorageKr84.png> <./Experiments/FSLabthMode.
-png (PNG copy)> <./Experiments/FSLabnMode.png (PNG copy)> <./Experiments/FSthMo
-de200uA.png (PNG copy)> <./Experiments/FSnMode200uA.png (PNG copy)>] [48 <./Exp
-eriments/FS_thMode300uA.png (PNG copy)> <./Experiments/FSLabSNRRestGasPressCal.
-png (PNG copy)>] (Conclusion.tex) [49
+) [48 <./Experiments/FSLabIonStorageH2.png> <./Experiments/FSLabIonStorageKr84.
+png> <./Experiments/FSLabthMode.png (PNG copy)> <./Experiments/FSLabnMode.png (
+PNG copy)>] [49 <./Experiments/FSthMode200uA.png (PNG copy)> <./Experiments/FSn
+Mode200uA.png (PNG copy)> <./Experiments/FS_thMode300uA.png (PNG copy)>]
+[50 <./Experiments/FSLabSNRRestGasPressCal.png (PNG copy)>] (Conclusion.tex)
+[51
 
-] [50] (Outlook.tex) [51] (arbeit.bbl
+] [52] (Outlook.tex) [53] (arbeit.bbl
 LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 1
 7.
 
@@ -2685,14 +2691,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 101--104
 []\OT1/ptm/m/n/12 M. W[]uest, D. S. Evans, and R. von Steiger.
  []
 
-[52
+[54
 
-]) [53] (Appendix.tex) [54
+]) [55] (Appendix.tex) [56
 
-] [55
+] [57
 
-] [56]
-<MSc_Masterarbeit_erklaerung.pdf, id=762, 597.45204pt x 845.1575pt>
+] [58]
+<MSc_Masterarbeit_erklaerung.pdf, id=782, 597.45204pt x 845.1575pt>
 File: MSc_Masterarbeit_erklaerung.pdf Graphic file (type pdf)
 <use MSc_Masterarbeit_erklaerung.pdf>
 Package pdftex.def Info: MSc_Masterarbeit_erklaerung.pdf  used on input line 21
@@ -2703,7 +2709,7 @@ File: MSc_Masterarbeit_erklaerung.pdf Graphic file (type pdf)
 Package pdftex.def Info: MSc_Masterarbeit_erklaerung.pdf  used on input line 21
 3.
 (pdftex.def)             Requested size: 597.45058pt x 845.15544pt.
-<MSc_Masterarbeit_erklaerung.pdf, id=765, page=1, 597.45204pt x 845.1575pt>
+<MSc_Masterarbeit_erklaerung.pdf, id=785, page=1, 597.45204pt x 845.1575pt>
 File: MSc_Masterarbeit_erklaerung.pdf Graphic file (type pdf)
 <use MSc_Masterarbeit_erklaerung.pdf, page 1>
 Package pdftex.def Info: MSc_Masterarbeit_erklaerung.pdf , page1 used on input 
@@ -2729,7 +2735,7 @@ File: MSc_Masterarbeit_erklaerung.pdf Graphic file (type pdf)
 Package pdftex.def Info: MSc_Masterarbeit_erklaerung.pdf , page1 used on input 
 line 213.
 (pdftex.def)             Requested size: 597.47792pt x 845.19412pt.
- [57 <./MSc_Masterarbeit_erklaerung.pdf>]
+ [59 <./MSc_Masterarbeit_erklaerung.pdf>]
 
 LaTeX3 Info: Redefining command \BeforeClosingMainAux with sig. 'm' on line
 (LaTeX3)     215.
@@ -2750,10 +2756,10 @@ Package rerunfilecheck Info: File `arbeit.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 37172 strings out of 479209
- 731362 string characters out of 2855765
- 1143642 words of memory out of 3000000
- 53739 multiletter control sequences out of 15000+600000
+ 37189 strings out of 479209
+ 731809 string characters out of 2855765
+ 1143604 words of memory out of 3000000
+ 53751 multiletter control sequences out of 15000+600000
  491568 words of font info for 126 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  108i,17n,110p,10652b,941s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2779,9 +2785,9 @@ sers/foehn/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb><C
 ><C:/Users/foehn/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb
 ><C:/Users/foehn/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb
 >
-Output written on arbeit.pdf (66 pages, 33181914 bytes).
+Output written on arbeit.pdf (68 pages, 33220340 bytes).
 PDF statistics:
- 1047 PDF objects out of 1200 (max. 8388607)
- 243 named destinations out of 1000 (max. 500000)
- 651 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1068 PDF objects out of 1200 (max. 8388607)
+ 247 named destinations out of 1000 (max. 500000)
+ 656 words of extra memory for PDF output out of 10000 (max. 10000000)
 

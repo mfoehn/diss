@@ -135,36 +135,40 @@
 	\begin{figure}[h!]
 		\centering
 		\includegraphics[width=\textwidth]{Experiments/Entrence_Proto_topview.png}
-		\caption{Zoom on the entrance when shooting with the neutral particle beam at the structure of the NIM Prototype. The red circles mark the positions of the pillars holding the ion osurce together.}
+		\caption{Zoom on the entrance when shooting with the neutral particle beam at the structure of the NIM Prototype. The red circles mark the positions of the pillars holding the ion source together.}
 		\label{exp:ProtoIntCharEnt}
 	\end{figure}
 	
+%--------------------------------------------------------------------------------------------	
+	\subsection{Shutter Performance Test}
+	When measuring with the neutral gas channel, the aim is that the particles are measured directly without any interaction with the structure of the instrument. Therefore, a shutter between the antechamber and the ionization region was required to close the particle entrance from the antechamber. In this section the performance of the shutter was tested. According to the model stated in Chap.\ref{subsubsec:motorflow} the shutter should damp the signal by a factor 600.\\
+	These tests were performed with the NIM PFM \notes{Ref. as soon as the two models are properly described in the Setup section.}. The PFM was operated with laboratory electronics. The tests were performed at the CASYMIR test facility. The used particle beam consisted of hydrogen and xenon with a velocity of 2\,\si{\kilo\meter\per\second}. Three different measurements were performed: One with the beam directing onto the antechamber with the shutter open, one with the shutter closed and a background measurement, where the particle beam was pointed onto the outer structure of NIM to estimate how much of the signal arises from the test gas scattering into the ionization region when the beam is directed in an arbitrary direction. This background was subtracted from both signals before they were divided through each other to determine the damping factor $G_{close}$ of the shutter.\\
+	The damping factor of the shutter according to the measurements is 12 instead of the required 1000. The biggest impact has the actual thickness of the gap between the shutter and the antechamber when the shutter is closed. The damping reduces significantly when the gap is bigger than actually designed. This is shown in Fig.\,\ref{fig:ShutGapSizeSigDamp} in Chap.\,\ref{subsubsec:motorflow}. With a gap size of about 0.1\,mm instead of 0.01\,mm the damping factor is only about a factor 25. Other reasons are that the portion of the beam which scatters on the antechamber outer walls gets thermalized in the vacuum chamber and adds to the signal intensity. In the outer space, the gas scatters on the antechamber but does not reach the ionization region because it will flow around the instrument.
 	
-	\subsection{Shutter performance test} % Not a much material. Similar to reflectron. its a verification and showing of the limitations of the possible test.
-	When measuring with the neutral gas channel, the aim is that the particles are measured directly without any interaction with the instruments structure. Therefore, a shutter between the antechamber and the ionization region was required to close that particle entrance from the antechamber. In this section the performance of the shutter was tested. According to the model stated in Chap.\ref{subsubsec:motorflow} the shutter should damp the signal by at least a factor 600.\\
-	These tests were performed with the NIM PFM \notes{Ref. as soon as the two models are properly described in the Setup section.}. The PFM was operated with laboratory electronics. The tests were performed at the CASYMIR test facility. The used particle beam consisted of hydrogen and xenon a velocity of 2\,\si{\kilo\meter\per\second}. N\textsubscript{2} and CO\textsubscript{2} are part of the residual gas in the chamber. Three different measurements were done: One with the beam directing onto the antechamber with the shutter open, one with the shutter closed and a background measurement, where the particle beam was pointed onto the structure to have an estimation of how much of the signal arises from the test gas scattering into the ionization region when the beam is directed in an arbitrary direction. % May leave the last part away.
-	The IsoArea is proportional to the number of detected particles of the corresponding species (Tab.\,\ref{tab:measShutMot}).\\
-	The damping factor of the shutter according to the measurements is around 6 instead of the expected 600. When subtracting the background from both measurements, the resulting damping factor is 11. Reasons for the lower damping factor could be that the portion of the beam which scatters on the antechamber outer walls gets thermalized in the vacuum chamber and adds to the signal intensity. In the outer space, the gas also scatters on the antechamber but does not reach the ionization region. To take that into account, this sort of background measurement was done. This does not explain the big difference.
-	
-	% Motor tests:
-	% Factor 7 in the lab instead of 1000. Gas scatters in the chamber and finds other ways to reach the entrance. To test is accurately, one has to channel the gas in the chamber and suppress the scattering. When subtracting the hobby background and calculate it with the IsoArea the factor is about 11. IsoArea corresponds to the number of detected particles. Gas flows around the instrument and leaves the environment. Why is no good background subtraction possible?...
-	% Difference between real background and the hobby background? Gas leaves and does not flow back. Ram pressure.
-	% Leave away and argument that particles scattering in the vacuum chamber also contribute to the signal. This amount is difficult to determine because for a really realistic scenario one has to remove the scattered particles and work with a much wider beam.
-	% this test can just give a confirmation if the shutter works but does not say anything about the quality. Lower boundary approximation?...
-	% Lot of background signal... Tried to estimate it with a background measurement. Does not fully represent the state...
-	% Imperfect voltage set? Reason for everything.
-	% Neutral mode the amount is much less (why? Estimation?)
-	% May delet row with the background
-	
-	% Measurements were done with PFM! Not with Prototyp. State that clearly.
-	% Folder with measurement data:
-	% \\titania.unibe.ch\UserHomes\foehn\My Documents\PhD\Messungen\PFM\PFM_1905to1911\Motortest_191014
-	
+	\begin{comment}	
+	\begin{table}
+		\begin{center}
+			\begin{tabular}{|c|c|c|}
+				\hline
+				\multirow{2}{*}{Configuration} & \multicolumn{2}{c|}{Species Area [a.u.]} \\
+				\cline{2-3}
+				& \textsuperscript{129}Xe & \textsuperscript{132}Xe \\ \hline
+				Shutter open  & 36.97 ±0.07 & 36.7 ±0.06\\
+				Shutter close &	6.76 ±0.07 & 6.7 ±0.05\\
+				Background & 3.87 ±0.05 & 3.73 ±0.03 \\
+				\hline
+			\end{tabular}
+		\end{center}
+		\caption{The signal intensity is given for different shutter positions. It is proportional to the number of measured particles. The background was determined by shooting with the beam onto the outer structure of NIM.}
+%		\label{tab:measShutMot}
+	\end{table}
+		% IsoArea [10^9]
+		
 	\begin{table}
 		\begin{center}
 			\begin{tabular}{|c|c|c|c|c|}
 				\hline
-				\multirow{2}{*}{Configuration} & \multicolumn{4}{c|}{IsoArea [10\textsuperscript{9}]} \\
+				\multirow{2}{*}{Configuration} & \multicolumn{4}{c|}{Species Area [a.u.]} \\
 				\cline{2-5}
 				&N\textsubscript{2}& CO\textsubscript{2} & \textsuperscript{129}Xe & \textsuperscript{132}Xe \\ \hline
 				Shutter open & 18.36 ±0.07 & 10.76 ±0.06 & 36.97 ±0.07 & 36.7 ±0.06\\
@@ -173,13 +177,9 @@
 				\hline
 			\end{tabular}
 		\end{center}
-		\caption{The IsoArea is given for different shutter positions. It is proportional to the number of measured particles. The background was determined by shooting with the beam onto the vacuum chamber walls. N\textsubscript{2} and CO\textsubscript{2} are part of the residual gas and Xe is the test gas in the neutral particle beam.}
-		\label{tab:measShutMot}
+		\caption{The signal intensity is given for different shutter positions. It is proportional to the number of measured particles. The background was determined by shooting with the beam onto the outer structure of NIM. N\textsubscript{2} and CO\textsubscript{2} are part of the residual gas and Xe is the test gas in the neutral particle beam.}
+%		\label{tab:measShutMot}
 	\end{table}
-	
-	
-	
-	\begin{comment}
 	
 	\begin{table}
 	\begin{center}

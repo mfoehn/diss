@@ -13,16 +13,20 @@
 	% Sensitivity estimation. Nessesary? If so, part of SNR discussion. Not used in the experiments explained so far...	
 	
 	% Priciples kann immernoch weiter ausgearbeitet werden falls nötig.
-	\subsubsection{Principle} % Noch Referenzen auf Vorlesung einfügen. Evt. noch Bild eifügen von Ionen an versch. Startpositionen.
+	\subsubsection{Principle} % Noch Referenzen auf Vorlesung einfügen. Evt. noch Bild eifügen von Ionen an versch. Startpositionen. Jess definitly to descibe the different scenarios and to explain which we discuss in that section.
+	
+	
 	This chapter explains the function of a TOF instruments. A TOF mass spectrometer consists of, an ion-source, a mass analyser and a detector. The mass analyser has an ion-mirror which increases the flight distance of the ions by keeping the instrument on a certain length. A longer flight distance increases the mass resolution of the instrument.\\% Mention that later.
-	In the ion source, the ions are produced. An electric field in the source is generated such that ions get trapped in it. Then ions get accelerated by applying a high voltage pulse on the extraction grid. \textcolor{red}{Include a Graphic of the IS and draw a sample electric field to explain how the extraction pulse (the door to open) works.}
-	If the pulse width is long enough that all ions leave the source during the time the pulse is applied, the ions get all the same amount of energy $W$
+	In the ion source, the ions are produced. An electric field in the source is generated such that ions get trapped and focused in the centre of the source. Then ions get accelerated by applying a high voltage pulse on the extraction grid. \textcolor{red}{Include a Graphic of the IS and draw a sample electric field to explain how the extraction pulse (the door to open) works.}
+	If the pulse width is long enough for all ions to leave the source during the time the pulse is applied, the ions get all the same amount of energy $W$:
 	\begin{equation}
-		W = \int_{0}^{s_0}q_0 E_s ds = q_0 U_0
+		W = \int_{0}^{s_0}q_0 E_s ds = q_0 \frac{U_0}{2}
 	\end{equation}
-	With $s_0$ the distance the ions get accelerated, in our case 1\si{\milli\metre} which is half the height of the ion source, $q_0$ the elementary charge, $E_s$ the applied electric field strength and $U_0$ the voltage applied on the extraction grid. This energy is equal to the kinetic energy the ions have after leaving the ion-source
+	With $s_0$ the distance the ions get accelerated in the ion source. This distance is 1\si{\milli\metre} corresponding to half the height of the ion source. $q_0$ is the elementary charge, $E_s$ is the applied electric field strength induced by the voltage $U_0$ applied on the extraction grid.
+	The ions start in centre of ionisation region and not at the grid opposite of the extraction grid. Therefore, they have the energy $q_0U_0/2$ when arriving at the extraction grid.
+	This energy is equal to the kinetic energy the ions have after leaving the ion-source
 	\begin{equation}
-		q_0 U_0 = \frac{1}{2}m v^2
+		q_0 \frac{U_0}{2} = \frac{1}{2}m v^2
 	\end{equation}
 	With $m$ the mass of the particle and $v$ the particle velocity. Rearranging this formula we get
 	\begin{equation}
@@ -30,8 +34,18 @@
 		\label{eq:m/q}
 	\end{equation}
 	With $t$ the time of flight and $s$ the flight distance. Therefore, $m/q_0$ is proportional to $t^2$.\\
+	
+	% Discussion about the influence of the different parameters on the flight time.
 	Ions starting at different positions also get a different amount of energy. Ions starting closer to the extraction grid will get less energy than ions further away from the grid. At a certain point after the source, the ions with higher energy have overtaken the slower ions. This point is at around $2\cdot s_0$ which corresponds to a very short flight distance. To shift this focal point onto to the detector, additional fields after the ion-source are applied.\\
-	The ions have different thermal energies. Therefore ions of the same mass and the the same starting position will not have all the same energy when they leave the ion source. This energy spread leads to a difference in their velocity and to different flight times. This energy spread can be partially compensated by an ion-mirror also referred to as reflectron (Fig.\,\ref{fig:NIMSketch}). Ions with a higher energy will penetrate deeper into the ion-mirror and have a bigger flight path than ions with less energy. Therefore, the ion-mirror is able to compensate the different start energies of the ions. In the worst case scenario we have one particle flying toward the extraction grid and the other particle flying with the same velocity in the opposite direction. The second particle gets decelerated and has to turn in the source. When it reached its initial position, it has the same amount of energy as the first particle. But it will always be behind the first particle by a constant time delay needed to turn around and reach its initial position. To minimize this effect, one has to minimise the distance of the ionisation region or increase the voltage of the HV pulse. A smaller ion source means less ions and therefore less signal. Increasing the HV pulse results in bigger electronic noise at the start of the spectrum and fast species such as hydrogen of helium are lost in the noise. % Evt. noch Effekte etwas besser ausführen.
+	The ions have different thermal energies. Therefore ions of the same mass and the the same starting position will not have all the same energy when they leave the ion source. This energy spread leads to a difference in their velocity and to different flight times. This energy spread can be partially compensated by an ion-mirror (Fig.\,\ref{fig:NIMSketch}). Ions with a higher energy will penetrate deeper into the ion-mirror and have a bigger flight path than ions with less energy. Therefore, the ion-mirror is able to compensate the different start energies of the ions. % about 10% in energy spread can be compensated in this way. Search for reference of that value.
+	In the worst case scenario we have one particle flying toward the extraction grid and the other particle flying with the same velocity in the opposite direction. The second particle gets decelerated and has to turn in the source. When it reached its initial position, it has the same amount of energy as the first particle. But it will always be behind the first particle by a constant time delay needed to turn around and reach its initial position. To minimize this effect, one has to minimise the distance of the ionisation region or increase the voltage of the HV pulse. A smaller ion source means less ions and therefore less signal. Increasing the HV pulse results in bigger electronic noise at the start of the spectrum and fast species such as hydrogen of helium are lost in the noise. % Evt. noch Effekte etwas besser ausführen.
+	In addition, a higher HV pulse needs longer until the pulse is fully applied.
+	
+	% 's' is sort of a theoretical value because the velocity changes during the flight of the ions through the spectrometer.
+	% Discussion about the timing 't'
+	% Effect of double charged masses and where they appear. Mention why the larger instrument automatically increases the mass resolution but that due to the sizes and weight limitations of the instrument, the maximum size is give to a certain degree. Therefore, good focusing of the ions is essetiel to lower the time spread dt of the ions. Show it with reference to the corresponding equation.
+
+	% Pulser discussion in this chapter? No, just discussion about the timings and how it works. The discussion about the fast fall time and the other parameters are part of the pulser chapter. It will be part of a repetition because of the discussion about the requirements.
 
 	\subsubsection{Mass Calibration}
 	In this section we discuss the calibration of the mass axis. According to Eq.\,\eqref{eq:m/q} the $m/q_0$ is proportional to the square of time. By rearranging Eq.\,\eqref{eq:m/q} $m$ is:
@@ -194,8 +208,8 @@
 			\caption{Schematics of the antechamber and the ionisation region.}
 			\label{fig:thAntIs}
 		\end{figure}
-		\notes{Adapt antechamber figure}
-		
+
+%----------------------------------------------------------------------------------------------------
 		\subsubsection{Density enhancement Model}\label{subsubsec:Densenhan}
 		\begin{table}
 			\begin{center}
@@ -204,7 +218,7 @@
 					$T_a$ 	& 295 K	& $r_{aHi}$	& 2.5\, mm	& $\chi$	& 0\degree \\
 					$T_s$ 	& 320 K & $r_{aIs}$ & 2\, mm	& $\theta_0$& 30\degree\\	
 					$k$		&	1	& $v_{sc}$	& 2.5\, km/s& $m$		& 18 u\\
-					$a$		& 0.22	&			&			&			&	\\
+					$a$		& 0.23	&			&			&			&	\\
 					\hline
 				\end{tabular}
 			\end{center}
@@ -240,7 +254,7 @@
 			\end{cases}
 		\end{equation}
 		with $v_{sc}$ the velocity of the neutral gas beam relative to the antechamber corresponding to the spacecraft velocity, $m$ the average particle mass of the gas and $k_B$ the Boltzmann constant. $\chi$ is the angle of the test gas relative to the x-axis of the instrument and $\theta_0$ is the angle between the x-axis and the axis normal of the entrance hole. $\chi \pm \theta_0$ is the angle between the normal axis of the entrance hole and the gas influx direction. $\chi \pm \theta_0$ has to be between $\pm 90\degree$ to enter the antechamber which implies that $\cos(\chi \pm \theta_0)$ cannot have negative values. $i=1$ is the index of one of the two entrance hole and $i=2$ is the index of the other entrance hole.\\ 
-		The antechamber has three openings for the gas to flow out of the antechamber. The last term in Eq.\,\eqref{eq:thDensEnhan} gives the ratio of how many particle leave the antechamber through the hole connecting the antechamber with the ionization region compared to the amount of particles leaving the antechamber through the two entrance holes. The radius of the entrance holes is $r_{aHi}$ and the radius of the hole connecting the antechamber with the ionization region is $r_{aIs}$. This term takes the molecular flow conductance of the different holes into account. The molecular-flow conductance of a thermalized gas is $C_0$:
+		The antechamber has three openings for the gas to flow out of the antechamber. The last term in Eq.\,\eqref{eq:thDensEnhan} gives the ratio of how many particle leave the antechamber through the hole connecting the antechamber with the ionization region compared to the amount of particles leaving the antechamber through the two entrance holes. The radius of the entrance holes is $r_{aHi}$ and the radius of the hole connecting the antechamber with the ionization region is $r_{aIs}$. This term takes the molecular flow conductance of the different holes into account. The molecular flow conductance of a thermalized gas is $C_0$:
 		\begin{equation}
 			C_0 = A\bar{v}/4
 			\label{eq:theoMolFlowCondC0}
@@ -250,15 +264,34 @@
 			C = C_0 \cdot a
 			\label{eq:theoMolFlowCondCEff}
 		\end{equation}
-		The transmission probability depends on the length-to-diameter ratio $L/R$ of the opening. The flow conductance has units [\si{\cubic\meter\per\second}]. There are different approximations discussed to determine this factor in the paper of \cite{molFlowTubeTransm_Essen1976}. The paper also gives values of $a$ for different length-to-diameter ratios $L/R$ of the opening. For the two gas entrance openings of the antechamber $a$ is 1 because they have a sharp edge and therefore the length of the opening is close to zero. The opening between the antechamber and the entrance has a length-to-diameter ratio of 8 resulting in a $a$ of 0.23.	The amount of gas flowing through this opening relative to the total outflow is:
+				
+		The transmission probability depends on the length-to-radius ratio $L/R$ of the opening. D. van Essen and W. Chr. Heerens compared different approaches to determine the transmission probability and give values for specific length-to-radius ratios \cite{molFlowTubeTransm_Essen1976}. The approximation which comes closest to reality is the one by Nawyn and Meyer. To calculate the transmission probability for any length-to-radius ratio, this data was fitted with the following function:
+		\begin{equation}
+			a = y_0 + A_1\left(1-e^{-\frac{L/R}{t_1}}\right) + A_2\left(1-e^{-\frac{L/R}{t_2}}\right)
+			\label{eq:MolFloConFitFunc}
+		\end{equation}
+		The fit parameters are listed in Table\,\ref{tab:thMolFloConFiPara}.
+		\begin{table}[h!]
+			\begin{center}
+				\begin{tabular}{l r| l r }
+					$A_1$	& $-0.48 \pm 0.01$ & $t_1$	& $7.4 \pm 0.3$	\\
+					$A_2$	& $-0.45 \pm 0.01$ & $t_2$	& $1.13 \pm 0.04$ \\
+					$y_0$ 	& $0.998 \pm 0.001$	& &\\
+				\end{tabular}
+			\end{center}
+			\caption{Fit parameters of Eq.\,\eqref{eq:MolFloConFitFunc}.}
+			\label{tab:thMolFloConFiPara}
+		\end{table}	
+		For the two gas entrance openings of the antechamber $a$ is 1 because they have a sharp edge and therefore the length of the opening is close to zero. The opening between the antechamber and the entrance has a length-to-diameter ratio of 8 resulting in a $a$ of 0.23. The amount of gas flowing through this opening relative to the total outflow is:
 		\begin{align}
 			G_{open} & = \frac{C_{aIs}}{C_{aIs} + 2\cdot C_{aHi}} \label{eq:GAntOpen}\\
 			G_{open} & = \frac{\frac{r_{aIs}^2\cdot a\cdot \bar{v}}{4}}{\frac{r_{aIs}^2\cdot a\cdot \bar{v}}{4} + 2\frac{r_{aHi}^2\cdot \bar{v}}{4}}\\
 			G_{open} &= \frac{r_{aIs}^2\cdot a}{r_{aIs}^2\cdot a + 2\cdot r_{aHi}^2}
 		\end{align}
 		With $r_{aIs} = 2\,\si{\milli\meter}$ and $r_{aHi} = 2.5\,\si{\milli\meter}$ resulting in $G_{open} = 0.067$ meaning that about 6.7\% of all particles entering the antechamber actually reach the ionization region due to losses of the geometry.\\
-		In the following section the different parameters of the density enhancement equation Eq.\,\eqref{eq:thDensEnhan} were varied to determine their influence. For this analysis the particle density in the ionization region $n_{cs}$ was divided by the particle density of the test gas $n_a$ outside of the antechamber and $n_a$ was set 1 to get the amplification factor of the antechamber. For this analysis the parameters were set according to table \ref{tab:thDensEnhan} if not otherwise mentioned. The temperatures are the values used in the laboratory. For the particle velocity I used 2.5\,\si{\kilo\meter\per\sec} because it is velocity of the spacecraft in Ganymede orbit and the velocity at which most of the measurements will be done.\\
-				
+		
+		In the following section the different parameters of the density enhancement equation Eq.\,\eqref{eq:thDensEnhan} were varied to determine their influence. For this analysis the particle density in the ionization region $n_{cs}$ was divided by the particle density of the test gas $n_a$ outside of the antechamber and $n_a$ was set 1 to get the amplification factor of the antechamber. For this analysis the parameters were set according to Table \ref{tab:thDensEnhan} unless otherwise mentioned. The temperatures are the ones used in the laboratory. The used particle velocity was 2.5\,\si{\kilo\meter\per\sec} because it is velocity of the spacecraft in Ganymede orbit and the velocity at which most of the measurements will be done.\\
+		
 		The first parameter which was varied was the gas temperature $T_a$. This temperature can be varied between 0 and 1000\,\si{\kelvin} without significantly influencing the gain of the antechamber as it can be seen in Fig.\,\ref{th:densEnhTaTs}. When looking closer, a slight increase in gain is observed with increasing temperature.\\
 		The temperature of the antechamber $T_s$ has a bigger impact on the gain. Ideally this temperature should be as low as possible to slow down the particles when they hit the chamber walls. When the temperature of the antechamber is too low, the gas condenses at the antechamber walls. Therefore the antechamber is kept at temperatures higher than -17\,\si{\degreeCelsius} during measurements to avoid condensation.\\
 		\notes{Rewrite captions.}
@@ -280,14 +313,14 @@
 		\begin{figure}[h!] % k
 			\centering
 			\includegraphics[width= .7\textwidth]{Bilder/k.png}
-			\caption{Gain $n_{cs}/n_a$ of the antechamber in dependence of the particle reflection coefficient $k$.}
+			\caption{Gain $n_{cs}/n_a$ of the antechamber as a function of the particle reflection coefficient $k$.}
 			\label{th:densEnhk}
 		\end{figure}
 		Fig\ref{th:densEnhm} shows the amplification of the antechamber in dependence of the particles unit mass\,[u]. The figure shows that particles with higher unit mass get amplified more and are therefore easier to detect.\\
 		\begin{figure}[h!] % mass
 			\centering
 			\includegraphics[width= .7\textwidth]{Bilder/m.png}
-			\caption{Gain $n_{cs}/n_a$ of the antechamber in dependence of the particle mass $m$.}
+			\caption{Gain $n_{cs}/n_a$ of the antechamber as a function of the particle mass $m$.}
 			\label{th:densEnhm}
 		\end{figure}
 		Fig.\,\ref{th:densEnhvelo} shows the amplification of the antechamber in dependence of the spacecraft velocity for different species. We expect H\textsubscript{2}O and different radiolysis radiolysis products such as H\textsubscript{2}, O\textsubscript{2} or HO. Absorption lines in the near infrared recorded by the Near Infrared Mapping Spectrometer (NIMS) on board of the Galileo spacecraft indicate CO\textsubscript{2} bond to other solid materials in the soil. Sulphur is part of the plasma. The sulphur compounds are therefore a result of the ion bombardment on the moons surface. Sulphur reacts with water resulting in various different compounds such as sulphur dioxide (SO\textsubscript{2}) or sulphuric acid (H\textsubscript{2}SO\textsubscript{4}) \cite{Collins_2014}. \notes{include Audrey's paper if it gets finished in time.}
@@ -295,18 +328,18 @@
 		\begin{figure}[h!] % velocity
 			\centering
 			\includegraphics[width= .7\textwidth]{Bilder/velocity.png}
-			\caption{Gain $n_{cs}/n_a$ of the antechamber in dependence of the spacecraft velocity $v_{sc}$ for different species expected in the moons atmospheres.}
+			\caption{Gain $n_{cs}/n_a$ of the antechamber as a function of the spacecraft velocity $v_{sc}$ for different species expected in the moons atmospheres.}
 			\label{th:densEnhvelo}
 		\end{figure}
 		Fig.\,\ref{th:densEnhChiTheta} shows the amplification in dependence of different particle influx angles $\chi$. $\chi$ is measured in the x-/y- plane (Fig.\,\ref{fig:thAntIs}). The function was evaluated for different positions of the entrance holes. The minimal angle the two entrance hole can be apart from each other without overlapping is 3.6\si{\degree}. The holes of the PFM are at $\theta_0 = \pm30\,\si{\degree}$. With that configuration the biggest signal intensity is measured with a spacecraft ramp direction of 0\si{\degree}. When the two holes are at $\pm$60\si{\degree} it results in a plateau between $\pm$60\,\si{\degree} and also a wider angular range at which NIM is sensitive. This is an interesting feature under certain circumstance. For our purpose it is unnecessary because the spacecraft blocs the field of view (FoV) for angles bigger than 100\degree (see also Chap.\,\ref{subsubsec:Calfly}).
 		\begin{figure}[h!] % chi theat
 			\centering
 			\includegraphics[width= .8\textwidth]{Bilder/Chi_theta0.png}
-			\caption{Gain $n_{cs}/n_a$ of the antechamber in dependence of the gas influx direction $\chi$ for different positions of the two entrance holes $\theta_0$. $\theta_0=30\degree$ is the position of the holes in flight configuration.}
+			\caption{Gain $n_{cs}/n_a$ of the antechamber as a function of the gas influx direction $\chi$ for different positions of the two entrance holes $\theta_0$. $\theta_0=30\degree$ is the position of the holes in flight configuration.}
 			\label{th:densEnhChiTheta}
 		\end{figure}
 		
-		
+%-------------------------------------------------------------------------------------------		
 		\subsubsection{Callisto Flyby}\label{subsubsec:Calfly}
 	
 		\begin{figure}[h!]
@@ -365,7 +398,7 @@
 		
 		
 %----------------------------------------------------------------------------------		
-		\subsubsection{Motor Flow Calculation} \label{subsubsec:motorflow}
+		\subsubsection{Shutter Performance} \label{subsubsec:motorflow}
 		NIM has a shutter to close the entrance to the antechamber. This shutter is mounted between the ion source and the antechamber (Fig.\,\ref{fig:shutterMotor} left). When the shutter is open, the gas flows right through the hole into the ion source. When the shutter is closed, the hole moves to the side as it is indicated in Fig.\,\ref{fig:shutterMotor} right. Because the shutter does not close the gag perfectly, still a small amount of gas flows around the shutter into the ionisation region. In the following section, the geometry factor $G_{close}$ of the antechamber is determine when the shutter is closed.\\
 		\begin{figure}[h!]
 			\begin{subfigure}{0.5\textwidth}
@@ -376,21 +409,34 @@
 				\centering
 				\includegraphics[width=.8\textwidth]{Bilder/Shutter_topview.png}
 			\end{subfigure}
-		\caption{Shutter Motor. Left: side view with shutter open. Right: Top view with open shutter. When shutter is closing it moves to the red position.}
+		\caption{Shutter Motor. Left: side view with shutter closed. Right: Top view with open shutter. When the shutter is closing the central hole moves to the red position.}
 		\label{fig:shutterMotor}
 		\end{figure}
 		The molecular flow conductance is:
 		\begin{equation}
 			C = \frac{A\cdot\bar{v}\cdot a}{4}
 		\end{equation}
-		With $A$ the cross-section of the tube, $\bar{v}$ the average velocity of the thermalized gas flowing through the opening and $a$ the transmission probability depending on the length-to-diameter ratio of the tube. When the shutter is closed, the conductance of the tube $C_{tot}$ is divided into four terms. The tube length is split into three parts $C_{top}$, $C_{hole}$ and $C_{bot}$ (see Fig.\ref{fig:shutterMotor} left). In addition the gas has to flow through the small gap around the shutter. The conductance of that gap is $C_{gap}$:
+		With $A$ the cross-section of the tube, $\bar{v}$ the average velocity of the thermalized gas flowing through the opening and $a$ the transmission probability depending on the length-to-diameter ratio of the tube. When the shutter is closed, the conductance of the tube $C_{tot}$ is divided into four terms: The conductance of the upper part of the tube $C_{top}$, the conductance of the gap between the shutter and pocket $C_{gap}$, the conductance of the hole in the shutter $C_{hole}$ and the conductance of the lower part of the tube connecting the antechamber with the ionization region $C_{bot}$ (Fig.\ref{fig:shutterMotor} left):
 		\begin{align}
 			C_{top}  &= \frac{r_{aIs}^2\cdot\pi\cdot\bar{v}\cdot a_{top}}{4}\\
 			C_{gap}  &= \frac{2\cdot r_{aIs}\cdot \pi \cdot h_{gap}\cdot\bar{v}\cdot a_{gap}}{4}\\
 			C_{hole} &= \frac{r_{aIs}^2\cdot\pi\cdot\bar{v}\cdot a_{hole}}{4}\\
-			C_{bot}  &= \frac{r_{aIs}^2\cdot\pi\cdot\bar{v}\cdot a_{bot}}{4}\\
+			C_{bot}  &= \frac{r_{aIs}^2\cdot\pi\cdot\bar{v}\cdot a_{bot}}{4}
 		\end{align}
-		With $a_{top} = 0.73$, $a_{gap} = 0.07$, $a_{hole} = 0.67$, $a_{bot} = 0.28$ \cite{molFlowTubeTransm_Essen1976}, $r_{aIs} = 2 mm$ and $h_{gap} = 0.01 mm$. The average velocity $\bar{v}$ will cancel out later in the derivation of the geometry factor. The conductance of the tube $C_{tot}$ is:
+		\begin{table}[h!]
+			\begin{center}
+				\begin{tabular}{l r| l r }
+					$a_{top}$	& 0.73 	& $h_{top}$		& 1.5\,mm	\\
+					$a_{gap}$	& 0.07 	& $h_{gap}$		& 0.01\,mm \\
+					$a_{hole}$ 	& 0.67 	& $h_{hole}$ 	& 2\,mm\\
+					$a_{bot}$ 	& 0.28 	& $h_{bot}$ 	& 12\,mm\\
+					$r_{aIs}$ 	& 2\,mm & $l_{gap}$ 	& 7\,mm\\
+				\end{tabular}
+			\end{center}
+			\caption{Nominal transmission probabilities $a_i$, tube heights $h_i$, tube radius $r_{aIs}$ and minimal gap length $l_{gap}$ when the shutter between the antechamber and the ion-source is closed.}
+			\label{tab:thMolFloConMotClosPara}
+		\end{table}	
+		With $a_{i}$ the transmission probabilities of the different sections (Eq.\,\eqref{eq:MolFloConFitFunc}), $h_i$ the height of the different sections, $r_{aIs}$ the radius of the antechamber hole and $l_{gap}$ the minimal distance between the hole in the shutter and the tube connecting the antechamber with the ion-source. The nominal values for these parameters are listed in Table\,\ref{tab:thMolFloConMotClosPara}. The average velocity $\bar{v}$ will cancel out later in the derivation of the geometry factor. The conductance of the tube $C_{tot}$ is:
 		\begin{equation}
 			\frac{1}{C_{tot}} = \frac{1}{C_{top}} + \frac{2}{C_{gap}} + \frac{1}{C_{hole}} + \frac{1}{C_{bot}}
 		\end{equation}
@@ -398,16 +444,30 @@
 		\begin{equation}
 			C_{aHi} = \frac{r_{aHi}^2\cdot\pi\cdot\bar{v}}{4}
 		\end{equation}
-		The geometry factor $G_{close}$ is:
+		The geometry factor of the tube when the shutter is closed $G_{close}$ is:
 		\begin{equation}
 			G_{close} = \frac{C_{tot}}{C_{tot} + 2\cdot C_{aHi}}
 		\end{equation}
-		When the shutter is closed, $G_{close}$ is $0.11\cdot10^{-3}$. When the shutter is open, the geometry factor $G_{open}$ is $67\cdot10^{-3}$ meaning the shutter damps the signal at least by a factor 600. In this approximation we assumed that the gas will take the shortest distance between the antechamber and the ion-source. In reality it will flow around the shutter and the signal will be damped even more because with increasing distance the gas has to flow, it get damped more.\\
+		\begin{figure}[h]
+			\centering
+			\includegraphics[width=.8\textwidth]{Bilder/ShutGapSizeSigDamp.png}
+			\caption{Damping factor $G_{open}/G_{close}$ of the shutter as a function of the gap size $h_{gap}$ of the gap between the shutter and antechamber.}
+			\label{fig:ShutGapSizeSigDamp}
+		\end{figure}
+		The gap between the shutter and the antechamber has to be very thin to seal the hole when the shutter is closed. Fig.\,\ref{fig:ShutGapSizeSigDamp} shows the damping factor $G_{open}/G_{close}$ as a function of the gap size $h_{gap}$. With increasing gap size, the damping factor reduces significantly. The requirement was to damp the signal by a factor 1000 when the shutter is closed. With the nominal gap size of 0.01\,mm, the shutter damps the signal by a factor 600. When the gap size is about 0.1\,mm the damping factor is only about 25. This may can happen when the shutter is not properly fabricated and the tolerances are therefore bigger than originally designed.\\
 		When measuring with the open source channel, a small amount of gas will enter the ion-source through the antechamber. The open source slit is in the y-/z-plane and therefore $\chi$ is 90\si{\degree} (Fig.\ref{fig:thAntIs}). When the shutter is closed, about 0.05\% of the signal originates from the antechamber.
 		
+		%In this approximation the assumption was that the gas will take the shortest distance between the antechamber and the ion-source. In reality it will flow around the shutter and the signal will be damped even more because with increasing distance the gas has to flow, it get damped more.
 		
 		\subsubsection{Pulser}
-				
+		% Draw a second schema of the pulser to compare the rise time/ energy distributions. Or just make a zoom on the falling edge of the pulse and explain it with the energy why a certain configuration is favourable.
+		
+		% Analysis of the timeings.
+		% -> discussion about the time focussing of the reflectron and for how much it can compensate.
+		
+		
+		% Pulse shape is discussed with the flight pulse as an example. May that comes in the experimental part thus it discusses hardware...
+		
 		\begin{figure}[h]
 			\centering
 			\includegraphics[width=\textwidth]{Bilder/Pulser_theretical_shape.jpg}
@@ -417,11 +477,12 @@
 		The high voltage pulser is used to accelerate the generated ions in the ionisation region to a certain energy. During the time when no high voltage pulse is applied, the potential has to be stable at the bias voltage to allow ion storage as previously discussed in chapter\,\ref{chap:IonStor}.\\ Fig.\,\ref{fig:PulserTheoCurve} shows a schema of a realistic high voltage pulse and Table\,\ref{tab:FlightPulserPerf} shows the characteristics of the flight pulser compared to the requirements. The fall time is the time to build up the negative high voltage. This time has to be very short to give all particles the same amount of energy. With a thickness of the ion-source of 2\,mm and a voltage of -480\,V, atomar hydrogen needs about 3\,ns to leave the source. Helium needs already 6.5\,ns. To affect as few species as possible but to set a realistic requirement, the maximum fall time of the high voltage pulse has to be smaller than about 5\,ns. The fall time of the flight pulser slightly exceeds the that value with a fall time of 5.76\,ns. Therefore it still only affects hydrogen. When applying a high voltage, the pulse overshoots its set value and drops slightly. The overshoot and the voltage drop result in a variation of the particle energy for the different species. The ringing of the high voltage, and the pulse drop of the flight pulser are within the specifications. The pulse duration has to be longer than 0.2\,\si{\micro\second} because that is the minimum time particles with masses of 1000\,u need to leave the ionisation region. With some margin, the specifications were set to 0.5\,\si{\micro\second}. The rise time to bias voltage should be smaller than 100\,ns to leave enough time for ion storage. This is well achieved with the flight pulser. The ripple of the bias voltage should be smaller than $\pm$50\,mV to generate a stable electric field for ion storage in the ionisation region during the time when the high voltage pulse is not applied. This ripple should be smaller than $\pm$50\,mV. However, the flight pulser exceeds this value. How big the impact actually is, is difficult to estimate. But due to limited choices for the different components of the pulser, this pulser is the best which we were able to produce with the available resources. A further discussion about the design decisions and the requirements for the available components can be found in \cite{Lasi_IEEE2020}.\\
 		\begin{table}[h]
 			\begin{center}
-			\begin{tabular}{m{2.2cm}|>{\centering}m{2cm}|>{\centering}m{2cm}|>{\centering}m{2.8cm}|>{\centering}m{1.7cm}|m{1.8cm}<{\centering}}
+			\begin{tabular}{|m{2.2cm}|>{\centering}m{2cm}|>{\centering}m{2cm}|>{\centering}m{2.8cm}|>{\centering}m{1.7cm}|m{1.8cm}<{\centering}|}
 			\hline
 							& Ringing of HV Pulse & Pulse drop at full HV & Baseline Ripple & Fall Time & Rise Time \\ \hline
 			Requirement		& $<$ 5\%  & $<$ 10\,V & $\pm$50\,mV & $<$ 5\,ns & $<$ 100\,ns\\
 			Flight Pulser	& 2.5\% & 1.9\,V & 300\,mV & 5.76\,ns & 19.7\,ns\\
+			\hline
 			\end{tabular}
 			\end{center}
 			\caption{Characteristics of the flight pulser compared with the requirements.}
