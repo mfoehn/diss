@@ -30,7 +30,7 @@
 	\end{equation}
 	With $m$ the mass of the particle and $v$ the particle velocity. Rearranging this formula we get
 	\begin{equation}
-		\frac{m}{q_0} = 2 U_0\frac{t^2}{s^2}
+		\frac{m}{q_0} = U_0\frac{t^2}{s^2}
 		\label{eq:m/q}
 	\end{equation}
 	With $t$ the time of flight and $s$ the flight distance. Therefore, $m/q_0$ is proportional to $t^2$.\\
@@ -50,12 +50,12 @@
 	\subsubsection{Mass Calibration}
 	In this section we discuss the calibration of the mass axis. According to Eq.\,\eqref{eq:m/q} the $m/q_0$ is proportional to the square of time. By rearranging Eq.\,\eqref{eq:m/q} $m$ is:
 	\begin{equation}
-		m = 2 q_0 U_0 \frac{t^2}{s^2}
+		m = q_0 U_0 \frac{t^2}{s^2}
 		\label{eq:mass_Calib_pre}
 	\end{equation}
 	Take together all parameters which remain constant to one single constant: % Write a bit better
 	\begin{equation}
-		C = \frac{2 q_0 U_0 }{s^2} 
+		C = \frac{q_0 U_0 }{s^2} 
 	\end{equation}
 	and considering the time scale has a constant offset $t_0$, equation \eqref{eq:mass_Calib_pre} results in % Split the two ts. It is not acctually the same.
 	\begin{equation}
@@ -83,13 +83,12 @@
 	There are also limitations of the instrument itself. For example the performance of the pulser which will be discussed later in Chap. bla.
 	\begin{comment}
 		Resolution limitations:
-		Pulser:
-		Turn around time
-		Different starting positions (discussed a little bit further above)
-		Reflectron: Not ideal energy focusing -> spread
-		Thermic energy -> spread
-		instrument limitations: not perfect pulser pulse. discussion of Pulser follows maybe a bit later.
-		peak width of the single ions measured with the detector. Peak width of 1 peak is b< a factor 10 smaller than the actual peak in the mass spectrum.
+		Pulser fall time impact: Simulation results of a sample IS.
+		Turn around time: is implicitly taken into account in case a variation of the thermal energy would be made. Effect not simulated at the moment.
+		Different starting positions (discussed a little bit further above): also implicit in the model
+		
+		Ion-mirror: Not ideal energy focusing -> spread. Not in the model discuss it after the simulation discussion.
+		HV lenses compensate different starting times to a certain degree. Explain it from a phenomenological point of view. Not in detail because otherwise, detailed simulations would have to be done.
 	\end{comment}
 	% Mass resolution is independant from the actual mass
 	% Last part of the formula is from Stefans thesis.
