@@ -4,49 +4,45 @@
 	Add a Chapter about electric fields?/ Basis for the simulations?
 	\subsection{Requirements}
 	% Mass, performance, Power consumption. (See latest references. Part of the introduction?)
+	% Either give a short overview with references to the different subchapters in the Disseration as a guideline or delet that chapter completly. At that point, the people don'r know anything about the instrument. Does not make much sense to state here the different requirements. Most likely, this chapter will be deleted.
 	
+%------------------------------------------------------------------------------------------------
 	\subsection{Basic Theory about TOF Masspectrometry} % Allgemeine Theorie
+	\notes{Refs./Citations}
+	% Ionisation efficiency, Time focusing, SNR definition, Sensitivity estimation. Nessesary? If so, part of SNR discussion. Not used in the experiments explained so far...	
+	NIM is a time of flight mass spectrometer consisting of, an ion-source, a mass analyser and a detector.\\
+	\begin{figure}[htb]
+		\centering
+		\includegraphics[width= 10cm]{Bilder/NIM_Sketch.png}
+		\caption{Schematics of the NIM mass spectrometer. Adapted from \cite{Diss_Meyer}.}
+		\label{fig:NIMSketch}
+	\end{figure}
+	The NIM instrument is able to measure neutrals and ions. Neutral particles get ionised by electron ionisation. A filament is heated up until it emits electrons. Ions enter the ion source directly. All ions get accelerated to the same energy and fly through the mass analyser. Light particles fly faster through the spectrometer than heavier ones. The different particle species arrive at different times at the detector. To enlarge the flight distance, NIM has an ion-mirror. % May emntion energy range?
 	
-	% Ionisation efficiency
-	% Time focusing?
-	% SNR definition. Picture?
-	% Sensitivity estimation. Nessesary? If so, part of SNR discussion. Not used in the experiments explained so far...	
-	
-	% Priciples kann immernoch weiter ausgearbeitet werden falls nötig.
-	\subsubsection{Principle} % Noch Referenzen auf Vorlesung einfügen. Evt. noch Bild eifügen von Ionen an versch. Startpositionen. Jess definitly to descibe the different scenarios and to explain which we discuss in that section.
-	
-	
-	This chapter explains the function of a TOF instruments. A TOF mass spectrometer consists of, an ion-source, a mass analyser and a detector. The mass analyser has an ion-mirror which increases the flight distance of the ions by keeping the instrument on a certain length. A longer flight distance increases the mass resolution of the instrument.\\% Mention that later.
-	In the ion source, the ions are produced. An electric field in the source is generated such that ions get trapped and focused in the centre of the source. Then ions get accelerated by applying a high voltage pulse on the extraction grid. \textcolor{red}{Include a Graphic of the IS and draw a sample electric field to explain how the extraction pulse (the door to open) works.}
-	If the pulse width is long enough for all ions to leave the source during the time the pulse is applied, the ions get all the same amount of energy $W$:
+	\subsubsection{Principle} % Noch Referenzen auf Vorlesung einfügen. Discuss here the ideal case and later the general case where the impact of the 3 different timings is discussed. For the moment, put it before the SNR part.
+	The ions in the ion-source are focused in the centre of the ion-source. When extracting them, a high voltage pulse is applied on the extraction grid to accelerate the ions to the energy $W$.
 	\begin{equation}
-		W = \int_{0}^{s_0}q_0 E_s ds = q_0 \frac{U_0}{2}
+		W = \int_{0}^{s_0}z E_s ds =  \frac{z U_0}{2}
+		\label{eq:WIonPulse}
 	\end{equation}
-	With $s_0$ the distance the ions get accelerated in the ion source. This distance is 1\si{\milli\metre} corresponding to half the height of the ion source. $q_0$ is the elementary charge, $E_s$ is the applied electric field strength induced by the voltage $U_0$ applied on the extraction grid.
-	The ions start in centre of ionisation region and not at the grid opposite of the extraction grid. Therefore, they have the energy $q_0U_0/2$ when arriving at the extraction grid.
-	This energy is equal to the kinetic energy the ions have after leaving the ion-source
+	With $s_0$ the distance from the centre of the ion-source to the extraction grid corresponding to half the height of the ion-source. $z$ is the particle charge, $E_s$ is the applied electric field strength induced by the voltage $U_0$ applied on the extraction grid. The ions start in the centre of the ion-source and not at the backplane. Therefore, they have the kinetic energy $z U_0/2$ when reaching the extraction grid:
 	\begin{equation}
-		q_0 \frac{U_0}{2} = \frac{1}{2}m v^2
+		\frac{z U_0}{2} = \frac{1}{2}m v^2
 	\end{equation}
-	With $m$ the mass of the particle and $v$ the particle velocity. Rearranging this formula we get
+	With $m$ the mass of the particle and $v$ the particle velocity. Rearranging this formula results in:
 	\begin{equation}
-		\frac{m}{q_0} = U_0\frac{t^2}{s^2}
+		\frac{m}{z} = U_0\frac{t^2}{D^2}
 		\label{eq:m/q}
 	\end{equation}
-	With $t$ the time of flight and $s$ the flight distance. Therefore, $m/q_0$ is proportional to $t^2$.\\
+	With $t$ the time of flight and $D$ the flight distance from the extraction grid to the detector. In real systems, the energy $W$ and the flight distance $D$ cannot be determined exactly. $U_0$ and $D^2$ are merged into one constant $C$ resulting in:
+	\begin{equation}
+		\frac{m}{z} = C(t-t_0)^2
+		\label{eq:mass_Calib}
+	\end{equation}
+	$t_0$ correspond to an offset between the actual start of the mass axis versus the time axis. This offset is induce by the electronics. The two calibration constants $C$ and $t_0$ are determined by at least knowing two species in the spectrum. With that information, the mass scale is calibrated.
+	% [Scherer 1999]
 	
-	% Discussion about the influence of the different parameters on the flight time.
-	Ions starting at different positions also get a different amount of energy. Ions starting closer to the extraction grid will get less energy than ions further away from the grid. At a certain point after the source, the ions with higher energy have overtaken the slower ions. This point is at around $2\cdot s_0$ which corresponds to a very short flight distance. To shift this focal point onto to the detector, additional fields after the ion-source are applied.\\
-	The ions have different thermal energies. Therefore ions of the same mass and the the same starting position will not have all the same energy when they leave the ion source. This energy spread leads to a difference in their velocity and to different flight times. This energy spread can be partially compensated by an ion-mirror (Fig.\,\ref{fig:NIMSketch}). Ions with a higher energy will penetrate deeper into the ion-mirror and have a bigger flight path than ions with less energy. Therefore, the ion-mirror is able to compensate the different start energies of the ions. % about 10% in energy spread can be compensated in this way. Search for reference of that value.
-	In the worst case scenario we have one particle flying toward the extraction grid and the other particle flying with the same velocity in the opposite direction. The second particle gets decelerated and has to turn in the source. When it reached its initial position, it has the same amount of energy as the first particle. But it will always be behind the first particle by a constant time delay needed to turn around and reach its initial position. To minimize this effect, one has to minimise the distance of the ionisation region or increase the voltage of the HV pulse. A smaller ion source means less ions and therefore less signal. Increasing the HV pulse results in bigger electronic noise at the start of the spectrum and fast species such as hydrogen of helium are lost in the noise. % Evt. noch Effekte etwas besser ausführen.
-	In addition, a higher HV pulse needs longer until the pulse is fully applied.
-	
-	% 's' is sort of a theoretical value because the velocity changes during the flight of the ions through the spectrometer.
-	% Discussion about the timing 't'
-	% Effect of double charged masses and where they appear. Mention why the larger instrument automatically increases the mass resolution but that due to the sizes and weight limitations of the instrument, the maximum size is give to a certain degree. Therefore, good focusing of the ions is essetiel to lower the time spread dt of the ions. Show it with reference to the corresponding equation.
-
-	% Pulser discussion in this chapter? No, just discussion about the timings and how it works. The discussion about the fast fall time and the other parameters are part of the pulser chapter. It will be part of a repetition because of the discussion about the requirements.
-
+	\begin{comment}
 	\subsubsection{Mass Calibration}
 	In this section we discuss the calibration of the mass axis. According to Eq.\,\eqref{eq:m/q} the $m/q_0$ is proportional to the square of time. By rearranging Eq.\,\eqref{eq:m/q} $m$ is:
 	\begin{equation}
@@ -58,42 +54,159 @@
 		C = \frac{q_0 U_0 }{s^2} 
 	\end{equation}
 	and considering the time scale has a constant offset $t_0$, equation \eqref{eq:mass_Calib_pre} results in % Split the two ts. It is not acctually the same.
-	\begin{equation}
-		m = C(t-t_0)^2
-		\label{eq:mass_Calib}
-	\end{equation}
-	In this equation there are two free parameters, $C$ and $t_0$. To calibrate a mass spectrum at least two species appearing in the spectrum have to be known to solve this equation for the two parameters.
-	% [Scherer 1999]
+	\end{comment}
 	
 	\subsubsection{Mass resolution} % Bild einfügen, wie die Mass Resolution berechnet wird.
-	The mass resolution is calculated as follows. According to Eq.\ref{eq:mass_Calib} $m$ is:
-	\begin{align*}
-		m &= c\cdot t^2\\
-		\frac{dm}{dt} &= 2ct\\
-		dm &= 2ct\cdot dt\\
-		\frac{m}{dm} &= \frac{ct^2}{2ct\cdot dt}
-	\end{align*}
-	% Source down to here is from the lecture.
-	Resulting in:
+	The mass resolution is calculated as follows. According to Eq.\ref{eq:mass_Calib} $m$ is proportional to $t^2$:
 	\begin{equation}
-		\frac{m}{\Delta m} = \frac{t}{2 \Delta t} = \frac{\mu_t}{2 FWHM_t}
-		\label{eq:mass_res}
+		m = c\cdot t^2
+		\label{eq:mt2}
 	\end{equation}
-	With $\mu_t$ the centre of the mass peak in the time domain and $FWHM_t$ the full width at half maximum. The $FWHM_t$ depends on several parameters. For example the turn around time of the particles, the energy spread resulting from different starting positions of the particles relative to the extraction grid, spread in thermal energy. The reflectron is able to compensate for the energy spread by a certain amount. % Maybe explain that a bit further
-	There are also limitations of the instrument itself. For example the performance of the pulser which will be discussed later in Chap. bla.
+	The derivative is:
+	\begin{align}
+		\frac{dm}{dt} &= 2~ct\\
+		dm &= 2~ct\cdot dt
+		\label{eq:dm}
+	\end{align}
+	Dividing Eq.\,\eqref{eq:mt2} through Eq.\,\eqref{eq:dm} results in:
+	\begin{align}
+		\frac{m}{dm} &= \frac{ct^2}{2~ct\cdot dt}\\
+		\frac{m}{dm} &= \frac{t}{2~dt} = \frac{\mu}{2\cdot FWHM}
+		\label{eq:massRes}
+	\end{align}
+	With $\mu$ the centre of the mass peak in the time domain and $FWHM$ is the full width at half maximum of the mass peak.
+		
+	\subsubsection{Mass Resolution Error Estimations} % May later merge this chapter with the previous one.
+	In this chapter, we take a closer look at different contributions having an impact on the mass resolution of the NIM instrument. The main focus is on the contributions originating from the source thus they have the biggest impact on the mass resolution of the instrument.\\
+	
+	The total time spread $dt_i$ of the signal of an ion $i$ is according to error propagation:
+	\begin{equation}
+		dt_i = \sqrt{\sum_{k} dt_k^2} = \sqrt{dt_D^2 + dt_{ADC}^2 +dt_{th}^2 + dt_{s}^2 + dt_{tfall}^2} 
+	\end{equation}
+	
+	With the different contributions $dt_k$. When an ion hits the detector, it generates a voltage pulse with a pulse width $dt_D$. For the NIM detectors, this pulse is in the range of $\sim$~0.5~ns.	The generated pulse is converted into a digital signal with an analog-to-digital converter (ADC). The ADC used in the laboratory has a sampling rate of 4~GHz resulting in a time resolution of $dt_{ADC} =$ 0.25~ns. The flight ADC has a maximal sampling rate of 2~GHz corresponding to a time resolution of 0.5~ns. The ions in the ion-source have thermal energy $W_{th}$:
+	\begin{equation}
+		W_{th} = \frac{3}{2}\cdot k_B \cdot T
+	\end{equation}
+	With $k_B$ the Boltzmann constant and $T$ the temperature. The thermal energy leads to an initial velocity of the ions $v_{init}$. In worse case scenario, the velocity vector of one ion points in the direction of the extraction grid and the vector of another ion points in towards the backplane (Fig.\,\ref{fig:thISStartPosThermEn} top panel). When the extraction pulse is applied on the grid, the later ion has to turned around before it is accelerated. When the absolute value of the velocity vector of the two ions is the same, the two ions have the same amount of energy when reaching the extraction grid. Therefore, the time difference $dt_u$ between those two ions stays the same. At a certain point in time, these ions will overtake ions with less energy. \notes{In simulation discussion mention that temperature has no effect.}\\	
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=.5\textwidth]{Bilder/ISStartPosThermEn.png}
+		\caption{Ion flight path for different start velocities (top panel) and start positions (lower panel).}
+		\label{fig:thISStartPosThermEn}
+	\end{figure}
+	\begin{figure}[h!]
+		\begin{subfigure}{0.5\textwidth}
+			\centering
+			\includegraphics[width=\textwidth]{Bilder/PulserShapeTheoAna.png}
+			\caption{}
+			\label{subfig:theoPulseShape}
+		\end{subfigure}
+		\begin{subfigure}{0.5\textwidth}
+			\centering
+			\includegraphics[width=.8\textwidth]{Bilder/PulserFallTimeShapes.png}
+			\caption{\notes{Insert coordinate system. Figure alignment!}}
+			\label{subfig.PulserFallTimeShapes}
+		\end{subfigure}
+		\caption{a) Shape of a realistic high voltage pulse applied on the extraction grid. b) Two different possible shapes of the falling edge of the high voltage pulse.}
+		\label{fig:theoPulseShape}
+	\end{figure}
+	
+
+	When the ions start at different positions in the ionisation region, they receive a different amount of energy because their travel distance in the acceleration field is different (Fig.\,\ref{fig:thISStartPosThermEn} lower panel). Ions starting closer at the backplane receive more energy but start later at the extraction grid than ions starting closer to the extraction grid. At a certain point in time, the ions starting closer at the backplane will overtake the other ions. This point is at around $2\cdot s_0$ which corresponds to a very short flight distance. To shift this focal point onto to the detector, additional electric fields are applied right after the extraction grid in the ion-source to move the focal spot onto the detector.\\ % Question: prepare for the defence the calculation of the time it needs to overtake the other particles.
+	
+	\notes{Rewrite} The shape of the high voltage pulse applied on the extraction grid should look like a rectangular function. Fig.\,\ref{subfig:theoPulseShape}) shows the shape of a realistic extraction pulse. The pulse needs a certain amount of time ($t_{fall}$) until the charge is loaded. The energy the ions receive is according to Eq.\,\eqref{eq:WIonPulse} the integral of the electric field over the flight distance of the ions. A long fall time leads to a lower energy for the ions. This effect affects low mass ions more than high mass ions leading to a stretching of the mass scale at low masses and therefore to a lower mass resolution for low mass particles compared to high mass particles.\\
+	
+	% Ref to Abplanalps Diss because the equation of motion is copied by a big part out of his dissertaion.
+	In the following section the impact of the thermal energy $W_{th}$, the different start positions and the fall time of the high voltage pulse is analysed. In the model, the ions are generated in the centre of the ionisation region and accelerated with the extraction grid.\notes{Insert variables.}\\
+	
+	
+	The total energy $W_{tot}$ the ions get in the ionisation region is:
+	\begin{equation}
+		W_{tot} = \int_{s_{init}}^{s_0} z\cdot E(t)\cdot ds
+	\end{equation}
+	With $s_{init}$ the initial position of the ions, $s_0$ the distance from the centre of the ionisation region to the acceleration grid, $z$ the particle charge, $E(t)$ the electric field strength depending on the time $t$. $E(t)$ is approximated with a linear function during the fall time $t_{fall}$ of the high voltage pulse and constant during the rest of the time:
+	\begin{equation}
+		E(t) =
+		\begin{cases}
+			E_1\cdot\frac{t}{t_{fall}},& (0\leq t\leq t_{fall})\\
+			E_1,& t_{fall} < t
+		\end{cases}
+	\label{eq:PulseEt}
+	\end{equation}
+	$E_1$ is the electric field strength when the high voltage pulse is fully applied:
+	\begin{equation}
+		E_1 = \frac{U_0}{2\cdot s_0}
+	\end{equation}
+	With $U_0$ the pulse voltage. The equation of motion for the ions during the fall time is:
+	\begin{equation}
+		a_{fall}(t\leq t_{fall}) = \frac{z\cdot E_1}{m\cdot t_{fall}}\cdot t
+		\label{eq:afall}
+	\end{equation}
+	With $a_{fall}$ the acceleration of the ions and $m$ the particle mass. The velocity of the ions $v_{fall}$ is:
+	\begin{equation}
+		v_{fall}(t\leq t_{fall}) = \frac{z\cdot E_1}{2\cdot m\cdot t_{fall}}\cdot t^2 + v_{init}\label{eq:vfall}
+	\end{equation}
+	With $v_{init}$ the initial velocity of the ions before applying the extraction pulse. Integrating over time results in the position of the ions $s_{fall}$ at the time $t$:
+	\begin{equation}
+		s_{fall}(t\leq t_{fall}) = \frac{z\cdot E_1}{6\cdot m\cdot t_{fall}}\cdot t^3 + v_{init}\cdot t + s_{init}
+		\label{eq:sfall}
+	\end{equation}
+	When the high voltage pulse is fully applied and the ions did not reach the extraction grid until that time, the acceleration of the ions $a_{p}$ is:
+	\begin{equation}
+		a_{p}(t > t_{fall}) = \frac{z\cdot E_1}{m}
+		\label{eq:ap}
+	\end{equation}
+	The velocity $v_{p}$ is:
+	\begin{equation}
+		v_{p}(t > t_{fall}) = \frac{z\cdot E_1}{m}(t-t_{fall}) + v_{fall}(t_{fall})
+		\label{eq:vp}
+	\end{equation}
+	With $v_{fall}(t_{fall})$ the velocity of the ions at the time when the pulse reached full high voltage. The position $s_{p}$ is:
+	\begin{equation}
+		s_{p}(t > t_{fall}) = \frac{z\cdot E_1}{2\cdot m}(t-t_{fall})^2 + v_{fall}(t_{fall})(t-t_{fall}) + s_{fall}(t_{fall})
+		\label{eq:sp}
+	\end{equation}
+	With $s_{fall}(t_{fall})$ the position of the ions at the time when the pulse reached full high voltage.\\
+	When the ions leave the ionisation region before full high voltage is applied on the extraction grid, the time they spend in the ionisation region $t_{IS}$ is calculated by setting $s_{fall}=s_0$ and solving the cubic Eq.\,\eqref{eq:sfall} to $t$. The velocity $v_{Grid}$ of the ions at the extraction grid is determined by inserting $t_{IS}$ in Eq.\,\eqref{eq:vfall}.\\
+	When the ions leave the ionisation region after the high voltage is fully applied, the time they spend in the ionisation region $t_{IS}$ is calculated by setting $s_{p}=s_0$ and solving Eq.\,\eqref{eq:sp} to $t$. The velocity $v_{Grid}$ of the ions at the extraction grid is determined by inserting $t_{IS}$ in Eq.\,\eqref{eq:vp}. The total flight time of the ions in this model is:
+	\begin{equation}
+		t_{TOF} = t_{IS} +\frac{D}{t_{D}}
+	\end{equation}
+	With $D$ the flight distance from the extraction grid to the detector and the $t_{D}$ the time the ions need to travel the distance $D$. The mass resolution is calculated according to Eq.\,\eqref{eq:massRes}. % May mention to get the dt that 3 time series were generated to determine a series for t and 2 series to determine dt.
+	
+	
+	
+	%The flight time of the ions is the time the ions spend in the ionisation region plus the time spending on the drift path. The drift path is set to 1~m to avoid any unwanted secondary effects. % Discuss the behaviour with Peter in the meeting. Time focusing of certain masses when the detector is positioned too close at the extraction grid for certain fall times.
+	
+	
+	% The energy the ions receive is according to Eq.\,\eqref{eq:mass_Calib_pre} the integral of the electric field over the distance the field is applied. During the fall time when the grid is charging, the ions see a changing electric field until the voltage is fully applied.
+	
+	% The total energy of the ions when reaching the extraction grid is the energy they receive during the fall time plus the energy the they get when the pulse is applied until they reach the extraction grid. Because low mass particles are affected more by the electric field, they spend less time in the ionisation region ad therefore, the 	
+	
+
+	% First mention the contributions of the parts affecting all masses and then switch to the mass dependend derivation.
+	
+	% mention that here we only look at single charged particles and not double charged.
+	
 	\begin{comment}
 		Resolution limitations:
 		Pulser fall time impact: Simulation results of a sample IS.
 		Turn around time: is implicitly taken into account in case a variation of the thermal energy would be made. Effect not simulated at the moment.
 		Different starting positions (discussed a little bit further above): also implicit in the model
-		
 		Ion-mirror: Not ideal energy focusing -> spread. Not in the model discuss it after the simulation discussion.
 		HV lenses compensate different starting times to a certain degree. Explain it from a phenomenological point of view. Not in detail because otherwise, detailed simulations would have to be done.
 	\end{comment}
-	% Mass resolution is independant from the actual mass
-	% Last part of the formula is from Stefans thesis.
 	
-	% Then continue with the calculation of the mass resolution and the calibration of the mass scale (evt. Reference further explanation how the software it acctually does (keep it short, only extend it if further nessecary)).
+	
+	\begin{comment}
+	% This part comes later
+	The ions have different thermal energies. Therefore ions of the same mass and the same starting position will not have all the same energy when they leave the ion source. This energy spread leads to a difference in their velocity and to different flight times.
+	
+	This energy spread can be partially compensated by an ion-mirror (Fig.\,\ref{fig:NIMSketch}). Ions with a higher energy will penetrate deeper into the ion-mirror and have a bigger flight path than ions with less energy. Therefore, the ion-mirror is able to compensate the different start energies of the ions. % about 10% in energy spread can be compensated in this way. Search for reference of that value.
+	
+	% Effect of double charged masses and where they appear. Mention why the larger instrument automatically increases the mass resolution but that due to the sizes and weight limitations of the instrument, the maximum size is given to a certain degree. Therefore, good focusing of the ions is essetiel to lower the time spread dt of the ions. Show it with reference to the corresponding equation.
+	\end{comment}
 	
 	\subsubsection{Signal-to-Noise Ratio and Sensitivity}
 	
@@ -133,22 +246,10 @@
 	
 
 	
-	\subsection{Ion Optical Design, NIM specific elements} % Inspiration from the arguments of the paper. Titel noch anpassen. Theorieteil fortlaufend hinzufügen. Ion source efficienies, reflectron double focusing, detector reflection of signal, signal matching. Density enhancement.
-	% Hier das Design allgemein halten. Erst in Kapitel 'Setup' auf die Designdetails eingehen. Discuss important theory parts here and just give a short summary in the corresponding experimental parts when the theory is used.
-	% Explain here as far a necessary what the function of the different subcomponents are (reflectron to increase the flight distance,...).
+	\subsection{Ion Optical Design, NIM specific elements} % Inspiration from the arguments of the paper. Titel noch anpassen. Ion source efficienies, reflectron double focusing, detector reflection of signal, signal matching.
+	This section gives a detailed overview over the different subcomponents of NIM. Here, the fundamental theory parts for the NIM specific elements are explained. These elements are the functionality of the closed source antechamber, the shutter motor,...
+	Later on in chapter \notes{Ref.} test results of the different components are shown.
 	
-	A time of flight mass spectrometer consists of, an ion-source, a mass analyser and a detector.\\
-	
-	\begin{figure}[htb] % Noch schauen, ob das noch verschoben wird.
-		\centering
-		\includegraphics[width= 10cm]{Bilder/NIM_Sketch.png} % Bei Bild noch schauen, ob die Ränder drauf sind. Bei Zeiten noch Bild anpassen.
-		\caption{Schematics of the NIM mass spectrometer. Adapted from \cite{Diss_Meyer}.}
-		\label{fig:NIMSketch}
-	\end{figure}
-
-	%First overview and then go into the details.
-	The NIM instrument is able to measure neutrals and ions. Neutral particles get ionised by electron ionisation. A filament is heated up until it emits electron. Ions enter the ion source directly.  % Noch genaue Formulierung nachschauen.
-	All ions then get accelerated to the same energy and fly through the mass analyser. Light particles fly faster through the spectrometer than heavier ones. The different particle species arrive at different times at the detector. To enlarge the flight distance, an ion-mirror, which reflects the ions and leads them back to the detector. The used detector is a MCP detector. % Explain a little bit in more detail.
 	
 		\subsubsection{Filament Power Calculation}
 		% See Diss Lukas and do the same calcultation. Make an approximation where the flight filaments should end up with the power. Do the same calculaiton also for the FS filaments. May also for the others?

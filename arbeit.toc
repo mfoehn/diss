@@ -3,41 +3,41 @@
 \contentsline {section}{\numberline {2}Theory}{3}{section.2}%
 \contentsline {subsection}{\numberline {2.1}Requirements}{3}{subsection.2.1}%
 \contentsline {subsection}{\numberline {2.2}Basic Theory about TOF Masspectrometry}{3}{subsection.2.2}%
-\contentsline {subsubsection}{\numberline {2.2.1}Principle}{3}{subsubsection.2.2.1}%
-\contentsline {subsubsection}{\numberline {2.2.2}Mass Calibration}{4}{subsubsection.2.2.2}%
-\contentsline {subsubsection}{\numberline {2.2.3}Mass resolution}{5}{subsubsection.2.2.3}%
-\contentsline {subsubsection}{\numberline {2.2.4}Signal-to-Noise Ratio and Sensitivity}{5}{subsubsection.2.2.4}%
-\contentsline {subsubsection}{\numberline {2.2.5}Statistical Peak Analysis}{6}{subsubsection.2.2.5}%
-\contentsline {subsection}{\numberline {2.3}Ion Optical Design, NIM specific elements}{6}{subsection.2.3}%
-\contentsline {subsubsection}{\numberline {2.3.1}Filament Power Calculation}{7}{subsubsection.2.3.1}%
-\contentsline {subsubsection}{\numberline {2.3.2}Ion Storage capability}{7}{subsubsection.2.3.2}%
-\contentsline {subsubsection}{\numberline {2.3.3}Density enhancement Model}{8}{subsubsection.2.3.3}%
-\contentsline {subsubsection}{\numberline {2.3.4}Callisto Flyby}{15}{subsubsection.2.3.4}%
-\contentsline {subsubsection}{\numberline {2.3.5}Shutter Performance}{19}{subsubsection.2.3.5}%
-\contentsline {subsubsection}{\numberline {2.3.6}Pulser}{22}{subsubsection.2.3.6}%
-\contentsline {subsubsection}{\numberline {2.3.7}Pressure calibration of the NIM Sensor}{23}{subsubsection.2.3.7}%
-\contentsline {subsubsection}{\numberline {2.3.8}Detector Parameters}{23}{subsubsection.2.3.8}%
-\contentsline {section}{\numberline {3}Setup}{27}{section.3}%
-\contentsline {subsection}{\numberline {3.1}NIM Sensor Models}{27}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}Test facilities/ Test Tools}{27}{subsection.3.2}%
-\contentsline {subsubsection}{\numberline {3.2.1}Pumpstand nr. 2}{28}{subsubsection.3.2.1}%
-\contentsline {section}{\numberline {4}Experiments}{36}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Flight Ion-Mirror}{36}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}Flight Antechamber}{37}{subsection.4.2}%
-\contentsline {subsection}{\numberline {4.3}Entrance characterization}{39}{subsection.4.3}%
-\contentsline {subsection}{\numberline {4.4}Shutter Performance Test}{43}{subsection.4.4}%
-\contentsline {subsection}{\numberline {4.5}Simulations}{43}{subsection.4.5}%
-\contentsline {subsection}{\numberline {4.6}Filament decision}{43}{subsection.4.6}%
-\contentsline {subsection}{\numberline {4.7}Pulser}{43}{subsection.4.7}%
-\contentsline {subsection}{\numberline {4.8}Detector Tests}{43}{subsection.4.8}%
-\contentsline {subsection}{\numberline {4.9}Ionoptics}{45}{subsection.4.9}%
-\contentsline {subsubsection}{\numberline {4.9.1}Voltage Optimisation}{45}{subsubsection.4.9.1}%
-\contentsline {subsection}{\numberline {4.10}Instrument performance tests}{46}{subsection.4.10}%
-\contentsline {subsubsection}{\numberline {4.10.1}Prototype}{46}{subsubsection.4.10.1}%
-\contentsline {subsubsection}{\numberline {4.10.2}PFM}{46}{subsubsection.4.10.2}%
-\contentsline {subsubsection}{\numberline {4.10.3}FS}{46}{subsubsection.4.10.3}%
-\contentsline {section}{\numberline {5}Conclusion}{51}{section.5}%
-\contentsline {section}{\numberline {6}Outlook}{53}{section.6}%
-\contentsline {section}{References}{54}{section*.54}%
-\contentsline {section}{\numberline {7}Appendix}{56}{section.7}%
+\contentsline {subsubsection}{\numberline {2.2.1}Principle}{4}{subsubsection.2.2.1}%
+\contentsline {subsubsection}{\numberline {2.2.2}Mass resolution}{4}{subsubsection.2.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.3}Mass Resolution Error Estimations}{5}{subsubsection.2.2.3}%
+\contentsline {subsubsection}{\numberline {2.2.4}Signal-to-Noise Ratio and Sensitivity}{8}{subsubsection.2.2.4}%
+\contentsline {subsubsection}{\numberline {2.2.5}Statistical Peak Analysis}{8}{subsubsection.2.2.5}%
+\contentsline {subsection}{\numberline {2.3}Ion Optical Design, NIM specific elements}{8}{subsection.2.3}%
+\contentsline {subsubsection}{\numberline {2.3.1}Filament Power Calculation}{9}{subsubsection.2.3.1}%
+\contentsline {subsubsection}{\numberline {2.3.2}Ion Storage capability}{9}{subsubsection.2.3.2}%
+\contentsline {subsubsection}{\numberline {2.3.3}Density enhancement Model}{10}{subsubsection.2.3.3}%
+\contentsline {subsubsection}{\numberline {2.3.4}Callisto Flyby}{17}{subsubsection.2.3.4}%
+\contentsline {subsubsection}{\numberline {2.3.5}Shutter Performance}{21}{subsubsection.2.3.5}%
+\contentsline {subsubsection}{\numberline {2.3.6}Pulser}{24}{subsubsection.2.3.6}%
+\contentsline {subsubsection}{\numberline {2.3.7}Pressure calibration of the NIM Sensor}{25}{subsubsection.2.3.7}%
+\contentsline {subsubsection}{\numberline {2.3.8}Detector Parameters}{25}{subsubsection.2.3.8}%
+\contentsline {section}{\numberline {3}Setup}{29}{section.3}%
+\contentsline {subsection}{\numberline {3.1}NIM Sensor Models}{29}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Test facilities/ Test Tools}{29}{subsection.3.2}%
+\contentsline {subsubsection}{\numberline {3.2.1}Pumpstand nr. 2}{30}{subsubsection.3.2.1}%
+\contentsline {section}{\numberline {4}Experiments}{38}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Flight Ion-Mirror}{38}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Flight Antechamber}{39}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Entrance characterization}{41}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}Shutter Performance Test}{45}{subsection.4.4}%
+\contentsline {subsection}{\numberline {4.5}Simulations}{45}{subsection.4.5}%
+\contentsline {subsection}{\numberline {4.6}Filament decision}{45}{subsection.4.6}%
+\contentsline {subsection}{\numberline {4.7}Pulser}{45}{subsection.4.7}%
+\contentsline {subsection}{\numberline {4.8}Detector Tests}{45}{subsection.4.8}%
+\contentsline {subsection}{\numberline {4.9}Ionoptics}{47}{subsection.4.9}%
+\contentsline {subsubsection}{\numberline {4.9.1}Voltage Optimisation}{47}{subsubsection.4.9.1}%
+\contentsline {subsection}{\numberline {4.10}Instrument performance tests}{48}{subsection.4.10}%
+\contentsline {subsubsection}{\numberline {4.10.1}Prototype}{48}{subsubsection.4.10.1}%
+\contentsline {subsubsection}{\numberline {4.10.2}PFM}{48}{subsubsection.4.10.2}%
+\contentsline {subsubsection}{\numberline {4.10.3}FS}{48}{subsubsection.4.10.3}%
+\contentsline {section}{\numberline {5}Conclusion}{53}{section.5}%
+\contentsline {section}{\numberline {6}Outlook}{55}{section.6}%
+\contentsline {section}{References}{56}{section*.56}%
+\contentsline {section}{\numberline {7}Appendix}{58}{section.7}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
