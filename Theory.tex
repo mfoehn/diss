@@ -15,7 +15,7 @@
 	
 	
 	%------------------------------------------------------------------------------------------------
-	\subsection{Mass Resolution \notes{finished}}\label{chap:massRes}
+	\subsection{Mass Resolution \notes{Discussion Measurement missing}}\label{chap:massRes}
 	The generated ions in the ion-source are focused in the centre and extracted by a high voltage pulse applied onto the extraction grid. All ions are accelerated to the same energy $W$:
 	\begin{equation}
 		W = \int_{0}^{s_0}q E_s ds =  \frac{q U_0}{2}
@@ -270,7 +270,7 @@
 		\end{figure}
 
 %----------------------------------------------------------------------------------------------------
-		\subsubsection{Density enhancement Model}\label{subsubsec:Densenhan}
+		\subsubsection{Density enhancement Model \notes{finished}}\label{subsubsec:Densenhan}
 		\begin{table}
 			\begin{center}
 				\begin{tabular}{|l r |l r |l r|}
@@ -343,49 +343,49 @@
 			G_{open} & = \frac{C_{aIs}}{C_{aIs} + 2\cdot C_{aHi}} \label{eq:GAntOpen}\\
 			G_{open} & = \frac{\frac{r_{aIs}^2\cdot a\cdot \bar{v}}{4}}{\frac{r_{aIs}^2\cdot a\cdot \bar{v}}{4} + 2\frac{r_{aHi}^2\cdot \bar{v}}{4}}\\
 			G_{open} &= \frac{r_{aIs}^2\cdot a}{r_{aIs}^2\cdot a + 2\cdot r_{aHi}^2}
+			\label{eq:geoOpenTube}
 		\end{align}
 		With $r_{aIs} = 2\,\si{\milli\meter}$ and $r_{aHi} = 2.5\,\si{\milli\meter}$ resulting in $G_{open} = 0.067$ meaning that about 6.7\% of all particles entering the antechamber actually reach the ionization region due to losses of the geometry.\\
 		
 		In the following section the different parameters of the density enhancement equation Eq.\,\eqref{eq:thDensEnhan} were varied to determine their impact. For this analysis the particle density in the ionization region $n_{cs}$ was divided by the particle density of the test gas $n_a$ outside of the antechamber and $n_a$ was set 1 to get the amplification of the antechamber. For this analysis the parameters were set according to Table\,\ref{tab:thDensEnhan} unless otherwise mentioned. The temperatures are the ones used in the laboratory. The used particle velocity was 2.5\,\si{\kilo\meter\per\sec} because it is velocity of the spacecraft in Ganymede orbit and the velocity at which most of the measurements will be done.\\		
 		The first parameter which was varied was the gas temperature $T_a$. This temperature can be varied between 0 and 1000\,\si{\kelvin} without significantly influencing the gain of the antechamber (Fig.\,\ref{th:densEnhTaTs}). When looking closer, a slight increase in gain is observed with increasing temperature.\\
-		The temperature of the antechamber $T_s$ has a bigger impact on the gain. Ideally this temperature should be as low as possible to slow down the particles when they hit the chamber walls. When the temperature of the antechamber is too low, the gas condenses at the antechamber walls. Therefore the antechamber is kept at temperatures higher than -17\,\si{\degreeCelsius} during measurements. \notes{Continue here!!!}\\
+		The temperature of the antechamber $T_s$ has a bigger impact on the gain. Ideally this temperature should be as low as possible to slow down the particles when they hit the chamber walls. When the temperature of the antechamber is too low, the gas condenses at the antechamber walls. Therefore the antechamber is kept at temperatures higher than -17\,\si{\degreeCelsius} during measurements.
 		\begin{figure}[h!] % T_a T_s
 			\centering
 			\includegraphics[width= .7\textwidth]{Bilder/Ta_Ts.png}
 			\caption{Gain $n_{cs}/n_a$ as a function of the antechamber the ambient gas temperature $T_a$ and the temperature of the antechamber wall $T_s$ according to Eq.\eqref{eq:thDensEnhan}.}
 			\label{th:densEnhTaTs}
 		\end{figure}
-		The next parameter is the radius $r_{aIs}$ of the hole connecting the antechamber with the ionisation region. When the hole gets bigger, also the amount of gas flowing into the ionisation region increases as it can be seen in Fig.\,\ref{th:densEnhraHiraIs}. The radius of the entrance holes $r_{aHi}$ should be small to reach a high gain. This has two reasons: When the entrance holes are big compared to the hole connecting the antechamber with the ionisation region, a big amount of gas flows out through the entrance holes. The size of the entrance holes has also an impact on the opening angle $\omega$. In the first designs of such antechambers, the ionisation and counting of the particles happened in the antechamber itself \cite{Hedin_1964}. Therefore the antechamber needed only one opening. Our instrument has two entrances for particles. One to measure them directly without any interaction with the instrument surface (open-source channel) and a closed-source entrance through the antechamber to amplify the signal. Due to the flyby trajectories of the space craft the antechamber has to entrance holes with angle $\theta_0 = 30\degree$ relative to the x-axis of the instrument.\notes{Rewrite}
-		When having only one big entrance hole, the gas gets easily reflected and leaves the antechamber before being counted in the antechamber. Therefore a small opening is favoured over a big opening. From that perspective, the biggest gain is achieved when the radius of the entrance hole is 0 ergo the entrance hole is closed. That's the limitation of Eq.\,\eqref{eq:thDensEnhan} is. It does not take into account that at a certain radius of the opening, the gain should decrease because not enough particles enter the chamber to get amplified.\\
+		The radius $r_{aIs}$ of the hole connecting the antechamber with the ionisation region has to be as big as possible. A bigger radius leads to a smaller length-to-diameter ratio resulting in a bigger transition probability $a$. The amount of gas flowing into the ionisation region increases (Fig.\,\ref{th:densEnhraHiraIs}).\\
+		According to Eq.\,\eqref{eq:thDensEnhan}, the radius of the entrance holes $r_{aHi}$ should be small to reach a high gain. When the entrance holes are big, a big amount of gas flows out through them. From that perspective, the biggest gain is achieved when the radius of the entrance hole is close to zero. Eq.\,\eqref{eq:thDensEnhan} does not take into account that at a certain opening radius is needed to allow particles to enter the antechamber for being amplified.\\
 		\begin{figure}[h!] % raHi raIs
 			\centering
 			\includegraphics[width= .7\textwidth]{Bilder/raHi_raIs.png}
 			\caption{Gain $n_{cs}/n_a$ of the antechamber as a function of the entrance hole radius $r_{aHi}$ and the radius connecting the antechamber with the ionisation region $r_{aIs}$.}
 			\label{th:densEnhraHiraIs}
 		\end{figure}
-		It is very important to take materials with a high particle reflection coefficient $k$ for the coating of the antechamber' s inner surface. The particle reflection coefficient gives the probability of a particle being re-emitted when hitting the surface thus this value has to be close to 1. For our antechamber we used gold because it is electrically conductive preventing the surface from charging in the strong radiation field of Jupiter and it is chemically inert and thus there is a low probability of building chemical bonds with the test gas. Fig.\,\ref{th:densEnhk} shows the amplification of the antechamber in dependence of $k$. When changing $k$ by 1\textperthousand\, this already has a huge impact on the amplification. The impact of $k$ also depends on $\omega$. A small $\omega$ implies a big surface area with which the particles can interact before leaving the antechamber. The more interactions with the antechamber surface are possible, the bigger is the influence of $k$. For our antechamber $\omega$ is about 5.06\,\si{\degree} which is very small and therefore a small change in $k$ has a big impact on the gain.\\
+		It is very important to take materials with a high particle reflection coefficient $k$ for the coating of the antechamber's inner surface. The particle reflection coefficient gives the probability of a particle being re-emitted when hitting the surface thus this value has to be close to 1. NIM has a gold coated antechamber because gold it is electrically conductive preventing the surface from charging in the strong radiation field of Jupiter. In addition, gold is chemically inert and therefore, there is a low probability of building chemical bonds with the test gas. Fig.\,\ref{th:densEnhk} shows the amplification of the antechamber as a function of $k$. Already a change of 1\textperthousand  has a huge impact on the amplification. The impact of $k$ also depends on $\omega$. A small $\omega$ implies a big surface area with which the particles interact before being detected. The bigger the number of interactions is, the bigger is the influence of $k$. The $\omega$ of NIM's antechamber is about 5.06\,\si{\degree} which is very small and therefore a small change in $k$ has a big impact on the gain.\\
 		\begin{figure}[h!] % k
 			\centering
 			\includegraphics[width= .7\textwidth]{Bilder/k.png}
 			\caption{Gain $n_{cs}/n_a$ of the antechamber as a function of the particle reflection coefficient $k$.}
 			\label{th:densEnhk}
 		\end{figure}
-		Fig\ref{th:densEnhm} shows the amplification of the antechamber in dependence of the particles unit mass\,[u]. The figure shows that particles with higher unit mass get amplified more and are therefore easier to detect.\\
+		Fig\ref{th:densEnhm} shows the amplification of the antechamber as a function of the particles unit mass\,[u]. The figure shows that particles with higher unit mass get more amplified and are therefore easier to detect.\\
 		\begin{figure}[h!] % mass
 			\centering
 			\includegraphics[width= .7\textwidth]{Bilder/m.png}
 			\caption{Gain $n_{cs}/n_a$ of the antechamber as a function of the particle mass $m$.}
 			\label{th:densEnhm}
 		\end{figure}
-		Fig.\,\ref{th:densEnhvelo} shows the amplification of the antechamber in dependence of the spacecraft velocity for different species. We expect H\textsubscript{2}O and different radiolysis radiolysis products such as H\textsubscript{2}, O\textsubscript{2} or HO. Absorption lines in the near infrared recorded by the Near Infrared Mapping Spectrometer (NIMS) on board of the Galileo spacecraft indicate CO\textsubscript{2} bond to other solid materials in the soil. Sulphur is part of the plasma. The sulphur compounds are therefore a result of the ion bombardment on the moons surface. Sulphur reacts with water resulting in various different compounds such as sulphur dioxide (SO\textsubscript{2}) or sulphuric acid (H\textsubscript{2}SO\textsubscript{4}) \cite{Collins_2014}. \notes{include Audrey's paper if it gets finished in time.}
-		Fig.\,\ref{th:densEnhvelo} shows that with increasing flyby velocity, the particles get more amplified. Species with higher masses are stronger amplified than light particles as it was already shown also in Fig.\,\ref{th:densEnhm}.\\
+		Fig.\,\ref{th:densEnhvelo} shows the amplification of the antechamber as a function of the spacecraft velocity for different species. We expect H\textsubscript{2}O and different radiolysis products such as H\textsubscript{2}, O\textsubscript{2} or HO in the icy moons' exosphere. Absorption lines in the near infrared recorded by the Near Infrared Mapping Spectrometer (NIMS) on board of the Galileo spacecraft indicate CO\textsubscript{2} bond to other solid materials in the soil. Sulphur is ejected by the Galilean moon Io and is therefore part of the Jupiter's plasma torus. The sulphur compounds are a result of the ion bombardment on the icy moons' surface. Sulphur reacts with water resulting in various different compounds such as sulphur dioxide (SO\textsubscript{2}) or sulphuric acid (H\textsubscript{2}SO\textsubscript{4}) \cite{Collins_2014}. Fig.\,\ref{th:densEnhvelo} shows that with increasing flyby velocity, the particles get more amplified. Heavier species are stronger amplified than light ones as it was already shown in Fig.\,\ref{th:densEnhm}.\\
 		\begin{figure}[h!] % velocity
 			\centering
-			\includegraphics[width= .7\textwidth]{Bilder/velocity.png}
-			\caption{Gain $n_{cs}/n_a$ of the antechamber as a function of the spacecraft velocity $v_{sc}$ for different species expected in the moons atmospheres.}
+			\includegraphics[width= .8\textwidth]{Bilder/velocity.png}
+			\caption{Gain $n_{cs}/n_a$ of the antechamber as a function of the spacecraft velocity $v_{sc}$ for different species expected in the icy moons exospheres.}
 			\label{th:densEnhvelo}
 		\end{figure}
-		Fig.\,\ref{th:densEnhChiTheta} shows the amplification in dependence of different particle influx angles $\chi$. $\chi$ is measured in the x-/y- plane (Fig.\,\ref{fig:thAntIs}). The function was evaluated for different positions of the entrance holes. The minimal angle the two entrance hole can be apart from each other without overlapping is 3.6\si{\degree}. The holes of the PFM are at $\theta_0 = \pm30\,\si{\degree}$. With that configuration the biggest signal intensity is measured with a spacecraft ramp direction of 0\si{\degree}. When the two holes are at $\pm$60\si{\degree} it results in a plateau between $\pm$60\,\si{\degree} and also a wider angular range at which NIM is sensitive. This is an interesting feature under certain circumstance. For our purpose it is unnecessary because the spacecraft blocs the field of view (FoV) for angles bigger than 100\degree (see also Chap.\,\ref{subsubsec:Calfly}).
+		Fig.\,\ref{th:densEnhChiTheta} shows the amplification as a function of different particle influx angles $\chi$. $\chi$ is measured in the x-/y- plane (Fig.\,\ref{fig:thAntIs}). The function was evaluated for different positions of the entrance holes. The minimal angle the two entrance holes can be apart from each other without overlapping is 3.6\si{\degree}. The holes of the PFM antechamber are at $\theta_0 = \pm30\,\si{\degree}$. With that configuration the biggest signal intensity is measured with a spacecraft ramp direction of 0\si{\degree}. When the two holes are at $\pm$60\si{\degree} the intensity distribution has a plateau between $\pm$60\,\si{\degree} and also a wider angular range. This is an interesting feature under certain circumstance. For NIM it is unnecessary because the spacecraft blocs the field of view (FoV) for angles bigger than 100\degree (see also Chap.\,\ref{subsubsec:Calfly}).
 		\begin{figure}[h!] % chi theat
 			\centering
 			\includegraphics[width= .8\textwidth]{Bilder/Chi_theta0.png}
@@ -394,66 +394,62 @@
 		\end{figure}
 		
 %-------------------------------------------------------------------------------------------		
-		\subsubsection{Callisto Flyby}\label{subsubsec:Calfly}
-	
+		\subsubsection{Field-of-View Analysis \notes{finished}}\label{subsubsec:Calfly}
 		\begin{figure}[h!]
 			\centering
 			\includegraphics[width=.8\textwidth]{Bilder/Callisto_flyby_schematic.png}
-			\caption{Schematics of one of the flybys at Jupiter's moon Callisto.}
+			\caption{Schematics of a flyby at Jupiter's moon Callisto.}
 			\label{fig:CalflybySchem}
 		\end{figure}
-				
 		\begin{figure}[h!]
 			\centering
 			\includegraphics[width = .7\textwidth]{Bilder/NIM_pointing_2031JAN15185200.png}
-			\caption{Fourth Callisto flyby of trajectory 141a \cite{SOC_Crema3p2} 1\,h before closest approach 15'600\,km away from Callisto.}
+			\caption{Fourth Callisto flyby of trajectory 141a \cite{SOC_Crema3p2} 1\,h before closest approach 15'600\,km above Callisto's surface.}
 			\label{fig:FlybyCal1852}
 		\end{figure}
 		\begin{figure}[h!]
 			\centering
 			\includegraphics[width = .7\textwidth]{Bilder/NIM_pointing_2031JAN15194200.png}
-			\caption{Fourth Callisto flyby of trajectory 141a \cite{SOC_Crema3p2} 10\,min before closest approach 1'560\,km away from Callisto.}
+			\caption{Fourth Callisto flyby of trajectory 141a \cite{SOC_Crema3p2} 10\,min before closest approach 1'560\,km above Callisto's surface.}
 			\label{fig:FlybyCal1942}
 		\end{figure}
 		\begin{figure}[h!]
 			\centering
 			\includegraphics[width = .7\textwidth]{Bilder/NIM_pointing_2031JAN15194700.png}
-			\caption{Fourth Callisto flyby of trajectory 141a \cite{SOC_Crema3p2} 5\,min before closest approach 580\,km away from Callisto.}
+			\caption{Fourth Callisto flyby of trajectory 141a \cite{SOC_Crema3p2} 5\,min before closest approach 580\,km above Callisto's surface.}
 			\label{fig:FlybyCal1947}
 		\end{figure}
 		\begin{figure}[h!]
 			\centering
 			\includegraphics[width = .7\textwidth]{Bilder/NIM_pointing_2031JAN15195200_tilt.png}
-			\caption{Fourth Callisto flyby of trajectory 141a \cite{SOC_Crema3p2} closest approach 200\,km away from Callisto with the solar panels oriented toward the sun to maximizes power generation of the spacecraft.}
+			\caption{Fourth Callisto flyby of trajectory 141a \cite{SOC_Crema3p2} closest approach 200\,km above Callisto's surface with the spacecraft solar panels oriented toward the sun to maximizes power generation.}
 			\label{fig:FlybyCal1952sol}
 		\end{figure}
 		\begin{figure}[h!]
 			\centering
 			\includegraphics[width = .7\textwidth]{Bilder/NIM_pointing_2031JAN15195200.png}
-			\caption{Fourth Callisto flyby of trajectory 141a \cite{SOC_Crema3p2} closest approach 200\,km away from Callisto.}
+			\caption{Fourth Callisto flyby of trajectory 141a \cite{SOC_Crema3p2} closest approach 200\,km above Callisto's surface with solar panels tilted to leave open NIM's field-of-view of the n-Mode.}
 			\label{fig:FlybyCal1952}
 		\end{figure}
 		\begin{figure}[h!]
 			\centering
 			\includegraphics[width = .7\textwidth]{Bilder/NIM_pointing_2031JAN15195700.png}
-			\caption{Fourth Callisto flyby of trajectory 141a \cite{SOC_Crema3p2} 5\,min after closest approach 640\,km away from Callisto.}
+			\caption{Fourth Callisto flyby of trajectory 141a \cite{SOC_Crema3p2} 5\,min after closest approach 640\,km above Callisto's surface.}
 			\label{fig:FlybyCal1957}
 		\end{figure}
-		Fig.\,\ref{fig:FlybyCal1852}\,- Fig.\,\ref{fig:FlybyCal1957} show the changing FoV of the NIM instrument at different times during the fourth Callisto flyby of trajectory 141a \cite{SOC_Crema3p2}. The reference coordinate system for these graphics is the ecliptic coordinate system. During the flyby, the spacecraft changes its orientation in reference to that coordinate system leading to a distortion of the different objects in the figures. The entrance holes of the antechamber are blue circles, the FoVs of the entrance holes are marked as dashed blue lines, the entrance slit is the blue band with the sinusoidal shape. The solar panels and the antenna which bloc part of the FoV of NIM are marked in red. The gas inflow direction is marked as an orang star. Fig.\,\ref{fig:FlybyCal1852} shows the FoV 1\,h before closest approach 15'600\,km above Callisto's surface. The gas inflow direction is in between the two entrance holes. The black doted line on the moons surface marks the day/night separation line. As the spacecraft moves closer to the moon, the gas inflow direction moves towards the entrance slit. 5\,min before closest approach, NIM changes from thermal to neutral mode (Fig.\,\ref{fig:FlybyCal1947}) to be ready for the neutral mode measurements. At this time, the gas inflow direction is still in the FoV of the antechamber. The time window for measuring with the neutral gas mode is very narrow. Already 5\,min after closest approach, the gas inflow direction is below the FoV of the neutral gas channel (Fig.\,\ref{fig:FlybyCal1957}). Therefore, the time to switch from thermal to neutral mode has to be very short to minimize the number of lost measurements. These measurements are very crucial because the closer the spacecraft gets to the moon's surface, the higher is the exospheric pressure and therefore the signal intensity.\\
-		The spacecraft structure blocs angles higher than 100\si{\degree}. The gas striking the spacecraft sputters particles from the spacecraft's surface. NIM is not able to determine if these particles are part of the moons exosphere of if they originate from the spacecraft. When the gas inflow direction reaches angles higher than 100\si{\degree} NIM starts measuring background. The solar panels are adjusted perpendicular to the sun to maximize power generation. 10\,min before closest approach, the solar panels are tilted to leave open the FoV of NIM to measure with the neutral gas mode. In case the solar panels would stay perpendicular to the sun, the gas would graze the surface of the solar panel as it is shown in Fig.\,\ref{fig:FlybyCal1952sol}. Fig.\,\ref{fig:FlybyCal1952} shows the same scenario but with the solar panels tilted to leave open NIM's FoV of the neutral gas channel.\\
-		Fig.\,\ref{fig:densEnhChiFlyby} shows the gain of the antechamber with the total FoV of the two entrance holes marked as red area $\pm$30\degree around the position of the two entrance holes. The orange stars mark the gas inflow direction for the various scenarios mentioned before.
+		In the following section, the fourth Callisto flyby of trajectory 141a \cite{SOC_Crema3p2} is analysed. Fig.\,\ref{fig:FlybyCal1852}\,- Fig.\,\ref{fig:FlybyCal1957} show the changing FoV of the NIM instrument at different times. The reference coordinate system for these graphics is the ecliptic coordinate system. During the flyby, the spacecraft changes its orientation leading to a distortion of the different objects in the figures. The entrance holes of the antechamber are marked as blue circles, the FoVs of the entrance holes are marked as dashed blue lines, the entrance slit is the blue, striped band with the sinusoidal shape. The solar panels and the rim antenna of the spacecraft are marked in red. The gas inflow direction is marked as an orang star. Fig.\,\ref{fig:FlybyCal1852} shows the FoV 1\,h before closest approach 15'600\,km above Callisto's surface. The gas inflow direction is in between the two entrance holes. As the spacecraft moves closer to the moon, the gas inflow direction moves towards the entrance slit. Due to the narrow FoV of 10\degree of the entrance slit and the short time window during which the gas inflow direction points on the entrance slit, NIM changes already 5\,min before closest approach from thermal to neutral mode (Fig.\,\ref{fig:FlybyCal1947}). At this time, the gas inflow direction is still in the FoV of the antechamber. The time to switch between the two modes should be as small as possible to minimize the number of lost measurements. These measurements are very crucial because the closer the spacecraft gets to the moon's surface, the higher is the exospheric pressure and therefore the signal intensity. 5\,min after closest approach, the gas inflow direction is below the FoV of the neutral gas channel and NIM takes background measurements (Fig.\,\ref{fig:FlybyCal1957}). In addition, the spacecraft structure blocs angles higher than 100\si{\degree}. The gas striking the spacecraft sputters particles from the spacecraft's surface. NIM is not able to determine if these particles are part of the moons exosphere of if they originate from the spacecraft. In general, the solar panels are adjusted perpendicular to the sun to maximize power generation. 10\,min before closest approach, the solar panels are tilted to leave open the FoV of NIM to measure with the neutral gas mode. In case the solar panels would stay perpendicular to the sun, the gas would graze the surface of the solar panel as it is shown in Fig.\,\ref{fig:FlybyCal1952sol}. Fig.\,\ref{fig:FlybyCal1952} shows the same scenario but with the solar panels tilted to leave open NIM's FoV of the neutral gas channel.\\
 		\begin{figure}[h!]
 			\centering
 			\includegraphics[width=.8\textwidth]{Bilder/Chi_theta0_flyby.png}
-			\caption{Gain $n_{cs}/n_a$ of the antechamber in dependence of the gas influx direction $\chi$. The blue circles mark the entrance hole positions and the red area marks the FoV of the entrance holes. The stars mark the gas influx direction from 1\,h before until 5\,min after closest approach of trajectory 141a \cite{SOC_Crema3p2}.}
+			\caption{Gain $n_{cs}/n_a$ of the antechamber as a function of the gas inflow direction $\chi$. The blue circles mark the entrance hole positions and the red area marks the FoV. The stars mark the gas influx direction from 1\,h before until 5\,min after closest approach of trajectory 141a \cite{SOC_Crema3p2}.}
 			\label{fig:densEnhChiFlyby}
 		\end{figure}
-		The main gas inflow direction varies for the different flybys. One time the gas comes from positive and one time from negative $\chi$ direction. Therefore, it was decided to make two entrance holes to allow measurements with angles different to the main direction to enlarge the FoV of the antechamber. The holes should also not be too close at the entrance because structures of the spacecraft bloc angles bigger than 100\degree and an amplification of such big angles would be useless.
+		Fig.\,\ref{fig:densEnhChiFlyby} shows the gain of the antechamber with the total FoV of the two entrance holes marked as red area $\pm$30\degree around the position of the two entrance holes. The orange stars mark the gas inflow direction for the various scenarios mentioned above. Depending on the flyby, the main gas inflow direction is from the $+\chi$ or $-\chi$ side. Therefore, it was decided to make two entrance holes to allow measurements with angles different to the main direction to enlarge the FoV of the antechamber. The holes should also not be too close at the entrance because structures of the spacecraft bloc angles bigger than 100\degree and an amplification of such big angles would be useless.
 		
 		
 %----------------------------------------------------------------------------------		
-		\subsubsection{Shutter Performance} \label{subsubsec:motorflow}
-		NIM has a shutter to close the entrance to the antechamber. This shutter is mounted between the ion source and the antechamber (Fig.\,\ref{fig:shutterMotor} left). When the shutter is open, the gas flows right through the hole into the ion source. When the shutter is closed, the hole moves to the side as it is indicated in Fig.\,\ref{fig:shutterMotor} right. Because the shutter does not close the gag perfectly, still a small amount of gas flows around the shutter into the ionisation region. In the following section, the geometry factor $G_{close}$ of the antechamber is determine when the shutter is closed.\\
+		\subsubsection{Shutter Performance \notes{finished}} \label{subsubsec:motorflow}
+		With the open-source entrance, NIM is able to measure neutral particles and ions directly without any interaction with the structure. Therefore, NIM has a shutter to close the entrance to the antechamber. This shutter is mounted between the ionization region and the antechamber (Fig.\,\ref{fig:shutterMotor} left). When the shutter is open, the gas flows right through the hole into the ionization region. When the shutter is closed, the hole moves to the side as it is indicated in Fig.\,\ref{fig:shutterMotor}~right. The shutter does not close the hole perfectly and therefore a small amount of gas flows through the gap around the shutter into the ionisation region. In the following section, the damping factor of the shutter is determined.\\
 		\begin{figure}[h!]
 			\begin{subfigure}{0.5\textwidth}
 				\centering
@@ -463,7 +459,7 @@
 				\centering
 				\includegraphics[width=.8\textwidth]{Bilder/Shutter_topview.png}
 			\end{subfigure}
-		\caption{Shutter Motor. Left: side view with shutter closed. Right: Top view with open shutter. When the shutter is closing the central hole moves to the red position.}
+		\caption{Left: side view with shutter when shutter is closed. Right: Top view with open shutter. When the shutter is closing the central hole moves to the red position.}
 		\label{fig:shutterMotor}
 		\end{figure}
 		The molecular flow conductance is:
@@ -477,7 +473,7 @@
 			C_{hole} &= \frac{r_{aIs}^2\cdot\pi\cdot\bar{v}\cdot a_{hole}}{4}\\
 			C_{bot}  &= \frac{r_{aIs}^2\cdot\pi\cdot\bar{v}\cdot a_{bot}}{4}
 		\end{align}
-		\begin{table}[h!]
+		\begin{table}[h]
 			\begin{center}
 				\begin{tabular}{l r| l r }
 					$a_{top}$	& 0.73 	& $h_{top}$		& 1.5\,mm	\\
@@ -489,8 +485,8 @@
 			\end{center}
 			\caption{Nominal transmission probabilities $a_i$, tube heights $h_i$, tube radius $r_{aIs}$ and minimal gap length $l_{gap}$ when the shutter between the antechamber and the ion-source is closed.}
 			\label{tab:thMolFloConMotClosPara}
-		\end{table}	
-		With $a_{i}$ the transmission probabilities of the different sections (Eq.\,\eqref{eq:MolFloConFitFunc}), $h_i$ the height of the different sections, $r_{aIs}$ the radius of the antechamber hole and $l_{gap}$ the minimal distance between the hole in the shutter and the tube connecting the antechamber with the ion-source. The nominal values for these parameters are listed in Table\,\ref{tab:thMolFloConMotClosPara}. The average velocity $\bar{v}$ will cancel out later in the derivation of the geometry factor. The conductance of the tube $C_{tot}$ is:
+		\end{table}
+		With $a_{i}$ the transmission probabilities of the different sections (Eq.\,\eqref{eq:MolFloConFitFunc}), $h_i$ the height of the different sections, $r_{aIs}$ the radius of the antechamber hole and $l_{gap}$ the minimal distance between the hole in the shutter and the tube connecting the antechamber with the ionization region. The nominal values for these parameters are listed in Table\,\ref{tab:thMolFloConMotClosPara}. The average velocity $\bar{v}$ cancels out during the derivation of the geometry factor. The conductance of the tube $C_{tot}$ is:
 		\begin{equation}
 			\frac{1}{C_{tot}} = \frac{1}{C_{top}} + \frac{2}{C_{gap}} + \frac{1}{C_{hole}} + \frac{1}{C_{bot}}
 		\end{equation}
@@ -502,25 +498,23 @@
 		\begin{equation}
 			G_{close} = \frac{C_{tot}}{C_{tot} + 2\cdot C_{aHi}}
 		\end{equation}
+		The geometry factor for the tube when the shutter is open was calculated with Eq.\,\eqref{eq:geoOpenTube}.\\
 		\begin{figure}[h]
 			\centering
 			\includegraphics[width=.8\textwidth]{Bilder/ShutGapSizeSigDamp.png}
 			\caption{Damping factor $G_{open}/G_{close}$ of the shutter as a function of the gap size $h_{gap}$ of the gap between the shutter and antechamber.}
 			\label{fig:ShutGapSizeSigDamp}
 		\end{figure}
-		The gap between the shutter and the antechamber has to be very thin to seal the hole when the shutter is closed. Fig.\,\ref{fig:ShutGapSizeSigDamp} shows the damping factor $G_{open}/G_{close}$ as a function of the gap size $h_{gap}$. With increasing gap size, the damping factor reduces significantly. The requirement was to damp the signal by a factor 1000 when the shutter is closed. With the nominal gap size of 0.01\,mm, the shutter damps the signal by a factor 600. When the gap size is about 0.1\,mm the damping factor is only about 25. This may can happen when the shutter is not properly fabricated and the tolerances are therefore bigger than originally designed.\\
+		Fig.\,\ref{fig:ShutGapSizeSigDamp} shows the damping factor $G_{open}/G_{close}$ as a function of the gap size $h_{gap}$ of the gap between the shutter and antechamber. With increasing gap size, the damping factor reduces significantly. The requirement was to damp the signal by a factor 1000 when the shutter is closed. With the nominal gap size of 0.01\,mm, the shutter damps the signal by a factor 600. When the gap size is about 0.1\,mm the damping factor is only about 25. This can happen when the shutter is not properly fabricated and the tolerances are therefore bigger than originally designed.\\
 		When measuring with the open source channel, a small amount of gas will enter the ion-source through the antechamber. The open source slit is in the y-/z-plane and therefore $\chi$ is 90\si{\degree} (Fig.\ref{fig:thAntIs}). When the shutter is closed, about 0.05\% of the signal originates from the antechamber.
 		
-		%In this approximation the assumption was that the gas will take the shortest distance between the antechamber and the ion-source. In reality it will flow around the shutter and the signal will be damped even more because with increasing distance the gas has to flow, it get damped more.
-		
-
-		\subsubsection{Pressure calibration of the NIM Sensor}
+%-----------------------------------------------------------------------------------------		
+		\subsubsection{Pressure calibration of the NIM Sensor \notes{May will be deleted.}}
 		% This chapter comes after the calculation of the detector gain because the gain of the detector is part of the pressure calculation. Proper error estimation of the paramaeters as far as possible.
 		% More detailed explanation about the NIM ion source, function of the different specific electrodes. Or explain it later in detail when discussing the simulations in detail. See paper as a guide line. Especially for the ion storage part.
 		
-		
-		
-		\textcolor{red}{see also density enhancement book for that derivation!!!}
+%		\textcolor{red}{see also density enhancement book for that derivation!!!}
+
 		To calculate the number of ions produced in the ion source we use:
 		\begin{equation}
 		I_{ion} = \beta\cdot Q_{ion}\cdot L\cdot n\cdot I_{em}
@@ -530,7 +524,7 @@
 		
 		\textcolor{red}{Write something about the radiation shielding concept? Or just make a reference to the paper because it gives an overview over the concept as far as it is necessary.}
 		
-		\subsubsection{Detector Parameters} % Clean up this chapter when finalizing the detector chapter. Finalize the theory part and the explanation of the workmanship of the detector housing.
+		\subsubsection{Detector Parameters \notes{Draft}} % Clean up this chapter when finalizing the detector chapter. Finalize the theory part and the explanation of the workmanship of the detector housing.
 		% All relevant parameters
 		% Gain
 		% dead time, R, C, number of channels. Calculation of the number of channels out of the data sheet (Diss Maike) charging behaviour. Is this really needed for the analysis I do? I case I should have to test with the FS, it would be nice to include that calculation and the timing resulting out from that. Otherwise it is just a nice part of theory but is not used for anything. Set up something, just that the chapter is completed (sort of).

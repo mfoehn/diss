@@ -1,21 +1,15 @@
 % !TEX root = arbeit.tex
 \section{Experiments} \label{sec:Exp}
-	%rewrite. Have a look how much the measurement configuration changes and state the normal measuring conditions instead of stating them always. Reference them if they do not change.
-	The tests described in this chapter include tests of the different components of the NIM instrument such as laboratory tests of the flight antechamber tested on the Prototype or the flight ion-mirror. This part of Chapter \ref{sec:Exp} includes manly test with the prototype, and tests with the PFM and FS model.
-
-	% In zeitlicher Reihenfolgen auflisten, damit man sieht, zu welchem Zeitpunkt man mit welchen Teilen gearbeitet hat.
-	% In this section, all the different test (lab and simulations) are listed. As far as possible in their chronolocial order because between some lab tests there were simulations to improve the instrument before testing the redesigned instrument.
+	
+	This section includes tests of flight components and also system tests of the NIM Proto~Flight~Model (PFM) and the Fligh~Spare (FS).
+	% Make refs to the different test facilities if needed.
 
 	% Fügt ein PDF ein, nummeriert nach dem PDF normal weiter.
 	%\includepdf[pages=-]{Report_Thermofoil_UV_Masterarbeit.pdf}
 
-	% Section über Detector? haben wir ja nicht wirklich etwas gemacht. Diode durch 2 Widerstände ersetzt. -> Spannungsfestigkeit. Verlauf der Überschläge. Unterschiedliche Skizzen.
-
-	In this section, the different tests are described to develop the NIM instrument. Different parts of the instrument were tested to improve the instrument.
 %-----------------------------------------------------------------------------------
-	\subsection{Flight Ion-Mirror}
-	% What is and ion-mirror. How does it work, compare the two designs.
-	In this section the performance of the two ion-mirrors is compared. As described in chapter \ref{subsec:setupInst}, the prototype ion-mirror consists of several ring-electrodes connected with each other with resistors to generate a linear voltage gradient. The flight ion-mirror consists of a ceramic tube with two resistance spirals replacing some of the ring-electrodes. Fig.\,\ref{fig:ExpRefl} left shows the prototype ion-mirror and Fig.\,\ref{fig:ExpRefl} right shows the flight ion-mirror mounted to the NIM prototype in the test setup. An ion-mirror of the same type as the flight ion-mirror was also used in the RTOF mass spectrometer which flew in ROSINA \cite{Diss_Scherer} and the in the NGMS \cite{Diss_Hofer}. From the electrical point of view, the two ion-mirror types behave the same.\\
+	\subsection{Flight Ion-Mirror \notes{Finished}}
+	In this section the performance of two ion-mirrors is compared. As described in chapter \ref{subsec:setupInst}, the prototype ion-mirror consists of several ring-electrodes connected with each other with resistors to generate a linear voltage gradient. The flight ion-mirror consists of a ceramic tube with two resistance spirals replacing some of the ring-electrodes. Fig.\,\ref{fig:ExpRefl} left shows the prototype ion-mirror and Fig.\,\ref{fig:ExpRefl} right shows the flight ion-mirror mounted to the NIM prototype in the test setup. An ion-mirror of the same type as the flight ion-mirror was also used in the RTOF mass spectrometer which flew in ROSINA \cite{Diss_Scherer} and the in the NGMS \cite{Diss_Hofer}. From the electrical point of view, the two ion-mirror types behave the same.\\
 	\begin{figure}[h]
 		\begin{subfigure}{0.5\textwidth}
 			\centering
@@ -28,7 +22,7 @@
 		\caption{Left: Prototype ion-mirror with ring-electrodes. Right: Prototype with flight ion-mirror.}
 		\label{fig:ExpRefl}
 	\end{figure}
-	The measurements were performed in a vacuum chamber. The residual gas pressure for the measurements with the prototype ion-mirror was 5$\cdot$10\textsuperscript{-10}mbar and for the measurements with the flight ion-mirror (PFMR) 1.4$\cdot$10\textsuperscript{-9}mbar. The test gases were injected directly through a leak valve to increase the chamber pressure up to 1$\cdot$10\textsuperscript{-8}mbar. The used test gases were: Ne, Ar, Kr and Xe. 3\, Mio. single spectra were histogramed for each of the measurements. All voltages of the instrument were optimized for the measurements with the two ion-mirrors. Table\ref{tab:refPerftab} shows the signal-to-noise ratios and the mass resolution of the different test gases measured with the two instrument configurations.\\
+	The measurements were performed in a vacuum chamber. The residual gas pressure for the measurements with the prototype ion-mirror was 5$\cdot$10\textsuperscript{-10}mbar and for the measurements with the flight ion-mirror 1.4$\cdot$10\textsuperscript{-9}mbar. The test gases were injected directly through a leak valve to increase the chamber pressure up to 1$\cdot$10\textsuperscript{-8}mbar. The used test gases were: Ne, Ar, Kr and Xe. 3\, Mio. single spectra were histogramed for each of the measurements. All voltages of the instrument were optimized for the measurements with the two ion-mirrors. Table\ref{tab:refPerftab} shows the signal-to-noise ratios and the mass resolution of the different test gases measured with the two instrument configurations.\\
 	\begin{table}
 		\begin{center}
 		\begin{tabular}{|l|r|r|r|r|}
@@ -42,18 +36,18 @@
 			\hline
 		\end{tabular}
 		\end{center}
-		\caption{Table listing the signal-to-noise ratios (SNR) and the mass resolution (m/$\Delta$m) of the prototype ion-mirror (ProtoR) and the flight ion-mirror (PFMR). The mass resolution in the table is underestimated to the real value.}
+		\caption{Table listing the signal-to-noise ratios (SNR) and the mass resolution (m/$\Delta$m) of the prototype ion-mirror (ProtoR) and the flight ion-mirror (PFMR).}
 		\label{tab:refPerftab}
 	\end{table}
-	The SNR of the flight ion-mirror of the measurement with the flight ion-mirror is for all gases lower than the SNR of the measurements with the prototype ion-mirror due to the higher amount of residual in the chamber during the measurements with the flight ion-mirror. The mass resolution of all of the test gases is higher when measuring with the flight ion-mirror.
-	% Only show spectrum if really required. Here it is not necessary. Only for bluffing how nice it looks like.
+	The SNR of the measurements with the flight ion-mirror is for all gases lower than the SNR of the measurements with the prototype ion-mirror. This is due to the higher amount of residual in the chamber during the measurements with the flight ion-mirror. The mass resolution of all of the test gases is higher when measuring with the flight ion-mirror.
+
 	
 %----------------------------------------------------------------------------------
-	\subsection{Flight Antechamber}
+	\subsection{Flight Antechamber \notes{finished}}
 	% dimensions old antechamber: d_in = 4 mm, d_out = 3 mm, d_sp = 40 mm
 	%			new:			d_in = 5 mm, d_out = 4 mm, d_sp = 80 mm
 	% For further explanation of the geometry see Chap.\ref{subsubsec:Densenhan}.
-	After successfully testing the flight ion-mirror, the flight antechamber was tested. A picture of the prototype and the flight antechamber is shown in Fig.\,\ref{fig:expAntchamPic}. The antechambers consist of two parts. In the old design the two parts of the antechamber had a rim on which the screws at position $\pm$45\degree were mounted to put the two parts together. Tests with this antechamber revealed that the neutral particles hit these screws and scatter into chamber (Fig.\ref{fig:AnteMeasData}a) \cite{Meyer_2017_ante}). Therefore, an antechamber with a flat outer surface was required. In the new design the screws are recessed into the 1\,\si{\milli\meter} thin surface of the antechamber to get rid of the needed rim in the old design. In addition the new antechamber is by a factor two bigger than the prototype antechamber with the aim to get more signal. Simulations of the flight trajectory revealed that two holes were required at positions $\pm$60\degree to get optimal signal \cite{SOC_Crema3p2}. The CASYMIR test facility is not able to shoot the neutral particle beam under an angle of 60\degree onto the instrument. To test the new designed antechamber, an slightly different antechamber was used with the second entrance hole at position $\theta_0 = -90\degree$ instead of -60\degree. With a rotation mechanism, the instrument can be rotated around the x-axes by $\pm$90\degree.\\
+	After successfully testing the flight ion-mirror, the flight antechamber was tested. A picture of the prototype and the flight antechamber is shown in Fig.\,\ref{fig:expAntchamPic}. The antechambers consist of two parts. In the old design the two parts of the antechamber had a rim on which the screws were mounted to put the two parts together. These screws were at position $\pm$45\degree. Tests with this antechamber revealed that neutral particles hit these screws and scatter into chamber (Fig.\ref{fig:AnteMeasData}a) \cite{Meyer_2017_ante}). Therefore, an antechamber with a flat outer surface was required. In the new design the screws are recessed into the 1\,\si{\milli\meter} thin surface of the antechamber to get rid of the needed rim in the old design. In addition, the new antechamber is by a factor two bigger than the prototype antechamber with the aim to get more signal. Simulations of the flight trajectory revealed that two holes were required at positions $\pm$60\degree to get optimal signal \cite{SOC_Crema3p2}. The CASYMIR test facility is not able to shoot the neutral particle beam under an angle of 60\degree onto the instrument. To test the new design, an slightly different antechamber was used with the second entrance hole at position $\theta_0 = -90\degree$ instead of -60\degree. With a rotation mechanism, the instrument can be rotated around the x-axes by $\pm$90\degree.\\
 	\begin{figure}[h!]
 		\begin{subfigure}{.5\textwidth}
 			\centering
@@ -66,7 +60,6 @@
 		\caption{Left: Prototype antechamber. Right: flight-like antechamber with two entrance holes at positions +60\degree and -90\degree.}
 		\label{fig:expAntchamPic}
 	\end{figure}
-
 	These measurements were conducted at the CASYMIR test facility at the university of Bern. CASYMIR is able to generate a neutral particle beam with velocities up to 5.5\,\si{\kilo\meter\per\second} \cite{CASYMIR_Graf2004}. For these measurements the particle velocity was about 2.5\,\si{\kilo\meter\per\second} because this is the velocity of the spacecraft in Ganymede orbit, which will be 90\% of the measuring time of NIM.\\
 	\begin{figure}[h!]
 		\begin{subfigure}[t]{.5\textwidth}
@@ -89,29 +82,24 @@
 			\includegraphics[width=\textwidth]{Experiments/newAnte_NMode.png}
 			\caption{New antechamber, neutral mode.}
 		\end{subfigure}
-		\caption{Panel a) an b) show measurements done with NIM Prototype sensor with the old antechamber attached. a) shows measurement conducted with the thermal gas mode and measurement of panel b) were conducted in neutral mode respectively \cite{Meyer_2017_ante}. c) and d) are the same corresponding measurements but performed with the new antechamber attached to the NIM instrument.}
+		\caption{Panel a) an b) show measurements done with the NIM Prototype sensor with the old antechamber attached. a) shows measurement conducted with the thermal gas mode and panel b) shows measurements of the neutral mode respectively \cite{Meyer_2017_ante}. c) and d) are the corresponding measurements performed with the new antechamber attached to the NIM Prototype.}
 		\label{fig:AnteMeasData}
 	\end{figure}
-
-	Fig.\,\ref{fig:AnteMeasData}~a) shows measurements conducted with the thermal mode when the old antechamber was attached \cite{Meyer_2017_ante}. For these measurements, the instrument was rotated around the x-axis by keeping the beam at the same position. When rotating the antechamber, the hole moves out the neutral particle beam because the beam is smaller than the antechamber. The expected intensity $I_{ant}$ is the result of the function of the moving hole through the beam with a normal distribution:
+	Fig.\,\ref{fig:AnteMeasData}~a) shows measurements conducted with the thermal mode when the old antechamber was attached \cite{Meyer_2017_ante}. For these measurements, the instrument was rotated around the x-axis by keeping the beam at the same position. When rotating the antechamber, the hole moves out of the neutral particle beam because the beam is smaller than the antechamber. The expected intensity distribution $I_{ant}$ is a combination of the function of the moving hole through the beam with a normal distribution:
 	\begin{equation}
 		I_{ant} = \frac{A}{\sigma\sqrt{2\pi}}\int_{x_{min}}^{x_{max}} \exp^{\frac{(x-\mu)^2}{2\sigma^2}} dx
 	\end{equation}
-	With $A$ a constant taking the beam intensity into account, $\sigma$ the standard deviation of the beam and $\mu$ the position of the beam centre relative to the centre of the antechamber which is equal 0. The borders of the integral determine the part of the beam entering the antechamber:
+	With $A$ a constant taking the beam intensity into account, $\sigma$ the standard deviation of the beam and $\mu$ the position of the beam centre relative to the centre of the antechamber which is zero. The borders of the integral determine the section of the beam entering the antechamber:
 	\begin{align}
 		x_{max} &= r_{ant}\sin{\alpha} - r_{aHi}\cos{\alpha}\label{eq:antIntgrLimHigh}\\
 		x_{min} &= r_{ant}\sin{\alpha} + r_{aHi}\cos{\alpha}\label{eq:antIntgrLimLow}
 	\end{align}
-	With $r_{ant}$ the radius of the antechamber and $r_{aHi}$ the radius of the antechamber entrance hole. The sine contribution considers the shift of the hole in y-direction when the hole is rotated. The cosine contribution comes from the projection of the beam on the entrance hole. For the measurements with the new antechamber, the shift in y-direction when rotating the instrument was compensated by shifting the whole instrument. Therefore the sine contribution in Eq.\eqref{eq:antIntgrLimHigh} and Eq.\eqref{eq:antIntgrLimLow} cancels out leading to a more cosine-like function.\\
-	When comparing Fig.\,\ref{fig:AnteMeasData}~a) and b), we see that with the new design we successfully got rid of the artefacts previously induced by the mounting screws of the old design. The higher intensity at angle +90\degree is most probable an outlier because it appears in both the thermal (Fig.\,\ref{fig:AnteMeasData}~b)) and the neutral mode graphic (Fig.\,\ref{fig:AnteMeasData}~d)) of the measurements with the new antechamber. The drop in signal intensity when measuring with the thermal mode channel compared to the old measurements is a result of having two an additional entrance hole which was necessary because of the flyby trajectories (see Chap.\ref{subsubsec:Densenhan}).\\	
-	Fig.\ref{fig:AnteMeasData}~b) shows measurements conducted with the neutral gas mode with the old antechamber attached and Fig.\ref{fig:AnteMeasData}~d) shows measurements conducted with the neutral gas mode when the new antechamber was attached. At position $\pm$30\degree and $\pm$90\degree there are pillars holding the stack of the ion-optical lenses together. When the beam hits these pillars, the particles scatter in all directions leading to a damping of the signal. For the neutral gas channel, no difference in the signal distribution is expected because a change in the antechamber design does not influence the signal measured with the neutral gas channel. At 0\degree the signal is significantly higher than on the other plateaus. When shooting under this angle into the source, the neutral particle beam is in line with the electron beam leading to a higher signal. Another explanation is, that a different voltage set for the voltages in the ionization region changes the distribution of the electron beam thus leading to a different ion distribution in the ionization region. This leads to a different angular distribution of the signal for the neutral gas channel when comparing the results of the two measurement series. The difference in signal intensity also comes from the better voltage set. Some times its just enough to tune on the right electrode to get a signal amplification of a factor 2.\notes{rewrite that explanation.}
-	
-	% Picture of that simulation. Only ions produced over the central grid reach the detector. \\titania.unibe.ch\UserHomes\foehn\My Documents\PhD\Presentations\PEP_CASYMIRD_data_180531.pptx
+	With $r_{ant}$ the radius of the antechamber and $r_{aHi}$ the radius of the antechamber entrance hole. The sine contribution considers the shift of the hole in y-direction when the hole is rotated. The cosine contribution comes from the projection of the beam on the entrance hole. For the measurements with the new antechamber, the shift in y-direction when rotating the instrument was compensated by shifting the whole instrument. Therefore the sine contribution in Eq.\eqref{eq:antIntgrLimHigh} and Eq.\eqref{eq:antIntgrLimLow} cancels leading to a cosine-like function.\\
+	When comparing Fig.\,\ref{fig:AnteMeasData}~a) and c), the artefacts successfully vanished after the redesign. The higher intensity at angle +90\degree is most probable an outlier because it appears in both the thermal (Fig.\,\ref{fig:AnteMeasData}~b)) and the neutral mode figure (Fig.\,\ref{fig:AnteMeasData}~d)) of the measurements with the new antechamber. The lower measured signal intensity for the measurements with the new antechamber is a result of having an additional entrance hole which was necessary because of the flyby trajectories (see Chap.\ref{subsubsec:Densenhan}).\\
+	Fig.\ref{fig:AnteMeasData}~b) shows measurements conducted with the neutral gas mode with the old antechamber attached and Fig.\ref{fig:AnteMeasData}~d) shows measurements conducted with the neutral gas mode when the new antechamber was attached. At position $\pm$30\degree and $\pm$90\degree are pillars holding the stack of the ion-optical lenses together. When the beam hits these pillars, the particles scatter in all directions leading to a damping of the signal. For the neutral gas channel, no difference in the signal distribution and intensity is expected because a change in the antechamber design does not influence the signal measured with the neutral gas channel. The observed signal of the neutral gas mode when the new antechamber is attached, is significantly higher than with the old antechamber. This is due to a better voltage set. A different voltage set for the voltages in the ionization region changes the distribution of the electron beam thus leading to a different ion distribution in the ionization region. This leads to a different angular distribution of the signal for the neutral gas channel when comparing the results of the two measurement series. 
 	
 %-------------------------------------------------------------------------------------	
-	\subsection{Entrance characterization}
-	\notes{rewrite title.}	
-	
+	\subsection{Entrance \notes{finished}}
 	\begin{figure}[h!]
 		\centering
 		\includegraphics[width=\textwidth]{Experiments/2D_scan_anteEntr.jpg}
@@ -127,11 +115,11 @@
 	\begin{figure}[h!]
 		\centering
 		\includegraphics[width=\textwidth]{Experiments/2D_scan_Entr.jpg}
-		\caption{Zoom on the entrance when shooting with the neutral particle beam at the structure of the NIM PFM instrument.}
+		\caption{Left: Zoom on the entrance when shooting with the neutral particle beam at the structure of the NIM PFM instrument. Right: Top view on the entrance.}
 		\label{exp:PFMIntCharEnt}
-	\end{figure}	
-	For the first tests with the NIM PFM, the front side of the NIM instrument was scanned with the neutral particle beam to find the position of the entrance slit and the antechamber entrance hole to align the beam properly with the instrument. Fig.\,\ref{exp:PFMIntCharTot} left shows the scan of the front side and the right picture shows the corresponding structural part. The hole of the antechamber is clearly visible as a small dot. Fig.\,\ref{exp:PFMIntCharAnt} shows a zoom with a better resolution of the antechamber entrance hole which shows a nice Gaussian distribution as expected. When looking at the entrance slit, there are two positions with increased intensities. The zoom on Fig.\,\ref{exp:PFMIntCharEnt} reveals that the positions of biggest intensity is were the beam hits the structure covering the two electron emitting filaments. The other intensity maximum is where the beam hits the supporting structure opposite of the filament bloc. When the gas hits these structures, the gas slows down leading to a local increase of the gas density. Therefore, the structure partially thermalizes the gas similar as the closed source antechamber. This was not intended because with the neutral gas channel the aim is to measure incoming particles directly without any interaction with the structure. In the design of thE PFM, the filament bloc and the supporting structure act like a funnel directing the sputtered gas to the central grid. The intensity amplification when shooting on the filament bloc is unavoidable. For the supporting structure opposite of the filament, a pillar instead of the plate like structure would have been the better option. When the gas hits the pillar, the pillar scatters the gas in all direction instead of scattering only in the direction of the central grid. This phenomenon was observed when doing a similar measurement with the NIM prototype (Fig.\,\ref{exp:ProtoIntCharEnt}).\\
-	The ion-source of the prototype had six pillars holding the different focusing lenses together. In Fig.\,\ref{exp:ProtoIntCharEnt} the pillars are marked as red circles. The prototype had also an electron emitting filament. For these measurements, the ionization region was scanned with the neutral particle beam at angles 0\degree and $\pm$60\degree to shoot between the pillars. When scanning from the front side, the signal intensity has a nice Gaussian shape. When shooting at angles of $\pm$60\degree the Gaussian distribution is visible when the neutral particle beam is aligned over the centre grid with an asymmetry toward the side of the filament. The filament bloc slows down the neutral particles leading to a small amplification of the signal. This amplification is less dominant than in the design of the PFM because the part of the filament structure seen by the beam is tilted outward. At distances bigger than $\pm$25\,mm from the centre, the signal drops again. This is where the beam is completely outside of the ionization region.
+	\end{figure}
+	For the first tests with the NIM PFM, the front side of the NIM instrument was scanned with the neutral particle beam to find the position of the entrance slit and the antechamber entrance hole to align the beam properly with the instrument. Fig.\,\ref{exp:PFMIntCharTot}~left shows the scan of the front side and Fig.\,\ref{exp:PFMIntCharTot}~right shows the corresponding structural part. The antechamber entrance hole is clearly visible as a small dot. Fig.\,\ref{exp:PFMIntCharAnt} shows a zoom with a better resolution of the entrance hole which shows a nice Gaussian distribution. When looking at the entrance slit, there are two positions with increased intensities. The zoom on Fig.\,\ref{exp:PFMIntCharEnt} reveals that the positions of biggest intensity is were the beam hits the structure covering the two electron emitting filaments. The other intensity maximum is where the beam hits the supporting structure opposite of the filament bloc. When the gas hits these structures, the gas slows down leading to a local increase of the gas density. Therefore, the structure partially thermalizes the gas similar as the closed source antechamber. This was not intended because with the neutral gas channel the aim is to measure incoming particles directly without any interaction with the structure. In the design of the PFM, the filament bloc and the supporting structure act like a funnel directing the sputtered gas to the central grid. The intensity amplification when shooting on the filament bloc is unavoidable. For the supporting structure opposite of the filament, a pillar instead of the plate like structure would have been the better option. When the gas hits the pillar, the pillar scatters the gas in all direction instead of scattering only in the direction of the central grid. This phenomenon was observed when doing a similar measurement with the NIM prototype (Fig.\,\ref{exp:ProtoIntCharEnt}).\\
+	The ion-source of the prototype had six pillars holding the different focusing lenses together. In Fig.\,\ref{exp:ProtoIntCharEnt} the pillars are marked as red circles. The electron emitting filament was opposite of the main gas inflow direction. For these measurements, the ionization region was scanned with the neutral particle beam at angles 0\degree and $\pm$60\degree to shoot between the pillars. When scanning from the front side, the signal intensity has a nice Gaussian shape. When shooting at angles of $\pm$60\degree the Gaussian distribution is visible when the neutral particle beam is aligned over the centre grid with an asymmetry toward the side of the filament. The filament bloc slows down the neutral particles leading to a small amplification of the signal. This amplification is less dominant than in the design of the PFM because the part of the filament structure seen by the beam is tilted outward. At distances bigger than $\pm$25\,mm from the centre, the signal drops again. This is where the beam is completely outside of the ionization region.
 	\begin{figure}[h!]
 		\centering
 		\includegraphics[width=\textwidth]{Experiments/Entrence_Proto_topview.png}
@@ -140,10 +128,10 @@
 	\end{figure}
 	
 %--------------------------------------------------------------------------------------------	
-	\subsection{Shutter Performance Test}
+	\subsection{Shutter Performance Test \notes{finished}}
 	When measuring with the neutral gas channel, the aim is that the particles are measured directly without any interaction with the structure of the instrument. Therefore, a shutter between the antechamber and the ionization region was required to close the particle entrance from the antechamber. In this section the performance of the shutter was tested. According to the model stated in Chap.\ref{subsubsec:motorflow} the shutter should damp the signal by a factor 600.\\
-	These tests were performed with the NIM PFM \notes{Ref. as soon as the two models are properly described in the Setup section.}. The PFM was operated with laboratory electronics. The tests were performed at the CASYMIR test facility. The used particle beam consisted of hydrogen and xenon with a velocity of 2\,\si{\kilo\meter\per\second}. Three different measurements were performed: One with the beam directing onto the antechamber with the shutter open, one with the shutter closed and a background measurement, where the particle beam was pointed onto the outer structure of NIM to estimate how much of the signal arises from the test gas scattering into the ionization region when the beam is directed in an arbitrary direction. This background was subtracted from both signals before they were divided through each other to determine the damping factor $G_{close}$ of the shutter.\\
-	The damping factor of the shutter according to the measurements is 12 instead of the required 1000. The biggest impact has the actual thickness of the gap between the shutter and the antechamber when the shutter is closed. The damping reduces significantly when the gap is bigger than actually designed. This is shown in Fig.\,\ref{fig:ShutGapSizeSigDamp} in Chap.\,\ref{subsubsec:motorflow}. With a gap size of about 0.1\,mm instead of 0.01\,mm the damping factor is only about a factor 25. Other reasons are that the portion of the beam which scatters on the antechamber outer walls gets thermalized in the vacuum chamber and adds to the signal intensity. In the outer space, the gas scatters on the antechamber but does not reach the ionization region because it will flow around the instrument.
+	These tests were performed with the NIM PFM. The PFM was operated with laboratory electronics. The tests were performed at the CASYMIR test facility. The used particle beam consisted of hydrogen and xenon with a velocity of 2\,\si{\kilo\meter\per\second}. Three different measurements were performed: One with the beam directing onto the antechamber with the shutter open, one with the shutter closed and a background measurement, where the particle beam was pointed onto the outer structure of NIM to estimate how much of the signal arises from the test gas scattering into the ionization region when the beam is directed in an arbitrary direction. This background was subtracted from both signals before they were divided through each other to determine the damping factor $G_{close}$ of the shutter.\\
+	The resulting damping factor of the shutter is 12 instead of the required 1000. The biggest impact has the actual thickness of the gap between the shutter and the antechamber when the shutter is closed. The damping reduces significantly when the gap is bigger than actually designed. This is shown in Fig.\,\ref{fig:ShutGapSizeSigDamp} in Chap.\,\ref{subsubsec:motorflow}. With a gap size of about 0.1\,mm instead of 0.01\,mm the damping factor is only about a factor 25. Other reasons are that the portion of the beam which scatters on the antechamber outer walls gets thermalized in the vacuum chamber and adds to the signal intensity. In the outer space, the gas scatters on the antechamber but does not reach the ionization region because it will flow around the instrument.
 	
 	\begin{comment}	
 	\begin{table}
@@ -203,7 +191,7 @@
 
 	
 %--------------------------------------------------------------------------------
-	\subsection{Simulations}
+	\subsection{Simulations \notes{Only if there is time to write something. Material is available}}
 	
 	During development, the mounting of the HV lenses was adapted. Simulations had to be done because as a result of the changed form of the lenses, the voltage set also changed. In this case, the voltage ranges increase by about blabla volts. These new higher ranges challenged the design of the supply electronics because the electronics has a limited amount of space. % Look up the details. Explanation with the electric fields?
 	
@@ -238,7 +226,7 @@
 		\label{fig:ExpSimRep}
 	\end{figure}
 
-	\subsection{Filament decision}
+	\subsection{Filament decision \notes{Draft}}
 	% Ranking criterion -> Explanation, see electronics book. constant power of one filament -> resistance variies over time. Vgl. Diss Rico.
 
 
@@ -255,7 +243,7 @@
 		\caption{Specifications for the pulse shape generated by a realistic pulser \cite{Diss_Meyer}.}
 		\label{fig:PulserTheoCurve}
 	\end{figure}
-	The high-voltage pulser is used to accelerate the generated ions in the ionisation region to a certain energy. During the time when no high voltage pulse is applied, the potential has to be stable at the bias voltage to allow ion storage as previously discussed in chapter\,\ref{chap:IonStor}.\\
+	The high-voltage pulser is used to accelerate the generated ions in the ionisation region to a certain energy. During the time when no high voltage pulse is applied, the potential has to be stable at the bias voltage to allow ion storage as previously discussed in Chapter\,\ref{chap:IonStor}.\\
 	Fig.\,\ref{fig:PulserTheoCurve} shows a schema of a realistic high voltage pulse and Table\,\ref{tab:FlightPulserPerf} shows the characteristics of the flight pulser compared to the requirements. The fall time is the time to build up the negative high voltage on the extraction grid. this time has to be very short to give all ions the same amount of energy. When the fall time is long, low mass particles receive less energy resulting in a lower mass resolution for these species. A fall time of 1~ns lead to a 0.1\,\% lower mass resolution of hydrogen compared to a particle with mass 200~u. A fall time of 5~ns results in a deviation of 3\,\% (cf. Chap.\,\ref{chap:massRes}). The fall time of the flight pulser is a bit longer than according to the specifications. When applying a high voltage, the pulse overshoots its set value and drops slightly. The overshoot and the voltage drop result in a variation of the particle energy for the different species. The ringing of the high voltage, and the pulse drop of the flight pulser are within the specifications. The pulse duration has to be longer than 0.2\,\si{\micro\second} because that is the minimum time particles with masses of 1000\,u need to leave the ionisation region. With some margin, the specifications were set to 0.5\,\si{\micro\second}. The rise time to bias voltage should be smaller than 100\,ns to leave enough time for ion storage. This is well achieved with the flight pulser. The ripple of the bias voltage should be smaller than $\pm$50\,mV to generate a stable electric field during the time when no high-voltage is applied on the extraction grid. A variation by $\pm$100\,mV of the voltage of the electrode opposite of the pulser grid results in a visible variation of the signal intensity during hand optimisation with laboratory electronics. However, the baseline ripple of the flight pulser exceeds this value.\\
 	\begin{table}[h!]
 		\begin{center}
@@ -272,7 +260,7 @@
 	\end{table}
 
 %--------------------------------------------------------------------------------------------
-	\subsection{Detector Tests}
+	\subsection{Detector Tests \notes{Draft}}
 	% Put the Calibration and discussion of Ustack vs. UMCP in that Chapter. It can later on still be moved into the Setup chapter. Show the fit parameter for the curve for calibration purpose.
 	% Discussion about upper part of the curve. Discuss that with the plot showing the differences to the model if there is a logical explanation. May discuss that again with Peter. Which possibilities thereare.
 	
@@ -331,41 +319,25 @@
 	% Plot off the gain curves of the detector in its different states. flat, folded, folded in the wolfram copper shealding.
 	% Measuring settings. Turn the drift voltage up to -2.5 kV and then slowly increase the anode voltage to the value you want to measure. The gain is calculated with the software by doing a Simpson 3/8 integration of the peak = Q. (Look in the lab book for the proper calculation)
 	% Maybe there is time to redo the tests with the real PFM detector (XD wär schön. Leider nein). (Die Resultate sind nicht so vollständig wie die von der einen anderen Messung. Messung mit einem Zwillingsdetektor und von diesem auf den Flugdetektor schliessen. -> evt. schöne Graphik).
-	
-	
-%-----------------------------------------------------------------------------------
-	\subsection{Ionoptics}
-	\subsubsection{Voltage Optimisation}
-	Two types of electrical lenses. positive and negative voltage lenses. positive and negative voltage lenses have the same effect. In negative voltage lenses, the particles fly faster = shorter time-of-flight. This results in a better mass resolution.\\
-	Aim in the lab is to get two different voltage sets. One for positive voltages to not stress the equipment and one with negative voltage lenses to reach the maximal performance of the instrument. -> Tests showed no significant better mass resolution. A more detailed data analysis has to be made. % data in folder: \\titania\UserHomes\foehn\My Documents\PhD\Messungen\PFM\CASYMIR-C\nMode_voltageSet_Comparison_200430 
-	
-	
-	
+		
 %---------------------------------------------------------------------------------------------	
-	\subsection{Instrument performance tests}
-		% At the end, make a comparison of the discussion of the different instruments as mass resolution, SNR as far as possible.
-		\subsubsection{Prototype} % Final results. Only shpw best mass resolution achieved. May revere to Stefan's Diss. With the Prototype there were mainly componenets tests.
-		\subsubsection{PFM} % Include here the paper because it gives a very good overview over the results conducted with it.
-		\subsubsection{FS} % Include here the final results of the FS of this year with lab and flight electronics. Discussion about that subject, see PFM paper.
-		% Laboratory and flight electronics are part of the same chapter because with the fligh electronics the only thing worth to discuss is the mass resolution because the signal intensity is still very low. Discuss the SNR graphics with Peter and then finalize this part of the chapter.
+	\subsection{Sensor performance tests}
+		This chapter shows the performance of the NIM PFM and the NIM FS sensor when operated with laboratory electronics.
 		
-		% Look up the conditions for the description.
-		\textbf{Ion Storage two different velocities}\\ % Ref. to Abplanalp paper.
-		Ion storage is very crucial for a time of flight mass spectrometer because every ion generated and not stored in the ion source is lost and can generate additional electrical noise on the detector signal line. In this test the ion storage behaviour of the ion source was analysed for thermal and neutral mode for hydrogen and krypton with velocities of 2\,\si{\kilo\meter\per\second} and 4\,\si{\kilo\meter\per\second}. The emission current was varied from 20 to 600\,\si{\micro\ampere}. Ion storage of positive ions in x- and y- direction is supported by the negative potential generated by the electron beam. Two ring electrodes with a positive voltage applied generate a positive potential ring to trap generated ions in y- and z- direction (Fig.\ref{fig:ExpFSFlightSenIonStorIS}). For emission currents from 20 to 600\,\si{\micro\ampere} according to Eq.\,\eqref{eq:elPotIem} the negative potential in the centre of the electron beam is -0.08-(-2.59)\,\si{\volt}. Fig.\ref{fig:ExpFSFlightSenIonStor} left shows the ion storage behaviour of the ion source of hydrogen and right the ion storage behaviour of krypton. In case of no ion storage, the relationship between the electron emission current I\textsubscript{em} and the signal intensity is linear. In case of ion storage there is a quadratic relationship between I\textsubscript{em} and the signal intensity. When measuring with the thermal mode, the particles get slowed down until they have energies in the range of 0.01\,\si{\electronvolt} and are therefore easy to trap in the potential field. In neutral mode particles enter the ionisation region directly. The kinetic energy of hydrogen for velocities between 2-4\,\si{\kilo\metre\per\sec} is 0.07-0.27\,\si{\electronvolt}. It can therefore easy be trapped in the potential field by the electron beam and the potential of the ring electrode already with very emission currents as low as 20\,\si{\micro\ampere}.\\
-		The kinetic energy of \textsuperscript{84}Kr for the same velocities is 2.8-11.2\,\si{\electronvolt}. This energy exceeds the potential of the centre of the electron beam and the ions are therefore more difficult to trap with only the electron beam. The ions are kept in the middle of the ionisation region with the positive potential ring. According to Fig.\,\ref{fig:ExpFSFlightSenIonStor} ion storage for \textsuperscript{84}Kr starts to dominate at emission currents of 100\,\si{\micro\ampere}.
-		%Therefore there is no difference in the measured intensities for hydrogen when it enters with 2 or 4\,\si{\kilo\meter\per\second}.\\		
-		In thermal mode, an increase in beam velocity leads to an increase in signal intensity due to the density enhancement effect \textcolor{red}{(Ref.)}. Therefore a higher signal intensity is expected in thermal mode for 4\,\si{\kilo\meter\per\second} compared to 2\,\si{\kilo\meter\per\second}. 
-		Like the in PFM, the FS shows a nice ion storage behaviour. For krypton ion storage just starts at an emission current of 100\,\si{\micro\ampere} where hydrogen is stored already at lower emission currents due its lower kinetic energy at the same beam velocity.
-		
+		\subsubsection{PFM}
+		\notes{Include IEEE paper!!!}.
+		\subsubsection{FS \notes{finished}}
+	
+		\textbf{Ion Storage}\\ % Ref. to Abplanalp paper.
+		Ion storage is very crucial for a time of flight mass spectrometer because every ion generated and not stored in the ion source is lost and can generate additional electrical noise on the detector signal line. In this test the ion storage behaviour of the ion source was analysed for thermal and neutral mode for hydrogen and krypton with velocities of 2\,\si{\kilo\meter\per\second} and 4\,\si{\kilo\meter\per\second}. The emission current was varied from 20 to 600\,\si{\micro\ampere}. Ion storage of positive ions in x- and y- direction is supported by the negative potential generated by the electron beam. Two ring electrodes with a positive voltage applied generate a positive potential ring to trap generated ions in y- and z- direction (Fig.\ref{fig:ExpFSFlightSenIonStorIS}). For emission currents from 20 to 600\,\si{\micro\ampere} according to Eq.\,\eqref{eq:elPotIem} the negative potential in the centre of the electron beam is -0.08-(-2.59)\,\si{\volt}. Fig.\ref{fig:ExpFSFlightSenIonStor} left shows the ion storage behaviour of the ion source of hydrogen and right the ion storage behaviour of krypton. In case of no ion storage, the relationship between the electron emission current I\textsubscript{em} and the signal intensity is linear. In case of ion storage there is a quadratic relationship between I\textsubscript{em} and the signal intensity. When measuring with the thermal mode, the particles get slowed down until they have energies in the range of 0.01\,\si{\electronvolt} and are therefore easy to trap in the potential field. When measuring with the neutral mode, particles enter the ionisation region directly. The kinetic energy of hydrogen for velocities between 2-4\,km/s is 0.07-0.27\,eV. Therefore it can be trapped with the potential field generated by an electron beam with an emission current higher than 20~$\mu$A.\\
+		The kinetic energy of \textsuperscript{84}Kr for the same velocities is 2.8-11.2\,eV. This energy exceeds the potential of the centre of the electron beam and the ions are therefore more difficult to trap with only the electron beam. The ions are kept in the middle of the ionisation region with the positive potential ring. According to Fig.\,\ref{fig:ExpFSFlightSenIonStor} ion storage for \textsuperscript{84}Kr starts to dominate at emission currents higher than 100\,$\mu$A. In thermal mode, an increase in beam velocity leads to an increase in signal intensity due to the density enhancement effect (Chap.\,\ref{subsubsec:Densenhan}). Therefore a higher signal intensity is expected in thermal mode for 4\,km/s compared to 2\,km/s. Like in the PFM, the FS shows a nice ion storage behaviour. For krypton ion storage just starts at an emission current of 100\,\si{\micro\ampere} where hydrogen is stored already at lower emission currents due its lower kinetic energy at the same beam velocity.\\
 		\begin{figure}[h]
 			\centering
-			\includegraphics[width = 0.8\textwidth]{Experiments/FiL_IS_elBeam_Storage.png}
+			\includegraphics[width = 0.7\textwidth]{Experiments/FiL_IS_elBeam_Storage.png}
 			\caption{Ion storage source with sample voltage set applied to the electrodes. In light blue are the potential lines and in dark blue a simulated electron beam.}
 			\label{fig:ExpFSFlightSenIonStorIS}
 		\end{figure}
-		
-		
-		\begin{figure}[h] % Ion storage. Exchange Graphics as soon as discussed with Peter how to proper show the results.
+		\begin{figure}[h] % Split in 2 Picutres? Because it is very small
 			\begin{subfigure}{0.5\textwidth}
 				\centering
 				\includegraphics[width = \textwidth]{Experiments/FSLabIonStorageH2.png}
@@ -374,19 +346,16 @@
 				\centering
 				\includegraphics[width = \textwidth]{Experiments/FSLabIonStorageKr84.png}
 			\end{subfigure}
-			\caption{Ion storage measurement with the flight spare sensor but with laboratory electronics attached for H$_2$ and $^{84}$Kr for two different gas velocities.}
+			\caption{Ion storage measurements performed with the flight spare sensor operated with laboratory electronics for H$_2$ and $^{84}$Kr for two different gas velocities.}
 			\label{fig:ExpFSFlightSenIonStor}
 		\end{figure}
-
-		% Detector behaviour test in FS sensor. Formula derivation is in the theory part with the proper detrivation.
-		% No saturation observed. 
-
-		\textbf{Mass resolution and Signal-to-Noise Ratio}\\
-		According to the requirements stated in (Ref.) % See paper
-		the required mass resolution for neutral mode is 500 and for thermal mode it is 1000 m/dm but to be able to distinguish between different masses at unit masses of 1000\,u NIM has to have a mass resolution of 1000. Otherwise NIM the different unit masses cannot be distinguished. Fig.\,\ref{fig:ExpFSFlightSenMassRes} show two spectra recorded with the NIM flight sensor with laboratory electronics attached with an electron emission current of 100\,\si{\micro\ampere}. With a mass resolution of 708 for neutral gas mode NIM fulfils the requirements. In thermal gas mode the highest mass resolution achieved was 830 m/$\Delta$m which comes close to the requirements. Fig.\,\ref{fig:ExpFSFlightElMassRes} show the mass spectra recorded with the NIM flight sensor with the flight electronics attached. The electron emission current was 200\,\si{\micro\ampere} the highest mass resolution achieved at the current state is 490 m/$\Delta$m for neutral gas mode and 462 m/$\Delta$m for thermal mode. Fig.\,\ref{fig:ExpFSFlightElK78} shows a mass spectrum recorded in thermal mode with an emission current of 300\,\si{\micro\ampere} the $^{78}$Kr peak is clearly visible. The signal to noise ratio for the spectra recorded with the flight electronics is very low compared to the SNR for the spectra recorded with the laboratory electronics. We also observe noisy part wandering between the single spectra. There is a significant part of repetitive noise appearing not always at the same position in the spectrum. With a proper noise filter this noise can be detected and significantly reduced without affecting the mass signal peaks. For future work, there is a lot of potential for improving the spectrum by proper analysing the noise and writing filters to suppress the noise.\\
-		Fig.\,\ref{fig:ExpFSFlightSenSNR} shows a mass spectrum recorded with the flight sensor with the laboratory electronics attached. The highest SNR achieved was $6\cdot10^{5}$ and therefore almost 6 decades. % Explanation why the 6 decades are required.
-		The mass peaks 355\,u, 390\,u and 429\,u are some oil components with water adducts coming from the used turbo pumps of the test facility. 415\,u is an artefact coming from the background subtraction algorithm. The artefact peak is also wider then the other surrounding mass peaks.
 		
+		\textbf{Mass resolution and Signal-to-Noise Ratio}\\
+		According to the requirements stated in \cite{red_book} NIM has to achieve a mass resolution for neutral mode of 500 and for thermal mode of 1000 but to be able to distinguish between different masses at unit masses of 1000\,m/z NIM has to have a mass resolution of 1000. Otherwise, the different unit masses cannot be distinguished.\\
+		Fig.\,\ref{fig:ExpFSFlightSenMassRes} shows two spectra recorded with the NIM~FS sensor with laboratory electronics attached with an electron emission current of 100\,$\mu$A. With a mass resolution of 708 for neutral gas mode NIM fulfils the requirements. In thermal gas mode the highest mass resolution achieved was 830 m/$\Delta$m. Fig.\,\ref{fig:ExpFSFlightElMassRes} shows mass spectra recorded with the NIM~FS sensor with the flight electronics attached. The electron emission current was 200\,$\mu$A. The highest mass resolution achieved at the current state is 490 m/$\Delta$m for neutral gas mode and 462 m/$\Delta$m for thermal mode. The mass resolution can be improved by further optimizing the system. With an emission current of 300\,$\mu$ the \textsuperscript{78}Kr isotope is visible in the spectrum which has a natural abundance of 0.36\,\% (Fig.\,\ref{fig:ExpFSFlightElK78}).\\
+		The signal to noise ratio for the spectra recorded with the flight electronics is very low compared to the SNR of the spectra recorded with the laboratory electronics. The SNR can be improved by adding proper noise filters.	A wandering noisy part is already identified. In Fig.\,\ref{fig:ExpFSFlightElMassRes} left and right it appears between masses m/z 40 and 70. In Fig.\,\ref{fig:ExpFSFlightElK78} it start right after the noise of the extraction pulse an ends at m/z 30. At the moment it is unclear what induces that noise but with a proper filter this noise can be detected and significantly reduced without affecting the mass signal peaks.\\
+		Fig.\,\ref{fig:ExpFSFlightSenSNR} shows a mass spectrum recorded with the FS sensor with the laboratory electronics attached. The highest SNR achieved was $6\cdot10^{5}$ and therefore almost 6 decades. The mass peaks m/z 355, 390 and 429 are some oil components with water adducts originating from the turbo pumps of the test facility. m/z 415 is an artefact generated by the algorithm used for the background subtraction. This peak is also wider then the other surrounding mass peaks.
+		A SNR of 6 decades is important to conduct optimal measurements during the flybys at Jupiter's icy moon Europa. The particle density of Europa's exosphere is about 10~-~10\textsuperscript{8}~cm\textsuperscript{-3} \cite{Vorburger_2018} corresponding to a pressure of 10\textsuperscript{-15}~-~10\textsuperscript{-8}~mbar. With a chamber pressure of 1.5$\cdot$10\textsuperscript{-9}~mbar NIM has to achieve a SNR of 6 decades to measure particles at a pressure of 10\textsuperscript{-15}~mbar.
 		\begin{figure}[h]
 			\begin{subfigure}{0.5\textwidth}
 				\centering
@@ -396,7 +365,7 @@
 				\centering
 				\includegraphics[width = \textwidth]{Experiments/FSLabnMode.png}
 			\end{subfigure}
-			\caption{Mass spectra measured with the flight spare sensor with the laboratory electronics electronics attached. Left: with thermal gas mode Right: neutral mode.}
+			\caption{Mass spectra measured with the flight spare sensor with the laboratory electronics attached. Left: thermal gas mode. Right: neutral mode.}
 			\label{fig:ExpFSFlightSenMassRes}
 		\end{figure}
 
@@ -412,14 +381,14 @@
 				\centering
 				\includegraphics[width = \textwidth]{Experiments/FSnMode200uA.png}
 			\end{subfigure}
-			\caption{Mass spectra measured with the flight spare instrument with the flight electronics attached. Filament emission current was 200 \si{\micro\ampere}. Left: with thermal gas mode Right: neutral mode.}
+			\caption{Mass spectra measured with the flight spare instrument with the flight electronics attached. Filament emission current was 200\,$\mu$A. Left: thermal gas mode. Right: neutral mode.}
 			\label{fig:ExpFSFlightElMassRes}
 		\end{figure}
 		
 		\begin{figure} % Point out at that picture that the Kr 78 isotope is clearly visible.
 			\centering
 			\includegraphics[width = 0.6\textwidth]{Experiments/FS_thMode300uA.png}
-			\caption{Mass spectra measured with the flight spare instrument with the flight electronics attached. Filament emission current was 300 \si{\micro\ampere}.}
+			\caption{Mass spectrum measured with the flight spare instrument with the flight electronics attached with a filament emission current of 300\,$\mu$A.}
 			\label{fig:ExpFSFlightElK78}
 		\end{figure}
 		
@@ -427,7 +396,7 @@
 		\begin{figure}[h]
 			\centering
 			\includegraphics[width = 0.7\textwidth]{Experiments/FSLabSNRRestGasPressCal.png}
-			\caption{SNR plot for the flight spare sensor but with laboratory electronics attached at a chamber pressure of $1.5\cdot10^{-9}$\, mbar.}
+			\caption{SNR plot for the flight spare sensor but with laboratory electronics attached. The residual gas pressure was 1.5$\cdot$10\textsuperscript{-9}\,mbar.}
 			\label{fig:ExpFSFlightSenSNR}
 		\end{figure}
 	

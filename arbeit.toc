@@ -9,30 +9,27 @@
 \contentsline {subsection}{\numberline {2.3}Ion Optical Design, NIM specific elements {\color {red}{see Subchapters}}}{11}{subsection.2.3}%
 \contentsline {subsubsection}{\numberline {2.3.1}Filament Power Calculation {\color {red}{Draft}}}{11}{subsubsection.2.3.1}%
 \contentsline {subsubsection}{\numberline {2.3.2}Ion Storage {\color {red}{finished}}}{11}{subsubsection.2.3.2}%
-\contentsline {subsubsection}{\numberline {2.3.3}Density enhancement Model}{13}{subsubsection.2.3.3}%
-\contentsline {subsubsection}{\numberline {2.3.4}Callisto Flyby}{20}{subsubsection.2.3.4}%
-\contentsline {subsubsection}{\numberline {2.3.5}Shutter Performance}{23}{subsubsection.2.3.5}%
-\contentsline {subsubsection}{\numberline {2.3.6}Pressure calibration of the NIM Sensor}{26}{subsubsection.2.3.6}%
-\contentsline {subsubsection}{\numberline {2.3.7}Detector Parameters}{27}{subsubsection.2.3.7}%
+\contentsline {subsubsection}{\numberline {2.3.3}Density enhancement Model {\color {red}{finished}}}{13}{subsubsection.2.3.3}%
+\contentsline {subsubsection}{\numberline {2.3.4}Field-of-View Analysis {\color {red}{finished}}}{19}{subsubsection.2.3.4}%
+\contentsline {subsubsection}{\numberline {2.3.5}Shutter Performance {\color {red}{finished}}}{23}{subsubsection.2.3.5}%
+\contentsline {subsubsection}{\numberline {2.3.6}Pressure calibration of the NIM Sensor {\color {red}{May will be deleted.}}}{26}{subsubsection.2.3.6}%
+\contentsline {subsubsection}{\numberline {2.3.7}Detector Parameters {\color {red}{Draft}}}{27}{subsubsection.2.3.7}%
 \contentsline {section}{\numberline {3}Setup}{30}{section.3}%
-\contentsline {subsection}{\numberline {3.1}NIM Sensor Models}{30}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}Test facilities/ Test Tools}{30}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.1}NIM Sensor Models {\color {red}{Draft}}}{30}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Test facilities/ Test Tools {\color {red}{Draft}}}{30}{subsection.3.2}%
 \contentsline {subsubsection}{\numberline {3.2.1}Pumpstand nr. 2}{31}{subsubsection.3.2.1}%
 \contentsline {section}{\numberline {4}Experiments}{39}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Flight Ion-Mirror}{39}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}Flight Antechamber}{40}{subsection.4.2}%
-\contentsline {subsection}{\numberline {4.3}Entrance characterization}{42}{subsection.4.3}%
-\contentsline {subsection}{\numberline {4.4}Shutter Performance Test}{46}{subsection.4.4}%
-\contentsline {subsection}{\numberline {4.5}Simulations}{46}{subsection.4.5}%
-\contentsline {subsection}{\numberline {4.6}Filament decision}{46}{subsection.4.6}%
+\contentsline {subsection}{\numberline {4.1}Flight Ion-Mirror {\color {red}{Finished}}}{39}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Flight Antechamber {\color {red}{finished}}}{40}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Entrance {\color {red}{finished}}}{42}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}Shutter Performance Test {\color {red}{finished}}}{44}{subsection.4.4}%
+\contentsline {subsection}{\numberline {4.5}Simulations {\color {red}{Only if there is time to write something. Material is available}}}{46}{subsection.4.5}%
+\contentsline {subsection}{\numberline {4.6}Filament decision {\color {red}{Draft}}}{46}{subsection.4.6}%
 \contentsline {subsection}{\numberline {4.7}Pulser {\color {red}{finished}}}{46}{subsection.4.7}%
-\contentsline {subsection}{\numberline {4.8}Detector Tests}{48}{subsection.4.8}%
-\contentsline {subsection}{\numberline {4.9}Ionoptics}{50}{subsection.4.9}%
-\contentsline {subsubsection}{\numberline {4.9.1}Voltage Optimisation}{50}{subsubsection.4.9.1}%
-\contentsline {subsection}{\numberline {4.10}Instrument performance tests}{50}{subsection.4.10}%
-\contentsline {subsubsection}{\numberline {4.10.1}Prototype}{50}{subsubsection.4.10.1}%
-\contentsline {subsubsection}{\numberline {4.10.2}PFM}{50}{subsubsection.4.10.2}%
-\contentsline {subsubsection}{\numberline {4.10.3}FS}{50}{subsubsection.4.10.3}%
+\contentsline {subsection}{\numberline {4.8}Detector Tests {\color {red}{Draft}}}{47}{subsection.4.8}%
+\contentsline {subsection}{\numberline {4.9}Sensor performance tests}{49}{subsection.4.9}%
+\contentsline {subsubsection}{\numberline {4.9.1}PFM}{49}{subsubsection.4.9.1}%
+\contentsline {subsubsection}{\numberline {4.9.2}FS {\color {red}{finished}}}{49}{subsubsection.4.9.2}%
 \contentsline {section}{\numberline {5}Conclusion}{55}{section.5}%
 \contentsline {section}{\numberline {6}Outlook}{57}{section.6}%
 \contentsline {section}{References}{58}{section*.61}%

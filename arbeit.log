@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.5.28)  21 AUG 2021 17:44
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.5.28)  24 AUG 2021 11:20
 entering extended mode
 **./arbeit.tex
 (arbeit.tex
@@ -2046,11 +2046,11 @@ Package pdftex.def Info: Bilder/logo-uni.jpg  used on input line 77.
 [1
 
 {C:/Users/foehn/AppData/Local/MiKTeX/pdftex/config/pdftex.map} <./Bilder/logo-u
-ni.jpg>] [2] [1] [2] (arbeit.toc [3])
+ni.jpg>] [2] [1] [2] (arbeit.toc)
 \tf@toc=\write5
 \openout5 = `arbeit.toc'.
 
- [4] [5] [6] [7] (Introduction.tex)pdfTeX warning (ext4): destination with the 
+ [3] [4] [5] [6] (Introduction.tex)pdfTeX warning (ext4): destination with the 
 same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
@@ -2061,7 +2061,7 @@ l.165 	\newpage
                    \relax 
 l.168 	\newpage
                 [2] (Theory.tex
-<Bilder/NIM_Sketch.png, id=133, 3103.595pt x 3808.2275pt>
+<Bilder/NIM_Sketch.png, id=123, 3103.595pt x 3808.2275pt>
 File: Bilder/NIM_Sketch.png Graphic file (type png)
 <use Bilder/NIM_Sketch.png>
 Package pdftex.def Info: Bilder/NIM_Sketch.png  used on input line 10.
@@ -2077,17 +2077,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 54--56
  []
 
 [4]
-<Bilder/ISStartPosThermEn.png, id=169, 562.62195pt x 466.8642pt>
+<Bilder/ISStartPosThermEn.png, id=158, 562.62195pt x 466.8642pt>
 File: Bilder/ISStartPosThermEn.png Graphic file (type png)
 <use Bilder/ISStartPosThermEn.png>
 Package pdftex.def Info: Bilder/ISStartPosThermEn.png  used on input line 65.
 (pdftex.def)             Requested size: 448.13095pt x 371.87477pt.
-<Bilder/PulserShapeTheoAna.png, id=170, 284.38245pt x 197.2971pt>
+<Bilder/PulserShapeTheoAna.png, id=159, 284.38245pt x 197.2971pt>
 File: Bilder/PulserShapeTheoAna.png Graphic file (type png)
 <use Bilder/PulserShapeTheoAna.png>
 Package pdftex.def Info: Bilder/PulserShapeTheoAna.png  used on input line 72.
 (pdftex.def)             Requested size: 224.06548pt x 155.45357pt.
-<Bilder/PulserFallTimeShapes.png, id=171, 258.0039pt x 197.2971pt>
+<Bilder/PulserFallTimeShapes.png, id=160, 258.0039pt x 197.2971pt>
 File: Bilder/PulserFallTimeShapes.png Graphic file (type png)
 <use Bilder/PulserFallTimeShapes.png>
 Package pdftex.def Info: Bilder/PulserFallTimeShapes.png  used on input line 78
@@ -2098,7 +2098,7 @@ Overfull \hbox (2.54399pt too wide) in paragraph at lines 70--82
 []$[]$ $[]$ 
  []
 
-<Bilder/PulsInt.png, id=172, 359.9046pt x 302.44995pt>
+<Bilder/PulsInt.png, id=161, 359.9046pt x 302.44995pt>
 File: Bilder/PulsInt.png Graphic file (type png)
 <use Bilder/PulsInt.png>
 Package pdftex.def Info: Bilder/PulsInt.png  used on input line 87.
@@ -2116,17 +2116,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 102--106
 
 [6 <./Bilder/PulserShapeTheoAna.png> <./Bilder/PulserFallTimeShapes.png>]
 [7 <./Bilder/PulsInt.png>] [8]
-<Bilder/PulseSimMassRes.png, id=223, 730.73pt x 276.03125pt>
+<Bilder/PulseSimMassRes.png, id=213, 730.73pt x 276.03125pt>
 File: Bilder/PulseSimMassRes.png Graphic file (type png)
 <use Bilder/PulseSimMassRes.png>
 Package pdftex.def Info: Bilder/PulseSimMassRes.png  used on input line 162.
 (pdftex.def)             Requested size: 448.13095pt x 169.28015pt.
-<Bilder/PulseLabWLEm480.png, id=224, 639.89063pt x 426.84468pt>
+<Bilder/PulseLabWLEm480.png, id=214, 639.89063pt x 426.84468pt>
 File: Bilder/PulseLabWLEm480.png Graphic file (type png)
 <use Bilder/PulseLabWLEm480.png>
 Package pdftex.def Info: Bilder/PulseLabWLEm480.png  used on input line 168.
 (pdftex.def)             Requested size: 358.50612pt x 239.14862pt.
-<Bilder/PulseSimPosition.png, id=225, 715.67375pt x 272.51813pt>
+<Bilder/PulseSimPosition.png, id=215, 715.67375pt x 272.51813pt>
 File: Bilder/PulseSimPosition.png Graphic file (type png)
 <use Bilder/PulseSimPosition.png>
 Package pdftex.def Info: Bilder/PulseSimPosition.png  used on input line 174.
@@ -2170,55 +2170,60 @@ LaTeX Font Info:    Trying to load font information for TS1+phv on input line 2
  (C:\Users\foehn\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1phv.fd
 File: ts1phv.fd 2020/03/25 scalable font definitions for TS1/phv.
 )
-<Bilder/NIM_schema_zoom_IS.png, id=263, 768.8725pt x 304.63812pt>
+<Bilder/NIM_schema_zoom_IS.png, id=253, 768.8725pt x 304.63812pt>
 File: Bilder/NIM_schema_zoom_IS.png Graphic file (type png)
 <use Bilder/NIM_schema_zoom_IS.png>
 Package pdftex.def Info: Bilder/NIM_schema_zoom_IS.png  used on input line 261.
 
 (pdftex.def)             Requested size: 224.06548pt x 88.77509pt.
-<Bilder/particleDensEnh.png, id=264, 2747.7054pt x 1995.01335pt>
+<Bilder/particleDensEnh.png, id=254, 2747.7054pt x 1995.01335pt>
 File: Bilder/particleDensEnh.png Graphic file (type png)
 <use Bilder/particleDensEnh.png>
 Package pdftex.def Info: Bilder/particleDensEnh.png  used on input line 267.
 (pdftex.def)             Requested size: 313.69029pt x 227.73221pt.
 
-[12] [13 <./Bilder/NIM_schema_zoom_IS.png> <./Bilder/particleDensEnh.png>]
-[14] [15]
-Underfull \hbox (badness 10000) in paragraph at lines 346--348
+[12]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@ifnextchar' on input line 273.
+
+[13 <./Bilder/NIM_schema_zoom_IS.png> <./Bilder/particleDensEnh.png>] [14]
+[15]
+Underfull \hbox (badness 10000) in paragraph at lines 347--349
 
  []
 
-<Bilder/Ta_Ts.png, id=324, 853.68938pt x 555.57562pt>
+<Bilder/Ta_Ts.png, id=314, 853.68938pt x 555.57562pt>
 File: Bilder/Ta_Ts.png Graphic file (type png)
 <use Bilder/Ta_Ts.png>
-Package pdftex.def Info: Bilder/Ta_Ts.png  used on input line 354.
+Package pdftex.def Info: Bilder/Ta_Ts.png  used on input line 355.
 (pdftex.def)             Requested size: 313.69029pt x 204.15251pt.
-<Bilder/raHi_raIs.png, id=330, 853.68938pt x 555.57562pt>
+<Bilder/raHi_raIs.png, id=320, 853.68938pt x 555.57562pt>
 File: Bilder/raHi_raIs.png Graphic file (type png)
 <use Bilder/raHi_raIs.png>
-Package pdftex.def Info: Bilder/raHi_raIs.png  used on input line 362.
+Package pdftex.def Info: Bilder/raHi_raIs.png  used on input line 363.
 (pdftex.def)             Requested size: 313.69029pt x 204.15251pt.
 LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 3
-66.
+67.
 (C:\Users\foehn\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 )
-<Bilder/k.png, id=332, 853.68938pt x 555.57562pt>
+<Bilder/k.png, id=322, 853.68938pt x 555.57562pt>
 File: Bilder/k.png Graphic file (type png)
 <use Bilder/k.png>
-Package pdftex.def Info: Bilder/k.png  used on input line 369.
+Package pdftex.def Info: Bilder/k.png  used on input line 370.
 (pdftex.def)             Requested size: 313.69029pt x 204.15251pt.
-<Bilder/m.png, id=334, 853.68938pt x 555.57562pt>
+<Bilder/m.png, id=324, 853.68938pt x 555.57562pt>
 File: Bilder/m.png Graphic file (type png)
 <use Bilder/m.png>
-Package pdftex.def Info: Bilder/m.png  used on input line 376.
+Package pdftex.def Info: Bilder/m.png  used on input line 377.
 (pdftex.def)             Requested size: 313.69029pt x 204.15251pt.
-<Bilder/velocity.png, id=339, 853.68938pt x 555.57562pt>
+<Bilder/velocity.png, id=329, 853.68938pt x 555.57562pt>
 File: Bilder/velocity.png Graphic file (type png)
 <use Bilder/velocity.png>
 Package pdftex.def Info: Bilder/velocity.png  used on input line 384.
-(pdftex.def)             Requested size: 313.69029pt x 204.15251pt.
-<Bilder/Chi_theta0.png, id=343, 853.68938pt x 555.57562pt>
+(pdftex.def)             Requested size: 358.50612pt x 233.31473pt.
+<Bilder/Chi_theta0.png, id=333, 853.68938pt x 555.57562pt>
 File: Bilder/Chi_theta0.png Graphic file (type png)
 <use Bilder/Chi_theta0.png>
 Package pdftex.def Info: Bilder/Chi_theta0.png  used on input line 391.
@@ -2227,127 +2232,150 @@ Package pdftex.def Info: Bilder/Chi_theta0.png  used on input line 391.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[16] [17 <./Bilder/Ta_Ts.png (PNG copy)> <./Bilder/raHi_raIs.png (PNG copy)>]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[16]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[17 <./Bilder/Ta_Ts.png (PNG copy)> <./Bilder/raHi_raIs.png (PNG copy)>]
+[18 <./Bilder/k.png (PNG copy)> <./Bilder/m.png (PNG copy)>]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@ifnextchar' on input line 397.
 
-[18 <./Bilder/k.png (PNG copy)>]
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<Bilder/Callisto_flyby_schematic.png, id=367, 587.91644pt x 244.63396pt>
+<Bilder/Callisto_flyby_schematic.png, id=355, 587.91644pt x 244.63396pt>
 File: Bilder/Callisto_flyby_schematic.png Graphic file (type png)
 <use Bilder/Callisto_flyby_schematic.png>
 Package pdftex.def Info: Bilder/Callisto_flyby_schematic.png  used on input lin
-e 401.
+e 400.
 (pdftex.def)             Requested size: 358.50612pt x 149.17422pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Bilder/NIM_pointing_2031JAN15185200.png, id=368, 569.12625pt x 321.6015pt>
+<Bilder/NIM_pointing_2031JAN15185200.png, id=356, 569.12625pt x 321.6015pt>
 File: Bilder/NIM_pointing_2031JAN15185200.png Graphic file (type png)
 <use Bilder/NIM_pointing_2031JAN15185200.png>
 Package pdftex.def Info: Bilder/NIM_pointing_2031JAN15185200.png  used on input
- line 408.
+ line 406.
 (pdftex.def)             Requested size: 313.69029pt x 177.26903pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Bilder/NIM_pointing_2031JAN15194200.png, id=371, 572.3784pt x 324.13095pt>
+<Bilder/NIM_pointing_2031JAN15194200.png, id=359, 572.3784pt x 324.13095pt>
 File: Bilder/NIM_pointing_2031JAN15194200.png Graphic file (type png)
 <use Bilder/NIM_pointing_2031JAN15194200.png>
 Package pdftex.def Info: Bilder/NIM_pointing_2031JAN15194200.png  used on input
- line 414.
+ line 412.
 (pdftex.def)             Requested size: 313.69029pt x 177.6395pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Bilder/NIM_pointing_2031JAN15194700.png, id=374, 569.12625pt x 319.79475pt>
+<Bilder/NIM_pointing_2031JAN15194700.png, id=362, 569.12625pt x 319.79475pt>
 File: Bilder/NIM_pointing_2031JAN15194700.png Graphic file (type png)
 <use Bilder/NIM_pointing_2031JAN15194700.png>
 Package pdftex.def Info: Bilder/NIM_pointing_2031JAN15194700.png  used on input
- line 420.
+ line 418.
 (pdftex.def)             Requested size: 313.69029pt x 176.27315pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Bilder/NIM_pointing_2031JAN15195200_tilt.png, id=377, 569.12625pt x 321.6015pt
+<Bilder/NIM_pointing_2031JAN15195200_tilt.png, id=365, 569.12625pt x 321.6015pt
 >
 File: Bilder/NIM_pointing_2031JAN15195200_tilt.png Graphic file (type png)
 <use Bilder/NIM_pointing_2031JAN15195200_tilt.png>
 Package pdftex.def Info: Bilder/NIM_pointing_2031JAN15195200_tilt.png  used on 
-input line 426.
+input line 424.
 (pdftex.def)             Requested size: 313.69029pt x 177.26903pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Bilder/NIM_pointing_2031JAN15195200.png, id=380, 569.84895pt x 322.68555pt>
+<Bilder/NIM_pointing_2031JAN15195200.png, id=368, 569.84895pt x 322.68555pt>
 File: Bilder/NIM_pointing_2031JAN15195200.png Graphic file (type png)
 <use Bilder/NIM_pointing_2031JAN15195200.png>
 Package pdftex.def Info: Bilder/NIM_pointing_2031JAN15195200.png  used on input
- line 432.
+ line 430.
 (pdftex.def)             Requested size: 313.69029pt x 177.63023pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Bilder/NIM_pointing_2031JAN15195700.png, id=383, 570.2103pt x 322.3242pt>
+<Bilder/NIM_pointing_2031JAN15195700.png, id=371, 570.2103pt x 322.3242pt>
 File: Bilder/NIM_pointing_2031JAN15195700.png Graphic file (type png)
 <use Bilder/NIM_pointing_2031JAN15195700.png>
 Package pdftex.def Info: Bilder/NIM_pointing_2031JAN15195700.png  used on input
- line 438.
+ line 436.
 (pdftex.def)             Requested size: 313.69029pt x 177.32312pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Bilder/Chi_theta0_flyby.png, id=395, 854.59274pt x 555.7563pt>
+<Bilder/Chi_theta0_flyby.png, id=382, 854.59274pt x 555.7563pt>
 File: Bilder/Chi_theta0_flyby.png Graphic file (type png)
 <use Bilder/Chi_theta0_flyby.png>
-Package pdftex.def Info: Bilder/Chi_theta0_flyby.png  used on input line 447.
+Package pdftex.def Info: Bilder/Chi_theta0_flyby.png  used on input line 443.
 (pdftex.def)             Requested size: 358.50612pt x 233.14468pt.
-[19 <./Bilder/m.png (PNG copy)> <./Bilder/velocity.png (PNG copy)>] [20 <./Bild
-er/Chi_theta0.png (PNG copy)> <./Bilder/Callisto_flyby_schematic.png>] [21 <./B
-ilder/NIM_pointing_2031JAN15185200.png> <./Bilder/NIM_pointing_2031JAN15194200.
-png>] [22 <./Bilder/NIM_pointing_2031JAN15194700.png> <./Bilder/NIM_pointing_20
-31JAN15195200_tilt.png>]
+[19 <./Bilder/velocity.png (PNG copy)>] [20 <./Bilder/Chi_theta0.png (PNG copy)
+> <./Bilder/Callisto_flyby_schematic.png>]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Bilder/Shutter_sideview.png, id=431, 532.99126pt x 282.93706pt>
+[21 <./Bilder/NIM_pointing_2031JAN15185200.png> <./Bilder/NIM_pointing_2031JAN1
+5194200.png>]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@ifnextchar' on input line 451.
+
+<Bilder/Shutter_sideview.png, id=414, 532.99126pt x 282.93706pt>
 File: Bilder/Shutter_sideview.png Graphic file (type png)
 <use Bilder/Shutter_sideview.png>
-Package pdftex.def Info: Bilder/Shutter_sideview.png  used on input line 460.
+Package pdftex.def Info: Bilder/Shutter_sideview.png  used on input line 456.
 (pdftex.def)             Requested size: 224.06548pt x 118.94499pt.
-<Bilder/Shutter_topview.png, id=432, 363.5181pt x 347.98006pt>
+<Bilder/Shutter_topview.png, id=415, 363.5181pt x 347.98006pt>
 File: Bilder/Shutter_topview.png Graphic file (type png)
 <use Bilder/Shutter_topview.png>
-Package pdftex.def Info: Bilder/Shutter_topview.png  used on input line 464.
+Package pdftex.def Info: Bilder/Shutter_topview.png  used on input line 460.
 (pdftex.def)             Requested size: 179.25305pt x 171.58958pt.
 
-Overfull \hbox (2.54399pt too wide) in paragraph at lines 458--466
+Overfull \hbox (2.54399pt too wide) in paragraph at lines 454--462
 []$[]$ $[]$ 
  []
 
-[23 <./Bilder/NIM_pointing_2031JAN15195200.png> <./Bilder/NIM_pointing_2031JAN1
-5195700.png>] [24 <./Bilder/Chi_theta0_flyby.png> <./Bilder/Shutter_sideview.pn
-g> <./Bilder/Shutter_topview.png>] [25]
-<Bilder/ShutGapSizeSigDamp.png, id=462, 639.89063pt x 426.84468pt>
+[22 <./Bilder/NIM_pointing_2031JAN15194700.png> <./Bilder/NIM_pointing_2031JAN1
+5195200_tilt.png>] [23 <./Bilder/NIM_pointing_2031JAN15195200.png> <./Bilder/NI
+M_pointing_2031JAN15195700.png>] [24 <./Bilder/Chi_theta0_flyby.png> <./Bilder/
+Shutter_sideview.png> <./Bilder/Shutter_topview.png>]
+<Bilder/ShutGapSizeSigDamp.png, id=442, 639.89063pt x 426.84468pt>
 File: Bilder/ShutGapSizeSigDamp.png Graphic file (type png)
 <use Bilder/ShutGapSizeSigDamp.png>
-Package pdftex.def Info: Bilder/ShutGapSizeSigDamp.png  used on input line 507.
+Package pdftex.def Info: Bilder/ShutGapSizeSigDamp.png  used on input line 504.
 
 (pdftex.def)             Requested size: 358.50612pt x 239.14862pt.
- [26 <./Bilder/ShutGapSizeSigDamp.png (PNG copy)>]
-Underfull \hbox (badness 10000) in paragraph at lines 541--542
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[25]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@ifnextchar' on input line 512.
+
+[26 <./Bilder/ShutGapSizeSigDamp.png (PNG copy)>]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@ifnextchar' on input line 527.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 535--536
 
  []
 
-<Bilder/MCP_hex.jpg, id=472, 198.99344pt x 125.21782pt>
+<Bilder/MCP_hex.jpg, id=463, 198.99344pt x 125.21782pt>
 File: Bilder/MCP_hex.jpg Graphic file (type jpg)
 <use Bilder/MCP_hex.jpg>
-Package pdftex.def Info: Bilder/MCP_hex.jpg  used on input line 545.
+Package pdftex.def Info: Bilder/MCP_hex.jpg  used on input line 539.
 (pdftex.def)             Requested size: 179.24963pt x 112.79816pt.
 [27 <./Bilder/MCP_hex.jpg>] [28]) [29] (Setup.tex
 
@@ -2359,10 +2387,14 @@ LaTeX Warning: Reference `subsubsec:setupPFM' on page 30 undefined on input lin
 e 5.
 
 
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@ifnextchar' on input line 20.
+
+
 
 pdfTeX warning: pdflatex.exe (file ./Setup/NIM_schema.pdf): PDF inclusion: foun
 d PDF version <1.7>, but at most version <1.5> allowed
-<Setup/NIM_schema.pdf, id=524, 484.33707pt x 726.88292pt>
+<Setup/NIM_schema.pdf, id=515, 484.33707pt x 726.88292pt>
 File: Setup/NIM_schema.pdf Graphic file (type pdf)
 <use Setup/NIM_schema.pdf>
 Package pdftex.def Info: Setup/NIM_schema.pdf  used on input line 59.
@@ -2373,7 +2405,7 @@ LaTeX Warning: Float too large for page by 27.93799pt on input line 62.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Setup/Proto_IS_sim.png, id=525, 474.45255pt x 168.02776pt>
+<Setup/Proto_IS_sim.png, id=516, 474.45255pt x 168.02776pt>
 File: Setup/Proto_IS_sim.png Graphic file (type png)
 <use Setup/Proto_IS_sim.png>
 Package pdftex.def Info: Setup/Proto_IS_sim.png  used on input line 67.
@@ -2381,7 +2413,7 @@ Package pdftex.def Info: Setup/Proto_IS_sim.png  used on input line 67.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Setup/ISFlight_bearb.png, id=528, 369.2997pt x 140.2038pt>
+<Setup/ISFlight_bearb.png, id=519, 369.2997pt x 140.2038pt>
 File: Setup/ISFlight_bearb.png Graphic file (type png)
 <use Setup/ISFlight_bearb.png>
 Package pdftex.def Info: Setup/ISFlight_bearb.png  used on input line 74.
@@ -2389,12 +2421,12 @@ Package pdftex.def Info: Setup/ISFlight_bearb.png  used on input line 74.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Setup/Proto_FilEl_sim.jpg, id=529, 154.3366pt x 108.7262pt>
+<Setup/Proto_FilEl_sim.jpg, id=520, 154.3366pt x 108.7262pt>
 File: Setup/Proto_FilEl_sim.jpg Graphic file (type jpg)
 <use Setup/Proto_FilEl_sim.jpg>
 Package pdftex.def Info: Setup/Proto_FilEl_sim.jpg  used on input line 81.
 (pdftex.def)             Requested size: 190.45702pt x 134.1787pt.
-<Setup/PFM_FilEl_sim.jpg, id=530, 151.6064pt x 109.3686pt>
+<Setup/PFM_FilEl_sim.jpg, id=521, 151.6064pt x 109.3686pt>
 File: Setup/PFM_FilEl_sim.jpg Graphic file (type jpg)
 <use Setup/PFM_FilEl_sim.jpg>
 Package pdftex.def Info: Setup/PFM_FilEl_sim.jpg  used on input line 85.
@@ -2407,7 +2439,7 @@ Overfull \hbox (2.54399pt too wide) in paragraph at lines 79--87
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Setup/Prototype_Reflectron_sim.png, id=531, 451.6875pt x 157.18726pt>
+<Setup/Prototype_Reflectron_sim.png, id=522, 451.6875pt x 157.18726pt>
 File: Setup/Prototype_Reflectron_sim.png Graphic file (type png)
 <use Setup/Prototype_Reflectron_sim.png>
 Package pdftex.def Info: Setup/Prototype_Reflectron_sim.png  used on input line
@@ -2416,7 +2448,7 @@ Package pdftex.def Info: Setup/Prototype_Reflectron_sim.png  used on input line
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Setup/Prototype_totPic.jpg, id=534, 446.34679pt x 343.39613pt>
+<Setup/Prototype_totPic.jpg, id=525, 446.34679pt x 343.39613pt>
 File: Setup/Prototype_totPic.jpg Graphic file (type jpg)
 <use Setup/Prototype_totPic.jpg>
 Package pdftex.def Info: Setup/Prototype_totPic.jpg  used on input line 100.
@@ -2424,7 +2456,7 @@ Package pdftex.def Info: Setup/Prototype_totPic.jpg  used on input line 100.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Setup/PFM_in_calib_Setup.JPG, id=537, 5203.44pt x 3468.96pt>
+<Setup/PFM_in_calib_Setup.JPG, id=528, 5203.44pt x 3468.96pt>
 File: Setup/PFM_in_calib_Setup.JPG Graphic file (type jpg)
 <use Setup/PFM_in_calib_Setup.JPG>
 Package pdftex.def Info: Setup/PFM_in_calib_Setup.JPG  used on input line 107.
@@ -2437,19 +2469,23 @@ Underfull \hbox (badness 10000) in paragraph at lines 132--134
 
  []
 
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@ifnextchar' on input line 138.
+
 [30]
 Underfull \hbox (badness 10000) in paragraph at lines 168--170
 
  []
 
 [31]
-<Bilder/Galerie_Setup/Pumpstand2_midres.png, id=563, 3011.25pt x 4013.99625pt>
+<Bilder/Galerie_Setup/Pumpstand2_midres.png, id=554, 3011.25pt x 4013.99625pt>
 File: Bilder/Galerie_Setup/Pumpstand2_midres.png Graphic file (type png)
 <use Bilder/Galerie_Setup/Pumpstand2_midres.png>
 Package pdftex.def Info: Bilder/Galerie_Setup/Pumpstand2_midres.png  used on in
 put line 205.
 (pdftex.def)             Requested size: 179.25305pt x 238.93068pt.
-<Bilder/Galerie_Setup/Pumpstand_PSOszi.png, id=564, 4129.71428pt x 3097.28572pt
+<Bilder/Galerie_Setup/Pumpstand_PSOszi.png, id=555, 4129.71428pt x 3097.28572pt
 >
 File: Bilder/Galerie_Setup/Pumpstand_PSOszi.png Graphic file (type png)
 <use Bilder/Galerie_Setup/Pumpstand_PSOszi.png>
@@ -2464,7 +2500,7 @@ Overfull \hbox (2.54399pt too wide) in paragraph at lines 203--211
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Bilder/Detector_elec_schema.png, id=565, 548.7264pt x 288.0288pt>
+<Bilder/Detector_elec_schema.png, id=556, 548.7264pt x 288.0288pt>
 File: Bilder/Detector_elec_schema.png Graphic file (type png)
 <use Bilder/Detector_elec_schema.png>
 Package pdftex.def Info: Bilder/Detector_elec_schema.png  used on input line 21
@@ -2496,74 +2532,87 @@ png> <./Bilder/Galerie_Setup/Pumpstand_PSOszi.png>] [37 <./Bilder/Detector_elec
 _schema.png>] [38
 
 ] (Experiments.tex
-<Experiments/reflectron_Prototype1.jpg, id=628, 301.6068pt x 165.7392pt>
+Overfull \hbox (23.67906pt too wide) in paragraph at lines 4--6
+\OT1/ptm/m/n/12 This sec-tion in-cludes tests of flight com-pon-ents and also s
+ys-tem tests of the NIM Proto Flight Model
+ []
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@ifnextchar' on input line 11.
+
+<Experiments/reflectron_Prototype1.jpg, id=618, 301.6068pt x 165.7392pt>
 File: Experiments/reflectron_Prototype1.jpg Graphic file (type jpg)
 <use Experiments/reflectron_Prototype1.jpg>
 Package pdftex.def Info: Experiments/reflectron_Prototype1.jpg  used on input l
-ine 22.
+ine 16.
 (pdftex.def)             Requested size: 212.86151pt x 116.97511pt.
-<Experiments/reflectron_flight.JPG, id=629, 367.8543pt x 281.3712pt>
+<Experiments/reflectron_flight.JPG, id=619, 367.8543pt x 281.3712pt>
 File: Experiments/reflectron_flight.JPG Graphic file (type jpg)
 <use Experiments/reflectron_flight.JPG>
 Package pdftex.def Info: Experiments/reflectron_flight.JPG  used on input line 
-26.
+20.
 (pdftex.def)             Requested size: 190.45702pt x 145.68274pt.
 
-Overfull \hbox (2.54399pt too wide) in paragraph at lines 20--28
+Overfull \hbox (2.54399pt too wide) in paragraph at lines 14--22
 []$[]$ $[]$ 
  []
 
-[39 <./Experiments/reflectron_Prototype1.jpg> <./Experiments/reflectron_flight.
-JPG>]
-<Experiments/ProtoAnte.png, id=643, 1070.3187pt x 802.9197pt>
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@ifnextchar' on input line 46.
+
+<Experiments/ProtoAnte.png, id=625, 1070.3187pt x 802.9197pt>
 File: Experiments/ProtoAnte.png Graphic file (type png)
 <use Experiments/ProtoAnte.png>
-Package pdftex.def Info: Experiments/ProtoAnte.png  used on input line 60.
+Package pdftex.def Info: Experiments/ProtoAnte.png  used on input line 54.
 (pdftex.def)             Requested size: 224.06548pt x 168.07904pt.
-<Experiments/FlightAnte.png, id=644, 465.78015pt x 427.1157pt>
+<Experiments/FlightAnte.png, id=626, 465.78015pt x 427.1157pt>
 File: Experiments/FlightAnte.png Graphic file (type png)
 <use Experiments/FlightAnte.png>
-Package pdftex.def Info: Experiments/FlightAnte.png  used on input line 64.
+Package pdftex.def Info: Experiments/FlightAnte.png  used on input line 58.
 (pdftex.def)             Requested size: 179.25305pt x 164.37161pt.
 
-Overfull \hbox (2.54399pt too wide) in paragraph at lines 58--66
+Overfull \hbox (2.54399pt too wide) in paragraph at lines 52--60
 []$[]$ $[]$ 
  []
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<Experiments/oldAnte_ThMode.png, id=646, 494.84875pt x 275.0275pt>
+<Experiments/oldAnte_ThMode.png, id=628, 494.84875pt x 275.0275pt>
 File: Experiments/oldAnte_ThMode.png Graphic file (type png)
 <use Experiments/oldAnte_ThMode.png>
-Package pdftex.def Info: Experiments/oldAnte_ThMode.png  used on input line 74.
+Package pdftex.def Info: Experiments/oldAnte_ThMode.png  used on input line 67.
 
 (pdftex.def)             Requested size: 224.06548pt x 124.5292pt.
-<Experiments/oldAnte_NMode.png, id=647, 498.36188pt x 275.0275pt>
+<Experiments/oldAnte_NMode.png, id=629, 498.36188pt x 275.0275pt>
 File: Experiments/oldAnte_NMode.png Graphic file (type png)
 <use Experiments/oldAnte_NMode.png>
-Package pdftex.def Info: Experiments/oldAnte_NMode.png  used on input line 79.
+Package pdftex.def Info: Experiments/oldAnte_NMode.png  used on input line 72.
 (pdftex.def)             Requested size: 224.06548pt x 123.65211pt.
-<Experiments/newAnte_ThMode.png, id=648, 488.32437pt x 275.0275pt>
+<Experiments/newAnte_ThMode.png, id=630, 488.32437pt x 275.0275pt>
 File: Experiments/newAnte_ThMode.png Graphic file (type png)
 <use Experiments/newAnte_ThMode.png>
-Package pdftex.def Info: Experiments/newAnte_ThMode.png  used on input line 84.
+Package pdftex.def Info: Experiments/newAnte_ThMode.png  used on input line 77.
 
 (pdftex.def)             Requested size: 224.06548pt x 126.19524pt.
-<Experiments/newAnte_NMode.png, id=649, 506.39188pt x 282.55562pt>
+<Experiments/newAnte_NMode.png, id=631, 506.39188pt x 282.55562pt>
 File: Experiments/newAnte_NMode.png Graphic file (type png)
 <use Experiments/newAnte_NMode.png>
-Package pdftex.def Info: Experiments/newAnte_NMode.png  used on input line 89.
+Package pdftex.def Info: Experiments/newAnte_NMode.png  used on input line 82.
 (pdftex.def)             Requested size: 224.06548pt x 125.0233pt.
 
-Overfull \hbox (2.54399pt too wide) in paragraph at lines 72--92
+Overfull \hbox (2.54399pt too wide) in paragraph at lines 65--85
 [][] []
  []
 
 
-Overfull \hbox (2.54399pt too wide) in paragraph at lines 72--92
+Overfull \hbox (2.54399pt too wide) in paragraph at lines 65--85
 [] [] 
  []
+
+[39 <./Experiments/reflectron_Prototype1.jpg> <./Experiments/reflectron_flight.
+JPG>]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -2575,52 +2624,128 @@ LaTeX Warning: Text page 41 contains only floats.
 [41 <./Experiments/ProtoAnte.png> <./Experiments/FlightAnte.png> <./Experiments
 /oldAnte_ThMode.png> <./Experiments/oldAnte_NMode.png> <./Experiments/newAnte_T
 hMode.png> <./Experiments/newAnte_NMode.png>]
-<Experiments/2D_scan_anteEntr.jpg, id=681, 574.7874pt x 288.1164pt>
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@ifnextchar' on input line 102.
+
+<Experiments/2D_scan_anteEntr.jpg, id=672, 574.7874pt x 288.1164pt>
 File: Experiments/2D_scan_anteEntr.jpg Graphic file (type jpg)
 <use Experiments/2D_scan_anteEntr.jpg>
 Package pdftex.def Info: Experiments/2D_scan_anteEntr.jpg  used on input line 1
-17.
+05.
 (pdftex.def)             Requested size: 448.13095pt x 224.62875pt.
- [42]
-<Experiments/2D_scan_Ant.png, id=689, 400.3758pt x 325.6968pt>
-File: Experiments/2D_scan_Ant.png Graphic file (type png)
-<use Experiments/2D_scan_Ant.png>
-Package pdftex.def Info: Experiments/2D_scan_Ant.png  used on input line 123.
-(pdftex.def)             Requested size: 313.69029pt x 255.19545pt.
-<Experiments/2D_scan_Entr.jpg, id=690, 520.44438pt x 235.88126pt>
-File: Experiments/2D_scan_Entr.jpg Graphic file (type jpg)
-<use Experiments/2D_scan_Entr.jpg>
-Package pdftex.def Info: Experiments/2D_scan_Entr.jpg  used on input line 129.
-(pdftex.def)             Requested size: 448.13095pt x 203.10587pt.
-
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Experiments/Entrence_Proto_topview.png, id=696, 921.4425pt x 822.4326pt>
+<Experiments/2D_scan_Ant.png, id=673, 400.3758pt x 325.6968pt>
+File: Experiments/2D_scan_Ant.png Graphic file (type png)
+<use Experiments/2D_scan_Ant.png>
+Package pdftex.def Info: Experiments/2D_scan_Ant.png  used on input line 111.
+(pdftex.def)             Requested size: 313.69029pt x 255.19545pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<Experiments/2D_scan_Entr.jpg, id=674, 520.44438pt x 235.88126pt>
+File: Experiments/2D_scan_Entr.jpg Graphic file (type jpg)
+<use Experiments/2D_scan_Entr.jpg>
+Package pdftex.def Info: Experiments/2D_scan_Entr.jpg  used on input line 117.
+(pdftex.def)             Requested size: 448.13095pt x 203.10587pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<Experiments/Entrence_Proto_topview.png, id=681, 921.4425pt x 822.4326pt>
 File: Experiments/Entrence_Proto_topview.png Graphic file (type png)
 <use Experiments/Entrence_Proto_topview.png>
 Package pdftex.def Info: Experiments/Entrence_Proto_topview.png  used on input 
-line 137.
+line 125.
 (pdftex.def)             Requested size: 448.13095pt x 399.97113pt.
-[43 <./Experiments/2D_scan_anteEntr.jpg> <./Experiments/2D_scan_Ant.png>]
+[42] [43 <./Experiments/2D_scan_anteEntr.jpg> <./Experiments/2D_scan_Ant.png>]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@ifnextchar' on input line 131.
+
 [44 <./Experiments/2D_scan_Entr.jpg>] [45 <./Experiments/Entrence_Proto_topview
 .png>]
 
-LaTeX Warning: Characters dropped after `\end{comment}' on input line 201.
+LaTeX Warning: Characters dropped after `\end{comment}' on input line 189.
 
-<Experiments/SimRepPosU.png, id=718, 774.7344pt x 592.8549pt>
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@ifnextchar' on input line 194.
+
+<Experiments/SimRepPosU.png, id=709, 774.7344pt x 592.8549pt>
 File: Experiments/SimRepPosU.png Graphic file (type png)
 <use Experiments/SimRepPosU.png>
-Package pdftex.def Info: Experiments/SimRepPosU.png  used on input line 231.
+Package pdftex.def Info: Experiments/SimRepPosU.png  used on input line 219.
 (pdftex.def)             Requested size: 225.63268pt x 172.6653pt.
-<Experiments/SimRepPosImax.png, id=719, 639.8304pt x 520.5849pt>
+<Experiments/SimRepPosImax.png, id=710, 639.8304pt x 520.5849pt>
 File: Experiments/SimRepPosImax.png Graphic file (type png)
 <use Experiments/SimRepPosImax.png>
-Package pdftex.def Info: Experiments/SimRepPosImax.png  used on input line 235.
+Package pdftex.def Info: Experiments/SimRepPosImax.png  used on input line 223.
 
 (pdftex.def)             Requested size: 200.09033pt x 162.79358pt.
 
-Overfull \hbox (2.54398pt too wide) in paragraph at lines 229--237
+Overfull \hbox (2.54398pt too wide) in paragraph at lines 217--225
+[]$[]$ $[]$ 
+ []
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@ifnextchar' on input line 229.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@ifnextchar' on input line 234.
+
+<Bilder/Pulser_theretical_shape.jpg, id=711, 446.22038pt x 234.20062pt>
+File: Bilder/Pulser_theretical_shape.jpg Graphic file (type jpg)
+<use Bilder/Pulser_theretical_shape.jpg>
+Package pdftex.def Info: Bilder/Pulser_theretical_shape.jpg  used on input line
+ 242.
+(pdftex.def)             Requested size: 448.13095pt x 235.20064pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[46 <./Experiments/SimRepPosU.png> <./Experiments/SimRepPosImax.png>]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@ifnextchar' on input line 263.
+
+<Experiments/PFM_UstackUmccp_TimeEvol.png, id=726, 774.7344pt x 592.8549pt>
+File: Experiments/PFM_UstackUmccp_TimeEvol.png Graphic file (type png)
+<use Experiments/PFM_UstackUmccp_TimeEvol.png>
+Package pdftex.def Info: Experiments/PFM_UstackUmccp_TimeEvol.png  used on inpu
+t line 269.
+(pdftex.def)             Requested size: 313.69029pt x 240.05064pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 277--280
+
+ []
+
+[47 <./Bilder/Pulser_theretical_shape.jpg>] [48 <./Experiments/PFM_UstackUmccp_
+TimeEvol.png>]
+<Bilder/Gain_Curves_SN4p5_4p7.png, id=740, 622.9674pt x 519.6213pt>
+File: Bilder/Gain_Curves_SN4p5_4p7.png Graphic file (type png)
+<use Bilder/Gain_Curves_SN4p5_4p7.png>
+Package pdftex.def Info: Bilder/Gain_Curves_SN4p5_4p7.png  used on input line 3
+01.
+(pdftex.def)             Requested size: 201.65755pt x 168.20097pt.
+<Bilder/SN4p7_discharge.png, id=741, 642.7212pt x 519.6213pt>
+File: Bilder/SN4p7_discharge.png Graphic file (type png)
+<use Bilder/SN4p7_discharge.png>
+Package pdftex.def Info: Bilder/SN4p7_discharge.png  used on input line 305.
+(pdftex.def)             Requested size: 201.65755pt x 163.0314pt.
+
+Overfull \hbox (2.54399pt too wide) in paragraph at lines 299--307
 []$[]$ $[]$ 
  []
 
@@ -2629,140 +2754,89 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@ifnextchar' on input line 246.
+(hyperref)                removing `\@ifnextchar' on input line 329.
 
-<Bilder/Pulser_theretical_shape.jpg, id=720, 446.22038pt x 234.20062pt>
-File: Bilder/Pulser_theretical_shape.jpg Graphic file (type jpg)
-<use Bilder/Pulser_theretical_shape.jpg>
-Package pdftex.def Info: Bilder/Pulser_theretical_shape.jpg  used on input line
- 254.
-(pdftex.def)             Requested size: 448.13095pt x 235.20064pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[46] [47 <./Experiments/SimRepPosU.png> <./Experiments/SimRepPosImax.png> <./Bi
-lder/Pulser_theretical_shape.jpg>]
-<Experiments/PFM_UstackUmccp_TimeEvol.png, id=740, 774.7344pt x 592.8549pt>
-File: Experiments/PFM_UstackUmccp_TimeEvol.png Graphic file (type png)
-<use Experiments/PFM_UstackUmccp_TimeEvol.png>
-Package pdftex.def Info: Experiments/PFM_UstackUmccp_TimeEvol.png  used on inpu
-t line 281.
-(pdftex.def)             Requested size: 313.69029pt x 240.05064pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 289--292
-
- []
-
-[48]
-<Bilder/Gain_Curves_SN4p5_4p7.png, id=747, 622.9674pt x 519.6213pt>
-File: Bilder/Gain_Curves_SN4p5_4p7.png Graphic file (type png)
-<use Bilder/Gain_Curves_SN4p5_4p7.png>
-Package pdftex.def Info: Bilder/Gain_Curves_SN4p5_4p7.png  used on input line 3
-13.
-(pdftex.def)             Requested size: 201.65755pt x 168.20097pt.
-<Bilder/SN4p7_discharge.png, id=748, 642.7212pt x 519.6213pt>
-File: Bilder/SN4p7_discharge.png Graphic file (type png)
-<use Bilder/SN4p7_discharge.png>
-Package pdftex.def Info: Bilder/SN4p7_discharge.png  used on input line 317.
-(pdftex.def)             Requested size: 201.65755pt x 163.0314pt.
-
-Overfull \hbox (2.54399pt too wide) in paragraph at lines 311--319
-[]$[]$ $[]$ 
- []
-
-[49 <./Experiments/PFM_UstackUmccp_TimeEvol.png>] [50 <./Bilder/Gain_Curves_SN4
-p5_4p7.png> <./Bilder/SN4p7_discharge.png>]
-<Experiments/FiL_IS_elBeam_Storage.png, id=766, 582.67688pt x 304.13625pt>
+<Experiments/FiL_IS_elBeam_Storage.png, id=747, 582.67688pt x 304.13625pt>
 File: Experiments/FiL_IS_elBeam_Storage.png Graphic file (type png)
 <use Experiments/FiL_IS_elBeam_Storage.png>
 Package pdftex.def Info: Experiments/FiL_IS_elBeam_Storage.png  used on input l
-ine 362.
-(pdftex.def)             Requested size: 358.50612pt x 187.13316pt.
-<Experiments/FSLabIonStorageH2.png, id=767, 774.7344pt x 592.8549pt>
+ine 336.
+(pdftex.def)             Requested size: 313.69029pt x 163.7392pt.
+<Experiments/FSLabIonStorageH2.png, id=748, 1351.54938pt x 1156.32pt>
 File: Experiments/FSLabIonStorageH2.png Graphic file (type png)
 <use Experiments/FSLabIonStorageH2.png>
 Package pdftex.def Info: Experiments/FSLabIonStorageH2.png  used on input line 
-371.
-(pdftex.def)             Requested size: 224.06548pt x 171.46216pt.
-<Experiments/FSLabIonStorageKr84.png, id=768, 774.7344pt x 592.8549pt>
+343.
+(pdftex.def)             Requested size: 224.06548pt x 191.6844pt.
+<Experiments/FSLabIonStorageKr84.png, id=749, 1334.9875pt x 1134.2375pt>
 File: Experiments/FSLabIonStorageKr84.png Graphic file (type png)
 <use Experiments/FSLabIonStorageKr84.png>
 Package pdftex.def Info: Experiments/FSLabIonStorageKr84.png  used on input lin
-e 375.
-(pdftex.def)             Requested size: 224.06548pt x 171.46216pt.
+e 347.
+(pdftex.def)             Requested size: 224.06548pt x 190.36021pt.
 
-Overfull \hbox (2.54399pt too wide) in paragraph at lines 369--377
+Overfull \hbox (2.54399pt too wide) in paragraph at lines 341--349
 []$[]$ $[]$ 
  []
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[51 <./Experiments/FiL_IS_elBeam_Storage.png>]
-<Experiments/FSLabthMode.png, id=780, 1066.7353pt x 639.89063pt>
+[49] [50 <./Bilder/Gain_Curves_SN4p5_4p7.png> <./Bilder/SN4p7_discharge.png>]
+<Experiments/FSLabthMode.png, id=771, 604.75937pt x 409.02812pt>
 File: Experiments/FSLabthMode.png Graphic file (type png)
 <use Experiments/FSLabthMode.png>
-Package pdftex.def Info: Experiments/FSLabthMode.png  used on input line 393.
-(pdftex.def)             Requested size: 224.06548pt x 134.40051pt.
-<Experiments/FSLabnMode.png, id=781, 1066.7353pt x 639.89063pt>
+Package pdftex.def Info: Experiments/FSLabthMode.png  used on input line 362.
+(pdftex.def)             Requested size: 224.06548pt x 151.54399pt.
+<Experiments/FSLabnMode.png, id=772, 614.295pt x 410.03188pt>
 File: Experiments/FSLabnMode.png Graphic file (type png)
 <use Experiments/FSLabnMode.png>
-Package pdftex.def Info: Experiments/FSLabnMode.png  used on input line 397.
-(pdftex.def)             Requested size: 224.06548pt x 134.40051pt.
+Package pdftex.def Info: Experiments/FSLabnMode.png  used on input line 366.
+(pdftex.def)             Requested size: 224.06548pt x 149.55714pt.
 
-Overfull \hbox (2.54399pt too wide) in paragraph at lines 391--399
+Overfull \hbox (2.54399pt too wide) in paragraph at lines 360--368
 []$[]$ $[]$ 
  []
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<Experiments/FSthMode200uA.png, id=782, 632.3625pt x 474.27188pt>
+[51 <./Experiments/FiL_IS_elBeam_Storage.png> <./Experiments/FSLabIonStorageH2.
+png> <./Experiments/FSLabIonStorageKr84.png>]
+<Experiments/FSthMode200uA.png, id=782, 375.90437pt x 311.1625pt>
 File: Experiments/FSthMode200uA.png Graphic file (type png)
 <use Experiments/FSthMode200uA.png>
-Package pdftex.def Info: Experiments/FSthMode200uA.png  used on input line 409.
+Package pdftex.def Info: Experiments/FSthMode200uA.png  used on input line 378.
 
-(pdftex.def)             Requested size: 224.06548pt x 168.04565pt.
-<Experiments/FSnMode200uA.png, id=783, 632.3625pt x 474.27188pt>
+(pdftex.def)             Requested size: 224.06548pt x 185.47871pt.
+<Experiments/FSnMode200uA.png, id=783, 374.90062pt x 315.67938pt>
 File: Experiments/FSnMode200uA.png Graphic file (type png)
 <use Experiments/FSnMode200uA.png>
-Package pdftex.def Info: Experiments/FSnMode200uA.png  used on input line 413.
-(pdftex.def)             Requested size: 224.06548pt x 168.04565pt.
+Package pdftex.def Info: Experiments/FSnMode200uA.png  used on input line 382.
+(pdftex.def)             Requested size: 224.06548pt x 188.6721pt.
 
-Overfull \hbox (2.54399pt too wide) in paragraph at lines 407--415
+Overfull \hbox (2.54399pt too wide) in paragraph at lines 376--384
 []$[]$ $[]$ 
  []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Experiments/FS_thMode300uA.png, id=784, 632.3625pt x 474.27188pt>
+<Experiments/FS_thMode300uA.png, id=784, 377.91188pt x 316.18124pt>
 File: Experiments/FS_thMode300uA.png Graphic file (type png)
 <use Experiments/FS_thMode300uA.png>
-Package pdftex.def Info: Experiments/FS_thMode300uA.png  used on input line 421
+Package pdftex.def Info: Experiments/FS_thMode300uA.png  used on input line 390
 .
-(pdftex.def)             Requested size: 268.8813pt x 201.66057pt.
-<Experiments/FSLabSNRRestGasPressCal.png, id=785, 632.3625pt x 474.27188pt>
+(pdftex.def)             Requested size: 268.8813pt x 224.96304pt.
+<Experiments/FSLabSNRRestGasPressCal.png, id=785, 382.93062pt x 307.1475pt>
 File: Experiments/FSLabSNRRestGasPressCal.png Graphic file (type png)
 <use Experiments/FSLabSNRRestGasPressCal.png>
 Package pdftex.def Info: Experiments/FSLabSNRRestGasPressCal.png  used on input
- line 429.
-(pdftex.def)             Requested size: 313.69029pt x 235.26826pt.
+ line 398.
+(pdftex.def)             Requested size: 313.69029pt x 251.62355pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) [52 <./Experiments/FSLabIonStorageH2.png> <./Experiments/FSLabIonStorageKr84.
-png>] [53 <./Experiments/FSLabthMode.png (PNG copy)> <./Experiments/FSLabnMode.
-png (PNG copy)> <./Experiments/FSthMode200uA.png (PNG copy)> <./Experiments/FSn
-Mode200uA.png (PNG copy)>] [54 <./Experiments/FS_thMode300uA.png (PNG copy)> <.
-/Experiments/FSLabSNRRestGasPressCal.png (PNG copy)>] (Conclusion.tex) [55
+) [52 <./Experiments/FSLabthMode.png> <./Experiments/FSLabnMode.png>] [53 <./Ex
+periments/FSthMode200uA.png> <./Experiments/FSnMode200uA.png> <./Experiments/FS
+_thMode300uA.png>] [54 <./Experiments/FSLabSNRRestGasPressCal.png>]
+(Conclusion.tex) [55
 
-]
-[56] (Outlook.tex) [57] (arbeit.bbl
+] [56] (Outlook.tex) [57] (arbeit.bbl
 LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 2
 3.
 
@@ -2776,18 +2850,19 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <5> on input line 23.
 
-Underfull \hbox (badness 10000) in paragraph at lines 107--110
+[58
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 120--123
 []\OT1/ptm/m/n/12 M. W[]uest, D. S. Evans, and R. von Steiger.
  []
 
-[58
-
-]) [59] (Appendix.tex) [60
+) [59] (Appendix.tex) [60
 
 ] [61
 
 ] [62]
-<MSc_Masterarbeit_erklaerung.pdf, id=845, 597.45204pt x 845.1575pt>
+<MSc_Masterarbeit_erklaerung.pdf, id=850, 597.45204pt x 845.1575pt>
 File: MSc_Masterarbeit_erklaerung.pdf Graphic file (type pdf)
 <use MSc_Masterarbeit_erklaerung.pdf>
 Package pdftex.def Info: MSc_Masterarbeit_erklaerung.pdf  used on input line 21
@@ -2798,7 +2873,7 @@ File: MSc_Masterarbeit_erklaerung.pdf Graphic file (type pdf)
 Package pdftex.def Info: MSc_Masterarbeit_erklaerung.pdf  used on input line 21
 3.
 (pdftex.def)             Requested size: 597.45058pt x 845.15544pt.
-<MSc_Masterarbeit_erklaerung.pdf, id=848, page=1, 597.45204pt x 845.1575pt>
+<MSc_Masterarbeit_erklaerung.pdf, id=853, page=1, 597.45204pt x 845.1575pt>
 File: MSc_Masterarbeit_erklaerung.pdf Graphic file (type pdf)
 <use MSc_Masterarbeit_erklaerung.pdf, page 1>
 Package pdftex.def Info: MSc_Masterarbeit_erklaerung.pdf , page1 used on input 
@@ -2837,7 +2912,8 @@ LaTeX3 Info: Redefining command \BeforeClosingMainAux with sig. 'm' on line
 LaTeX3 Info: Redefining command \BeforeClosingMainAux with sig. 'm' on line
 (LaTeX3)     215.
 
- (arbeit.aux)
+
+(arbeit.aux)
 
 LaTeX Warning: There were undefined references.
 
@@ -2845,13 +2921,13 @@ Package rerunfilecheck Info: File `arbeit.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 37314 strings out of 479209
- 734617 string characters out of 2855765
- 1149732 words of memory out of 3000000
- 53844 multiletter control sequences out of 15000+600000
+ 37313 strings out of 479209
+ 734637 string characters out of 2855765
+ 1150473 words of memory out of 3000000
+ 53846 multiletter control sequences out of 15000+600000
  491568 words of font info for 126 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 108i,17n,110p,10652b,941s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 108i,17n,110p,10652b,921s stack positions out of 5000i,500n,10000p,200000b,80000s
 {C:/Users/foehn/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}{C:
 /Users/foehn/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc}{C:
 /Users/foehn/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc}{C:
@@ -2874,9 +2950,9 @@ sers/foehn/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb><C
 ><C:/Users/foehn/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb
 ><C:/Users/foehn/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb
 >
-Output written on arbeit.pdf (72 pages, 33520886 bytes).
+Output written on arbeit.pdf (71 pages, 33516211 bytes).
 PDF statistics:
- 1127 PDF objects out of 1200 (max. 8388607)
- 271 named destinations out of 1000 (max. 500000)
- 672 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1122 PDF objects out of 1200 (max. 8388607)
+ 268 named destinations out of 1000 (max. 500000)
+ 648 words of extra memory for PDF output out of 10000 (max. 10000000)
 

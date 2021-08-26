@@ -1,4 +1,4 @@
-\begin{thebibliography}{16}
+\begin{thebibliography}{17}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -53,14 +53,18 @@ L.~Hofer.
   investigate volatile species in the lunar soil for the Luna-Resurs mission}.
 \newblock Universität Bern, 2015.
 
-\bibitem[Lasi et~al.(2020)Lasi, Meyer, Piazza, Lüthi, Nentwig, Gruber,
-  Brüngger, Gerber, Braccini, Tulej, Föhn, and Wurz]{Lasi_IEEE2020}
-D.~Lasi, S.~Meyer, D.~Piazza, M.~Lüthi, A.~Nentwig, M.~Gruber, S.~Brüngger,
-  M.~Gerber, S.~Braccini, M.~Tulej, M.~Föhn, and P.~Wurz.
-\newblock Decisions and trade-offs in the design of a mass spectrometer for
-  jupiter's icy moons.
-\newblock In \emph{2020 IEEE Aerospace Conference}, pages 1--20, 2020.
-\newblock \doi{10.1109/AERO47225.2020.9172784}.
+\bibitem[Hussmann et~al.(2014)Hussmann, Palumbo, Jaumann, Dougherty, Langevin,
+  Piccioni, Barabash, Wurz, {van den Brandt}, Gurvits, Bruzzone, Plaut,
+  Wahlund, Cecconi, Hartogh, Gladstone, Iess, Stevenson, Kaspi, Grasset, and
+  Fletcher]{red_book}
+H.~Hussmann, P.~Palumbo, R.~Jaumann, M.~Dougherty, Y.~Langevin, G.~Piccioni,
+  S.~Barabash, P.~Wurz, P.~{van den Brandt}, L.~Gurvits, L.~Bruzzone, J.~Plaut,
+  J.~Wahlund, B.~Cecconi, P.~Hartogh, R.~Gladstone, L.~Iess, D.~Stevenson,
+  Y.~Kaspi, O.~Grasset, and L.~Fletcher.
+\newblock \emph{JUICE JUpiter ICy moons Explorer: Exploring the emergence of
+  habitable worlds around gas giants}, volume ESA/SRE.
+\newblock ESA, 2014.
+\newblock Definition Study Report.
 
 \bibitem[Meyer(2013)]{Master_Meyer}
 S.~Meyer.
@@ -101,6 +105,15 @@ D.~van Essen and W.~C. Heerens.
   tube.
 \newblock \emph{Journal of Vacuum Science and Technology}, 13\penalty0
   (6):\penalty0 1183 -- 1187, 1976.
+
+\bibitem[Vorburger and Wurz(2018)]{Vorburger_2018}
+A.~Vorburger and P.~Wurz.
+\newblock Europa’s ice-related atmosphere: The sputter contribution.
+\newblock \emph{Icarus}, 311:\penalty0 135--145, 2018.
+\newblock ISSN 0019-1035.
+\newblock \doi{https://doi.org/10.1016/j.icarus.2018.03.022}.
+\newblock URL
+  \url{https://www.sciencedirect.com/science/article/pii/S0019103517305377}.
 
 \bibitem[{W{\"u}est} et~al.(2007){W{\"u}est}, {Evans}, and {von
   Steiger}]{DensEnhan_Wurz_07}
