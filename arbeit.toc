@@ -4,7 +4,7 @@
 \contentsline {subsection}{\numberline {1.2}Requirements}{1}{subsection.1.2}%
 \contentsline {subsection}{\numberline {1.3}Diss Overview}{1}{subsection.1.3}%
 \contentsline {section}{\numberline {2}Theory}{3}{section.2}%
-\contentsline {subsection}{\numberline {2.1}Mass Resolution {\color {red}{finished}}}{4}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.1}Mass Resolution {\color {red}{Discussion Measurement missing}}}{4}{subsection.2.1}%
 \contentsline {subsection}{\numberline {2.2}Signal-to-Noise Ratio and Sensitivity {\color {red}{Draft}}}{11}{subsection.2.2}%
 \contentsline {subsection}{\numberline {2.3}Ion Optical Design, NIM specific elements {\color {red}{see Subchapters}}}{11}{subsection.2.3}%
 \contentsline {subsubsection}{\numberline {2.3.1}Filament Power Calculation {\color {red}{Draft}}}{11}{subsubsection.2.3.1}%
@@ -16,8 +16,8 @@
 \contentsline {subsubsection}{\numberline {2.3.7}Detector Parameters {\color {red}{Draft}}}{27}{subsubsection.2.3.7}%
 \contentsline {section}{\numberline {3}Setup}{30}{section.3}%
 \contentsline {subsection}{\numberline {3.1}NIM Sensor Models {\color {red}{Draft}}}{30}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}Test facilities/ Test Tools {\color {red}{Draft}}}{30}{subsection.3.2}%
-\contentsline {subsubsection}{\numberline {3.2.1}Pumpstand nr. 2}{31}{subsubsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2}Detector design improvements}{31}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}MCP Voltage Calculation}{32}{subsection.3.3}%
 \contentsline {section}{\numberline {4}Experiments}{39}{section.4}%
 \contentsline {subsection}{\numberline {4.1}Flight Ion-Mirror {\color {red}{Finished}}}{39}{subsection.4.1}%
 \contentsline {subsection}{\numberline {4.2}Flight Antechamber {\color {red}{finished}}}{40}{subsection.4.2}%
@@ -30,8 +30,8 @@
 \contentsline {subsection}{\numberline {4.9}Sensor performance tests}{49}{subsection.4.9}%
 \contentsline {subsubsection}{\numberline {4.9.1}PFM}{49}{subsubsection.4.9.1}%
 \contentsline {subsubsection}{\numberline {4.9.2}FS {\color {red}{finished}}}{49}{subsubsection.4.9.2}%
-\contentsline {section}{\numberline {5}Conclusion}{55}{section.5}%
-\contentsline {section}{\numberline {6}Outlook}{57}{section.6}%
-\contentsline {section}{References}{58}{section*.61}%
-\contentsline {section}{\numberline {7}Appendix}{60}{section.7}%
+\contentsline {section}{\numberline {5}Conclusion}{56}{section.5}%
+\contentsline {section}{\numberline {6}Outlook}{58}{section.6}%
+\contentsline {section}{References}{59}{section*.64}%
+\contentsline {section}{\numberline {7}Appendix}{61}{section.7}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

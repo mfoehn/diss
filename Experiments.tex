@@ -261,64 +261,78 @@
 
 %--------------------------------------------------------------------------------------------
 	\subsection{Detector Tests \notes{Draft}}
-	% Put the Calibration and discussion of Ustack vs. UMCP in that Chapter. It can later on still be moved into the Setup chapter. Show the fit parameter for the curve for calibration purpose.
-	% Discussion about upper part of the curve. Discuss that with the plot showing the differences to the model if there is a logical explanation. May discuss that again with Peter. Which possibilities thereare.
+	% Pumpstand nr.2 (Chapter \ref{subsubsec:SetFacPumpst}).
+	% describe the advantage of the anode vs. the resistor (constant voltage but resistor proved to be more robust against discharges.)
+	\begin{comment}
+	% This text is part of the setup now. It is only here as reminder what is written there.
+	The detector suffered repeatedly discharges causing a failure of the diode, which is one of the key components of the detector. This lead to a redesign of the detector housing and to an exchange of the diode through a resistor, because the resistor is more robust concerning discharges.
+	The discharges could be eliminated by a redesign of the detector housing.
+	Fig.bla left shows an earlier version of the detector housing and Fig. bla right shows the design of the current flight detector.
+	Basically, the MCPs lay on a border about 1 mm above the anode. % Check distance
+	A diode generates an additional voltage difference between the MCP backside and the anode to accelerate the electrons from the MCP backside towards the anode. Between this border and the MCP is the contact lug which is connected to the high voltage rail. On top of the upper MCP is the contact lug to connected to the corresponding voltage rail. On top of that is a bushing and a sort of screw. When tightening the screw, the bushing presses uniformly on the MCPs. In the old design, the thread for the screw was cut down to the boarder on which the MCPs lay. When assembling the whole stack, the MCPs often cant in the thread. Another challenge lay in tightening of the screw. When the screw was too loose, the top and the bottom contact lug had no reliable contact to the MCPs. When applying a high voltage over the whole MCP stack, the gap acts as an additional resistor over which the voltage build up resulting in a discharge between the corresponding electrode and the MCP. The discharge can propagate through the whole MCP stack and damage the diode and the capacitors. When the screw was tighten too much, the MCPs broke as they consist of lead glass and are very delicate in the mechanical point of view. As a consequence, the screw thread was cut less deep down and an additional boarder was made on which the bushing was pressed by the screw to make the assembly of the detector easier. In addition, the diode was exchanged through a resistor because the resistor is more robust in regards to the discharges. Due to the uncertainty in the manufacturing process of the detector housing, spacer rings are added between the bushing and the MCP to really close the gap. Due to that uncertainty, the number of rings needed for each detector has to be determined by trial.
+	% free play = thechnisch für Spiel
+	\end{comment}
 	
 	\begin{figure}[h]
 		\centering
 		\includegraphics[width=.7\textwidth]{Experiments/PFM_UstackUmccp_TimeEvol.png}
-		\caption{Dependence of the MCP voltage (U\textsubscript{MCP}) from the voltage applied over the detector (U\textsubscript{stack})}
+		\caption{Dependence of the MCP voltage (U\textsubscript{MCP}) from the voltage applied over the detector (U\textsubscript{stack})} % fit parameters: ax +b; a = 0.932, b = 12 V
 		\label{fig:PFMUstackUmcpTimeEvol}
 	\end{figure}
-	% fit parameters: ax +b; a = 0.932, b = 12 V
-	
-	% FS IsoArea. Variation of the MCP gain an observation how the SNR and IsoArea change. \\titania.unibe.ch\UserHomes\foehn\MyDocuments\PhD\Messungen\FS\ firstOpti\MCP_Gain.opj
-	% Also show different signal heights/ forms? Defect diode, functioning diode (not available), resistor? Full gain curve is only possible for functioning diode (tests to be done (no data available)) and resistor (plot already included).
-	The following chapter describes improvements of the mechanical and electrical design of the NIM PFM detector and tests performed with different versions. Most of the tests were performed in the Pumpstand nr.2 (Chapter \ref{subsubsec:SetFacPumpst}) and a few were done with the detector in the sensor Proto Flight Model (PFM) or in the sensor flight spare model (FS).\\
-	% Leave this part here as it is a description of the process we were working on. Describe the adaption of the meachanical design of the detector housing, the consequence that we inserted a resistor instead of an anode. Pros and Cons of the Anode vs. the resistor?
-	% Description of the housing and problems related to it -> investigation, improvements.
-	
-	% Explanation of the discharge problem and the redesign of the detector housing. Several figures and graphics are missing at that 
-	
-	The detector suffered repeatedly discharges causing a failure of the diode, which is one of the key components of the detector. This lead to a redesign of the detector housing and to an exchange of the diode through a resistor, because the resistor is more robust concerning discharges. % Include an electrical schema. May a zoom of the other one laready included in the setup chapter (as soon as it is finished). Explanation about how a diode works? Talk with JoGa maybe. Explain main hypothesis why it died repeatedly?
-	The discharges could be eliminated by a redesign of the detector housing. % Vgl. Fig. of the 2 housing designs (start and end) and explain them.
-	Fig.bla left shows an earlier version of the detector housing and Fig. bla right shows the design of the current flight detector.
-	Basically, the MCPs lay on a border about 1 mm above the anode. % Check distance
-	A diode generates an additional voltage difference between the MCP backside and the anode to accelerate the electrons from the MCP backside towards the anode. Between this border and the MCP is the contact lug which is connected to the high voltage rail. On top of the upper MCP is the contact lug to connected to the corresponding voltage rail. On top of that is a bushing and a sort of screw. When tightening the screw, the bushing presses uniformly on the MCPs. In the old design, the thread for the screw was cut down to the boarder on which the MCPs lay. When assembling the whole stack, the MCPs often cant in the thread. Another challenge lay in tightening of the screw. When the screw was too loose, the top and the bottom contact lug had no reliable contact to the MCPs. When applying a high voltage over the whole MCP stack, the gap acts as an additional resistor over which the voltage build up resulting in a discharge between the corresponding electrode and the MCP. The discharge can propagate through the whole MCP stack and damage the diode and the capacitors. When the screw was tighten too much, the MCPs broke as they consist of lead glass and are very delicate in the mechanical point of view. As a consequence, the screw thread was cut less deep down and an additional boarder was made on which the bushing was pressed by the screw to make the assembly of the detector easier. In addition, the diode was exchanged through a resistor because the resistor is more robust in regards to the discharges. Due to the uncertainty in the manufacturing process of the detector housing, spacer rings are added between the bushing and the MCP to really close the gap. Due to that uncertainty, the number of rings needed for each detector has to be determined by trial.
-	% Insert a Figure of the housing. Further explanation of the design
-	% free play = thechnisch für Spiel
-	% Circuit diagram with both options diode and resistor. Ref for that statement?
-	% Upgrade SNp6.
-	
-	% Explanation of the different meas Figs.
-	% Detector with broken anode is detector EM4. Look if there are any specifications. Seems to have most probable the same configuration as the other detectors. -> Sufficient for the data analysis but it would be good to have the datasheet.
-	Fig. \notes{bla} shows the signal shapes of different detector configurations beginning with the shape of a detector with a broken diode. The other two figures show the signal shape of a detector with a functioning diode and a functioning resistor. The most remarkable feature is that the signal height of the detector is much smaller and much broader that the signal shape of the other two configurations. In addition, the first overshoot is much lager due to the impedance mismatch caused by the broken diode. A broken diode gets conductive and therefore the potential at the MCP backside is equal to the potential of the anode. The electrons are not additionally accelerated and therefore the resulting signal is smaller than the signal with a functioning diode.\\
-	Fig.\ref{fig:SN4p54p7Gain} shows the gain curves of two potential FS detectors both in the configuration with a 10\,\si{\mega\ohm} resistor instead of a diode. 
-	% Other parameters to analyse? Pulse width of the 3 configurations? Overshoot? Can that really be calculated out of the data? Impedance match based on the overshoot.
-	\begin{figure}[h]
-		\begin{subfigure}{.5\textwidth}
-			\centering
-			\includegraphics[width=0.9\textwidth]{Bilder/Gain_Curves_SN4p5_4p7.png}
-		\end{subfigure}
-		\begin{subfigure}{.5\textwidth}
-			\centering
-			\includegraphics[width=0.9\textwidth]{Bilder/SN4p7_discharge.png}
-		\end{subfigure}
+	\begin{figure}[h] % Flat and folded detector. Lineal is missing on the figures.
+		\centering
+		\includegraphics[width=.8\textwidth]{Experiments/Detectors_fla_folded.png}
+		\caption{NIM PFM detectors ready for tests. Top: in flat configuration. Bottom: in folded configuration.}
+		\label{fig:DetFlatFolded}
+	\end{figure}
+	\begin{figure}[h] % Detector gain curves during conditioning of both FS detectors.
+	\begin{subfigure}{.5\textwidth}
+		\centering
+		\includegraphics[width=0.9\textwidth]{Experiments/Gain_Curves_SN4p5_4p7.png}
+	\end{subfigure}
+	\begin{subfigure}{.5\textwidth}
+		\centering
+		\includegraphics[width=0.9\textwidth]{Experiments/SN4p7_discharge.png}
+	\end{subfigure}
 		\caption{Left: Gain curves of two NIM PFM detectors. The difference in gain is because for each measurement curve, a different set of MCPs was used. Right: Gain curves of a folded NIM PFM detector. The lower gain curve was recorded after a discharge at an MCP voltage of 1.8\si{\kilo\volt}.}
 		\label{fig:SN4p54p7Gain}
 	\end{figure}
+	\begin{figure}[h] % Theoretical gain curve as a function of time
+		\centering
+		\includegraphics[width=.7\textwidth]{Experiments/MCP_relGain_timeevol.png}
+		\caption{Relative gain of an MCP as a function time.} % Which time
+		\label{fig:MCPrelGainTime}.6
+	\end{figure}
+	\begin{figure}[h] % FS gain Curve
+		\centering
+		\includegraphics[width=.7\textwidth]{Experiments/GainDetFSLabEl.png}
+		\caption{Gain curves measured with the FS instrument.}
+		\label{fig:MCPGainCurve4p7}
+	\end{figure}
+	% Detector with broken anode is detector EM4. Look if there are any specifications. Seems to have most probable the same configuration as the other detectors. -> Sufficient for the data analysis but it would be good to have the datasheet.
+	% Fig. \notes{bla} shows the signal shapes of different detector configurations beginning with the shape of a detector with a broken diode. The other figure shows the signal shape of a detector with a functioning resistor. The most remarkable feature is that the signal height of the detector is much smaller and much broader that the signal shape of the other configurations. In addition, the first overshoot is much lager due to the impedance mismatch caused by the broken diode. A broken diode gets conductive and therefore the potential at the MCP backside is equal to the potential of the anode. The electrons are not additionally accelerated and therefore the resulting signal is smaller than the signal with a functioning diode.\\
+	
+	This chapter shows performance results of the NIM FS detectors namely the gain curve, the impact of a discharge on the gain when the detector is running and it shows the relationship between the stack voltage $U_{stack}$ and the MCP voltage $U_{MCP}$ which can be used in the software to calculate the MCP voltage.\\
+	% Put this part into the Setup?
+	%	During the tests, the detector suffered repeatedly discharges leading to a mechanical redesign of the detector housing (Chap.\,\notes{Ref!!!}). In addition, the the diode was replaced by a resistor.
+	%	Fig.\,\ref{fig:PFMUstackUmcpTimeEvol} shows the relationship between the voltage $U_{stack}$ and $U_{MCP}$.
+	% Write something why we used a flex PCB for that purpose.
+	The flight detectors consists of a flexible PCB (Printed Circuit Board) with a peek housing for the MCPs. The flex PCB was needed to reduced the detector volume and therefore to reduced the volume, which has to be shielded against the strong radiation in Jupiter's radiation field. The detectors are tested in flat configuration with test MCPs and afterwards in folded configuration with flight MCPs (Fig.\,\ref{fig:DetFlatFolded}). The detectors were put in a vacuum chamber and baked out for 48~h. Earliest after another 24~h after bake out, the tests were started. The conditioning procedure is attached in the Appendix (Ref.\,\notes{Add MCP conditioning procedure}). Depending on the outgas behaviour of the detector, the conditioning took 2.5 to 4.5~h. After the conditioning, the measurements of the detector gain were performed. Fig.\ref{fig:SN4p54p7Gain}~left shows the gain curves of two FS detectors in the two configurations. The conditioning and the measurements in the folded configuration were only done up to lower voltages to spare the MCPs. The difference in gain between the two detectors is explained by that the conditioning of SN~4p7 took 1~h longer than with detector SN~4p4.
+	% Start discussion how the theoretical gain curve looks like as a function of time and detector usage. Just mention that that explains the difference between the curves of the 2 detector. That you have a variance in the conditioning and especially in the folded state, SN 4p4 was 3 days longer in vacuum than 4p7 and had therefore more time to outgase.
+	% Discussion about the discharge. Theory? or just mention that for every discharge, there is a gian loss of about 30% check if that matches the recorded curves.
+	% Gain curve in the instrument. Explain the different paramters? Are already explained in the theory chapter. What else? That the gain curve matches well the data? with Uinit ca. 6 eV and A 0.3 (1/ev)^(1/2)? The data is normed to hydrogen. Can we tell from that how Kr and the other things scale? No. because also the ionisation efficiency has an impact on the gain/ on the amount of gas seen by the spectrometer.
+	
+	
+	
+	
+	Fig.\ref{fig:SN4p54p7Gain}~right shows a zoom on two test series where detector SN~4p7 suffered a discharge in between the two measurement series.
+	
+	
 	% Discussion about the discharge behaviour in regards to gain. Are there any values? Something with free electrons destroying the inner coating of the MCP channels. Only a rough estimate needed.
-	% Explanation of the fit model in theory part. -> Maike if there is any theory about that topic specifically.	
-	
 	% ROSETTA? When was a resistor latest used? Have a look if there is a space for sort of improvements of the sensor. If it is part of the experiments of of the thery part...
-	% Explain, which measurements were made with which MCPs, describe how the discharge influences the signal. How much of the signal we loose in this specific measurement. Literature references?
-	% Description of the current measurement of the detector with the laboratory electronics attached and then the calculation of the MCP voltage. State clearly under with circumstances the calculation with this method is possible and under which it is not (ion current, which is falsely taken into account)
-	% Precise can we estimate the numbr of ions/ the partial pressure of the gas?
-	% Describe, how far we tried to approximate the voltage.
-	
-	% Plot off the gain curves of the detector in its different states. flat, folded, folded in the wolfram copper shealding.
-	% Measuring settings. Turn the drift voltage up to -2.5 kV and then slowly increase the anode voltage to the value you want to measure. The gain is calculated with the software by doing a Simpson 3/8 integration of the peak = Q. (Look in the lab book for the proper calculation)
-	% Maybe there is time to redo the tests with the real PFM detector (XD wär schön. Leider nein). (Die Resultate sind nicht so vollständig wie die von der einen anderen Messung. Messung mit einem Zwillingsdetektor und von diesem auf den Flugdetektor schliessen. -> evt. schöne Graphik).
+	% Measuring settings. Turn the drift voltage up to -2.5 kV and then slowly increase the anode voltage to the value you want to measure. The gain is calculated with the software by doing a Simpson 3/8 integration of the peak = Q.
+
+
 		
 %---------------------------------------------------------------------------------------------	
 	\subsection{Sensor performance tests}

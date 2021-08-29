@@ -1,66 +1,28 @@
 % !TEX root = arbeit.tex
 \section{Setup}\label{sec:setup}
+	
+	% Explain the 2 models and the differences.
+	% Explain the part about the detector in a bit more details thus there are the most design improvements done so far.
+	% Make a separate detector chapter? Explain the Setup and everything in that subchapter? Or just make one big chapter?
 
-	% Noch Kapitelreferenz rausnehmen, da dass jetz in einem Kapitel zusammengefasst ist.
-	This chapter includes the stand of the NIM prototype as it was in January 2018 (Chap. \ref{subsubsec:setupProto}). During test campaigns (Chap. bla) some parts such as the reflectron and the antechamber were exchanged and tested on the prototype. In May 2019 the tests with the NIM ProtoFlight Model (PFM) started. Chapter \ref{subsubsec:setupPFM} describes the NIM PFM as it was at the beginning of the test campaign. During the tests, improvements had to be done such as adaptations of the ion source and improvements on the detector.\\
-	In Chap. \ref{subsec:setupTestTools} the test facilities are described. Tests with a neutrals particle beam were performed with the CASYMIR test facility at the University of Bern. % Ref.
-	% Noch STROFIO chamber erwähnen und schreiben, welche tests man in dieser Kammer machen kann.
-	% Pumpstand 2 überhaupt erwähnen? Gain Kurve mit dem einen anderen detector aufzeichnen und rein kopieren. Gibt dazu nicht viel zu schreiben.
-		
-	\begin{comment}
-	The goal of this chapter is to show NIM in the current lab equipment. An 'as is' state.
-	Instrument in vacuum chamber, Mechanical description. Theoretical description is in the theory part.
-	Cabeling with schema for all test configurations (have a look at the TRR schema).
-	IS based on the design of Abplanalp 2009 if so. Look it up for NIM.
-	With which IS, reflectron, detector. Short description of the different parts as they were for the first tests. (IS, reflectron, detector type). With pictures. Short description of the IS types of the PFM (ref. to Davides paper. Give a bit a more detailed description)
-	Lab electronics, cabling? Or just reference to Stefan's Diss? Used standard settings such a pulser timings, UMCP, filament emission current, chamber pressure.
-	(The specified setting for each measurement will be mentioned in chapter experiments for the different settings)
-	\end{comment}
+	% In case of a manual:
+	% Chapter 1: NIM instrument description
+	% Chapter 2: Manual (if it is not part of the Appendix)
+	This chapter explains the NIM prototype and the NIM PFM model. It describes the differences between the two models. Special focus lay hereby on the design of the detector because there were done some major design improvements.
+	
 	
 	\subsection{NIM Sensor Models \notes{Draft}}\label{subsec:setupInst}
 	In this chapter, the NIM Prototype and the design of the NIM ProtoFlight Model (PFM) are described. The Prototype was build by Stefan Meyer and he also designed the NIM PFM \cite{Diss_Meyer}. The tests in Chapter \ref{sec:Exp} start with the configuration of the instruments as they are stated in this chapter.\\
 	Fig.\ref{fig:SetupProtoISSim} shows the SIMION model of the Prototype ion-source Fig.\ref{fig:SetupPFMISSim} shows the ion-source of the PFM and Fig.\ref{fig:SetupFilElSim} shows the filament housing of the Prototype (left) and of the PFM (right). The PFM has seven electrodes less then the prototype to simplify the source. Manly LV electrodes were taken together (IS 1\& 2, IS 3 \& 4, IS 6 \& 7). IS 10 was removed and IS 11 was shifted towards the ionisation region. In the filament housing the filament electron repelling electrodes Fil 2-5 were taken together to one single repeller electrode Fil 2. The repeller electrode was splitted in 4 to compensate the filament position in case the filament was badly adjusted. For the PFM, the mounting of the filament holder was improved, therefore these 4 electrodes could be taken together to one single electrode.\\
 	Fig.\ref{fig:SetupProtoReflSim} shows a schematics of the ion-mirror. The prototype ion-mirror consists of 14 ring-electrodes (R2-R15). R1 is the drift tube. Between the electrodes R4-R15 are resistors to connect the electrodes with each other to generate a linear voltage gradient when a voltage is applied at electrode R4 and R15. In addition, a voltage can be applied on electrode R8 allowing additional focusing of the ions in the ion-mirror.	The flight ion-mirror consists of a ceramic tube with two resistance spirals on its inner walls replacing electrodes R5-R7 and R9-R14. From the electrical point of view, the two ion-mirrors behave the same.
 	
-	% Comparison between the two designs/ types of the main structures.
-	% Detector: Anode, resistor, anode is floating on MCP front. May show a simple electrical schematics of how this work. Write a fucking manual!!! That somebody else can work with the instrument from scratch. If time, write a separate document with a description!!!
-	
+	% Detector: Anode, resistor, anode is floating on MCP front. May show a simple electrical schematics of how this work.
 	% Schematic of the whole instrument, where every electrode is named, zoom in the filament and the detector section to describe, which electrode does what there. Very short description about their funcitonallity. Make the description in one model and highlight the differences between the Prototype and the PFM. May show the zoom of both models at the same time to show the difference of the two models.
 	
 	% State that for the tests at the CASYMIR test facility, the top cover of the antechamber was exchanged through one with one entrance hole at position +90°.
 	
 	% Fig.\ref{fig:SetupProtoISSim}-\ref{fig:} show the SIMION models of the Prototype ion-source, the filament housing, the ion-mirror and the detector. Fig.\ref{fig:SetupProto} shows the NIM Prototype as it was at the beginning of the measurement campaigns. Detailed cable schema and connection to the laboratory power supplies can be found in \cite{Diss_Meyer} Chap. 4.2.
 
-		
-		\begin{comment}
-		Flight electronics
-		Have a look how this is actually done/ included. -> Separate Subchapter included in the PFM chapter. Paper description is sufficient. May add here the schema again for the further description for the tests how it is tested.
-		Antechamber, reflectron, detector. Grober Aufbau ist bis hierhin schon erklärt. 
-		
-		The cabeling can be referenced to the thesis for the Prototyp.
-	
-		NIM Instrument description overview. Startconfiguration.
-		
-		Foto von Rack von Stefan reinkopieren (Fig. 4.12) damit man sieht, wie es betrieben wurde. Liste welche Elektrode wo angeschlossen wird (schauen, ob das gleich ist wie in seiner Diss. Ansonsten Referenz und nur Anpassungen einfügen)
-		
-		
-		Schema of the Prototype with the lenses
-		IS with 8 lenses and one filament holder (flight 7 lenses, 2 filament holders)
-		small antechamber with edge, one entrance hole at 90° (flight 80mm diam., 2 holes at +-60° relative to normal)
-		Prototype reflectron with ring electrodes (flight has 3 electrodes with a linear increasing resistance in between them)
-		Pulser: lab pulser (flight still under development -> tests later)
-		\end{comment}
-		
-		\textbf{Ion-Optical System Prototype}\\
-		%\includepdf[pages=-]{Setup/NIM_schema.pdf}
-		% First description of the whole model according to the picture with all PFM electrodes and then point out the differences between the 2 designs (IS, Fil and reflectron)
-		\begin{figure}[h]
-			\centering
-			\includegraphics[width= 0.95\textwidth]{Setup/NIM_schema.pdf}
-			\caption{Schematics of NIM flight design with all electrodes marked in red.}
-			\label{fig:MINPFMTot}
-		\end{figure}
-		
 		
 		\begin{figure}[h] % Bild durch Bild mit Markierungen ersetzen
 			\centering
@@ -109,64 +71,43 @@
 			\label{fig:SetupPFM}
 		\end{figure}
 		
-		
-		\begin{comment}
-		
-		Take chapter Prototype and PFM together in one chapter depending on how much there is to write in the Prototype chapter.
-		PFM has more details.
-		In case of 1 Chapter, don't overlay the pictures, simply show both IS separately and mark the changes in the PFM/ Prototype pictures (IS, Fil). Reflectron make a short not about the changes. Detector stays the same. Antechamber got bigger. Shutter missing in Prototype.
-		
-		Startconfiguration.
-		
-		Gleiches Schema wie bei Prototyp (IS) einfügen aber die Änderungen markieren. Ref. Arbeit von Stefan machen, weil dieses Redesign eigentlich noch von seiner Arbeit ist.
-		Simulations Schema mit Quelle (für El-Benamslung einfügen. Evt. nur Schema von Quelle einfügen, weil hauptsächlich da die # der Elektroden geändert hat)
-		
-		Dann Fotos von der Harware zusammensuchen und zusammenstellen.
-		
-		Referenz auf Rack (am Anfang wurde das Gerät auch mit der Laborelektronik betrieben). Schema mit dem Kabel für die LVs zwischen dem Rack und der Kammer (Fotos). Anschlüsse fotografieren. Liste welche Elektrode wo angeschlossen wird (Liste von Prototyp anpassen)
-		
-		Show the model of the PFM and then explain the differences between the two models. Refere to the test campaigns of the Prototype, where the different parts were tested.
-		
-		\end{comment}
-		
-		\textbf{Ion-Optical System Proto Flight Model}\\
-		% Desciption of the electronics as far as necessary. Ask Matthias when writing that chapter. Paper is a short version. Add here more details. Also describe how the instrument is controlled with the flight software (depending on the level its in summer).-> outlook: finalisation of the flight software (description what has to be done and what is done so far).
-		
-		% PFM Simulationen Stand. Instrumentenvergleich. Beide Schemas von Quellen übereinander legen für den Vergleich der beiden Quellen am Anfang. Bei den Experimenten die kleinen Anpassungen jeweils bei den Expereimenten einfügen. Subchapter of NIM instrument.
-	
-	
-	\subsection{Test facilities/ Test Tools \notes{Draft}}\label{subsec:setupTestTools} % Bei test tools wäre das simulationsprogramm auch inbegriffen
-	
-	% Testanlagen hier beschreiben in einem einzelnen Unterkapitel falls sie weiter ausgeführt werden. Evt. auf CASYMIR nur einen Verweis machen. SATANS etwas genauer auseinander nehmen. Nop löschen, da da nicht gemacht wurde.
-	% Explain the simulation programm as far as it is needed. This chapter will be referenced from the experiments chapter. In experiments, simulations and tests will be compared -> reference on how the simulations work are explained here as far as needed.
-	% Short description of the setup at the PS# 2. How the late measurements with the current measurement were done.
-	
-%------------------------------------------------------------------------------------
+			
+%---------------------------------------------------------------------------------------------------------------
 
-		\pagebreak
-		\subsubsection{Pumpstand nr. 2}\label{subsubsec:SetFacPumpst}
+		\subsection{Detector design improvements}\label{subsubsec:SetFacPumpst} % May merge that chapter with the previous one.
+		% Summary
+		The detector suffered repeatedly discharges causing a failure of the diode, which is one of the key components of the detector (Fig.\,\notes{Ref. to the schema}). This lead to a redesign of the detector housing and to an exchange of the diode through a resistor, because the resistor is more robust concerning discharges.
+		The discharges could be eliminated by a redesign of the detector housing.
+		Fig.bla left shows an earlier version of the detector housing and Fig. bla right shows the design of the current flight detector.
+		% Detailed explanation of how the detector actually works.
+		Basically, the MCPs lay on a border about 1 mm above the anode. % Check distance
+		A diode generates an additional voltage difference between the MCP backside and the anode to accelerate the electrons from the MCP backside towards the anode. Between this border and the MCP is the contact lug which is connected to the high voltage rail. On top of the upper MCP is the contact lug to connected to the corresponding voltage rail. On top of that is a bushing and a sort of screw. When tightening the screw, the bushing presses uniformly on the MCPs. In the old design, the thread for the screw was cut down to the boarder on which the MCPs lay. When assembling the whole stack, the MCPs often cant in the thread. Another challenge lay in tightening of the screw. When the screw was too loose, the top and the bottom contact lug had no reliable contact to the MCPs. When applying a high voltage over the whole MCP stack, the gap acts as an additional resistor over which the voltage build up resulting in a discharge between the corresponding electrode and the MCP. The discharge can propagate through the whole MCP stack and damage the diode and the capacitors. When the screw was tighten too much, the MCPs broke as they consist of lead glass and are very delicate in the mechanical point of view. As a consequence, the screw thread was cut less deep down and an additional boarder was made on which the bushing was pressed by the screw to make the assembly of the detector easier. In addition, the diode was exchanged through a resistor because the resistor is more robust in regards to the discharges. Due to the uncertainty in the manufacturing process of the detector housing, spacer rings are added between the bushing and the MCP to really close the gap. Due to that uncertainty, the number of rings needed for each detector has to be determined by trial.\\
+		With the new design the detector suffered less discharges but as describe, the design is still not perfect. Therefore we decided to stay with the solution with the resistor instead of the diode.
 		
-		% the following part may only will show up in the Appendix because its only a derivation used in the lab. Except the electrical schematics of the detector with the corrsponding Variables.
-		% Arrange Figrues as soon as there is enough text in the Setup section. At least the electric circuit should appear as close as possible in this section at the end!!!
-		% Mechanical design, design improvements, electrical design and improvements (resistor, diode, Ri adaption to supress noise). These thing should be discussed when the schema is discussed. But the schema is also needed when showing the calculation for visualisation. In worst case, show the detector schematics twice if it is inevitable.
-
-		% Where do we put the whole detector discussion in? Is that part of the measurements? Or of the Setup because it is part of the instrument. The Prototype had most certainly a diode but did never cause any problems... A comparison of the Prototype and PFM detector is unnecessary.
+		% Mechanical design, design improvements, electrical design and improvements (resistor, diode).
+		% End with the calibration of U_{stack} vs. U_{MCP}
 		
+		
+		% Also mention something about the design of the Prototype as a side note? Too big -> flexprint needed. miniaturization.
 		% Mention something about that there are basically two different detector designs for the PFM detector from the electrical point of view and that that required an adaption of the setup to be able to calculate the voltage over the MCPs because the MCP Gain depends on the MCP voltage according to equation \notes{ref}.
 		
+		% Mechanical design improvement with the conclusion that the design is not perfect and therefore the desicion was to stay with the resistor instead of the diode. To calculate the MCP voltage, the lab measuring equipment had to be improved. With the flight electronics it is not possible to determine the current flowing through the MCPs an thus the MCP voltage. Therefore, a useful calibration is needed -> calculation with lab equipment. Differnt subchapter or put all in one as with the pulser discussion? Make it clear in the intro to the chapter...
+		
+		\subsection{MCP Voltage Calculation}\label{subsec:MCPVoltCalc} % If possible merge it with the previous chapter. Left it if it is easier to search about that calculation in a separate subchapter.
+		
+		The following section describes the design improvements of the PFM detector.
+		
+		
+		
+		
 		Pumpstand nr. 2 was used to perform stand-alone tests with the different NIM detectors. The test setup consists of a vacuum chamber, a HV power supply, an oscilloscope, a computer to remote control the oscilloscope and a HV meter (Fig. \ref{fig:Pumpstand2}).\\
-		We tested two different detectors from the electrical point of view.
-		
-		
 		
 		During the further development of the detector, the diode in the detector was replaced by a resistor. To compare different measurements with each other it was required to determine the current flowing through the detector to determine the voltage over the MCPs.
 		There are two different designs of the detector. One with a diode and one with a resistor
 		
 		Fig.\,\ref{fig:FlighElecSchema} shows the circuit diagram of the detector connected to an external power supply. Table\,\ref{tab:ElecSchemaVariableList} summarizes the used variables and gives a brief explanation.
 		
-		
-		the aim is to ca		
-		The aim is to calculate the voltage over the MCPs $U_{MCP}$ in dependence of the voltage difference $U_{PSMCP}$ between the two outputs of the power supply $U_{PSA}$ (anode output of the power supply for the detector) and $U_{PSD}$ (MCP front voltage output of the power supply for the detector) as by the flight electronics the voltage $U_{PSMCP}$ and the drift voltage $U_{PSD}$ can be set.\\
+		The aim is to calculate the voltage over the MCPs $U_{MCP}$ as a function of the voltage difference $U_{PSMCP}$ between the two outputs of the power supply $U_{PSA}$ (anode output of the power supply for the detector) and $U_{PSD}$ (MCP front voltage output of the power supply for the detector) as by the flight electronics the voltage $U_{PSMCP}$ and the drift voltage $U_{PSD}$ can be set.\\
 		\begin{equation}
 			U_{PSMCP} = U_{PSA} - U_{PSD}
 			\label{eq:Upsmcp}
@@ -240,12 +181,6 @@
 			\label{tab:ElecSchemaVariableList}
 		\end{table}
 	
-		
-		% More details
-		
-		
-%		\begin{align*}
-%		\end{align*}
 
 		\begin{comment}
 		\begin{table}
@@ -268,36 +203,14 @@
 		\end{table}
 		\end{comment}
 		
-		\begin{comment}
-			Add the simplified circuit diagram, The redrawn
-			Include a picture of the current setup with all things marked. Make a bit a better arrangement of the devices, that it does look less like a hugh mess. Is it necessary to write something like manual for the staff? Or is it part of the Diss? One can still set up a separate file and put all things together if necessary. This then can be part of the Appendix if there is a separate manual needed.
-			Same applies for the rack in the C-floor as certain devices have changed.
 	
-		\end{comment}
-
-%-------------------------------------------------------------------------------------	
-	%% STROFIO chamber
-	\begin{comment}
-		Include here the whole cabling? No. Refer to Diss Stefan for the description of the start electronics. -> show the changes later in Chap. Experiments.
-		Picture inside the STROFIO chamber. One picture of the current test setup with the rotation mechanism. Show on a picture where the gas enters the IS and the antechamber.
-		Static gas measurement: Measurement with the STROFIO chamber with a set background gas. (Or also describe it in the different experiments? Make also a note there because then it is clear how the different measurements where performed)
-		
-		If there is not enough txt for a chapter, include it at the description of the NIM prototype.
-	\end{comment}
-	
-	
-%---------------------------------------------------------------------------------------
-	%% Simulation Prototyp (in the simulationen, the simplification of the ionsource is already implemented)
-	\begin{comment}
-		7 lenses, no filament (you set the place and flight direction of the entering produced ions -> no filament in the current simulation model)
-		
-		flight reflectron
-		
-		Pulser: you can set the most important parameters of the pulse shape in the simulation.
-		
-		
-	\end{comment}
-	
+		%\includepdf[pages=-]{Setup/NIM_schema.pdf}
+		\begin{figure}[h!]
+			\centering
+			\includegraphics[width= 0.95\textwidth]{Setup/NIM_schema.pdf}
+			\caption{Schematics of NIM flight design with all electrodes marked in red.}
+			\label{fig:MINPFMTot}
+		\end{figure}
 	
 	
 	
