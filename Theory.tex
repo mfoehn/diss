@@ -530,6 +530,8 @@
 		% dead time, R, C, number of channels. Calculation of the number of channels out of the data sheet (Diss Maike) charging behaviour. Is this really needed for the analysis I do? I case I should have to test with the FS, it would be nice to include that calculation and the timing resulting out from that. Otherwise it is just a nice part of theory but is not used for anything. Set up something, just that the chapter is completed (sort of).
 		% Compare the performance of the diode with the performance of the resistor. Depending on the results, find arguments.. No time for that :(
 		
+		% State here clearly how the MCPs work with the electron avalange. May also with a pitcure.
+		
 		In this section we calculated some important parameters of the detector such as the dead time and the gain. % And further values if needed.
 		
 		\textbf{Dead time}\\
@@ -585,31 +587,36 @@
 			Temporal the count rate is much higher than the value averaged over 1 sec. -> The gain will drop within one spectrum but will recover to a certain amount until the next spectrum. This calculation looks at total paralyzability.
 			
 			See Simulations by Maike for the whole calculation -> also the gain drop is displayed there. Just summarize it here because it is interesting :) and it also gives sort of an approximation of the voltage drop.
-			-> Weekend
 			
 		\end{comment}
 
 		\textbf{Gain}\\
-		% Check all variables, if it is consistent. Finish this chapter properly
-		The following derivation is strongly based on the lecture notes of \cite{LecNot_Wurz2017}.	When an incoming particle hits the MCP channel wall there is a certain chance that it ejects an electron out of the channel wall. By applying an electric field $E$ over the MCP plate, this electron gets accelerated until it hits the opposite wall, where it ejects more electrons:
+		\begin{figure}[h] % Schema of the MCP detector. May explain it a bit better in the text to be able to reference it in the Setup.
+			\centering
+			\includegraphics[width=.7\textwidth]{Bilder/MCP_PrinipleSchema.jpg}
+			\caption{Working principle of a Multi Channel Plates (MCPs) detector \cite{Wiza_1979_MCP,Diss_Meyer}.}
+			\label{fig:MCPPrincipleSchema}
+		\end{figure}
+		
+		The following derivation is based on the lecture notes of \cite{LecNot_Wurz2017}. When an incoming particle hits the MCP channel wall there is a certain chance that it ejects an electron. By applying an electric field $E$ over the MCP plate, this electron gets accelerated until it hits the opposite wall, where it ejects more electrons (Fig.\,\ref{fig:MCPPrincipleSchema}):
 		\begin{equation}
 			E = \frac{U_{MCP}}{l} = \frac{F}{q_0} = \frac{a m_e}{q_0}
 		\end{equation}
-		With $U_{MCP}$ the voltage applied over the MCP, $l$ the channel length, $F$ the force applied on the electron, $q_0$ the elementary charge and $m_e$ the mass of the electron. The acceleration of the electron is:		
+		With $U_{MCP}$ the voltage applied over the MCP, $l$ the channel length, $F$ the force applied on the electron, $q_0$ the elementary charge and $m_e$ the mass of the electron. The acceleration $a$ of the electron is:		
 		\begin{equation}
 			a = \frac{U_{MCP}\cdot q_0}{l\cdot m_e}
 		\end{equation}
-		The distance $s$ an electron travels along the channel until it reaches the channel wall is:
+		The distance $s$ the electron travels along the channel until it reaches the channel wall is:
 		\begin{equation}
 			s = \frac{1}{2}at^2 = \frac{U_{MCP}\cdot q_0\cdot t^2}{l\cdot m_e\cdot 2}
 			\label{eq:DetGainChFlightDist}
 		\end{equation}
-		With $t$ the flight time of an electron until it hits the wall again. Assuming the initial velocity $v_{init}$ of the initial secondary electron is perpendicular to the channel wall, the flight distance until it hits the opposite channel wall is the channel diameter $d$. $t$ can be written as:
+		With $t$ the flight time of the electron until it hits the wall again. Assuming the initial velocity $v_{init}$ of the initial secondary electron is perpendicular to the channel wall, the flight distance until it hits the opposite channel wall is the channel diameter $d$. $t$ can be written as:
 		\begin{equation}
 			t = \frac{d}{v_{init}}
 			\label{eq:DetGainChFlightTime}
 		\end{equation}
-		$v_{init}$ can be derived out of the electron's initial kinetic energy $U_{init}$:
+		$v_{init}$ can be derived from the electron's initial kinetic energy $U_{init}$:
 		\begin{equation}
 			U_{init} = \frac{1}{2}m_e v_{init}^2 \rightarrow v_{init} = \sqrt{\frac{2U_{init}}{m_e}}
 			\label{eq:DetGainEkin}
@@ -621,8 +628,8 @@
 		\end{equation}
 		The energy $U_c$ the electron gains during the flight time $t$ is:
 		\begin{align}
-			U_c = &q_0 Es = q_0\cdot \frac{U_{MCP}}{l}\cdot\frac{q_0\cdot U_{MCP}\cdot d^2}{l\cdot 4 U_{init}}\\
-			= &q_0^2 \frac{U_{MCP}^2\cdot d^2}{l^2\cdot 4U_{init}}
+			U_c =& q_0 Es = q_0\cdot \frac{U_{MCP}}{l}\cdot\frac{q_0\cdot U_{MCP}\cdot d^2}{l\cdot 4 U_{init}}\\
+			=& q_0^2 \frac{U_{MCP}^2\cdot d^2}{l^2\cdot 4U_{init}}
 		\end{align}
 		The secondary electron emission coefficient $\delta$ is proportional to the square root of the energy $U_c$:
 		\begin{equation}
@@ -634,8 +641,7 @@
 			G_{ch} = \delta^{n} = \delta^{l/s}
 			\label{eq:detGainDel}
 		\end{equation}
-		The number of collisions is the channel length $l$ divided by the distance an electron flies within the channel before it hits the channel wall and ejects more electrons $s$. Inserting now Eq.\eqref{eq:DetGainDelta} and Eq.\eqref{eq:DetGainDistECh} leads to:
-		% alpha = l/d. Ref to [Wiza,1979] as the original formula is from him!!!
+		The number of collisions is the channel length $l$ divided by the distance $s$ an electron flies within the channel before it hits the channel wall and ejects more electrons. Inserting now Eq.\eqref{eq:DetGainDelta} and Eq.\eqref{eq:DetGainDistECh} in Eq.\eqref{eq:detGainDel} leads to:
 		\begin{equation}
 			G_{ch} = \left(A\cdot\frac{q_0 U_{MCP} \cdot d}{2\sqrt{U_{init}}\cdot l}\right)^{\frac{4U_{init}}{q_0 U_{MCP}}\left(\frac{l}{d}\right)^2}
 		\end{equation}

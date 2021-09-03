@@ -14,24 +14,24 @@
 \contentsline {subsubsection}{\numberline {2.3.5}Shutter Performance {\color {red}{finished}}}{23}{subsubsection.2.3.5}%
 \contentsline {subsubsection}{\numberline {2.3.6}Pressure calibration of the NIM Sensor {\color {red}{May will be deleted.}}}{26}{subsubsection.2.3.6}%
 \contentsline {subsubsection}{\numberline {2.3.7}Detector Parameters {\color {red}{Draft}}}{27}{subsubsection.2.3.7}%
-\contentsline {section}{\numberline {3}Setup}{30}{section.3}%
-\contentsline {subsection}{\numberline {3.1}NIM Sensor Models {\color {red}{Draft}}}{30}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}Detector design improvements}{31}{subsection.3.2}%
-\contentsline {subsection}{\numberline {3.3}MCP Voltage Calculation}{32}{subsection.3.3}%
-\contentsline {section}{\numberline {4}Experiments}{39}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Flight Ion-Mirror {\color {red}{Finished}}}{39}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}Flight Antechamber {\color {red}{finished}}}{40}{subsection.4.2}%
-\contentsline {subsection}{\numberline {4.3}Entrance {\color {red}{finished}}}{42}{subsection.4.3}%
-\contentsline {subsection}{\numberline {4.4}Shutter Performance Test {\color {red}{finished}}}{44}{subsection.4.4}%
-\contentsline {subsection}{\numberline {4.5}Simulations {\color {red}{Only if there is time to write something. Material is available}}}{46}{subsection.4.5}%
-\contentsline {subsection}{\numberline {4.6}Filament decision {\color {red}{Draft}}}{46}{subsection.4.6}%
-\contentsline {subsection}{\numberline {4.7}Pulser {\color {red}{finished}}}{46}{subsection.4.7}%
-\contentsline {subsection}{\numberline {4.8}Detector Tests {\color {red}{Draft}}}{47}{subsection.4.8}%
-\contentsline {subsection}{\numberline {4.9}Sensor performance tests}{49}{subsection.4.9}%
-\contentsline {subsubsection}{\numberline {4.9.1}PFM}{49}{subsubsection.4.9.1}%
-\contentsline {subsubsection}{\numberline {4.9.2}FS {\color {red}{finished}}}{49}{subsubsection.4.9.2}%
-\contentsline {section}{\numberline {5}Conclusion}{56}{section.5}%
-\contentsline {section}{\numberline {6}Outlook}{58}{section.6}%
-\contentsline {section}{References}{59}{section*.64}%
-\contentsline {section}{\numberline {7}Appendix}{61}{section.7}%
+\contentsline {section}{\numberline {3}Setup}{31}{section.3}%
+\contentsline {subsection}{\numberline {3.1}NIM Sensor Models {\color {red}{Draft}}}{31}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Detector}{32}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}MCP Voltage Calculation}{34}{subsection.3.3}%
+\contentsline {section}{\numberline {4}Experiments}{41}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Flight Ion-Mirror {\color {red}{Finished}}}{41}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Flight Antechamber {\color {red}{finished}}}{42}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Entrance {\color {red}{finished}}}{44}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}Shutter Performance Test {\color {red}{finished}}}{46}{subsection.4.4}%
+\contentsline {subsection}{\numberline {4.5}Simulations {\color {red}{Only if there is time to write something. Material is available}}}{48}{subsection.4.5}%
+\contentsline {subsection}{\numberline {4.6}Filament decision {\color {red}{Draft}}}{48}{subsection.4.6}%
+\contentsline {subsection}{\numberline {4.7}Pulser {\color {red}{finished}}}{48}{subsection.4.7}%
+\contentsline {subsection}{\numberline {4.8}Detector Tests {\color {red}{Draft}}}{49}{subsection.4.8}%
+\contentsline {subsection}{\numberline {4.9}Sensor performance tests}{51}{subsection.4.9}%
+\contentsline {subsubsection}{\numberline {4.9.1}PFM}{51}{subsubsection.4.9.1}%
+\contentsline {subsubsection}{\numberline {4.9.2}FS {\color {red}{finished}}}{51}{subsubsection.4.9.2}%
+\contentsline {section}{\numberline {5}Conclusion}{58}{section.5}%
+\contentsline {section}{\numberline {6}Outlook}{60}{section.6}%
+\contentsline {section}{References}{61}{section*.67}%
+\contentsline {section}{\numberline {7}Appendix}{63}{section.7}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
