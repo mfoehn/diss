@@ -1,4 +1,4 @@
-\begin{thebibliography}{18}
+\begin{thebibliography}{24}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -16,11 +16,29 @@ A.~Boutonnet and G.~Varga.
 \newblock \emph{JUICE- Jupiter Icy moons Explorer Consolidated Report on
   Mission Analysis (CReMA)}, esa document jui-esoc-moc-rp-001 edition, 04 2017.
 
+\bibitem[Cardarelli(2008)]{MaterHandbookCardaelli}
+F.~Cardarelli.
+\newblock \emph{Materials Handbook}.
+\newblock Springer-Verlag London, 2008.
+
 \bibitem[Collins and Johnson(2014)]{Collins_2014}
 G.~Collins and T.~C. Johnson.
 \newblock \emph{Chapter 37 - Ganymede and Callisto}.
 \newblock Elsevier, 2014.
 \newblock URL \url{https://doi.org/10.1016/B978-0-12-415845-0.00037-2}.
+
+\bibitem[Desai et~al.(1984)Desai, Chu, James, and Ho]{thermResistTungst}
+P.~D. Desai, T.~K. Chu, H.~M. James, and C.~Y. Ho.
+\newblock Electrical resistivity of selected elements.
+\newblock \emph{Journal of Physical and Chemical Reference Data}, 13\penalty0
+  (4):\penalty0 1069--1096, 1984.
+\newblock \doi{10.1063/1.555723}.
+\newblock URL \url{https://doi.org/10.1063/1.555723}.
+
+\bibitem[Fausch(2020)]{Diss_Fausch}
+R.~G. Fausch.
+\newblock \emph{Mass Spectrometry for In Situ Planetary Research}.
+\newblock Universität Bern, 2020.
 
 \bibitem[Graf et~al.(2004)Graf, Altweg, Balsiger, Jäckel, Kopp, Langer,
   Luithardt, Westermann, and Wurz]{CASYMIR_Graf2004}
@@ -76,6 +94,18 @@ J.~{Ladislas Wiza}.
 \newblock URL
   \url{https://www.sciencedirect.com/science/article/pii/0029554X79907341}.
 
+\bibitem[Lassner and Schubert(1999)]{thermcondTungst}
+E.~Lassner and W.-D. Schubert.
+\newblock \emph{Tungsten}.
+\newblock Springer US, 1999.
+
+\bibitem[McMahon and Wilder(1963)]{ThermEmiss_Y2O3}
+W.~R. McMahon and D.~R. Wilder.
+\newblock High temperature spectral emissivity of yttrium, samarium,
+  gadolinium, erbium and lutetium oxides.
+\newblock 1 1963.
+\newblock URL \url{https://www.osti.gov/biblio/4704246}.
+
 \bibitem[Meyer(2013)]{Master_Meyer}
 S.~Meyer.
 \newblock \emph{Development of Fully Automated and Highly Precise Data Analysis
@@ -96,6 +126,13 @@ S.~Meyer, M.~Tulej, and P.~Wurz.
   6\penalty0 (1):\penalty0 1--8, 2017.
 \newblock \doi{10.5194/gi-6-1-2017}.
 \newblock URL \url{https://gi.copernicus.org/articles/6/1/2017/}.
+
+\bibitem[Milosevic et~al.(1999)Milosevic, Vukovic, Pavicic, and
+  Maglic]{ThermalEmiss_Ta}
+N.~Milosevic, G.~Vukovic, D.~Z. Pavicic, and K.~Maglic.
+\newblock Thermal properties of tantalum between 300 and 2300 k.
+\newblock \emph{International Journal of Thermophysics}, 20:\penalty0
+  1129--1136, 1999.
 
 \bibitem[Neuland(2015)]{Diss_Neuland}
 M.~B. Neuland.

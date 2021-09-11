@@ -7,46 +7,47 @@ Reallocating 'name_of_file' (item size: 1) to 8 items.
 Database file #1: Quellen.bib
 Warning--empty year in Agilent_TechNote_SNR
 Warning--empty year in Agilent_TechNote_SNR
+Warning--empty journal in ThermEmiss_Y2O3
 Warning--empty publisher in DensEnhan_Wurz_07
-You've used 18 entries,
+You've used 24 entries,
             2773 wiz_defined-function locations,
-            714 strings with 8306 characters,
-and the built_in function-call counts, 7991 in all, are:
-= -- 654
-> -- 540
-< -- 14
-+ -- 186
-- -- 168
-* -- 645
-:= -- 1300
-add.period$ -- 65
-call.type$ -- 18
-change.case$ -- 100
-chr.to.int$ -- 18
-cite$ -- 39
-duplicate$ -- 356
-empty$ -- 614
-format.name$ -- 194
-if$ -- 1623
+            752 strings with 9220 characters,
+and the built_in function-call counts, 10461 in all, are:
+= -- 862
+> -- 680
+< -- 18
++ -- 234
+- -- 210
+* -- 836
+:= -- 1693
+add.period$ -- 86
+call.type$ -- 24
+change.case$ -- 129
+chr.to.int$ -- 24
+cite$ -- 52
+duplicate$ -- 477
+empty$ -- 825
+format.name$ -- 246
+if$ -- 2137
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 26
-newline$ -- 109
-num.names$ -- 72
-pop$ -- 240
+missing$ -- 35
+newline$ -- 142
+num.names$ -- 96
+pop$ -- 310
 preamble$ -- 1
-purify$ -- 92
+purify$ -- 118
 quote$ -- 0
-skip$ -- 269
+skip$ -- 355
 stack$ -- 0
-substring$ -- 159
-swap$ -- 22
+substring$ -- 225
+swap$ -- 28
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 148
-warning$ -- 3
-while$ -- 62
+type$ -- 199
+warning$ -- 4
+while$ -- 82
 width$ -- 0
-write$ -- 251
-(There were 3 warnings)
+write$ -- 330
+(There were 4 warnings)

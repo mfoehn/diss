@@ -1,37 +1,35 @@
 % !TEX root = arbeit.tex
 \section{Setup}\label{sec:setup}
 	
-	% Explain the 2 models and the differences.
-	% Explain the part about the detector in a bit more details thus there are the most design improvements done so far.
 	% Make a separate detector chapter? Explain the Setup and everything in that subchapter? Or just make one big chapter?
 
-	% In case of a manual:
-	% Chapter 1: NIM instrument description
-	% Chapter 2: Manual (if it is not part of the Appendix)
-	This chapter explains the NIM prototype and the NIM PFM model. It describes the differences between the two models. Special focus lay hereby on the design of the detector because there were done some major design improvements in design of the flight detector.
+	This chapter compares the NIM prototype with the NIM PFM model from the mechanical point of view. It shows the key differences between the two models. Special focus lay hereby on the design of the detector because there were made some major design improvements.
 	
+	
+	
+	% \\titania.unibe.ch\UserHomes\foehn\My Documents\PhD\Fotos\[2021.02.04]FS_Sensor&Cube_in_Strofio
+	% Put the 2 Pictures together side by side with the corresponding ruler.
+	% Figure collection of NIM once the inner part and once NIM with the electronic box. This picutre can be used as a reference for the comparison with the power supplys (2 pictures from the paper). Then only a picture with the lab power supplies has to be put in.
 	
 	\subsection{NIM Sensor Models \notes{Draft}}\label{subsec:setupInst}
+	
+	% Antechamber is missing
+	
+	
+	
 	In this chapter, the NIM Prototype and the design of the NIM ProtoFlight Model (PFM) are described. The Prototype was build by Stefan Meyer and he also designed the NIM PFM \cite{Diss_Meyer}. The tests in Chapter \ref{sec:Exp} start with the configuration of the instruments as they are stated in this chapter.\\
 	Fig.\ref{fig:SetupProtoISSim} shows the SIMION model of the Prototype ion-source Fig.\ref{fig:SetupPFMISSim} shows the ion-source of the PFM and Fig.\ref{fig:SetupFilElSim} shows the filament housing of the Prototype (left) and of the PFM (right). The PFM has seven electrodes less then the prototype to simplify the source. Manly LV electrodes were taken together (IS 1\& 2, IS 3 \& 4, IS 6 \& 7). IS 10 was removed and IS 11 was shifted towards the ionisation region. In the filament housing the filament electron repelling electrodes Fil 2-5 were taken together to one single repeller electrode Fil 2. The repeller electrode was splitted in 4 to compensate the filament position in case the filament was badly adjusted. For the PFM, the mounting of the filament holder was improved, therefore these 4 electrodes could be taken together to one single electrode.\\
 	Fig.\ref{fig:SetupProtoReflSim} shows a schematics of the ion-mirror. The prototype ion-mirror consists of 14 ring-electrodes (R2-R15). R1 is the drift tube. Between the electrodes R4-R15 are resistors to connect the electrodes with each other to generate a linear voltage gradient when a voltage is applied at electrode R4 and R15. In addition, a voltage can be applied on electrode R8 allowing additional focusing of the ions in the ion-mirror.	The flight ion-mirror consists of a ceramic tube with two resistance spirals on its inner walls replacing electrodes R5-R7 and R9-R14. From the electrical point of view, the two ion-mirrors behave the same.\\
-		
-	% Detector: Anode, resistor, anode is floating on MCP front. May show a simple electrical schematics of how this work.
-	% Schematic of the whole instrument, where every electrode is named, zoom in the filament and the detector section to describe, which electrode does what there. Very short description about their funcitonallity. Make the description in one model and highlight the differences between the Prototype and the PFM. May show the zoom of both models at the same time to show the difference of the two models.
 	
-	% State that for the tests at the CASYMIR test facility, the top cover of the antechamber was exchanged through one with one entrance hole at position +90°.
-	
-	% Fig.\ref{fig:SetupProtoISSim}-\ref{fig:} show the SIMION models of the Prototype ion-source, the filament housing, the ion-mirror and the detector. Fig.\ref{fig:SetupProto} shows the NIM Prototype as it was at the beginning of the measurement campaigns. Detailed cable schema and connection to the laboratory power supplies can be found in \cite{Diss_Meyer} Chap. 4.2.
-
 		
-		\begin{figure}[h] % Bild durch Bild mit Markierungen ersetzen
+		\begin{figure}[h]
 			\centering
 			\includegraphics[width= 0.9\textwidth]{Setup/Proto_IS_sim.png}
 			\caption{SIMION Model of the Ion-Source of the NIM Prototype \cite{Diss_Meyer}.}
 			\label{fig:SetupProtoISSim}
 		\end{figure}
 		
-		\begin{figure}[h] % Bild ersetzen. Evt noch Markierungen einfügen. IS bei den Nr. evt. noch einfügen.
+		\begin{figure}[h]
 			\centering
 			\includegraphics[width=0.9\textwidth]{Setup/ISFlight_bearb.png}
 			\caption{SIMION Model of the Ion-Source of the NIM ProtoFlight Model.}
@@ -63,18 +61,19 @@
 			\caption{NIM Prototype \cite{Diss_Meyer}.}
 			\label{fig:SetupProto}
 		\end{figure}
-		
-		\begin{figure}[h] % Exchange picture through a picture collection (EGU2020 slid of the sensor in different states) Add a picture, where the inner parts are visible for comparison. Include a lineal ruler into the pictures.
-			\centering
-			\includegraphics[width=0.8\textwidth]{Setup/PFM_in_calib_Setup.JPG}
-			\caption{NIM PFM sensor head in calibration setup.}
-			\label{fig:SetupPFM}
-		\end{figure}
+		\begin{comment}
+			\begin{figure}[h] % Exchange picture through a picture collection (EGU2020 slid of the sensor in different states) Add a picture, where the inner parts are visible for comparison. Include a lineal ruler into the pictures.
+				\centering
+				\includegraphics[width=0.8\textwidth]{Setup/PFM_in_calib_Setup.JPG}
+				\caption{NIM PFM sensor head in calibration setup.}
+				\label{fig:SetupPFM}
+			\end{figure}
+		\end{comment}
 		
 			
 %---------------------------------------------------------------------------------------------------------------
 
-		\subsection{Detector}\label{subsubsec:SetFacPumpst} % May merge that chapter with the previous one.
+		\subsection{Detector \notes{Draft}}\label{subsubsec:SetFacPumpst} % May merge that chapter with the previous one.
 		\begin{figure}[h] % Photograph of the Prototype an Flight detector.
 			\begin{subfigure}{0.5\textwidth}
 				\centering
@@ -93,65 +92,40 @@
 			\caption{Schematics of the PFM detector housings. Left: preliminary design. Right: final flight design.}
 			\label{fig:FlightDetSchemata}
 		\end{figure}
-		The NIM Prototype detector has a rigid Printed Circuit Board (PCB) on which the electrical components and the drift tube with the MCP stack are mounted (Fig.\,\ref{fig:DetPhotos}~left). Due to Jupiter's strong radiation field, the detector has to be shielded to reduce the noise level induced by the strong radiation and to increase the detector's lifetime. To minimized the required shielding mass, the flight detector has to be very compact. This was achieved by using a flex PCB to fold the detector into a peek housing (Fig.\,\ref{fig:DetPhotos}~right). Fig.~\ref{fig:FlightDetSchemata}~left shows the schema of the first design of the peek housing containing the MCPs with the drift tube attached. The MCPs lay on a ledge 1~mm above the anode. A diode generates a voltage difference between the MCP backside and the anode to accelerate the electrons from the MCP backside towards the anode (cf. electrical schema Fig,\,\ref{fig:FlighElecSchema}). Above the upper MCP and between the lower MCP and that ledge are two contact lugs to apply a voltage over the MCP stack. The MCPs are fixed with a peek screw within the housing. In the old design of the housing, the screw threads were milled down to the ledge. When the MCPs were mounted, they often canted in the threads. In addition, it was difficult to determine, how much the screw had to be tightened. When the screw was tighten too much, the MCPs broke as they consist of lead glass and are therefore very fragile. When the screw was too loose, the two contact lugs had no reliable contact to the MCPs. When applying a high voltage over the whole MCP stack, the gap between the contact lugs and the MCPs act as an additional resistors over which the voltage builds up resulting in a discharge between the corresponding electrode and the MCPs. The discharge can propagate through the whole MCP stack and damages the readout electronics. As a consequence, the screw thread was milled less far and an additional mechanical stop was made (Fig.\,\ref{fig:FlightDetSchemata}~right) to tighten the screw only down to that stop. This prevented the MCPs from cant in the screw thread thus it was not milled down to the bottom of the lower ledge and with the mechanical stop, the screw could not be tightened too much to break the MCPs. In addition, a peek space was added between the screw and the MCPs to push down the MCPs uniformly.
-		% Detector suffered still discharges -> resistor instead of diode due to loose contact and different number of gold rings for each detector version.
-		
-		In addition, the diode was exchanged through a resistor because the resistor is more robust in regards to the discharges. Due to the uncertainty in the manufacturing process of the detector housing, spacer rings are added between the bushing and the MCP to really close the gap. Due to that uncertainty, the number of rings needed for each detector has to be determined by trial.\\
-		With the new design the detector suffered less discharges but as describe, the design is still not perfect. Therefore we decided to stay with the solution with the resistor instead of the diode.
-		
-		
-		% This design is still not perfect thus from the electrical point of view the connection is still not very good. Another solution may would be to use a spring between the screw and the MCPs which garantees a good connection between the contact lug and the MCPs. (Reference to Rosina/ ROSETTA?)
-		
-		% Mechanical design, design improvements, electrical design and improvements (resistor, diode).
-		% End with the calibration of U_{stack} vs. U_{MCP}
-		
-		
-		% Mention something about that there are basically two different detector designs for the PFM detector from the electrical point of view and that that required an adaption of the setup to be able to calculate the voltage over the MCPs because the MCP Gain depends on the MCP voltage according to equation \notes{ref}.
-		
-		% With the flight electronics it is not possible to determine the current flowing through the MCPs an thus the MCP voltage. Therefore, a useful calibration is needed -> calculation with lab equipment. Differnt subchapter or put all in one as with the pulser discussion? Make it clear in the intro to the chapter...
-		
-		\subsection{MCP Voltage Calculation}\label{subsec:MCPVoltCalc} % If possible merge it with the previous chapter. Left it if it is easier to search about that calculation in a separate subchapter.
-		
-		Pumpstand nr. 2 was used to perform stand-alone tests with the different NIM detectors. The test setup consists of a vacuum chamber, a HV power supply, an oscilloscope, a computer to remote control the oscilloscope and a HV meter (Fig. \ref{fig:Pumpstand2}).\\
-		
-		During the further development of the detector, the diode in the detector was replaced by a resistor. To compare different measurements with each other it was required to determine the current flowing through the detector to determine the voltage over the MCPs.
-		There are two different designs of the detector. One with a diode and one with a resistor
-		
-		Fig.\,\ref{fig:FlighElecSchema} shows the circuit diagram of the detector connected to an external power supply. Table\,\ref{tab:ElecSchemaVariableList} summarizes the used variables and gives a brief explanation.
-		
-		The aim is to calculate the voltage over the MCPs $U_{MCP}$ as a function of the voltage difference $U_{PSMCP}$ between the two outputs of the power supply $U_{PSA}$ (anode output of the power supply for the detector) and $U_{PSD}$ (MCP front voltage output of the power supply for the detector) as by the flight electronics the voltage $U_{PSMCP}$ and the drift voltage $U_{PSD}$ can be set.\\
+		% free play = technisch Spiel. Put it in during proofreading.
+		The NIM Prototype detector has a rigid Printed Circuit Board (PCB) on which the electrical components and the drift tube with the MCP stack are mounted (Fig.\,\ref{fig:DetPhotos}~left). Due to Jupiter's strong radiation field, the detector has to be shielded to reduce the noise level induced by the strong radiation and to increase the detector's lifetime. To minimized the required shielding mass, the flight detector has to be very compact. This was achieved by using a flex PCB to fold the detector into a peek housing (Fig.\,\ref{fig:DetPhotos}~right). Fig.~\ref{fig:FlightDetSchemata}~left shows the schema of a preliminary design of the peek housing containing the MCPs with the drift tube attached. The MCPs lay on a ledge 1~mm above the anode. A diode generates a voltage between the MCP backside and the anode to accelerate the electrons from the MCP backside towards the anode (cf. electrical schema Fig,\,\ref{fig:FlighElecSchema}). There are two contact lugs on top and at the bottom of the MCP stack to apply a voltage over the MCPs. The MCPs are fixed with a peek screw within the housing. In the old design, the screw threads were milled down to the ledge. When the MCPs were mounted, they often canted in the threads. In addition, it was not possible to determine, how much the screw had to be tightened. When the screw was tighten too much, the MCPs broke as they consist of lead glass and are therefore very fragile. When the screw was too loose, the two contact lugs had no reliable contact to the MCPs. When applying a high voltage over the whole MCP stack, the gaps between the contact lugs and the MCPs act as an additional resistors over which the voltage builds up resulting in a discharge between the electrodes and the MCPs. The discharge can propagate through the whole MCP stack and damages the readout electronics. As a consequence, the screw thread was milled less far and an additional mechanical stop was made to tighten the screw only down to that stop (Fig.\,\ref{fig:FlightDetSchemata}~right). This prevented the MCPs from canting in the screw thread thus it was not milled down to the bottom of the lower ledge and with the mechanical stop, the screw could not be tightened too much to break the MCPs. In addition, a peek space was added between the screw and the MCPs to push down the MCPs uniformly. Due to the tolerances in the manufacturing process of the different parts of the housing, metallic spacer rings are added between the peek spacer and the contact lug of the top MCP to close the resulting gap. The number of added rings varied between each detector because the gap is different for each manufactured housing. With this design, the contact between the MCPs and the contact lugs could be improved but from the electrical point of view its still not a clean electrical contact. To make the system more robust against discharges the Zener diode was exchanged through a resistor ($R_D$). The flight electronics sets the voltage $U_{stack}$ between the top MCP and the anode. The MCPs and the diode act as resistors, which are connected in series. Therefore, the potential drop over the MCPs depends on the potential drop over the diode. The voltage drop over a Zener diode is 180~V independent of $U_{stack}$. Therefore, the voltage over the MCPs $U_{MCP}$ is 180~V lower than $U_{stack}$. When having a resistor $R_D$ instead of a diode, the voltage over the MCPs cannot be calculated by just having $U_{stack}$ because the resistance of the MCPs $R_{MCP}$ depends on the voltage $U_{MCP}$ applied over them. It also changes with time due to ageing because the conductive material inside the MCP channels degrades over time. Therefore, the current $I_{MCP}$ flowing through the system has to be known to be able to calculate $U_{MCP}$. The NIM flight electronics is not designed to measure this current because it was designed for a detector with a diode where a current measurement would be unnecessary. With the laboratory electronics we did a calibration to determine the relationship between $U_{stack}$ and $U_{MCP}$ (Chap.~\ref{chapExp:Det}).\\
+		In the following section, $U_{MCP}$ is derived as a function of the different voltages known when measuring with laboratory electronics. Fig.\,\ref{fig:FlighElecSchema} shows the circuit diagram of the detector when operated with laboratory electronics and Table\,\ref{tab:ElecSchemaVariableList} summarizes the used variables. The current flowing through the MCPs $I_{MCP}$ is measured with the resistor $R_M$:
 		\begin{equation}
-			U_{PSMCP} = U_{PSA} - U_{PSD}
-			\label{eq:Upsmcp}
-		\end{equation} % Phi_PSD is a negative voltage
-		The MCPs have a voltage depended resistance which implies that we need the current $I_{MCP}$ flowing through the circuit to calculate $U_{MCP}$. As with the flight electronics it is not possible to measure this current, we do a calibration of the detector with laboratory electronics. This calibration is only valid when the detector does not come into saturation i.e. the current $I_A$ is low compared to the current $I_{RD}$ or the particle rate is below $10^6$ particles/sec.\\ % Ref. Stefan or someone else. How low? Particle rate lower than 10^6/sec -> current.
-		$I_{MCP}$ is calculated by measuring the voltage over the test resistor $R_M$. $U_A$ is measured with a high voltage meter. By substituting $U_{PSA}$ with Eq.\eqref{eq:Upsmcp}, $I_{MCP}$ is then:
-		\begin{equation}
-			I_{MCP} = \frac{U_{PSMCP} + U_{PSD}-U_A}{R_M}
+			I_{MCP} = \frac{U_{RM}}{R_{M}}
 		\end{equation}
-		The voltage $U_{PSMCP}$ can be written as:
+		With $U_{RM}$ the voltage over the resistor $R_{M}$ which is:
+		\begin{align}
+			U_{RM} &= U_{PSA} - U_{A}\\
+				   &= U_{PSMCP} + U_{PSD} - U_A
+		\end{align}
+		With $U_{PSA}$ the power supply output voltage for the anode, $U_{A}$ the voltage applied on the detector anode, $U_{PSD}$ the power supply output voltage applied at the top contact lug of the MCP stack and $U_{PSMCP}$ the voltage difference between the two power supply outputs. $U_{PSMCP}$ is:
 		\begin{equation}
 			U_{PSMCP} = U_{RM} + 2\cdot U_{Ri} + U_{RD} + U_{MCP}
 			\label{eq:UpsmcpTot}
 		\end{equation}
-		With $U_{Ri} = I_{MCP}\cdot R_i$ the voltage over the input resistors $R_i$, which are there to damp noise coupled into the detector circuit from the power supply. In the final tests it is about 100 \si{\kilo\ohm}. $U_{RD}$ is the voltage over the diode replacement resistor $R_D$. Further explanation about the improvement of the detector can be found in chapter bla % Further comments about the developement needed.
-		If the ion current $I_{ion}$ is low, this results in a low anode current $I_A$:
+		With $U_{Ri}$ the voltage over the input resistors $R_i$, which are there to damp noise coupled into the detector circuit from the power supply:
 		\begin{equation}
-			I_A = G\cdot I_{ion}
-		\end{equation}
-		with $G$ the MCP gain. % Order of magnitude?
-		In this case $I_{MCP} = I_{RD}$ and:
+			U_{Ri} = I_{MCP}\cdot R_i
+		\end{equation} 
+		$U_{RD}$ is the voltage over the resistor $R_D$ replacing the former diode. The current $I_A$ induced when an ion generates an electron avalanche, is very low compared to the current $I_{RD}$. Therefore, $I_{MCP} = I_{RD}$ and:
 		\begin{equation}
 			U_{RD} = I_{MCP}\cdot R_D
 		\end{equation}
-		Solving Eq. \eqref{eq:UpsmcpTot} to $U_{MCP}$ results in:
+		Solving Eq.~\eqref{eq:UpsmcpTot} to $U_{MCP}$ and inserting the different voltages results in:
 		\begin{align}
 			U_{MCP} =& U_{PSMCP} - U_{RM} - 2\cdot U_{Ri} - U_{RD}\\
 			=& U_{PSMCP} - U_{PSMCP} + U_{PSD} - U_A - 2\cdot I_{MCP} R_i - I_{MCP} R_D\\
 			=& (U_A - U_{PSD})\cdot(1 + \frac{2R_i + R_D}{R_M}) - U_{PSMCP}\frac{2R_i + R_D}{R_M}
 		\end{align}
 		
-		
+		\begin{comment}
+		% Pumpstand nr.~2 was used to perform stand-alone tests with the different NIM detectors. The test setup consists of a vacuum chamber, a HV power supply, an oscilloscope, a computer to remote control the oscilloscope and a HV meter (Fig.~\ref{fig:Pumpstand2}).		
+
 		\begin{figure}[h]
 			\begin{subfigure}{.5\textwidth}
 				\centering
@@ -164,7 +138,8 @@
 			\caption{Left: Pumpstand nr. 2. Right: Power supply, oscilloscope and control computer for the stand-alone tests of the detector. The signal on the oscilloscope is a noise signal.}
 			\label{fig:Pumpstand2}
 		\end{figure}
-		
+		\end{comment}
+	
 		\begin{figure}[h]
 			\centering
 			\includegraphics[width = .8\textwidth]{Bilder/Detector_elec_schema.png}
