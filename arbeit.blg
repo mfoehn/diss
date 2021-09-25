@@ -5,49 +5,65 @@ Reallocating 'name_of_file' (item size: 1) to 9 items.
 The style file: abbrvnat.bst
 Reallocating 'name_of_file' (item size: 1) to 8 items.
 Database file #1: Quellen.bib
+I was expecting a `,' or a `}'---line 98 of file Quellen.bib
+ :  
+ :  journal = {Journal of Physical and Chemical Reference Data},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Too many commas in name 1 of "Ho, C. Y. Powell, R. W. Liley, P. E." for entry Ho_1972
+while executing---line 1347 of file abbrvnat.bst
+Too many commas in name 1 of "Ho, C. Y. Powell, R. W. Liley, P. E." for entry Ho_1972
+while executing---line 1347 of file abbrvnat.bst
 Warning--empty year in Agilent_TechNote_SNR
 Warning--empty year in Agilent_TechNote_SNR
+Too many commas in name 1 of "Ho, C. Y. Powell, R. W. Liley, P. E." for entry Ho_1972
+while executing---line 1429 of file abbrvnat.bst
+Too many commas in name 1 of "Ho, C. Y. Powell, R. W. Liley, P. E." for entry Ho_1972
+while executing---line 1429 of file abbrvnat.bst
+Warning--empty journal in Ho_1972
+Warning--empty year in Ho_1972
+Warning--empty year in Ho_1972
 Warning--empty journal in ThermEmiss_Y2O3
 Warning--empty publisher in DensEnhan_Wurz_07
-You've used 24 entries,
+You've used 29 entries,
             2773 wiz_defined-function locations,
-            752 strings with 9220 characters,
-and the built_in function-call counts, 10461 in all, are:
-= -- 862
-> -- 680
-< -- 18
-+ -- 234
-- -- 210
-* -- 836
-:= -- 1693
-add.period$ -- 86
-call.type$ -- 24
-change.case$ -- 129
-chr.to.int$ -- 24
-cite$ -- 52
-duplicate$ -- 477
-empty$ -- 825
-format.name$ -- 246
-if$ -- 2137
+            791 strings with 10405 characters,
+and the built_in function-call counts, 13309 in all, are:
+= -- 1106
+> -- 916
+< -- 21
++ -- 314
+- -- 285
+* -- 1096
+:= -- 2159
+add.period$ -- 106
+call.type$ -- 29
+change.case$ -- 169
+chr.to.int$ -- 29
+cite$ -- 65
+duplicate$ -- 577
+empty$ -- 1001
+format.name$ -- 328
+if$ -- 2705
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 35
-newline$ -- 142
-num.names$ -- 96
-pop$ -- 310
+missing$ -- 40
+newline$ -- 172
+num.names$ -- 116
+pop$ -- 384
 preamble$ -- 1
-purify$ -- 118
+purify$ -- 153
 quote$ -- 0
-skip$ -- 355
+skip$ -- 440
 stack$ -- 0
-substring$ -- 225
-swap$ -- 28
+substring$ -- 295
+swap$ -- 32
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 199
-warning$ -- 4
-while$ -- 82
+type$ -- 254
+warning$ -- 7
+while$ -- 103
 width$ -- 0
-write$ -- 330
-(There were 4 warnings)
+write$ -- 403
+(There were 5 error messages)

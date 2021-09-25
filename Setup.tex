@@ -1,79 +1,76 @@
 % !TEX root = arbeit.tex
-\section{Setup}\label{sec:setup}
-	
-	% Make a separate detector chapter? Explain the Setup and everything in that subchapter? Or just make one big chapter?
-
-	This chapter compares the NIM prototype with the NIM PFM model from the mechanical point of view. It shows the key differences between the two models. Special focus lay hereby on the design of the detector because there were made some major design improvements.
-	
-	
-	
+\section{Setup}\label{sec:setup} % Adapt title
+	\textbf{\notes{Proofread}}\\
+	This chapter compares the NIM prototype with the NIM ProtoFlight Model (PFM) from the mechanical point of view. It shows the key differences between the two models. Special focus lay hereby on the design of the detector because there were made some major design improvements.\\
+	% Pics with the lab power supply
 	% \\titania.unibe.ch\UserHomes\foehn\My Documents\PhD\Fotos\[2021.02.04]FS_Sensor&Cube_in_Strofio
-	% Put the 2 Pictures together side by side with the corresponding ruler.
-	% Figure collection of NIM once the inner part and once NIM with the electronic box. This picutre can be used as a reference for the comparison with the power supplys (2 pictures from the paper). Then only a picture with the lab power supplies has to be put in.
-	
-	\subsection{NIM Sensor Models \notes{Draft}}\label{subsec:setupInst}
-	
-	% Antechamber is missing
-	
-	
-	
-	In this chapter, the NIM Prototype and the design of the NIM ProtoFlight Model (PFM) are described. The Prototype was build by Stefan Meyer and he also designed the NIM PFM \cite{Diss_Meyer}. The tests in Chapter \ref{sec:Exp} start with the configuration of the instruments as they are stated in this chapter.\\
-	Fig.\ref{fig:SetupProtoISSim} shows the SIMION model of the Prototype ion-source Fig.\ref{fig:SetupPFMISSim} shows the ion-source of the PFM and Fig.\ref{fig:SetupFilElSim} shows the filament housing of the Prototype (left) and of the PFM (right). The PFM has seven electrodes less then the prototype to simplify the source. Manly LV electrodes were taken together (IS 1\& 2, IS 3 \& 4, IS 6 \& 7). IS 10 was removed and IS 11 was shifted towards the ionisation region. In the filament housing the filament electron repelling electrodes Fil 2-5 were taken together to one single repeller electrode Fil 2. The repeller electrode was splitted in 4 to compensate the filament position in case the filament was badly adjusted. For the PFM, the mounting of the filament holder was improved, therefore these 4 electrodes could be taken together to one single electrode.\\
-	Fig.\ref{fig:SetupProtoReflSim} shows a schematics of the ion-mirror. The prototype ion-mirror consists of 14 ring-electrodes (R2-R15). R1 is the drift tube. Between the electrodes R4-R15 are resistors to connect the electrodes with each other to generate a linear voltage gradient when a voltage is applied at electrode R4 and R15. In addition, a voltage can be applied on electrode R8 allowing additional focusing of the ions in the ion-mirror.	The flight ion-mirror consists of a ceramic tube with two resistance spirals on its inner walls replacing electrodes R5-R7 and R9-R14. From the electrical point of view, the two ion-mirrors behave the same.\\
-	
-		
-		\begin{figure}[h]
+	\begin{figure}[h] % Prototype
+		\centering
+		\includegraphics[width=\textwidth]{Setup/Prototype_totPic.jpg}
+		\caption{NIM Prototype \cite{Diss_Meyer}.}
+		\label{fig:SetupProto}
+	\end{figure}
+	\begin{figure}[h] % PFM Sensor
+		\begin{subfigure}{0.5\textwidth}
 			\centering
-			\includegraphics[width= 0.9\textwidth]{Setup/Proto_IS_sim.png}
-			\caption{SIMION Model of the Ion-Source of the NIM Prototype \cite{Diss_Meyer}.}
-			\label{fig:SetupProtoISSim}
-		\end{figure}
-		
-		\begin{figure}[h]
+			\includegraphics[width =.9\textwidth]{Setup/PFM_Sensor.png}
+		\end{subfigure}
+		\begin{subfigure}{0.5\textwidth}
 			\centering
-			\includegraphics[width=0.9\textwidth]{Setup/ISFlight_bearb.png}
-			\caption{SIMION Model of the Ion-Source of the NIM ProtoFlight Model.}
-			\label{fig:SetupPFMISSim}
-		\end{figure}
-		\begin{figure}[h] % In Bild noch Fil 7/ Fil 4 durch IS5/ IS3 ersetzen.
-			\begin{subfigure}{0.5\textwidth}
-				\centering
-				\includegraphics[width =0.85\textwidth]{Setup/Proto_FilEl_sim.jpg}
-			\end{subfigure}
-			\begin{subfigure}{0.5\textwidth}
-				\centering
-				\includegraphics[width = 0.85\textwidth]{Setup/PFM_FilEl_sim.jpg}
-			\end{subfigure}
-			\caption{Left: Prototype filament housing. Right: PFM filament housing.}
-			\label{fig:SetupFilElSim}
-		\end{figure}
-
-		\begin{figure}[h]
+			\includegraphics[width = \textwidth]{Setup/PFM_with_FlightEl.png}
+		\end{subfigure}
+		\caption{Left: NIM PFM ion-optical system without the closed-source antechamber. Right: NIM PFM ion-optical system with electronic box (card rack) attached \cite{Foehn2021}.}
+		\label{fig:SetupPFM}
+	\end{figure}
+	\begin{figure}[h!] % Antechamber
+		\begin{subfigure}{0.5\textwidth}
 			\centering
-			\includegraphics[width=0.9\textwidth]{Setup/Prototype_Reflectron_sim.png}
-			\caption{SIMION Model of the ion-mirror of the NIM Prototype \cite{Diss_Meyer}.}
-			\label{fig:SetupProtoReflSim}
-		\end{figure}
-		
-		\begin{figure}[h] % Exchange reflectron through ion-mirror
+			\includegraphics[width = 0.75\textwidth]{Setup/Antechamber_Proto.png}
+		\end{subfigure}
+		\begin{subfigure}{0.5\textwidth}
 			\centering
-			\includegraphics[width=\textwidth]{Setup/Prototype_totPic.jpg}
-			\caption{NIM Prototype \cite{Diss_Meyer}.}
-			\label{fig:SetupProto}
-		\end{figure}
-		\begin{comment}
-			\begin{figure}[h] % Exchange picture through a picture collection (EGU2020 slid of the sensor in different states) Add a picture, where the inner parts are visible for comparison. Include a lineal ruler into the pictures.
-				\centering
-				\includegraphics[width=0.8\textwidth]{Setup/PFM_in_calib_Setup.JPG}
-				\caption{NIM PFM sensor head in calibration setup.}
-				\label{fig:SetupPFM}
-			\end{figure}
-		\end{comment}
-		
-			
-%---------------------------------------------------------------------------------------------------------------
-
-		\subsection{Detector \notes{Draft}}\label{subsubsec:SetFacPumpst} % May merge that chapter with the previous one.
+			\includegraphics[width = 0.85\textwidth]{Setup/Antechamber_Flight.png}
+		\end{subfigure}
+		\caption{Left: Prototype antechamber. Right: Flight-like antechamber.}
+		\label{fig:SetupAntecham}
+	\end{figure}
+	\begin{figure}[h] % IS Proto
+		\centering
+		\includegraphics[width= 0.9\textwidth]{Setup/Proto_IS_sim.png}
+		\caption{SIMION Model of the Ion-Source of the NIM Prototype \cite{Diss_Meyer}.}
+		\label{fig:SetupProtoISSim}
+	\end{figure}
+	\begin{figure}[h] % IS PFM
+		\centering
+		\includegraphics[width=0.9\textwidth]{Setup/ISFlight_bearb.png}
+		\caption{SIMION Model of the Ion-Source of the NIM ProtoFlight Model.}
+		\label{fig:SetupPFMISSim}
+	\end{figure}
+	The Prototype was build by Stefan Meyer and he also designed the NIM PFM \cite{Diss_Meyer}. Fig.~\ref{fig:SetupProto} shows the NIM Prototype built into the test setup, Fig.~\ref{fig:SetupPFM}~left shows the interior NIM PFM and right the NIM PFM with the flight electronics attached.\\ % May write something more? Hmm...
+	Fig.~\ref{fig:SetupAntecham}~left shows the prototype antechamber and right the PFM antechamber. To improve the performance of the antechamber, the flight antechamber was made twice as big as the old one of the prototype. In addition, it has two entrance holes at $\pm$30\degree relative to the x-axis of the instrument to be able to measure gas coming from both directions of the instrument (cf. Chap~\ref{subsubsec:Calfly}). % Draw a coordinate system in the figures.
+	For test purpose, a second antechamber was made with one of the two entrance holes at 90\degree because the CASYMIR test facility \cite{CASYMIR_Graf2004} is not able to shoot with the neutral particle beam into the antechamber under such angles because the main direction of the beam is at 90\degree. The antechambers consists of two parts which are hold together with screws. Tests revealed that the mounting of the two parts has to be redesigned because the mounting screws of the old antechamber generate signal artefacts during the measurement. More about that subject can be found in Chap.~\ref{subsec:ExpAnteCham} and \cite{Meyer_2017_ante}.\\
+	Fig.\ref{fig:SetupProtoISSim} shows the SIMION model of the Prototype ion-source, Fig.\ref{fig:SetupPFMISSim} shows the ion-source of the PFM and Fig.\ref{fig:SetupFilElSim} shows the filament housing of the Prototype (left) and of the PFM (right). The PFM has seven electrodes less then the prototype to simplify the source and the electronics. Manly LV electrodes were taken together such as IS 1\& 2, IS 3 \& 4 and IS 6 \& 7. IS~10 was removed and IS~11 was shifted towards the ionisation region. In the filament housing the electron repelling electrodes Fil~2-5 were taken together to one single repeller electrode Fil~2. The repeller electrode in the prototype was split into four parts to compensate with the electric fields for a bad alignment of the filament. For the PFM, the mounting of the filament holder was improved and therefore these four electrodes could be taken together to one single electrode.\\
+	Fig.\ref{fig:SetupProtoReflSim} shows a schematics of the ion-mirror. The prototype ion-mirror consists of 14 ring-electrodes (R~2-R~15). R~1 is the drift tube. Between the electrodes R4-R15 are resistors to connect the electrodes with each other to generate a linear voltage gradient when a voltage is applied at electrodes R~4 and R~15. In addition, a voltage can be applied on electrode R~8 allowing additional focusing of the ions in the ion-mirror.	The flight ion-mirror consists of a ceramic tube with two resistance spirals on its inner walls replacing electrodes R~5-R~7 and R~9-R~14. From the electrical point of view, the two ion-mirrors behave the same.\\
+	\begin{figure}[h] % In Bild noch Fil 7/ Fil 4 durch IS5/ IS3 ersetzen.
+		\begin{subfigure}{0.5\textwidth}
+			\centering
+			\includegraphics[width =0.85\textwidth]{Setup/Proto_FilEl_sim.jpg}
+		\end{subfigure}
+		\begin{subfigure}{0.5\textwidth}
+			\centering
+			\includegraphics[width = 0.85\textwidth]{Setup/PFM_FilEl_sim.jpg}
+		\end{subfigure}
+		\caption{Left: Prototype filament housing. Right: PFM filament housing.}
+		\label{fig:SetupFilElSim}
+	\end{figure}
+	\begin{figure}[h] % ion mirror
+		\centering
+		\includegraphics[width=0.9\textwidth]{Setup/Prototype_Reflectron_sim.png}
+		\caption{SIMION Model of the ion-mirror of the NIM Prototype \cite{Diss_Meyer}.}
+		\label{fig:SetupProtoReflSim}
+	\end{figure}
+	
+		% Detector Figs.	
 		\begin{figure}[h] % Photograph of the Prototype an Flight detector.
 			\begin{subfigure}{0.5\textwidth}
 				\centering
@@ -91,6 +88,12 @@
 			\includegraphics[width= \textwidth]{Setup/PFMDetectors.png}
 			\caption{Schematics of the PFM detector housings. Left: preliminary design. Right: final flight design.}
 			\label{fig:FlightDetSchemata}
+		\end{figure}
+		\begin{figure}[h] % Circuit diagram
+			\centering
+			\includegraphics[width = .8\textwidth]{Bilder/Detector_elec_schema.png}
+			\caption{Electrical schematics of the NIM flight detector with laboratory electronics attached.}
+			\label{fig:FlighElecSchema}
 		\end{figure}
 		% free play = technisch Spiel. Put it in during proofreading.
 		The NIM Prototype detector has a rigid Printed Circuit Board (PCB) on which the electrical components and the drift tube with the MCP stack are mounted (Fig.\,\ref{fig:DetPhotos}~left). Due to Jupiter's strong radiation field, the detector has to be shielded to reduce the noise level induced by the strong radiation and to increase the detector's lifetime. To minimized the required shielding mass, the flight detector has to be very compact. This was achieved by using a flex PCB to fold the detector into a peek housing (Fig.\,\ref{fig:DetPhotos}~right). Fig.~\ref{fig:FlightDetSchemata}~left shows the schema of a preliminary design of the peek housing containing the MCPs with the drift tube attached. The MCPs lay on a ledge 1~mm above the anode. A diode generates a voltage between the MCP backside and the anode to accelerate the electrons from the MCP backside towards the anode (cf. electrical schema Fig,\,\ref{fig:FlighElecSchema}). There are two contact lugs on top and at the bottom of the MCP stack to apply a voltage over the MCPs. The MCPs are fixed with a peek screw within the housing. In the old design, the screw threads were milled down to the ledge. When the MCPs were mounted, they often canted in the threads. In addition, it was not possible to determine, how much the screw had to be tightened. When the screw was tighten too much, the MCPs broke as they consist of lead glass and are therefore very fragile. When the screw was too loose, the two contact lugs had no reliable contact to the MCPs. When applying a high voltage over the whole MCP stack, the gaps between the contact lugs and the MCPs act as an additional resistors over which the voltage builds up resulting in a discharge between the electrodes and the MCPs. The discharge can propagate through the whole MCP stack and damages the readout electronics. As a consequence, the screw thread was milled less far and an additional mechanical stop was made to tighten the screw only down to that stop (Fig.\,\ref{fig:FlightDetSchemata}~right). This prevented the MCPs from canting in the screw thread thus it was not milled down to the bottom of the lower ledge and with the mechanical stop, the screw could not be tightened too much to break the MCPs. In addition, a peek space was added between the screw and the MCPs to push down the MCPs uniformly. Due to the tolerances in the manufacturing process of the different parts of the housing, metallic spacer rings are added between the peek spacer and the contact lug of the top MCP to close the resulting gap. The number of added rings varied between each detector because the gap is different for each manufactured housing. With this design, the contact between the MCPs and the contact lugs could be improved but from the electrical point of view its still not a clean electrical contact. To make the system more robust against discharges the Zener diode was exchanged through a resistor ($R_D$). The flight electronics sets the voltage $U_{stack}$ between the top MCP and the anode. The MCPs and the diode act as resistors, which are connected in series. Therefore, the potential drop over the MCPs depends on the potential drop over the diode. The voltage drop over a Zener diode is 180~V independent of $U_{stack}$. Therefore, the voltage over the MCPs $U_{MCP}$ is 180~V lower than $U_{stack}$. When having a resistor $R_D$ instead of a diode, the voltage over the MCPs cannot be calculated by just having $U_{stack}$ because the resistance of the MCPs $R_{MCP}$ depends on the voltage $U_{MCP}$ applied over them. It also changes with time due to ageing because the conductive material inside the MCP channels degrades over time. Therefore, the current $I_{MCP}$ flowing through the system has to be known to be able to calculate $U_{MCP}$. The NIM flight electronics is not designed to measure this current because it was designed for a detector with a diode where a current measurement would be unnecessary. With the laboratory electronics we did a calibration to determine the relationship between $U_{stack}$ and $U_{MCP}$ (Chap.~\ref{chapExp:Det}).\\
@@ -139,13 +142,6 @@
 			\label{fig:Pumpstand2}
 		\end{figure}
 		\end{comment}
-	
-		\begin{figure}[h]
-			\centering
-			\includegraphics[width = .8\textwidth]{Bilder/Detector_elec_schema.png}
-			\caption{Electrical schematics of the NIM flight detector with laboratory electronics attached.}
-			\label{fig:FlighElecSchema}
-		\end{figure}
 		
 		
 		\begin{table}[h]
@@ -167,6 +163,12 @@
 			\caption{Variable list for the detector.}
 			\label{tab:ElecSchemaVariableList}
 		\end{table}
+		\begin{figure}[h!]
+			\centering
+			\includegraphics[width= 0.95\textwidth]{Setup/NIM_schema.pdf}
+			\caption{Schematics of the NIM flight design with all electrodes marked in red.}
+			\label{fig:MINPFMTot}
+		\end{figure}
 	
 
 		\begin{comment}
@@ -192,12 +194,6 @@
 		
 	
 		%\includepdf[pages=-]{Setup/NIM_schema.pdf}
-		\begin{figure}[h!]
-			\centering
-			\includegraphics[width= 0.95\textwidth]{Setup/NIM_schema.pdf}
-			\caption{Schematics of NIM flight design with all electrodes marked in red.}
-			\label{fig:MINPFMTot}
-		\end{figure}
 	
 	
 	

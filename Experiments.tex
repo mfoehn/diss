@@ -1,15 +1,14 @@
 % !TEX root = arbeit.tex
 \section{Experiments} \label{sec:Exp}
 	
-	This section includes tests of flight components and also system tests of the NIM Proto~Flight~Model (PFM) and the Fligh~Spare (FS).
-	% Make refs to the different test facilities if needed.
+	This section includes tests of flight components and also system tests of the NIM Proto~Flight~Model (PFM) and the Fligh~Spare (FS) models. The tests of the flight ion-mirror and the flight antechamber were performed with the NIM Prototype where the other tests were performed with the NIM PFM model unless further mentioned. % Include Refs. during the proofreading.
 
 	% Fügt ein PDF ein, nummeriert nach dem PDF normal weiter.
 	%\includepdf[pages=-]{Report_Thermofoil_UV_Masterarbeit.pdf}
 
 %-----------------------------------------------------------------------------------
 	\subsection{Flight Ion-Mirror \notes{Finished}}
-	In this section the performance of two ion-mirrors is compared. As described in chapter \ref{subsec:setupInst}, the prototype ion-mirror consists of several ring-electrodes connected with each other with resistors to generate a linear voltage gradient. The flight ion-mirror consists of a ceramic tube with two resistance spirals replacing some of the ring-electrodes. Fig.\,\ref{fig:ExpRefl} left shows the prototype ion-mirror and Fig.\,\ref{fig:ExpRefl} right shows the flight ion-mirror mounted to the NIM prototype in the test setup. An ion-mirror of the same type as the flight ion-mirror was also used in the RTOF mass spectrometer which flew in ROSINA \cite{Diss_Scherer} and the in the NGMS \cite{Diss_Hofer}. From the electrical point of view, the two ion-mirror types behave the same.\\
+	In this section the performance of two ion-mirrors is compared. As described in chapter~\ref{subsec:setupInst}, the prototype ion-mirror consists of several ring-electrodes connected with each other with resistors to generate a linear voltage gradient. The flight ion-mirror consists of a ceramic tube with two resistance spirals replacing some of the ring-electrodes. Fig.\,\ref{fig:ExpRefl} left shows the prototype ion-mirror and Fig.\,\ref{fig:ExpRefl} right shows the flight ion-mirror mounted to the NIM prototype in the test setup. An ion-mirror of the same type as the flight ion-mirror was also used in the RTOF mass spectrometer which flew in ROSINA \cite{Diss_Scherer} and the in the NGMS \cite{Diss_Hofer}. From the electrical point of view, the two ion-mirror types behave the same.\\
 	\begin{figure}[h]
 		\begin{subfigure}{0.5\textwidth}
 			\centering
@@ -19,7 +18,7 @@
 			\centering
 			\includegraphics[width = 0.85\textwidth]{Experiments/reflectron_flight.JPG}
 		\end{subfigure}
-		\caption{Left: Prototype ion-mirror with ring-electrodes. Right: Prototype with flight ion-mirror.}
+		\caption{Left: Prototype with prototype ion-mirror with ring-electrodes. Right: Prototype with flight ion-mirror.}
 		\label{fig:ExpRefl}
 	\end{figure}
 	The measurements were performed in a vacuum chamber. The residual gas pressure for the measurements with the prototype ion-mirror was 5$\cdot$10\textsuperscript{-10}mbar and for the measurements with the flight ion-mirror 1.4$\cdot$10\textsuperscript{-9}mbar. The test gases were injected directly through a leak valve to increase the chamber pressure up to 1$\cdot$10\textsuperscript{-8}mbar. The used test gases were: Ne, Ar, Kr and Xe. 3\, Mio. single spectra were histogramed for each of the measurements. All voltages of the instrument were optimized for the measurements with the two ion-mirrors. Table\ref{tab:refPerftab} shows the signal-to-noise ratios and the mass resolution of the different test gases measured with the two instrument configurations.\\
@@ -43,7 +42,7 @@
 
 	
 %----------------------------------------------------------------------------------
-	\subsection{Flight Antechamber \notes{finished}}
+	\subsection{Flight Antechamber \notes{finished}} \label{subsec:ExpAnteCham}
 	% dimensions old antechamber: d_in = 4 mm, d_out = 3 mm, d_sp = 40 mm
 	%			new:			d_in = 5 mm, d_out = 4 mm, d_sp = 80 mm
 	% For further explanation of the geometry see Chap.\ref{subsubsec:Densenhan}.
@@ -127,79 +126,79 @@
 		\label{exp:ProtoIntCharEnt}
 	\end{figure}
 	
-%--------------------------------------------------------------------------------------------	
-	\subsection{Shutter Performance Test \notes{finished}}
-	When measuring with the neutral gas channel, the aim is that the particles are measured directly without any interaction with the structure of the instrument. Therefore, a shutter between the antechamber and the ionization region was required to close the particle entrance from the antechamber. In this section the performance of the shutter was tested. According to the model stated in Chap.\ref{subsubsec:motorflow} the shutter should damp the signal by a factor 600.\\
-	These tests were performed with the NIM PFM. The PFM was operated with laboratory electronics. The tests were performed at the CASYMIR test facility. The used particle beam consisted of hydrogen and xenon with a velocity of 2\,\si{\kilo\meter\per\second}. Three different measurements were performed: One with the beam directing onto the antechamber with the shutter open, one with the shutter closed and a background measurement, where the particle beam was pointed onto the outer structure of NIM to estimate how much of the signal arises from the test gas scattering into the ionization region when the beam is directed in an arbitrary direction. This background was subtracted from both signals before they were divided through each other to determine the damping factor $G_{close}$ of the shutter.\\
-	The resulting damping factor of the shutter is 12 instead of the required 1000. The biggest impact has the actual thickness of the gap between the shutter and the antechamber when the shutter is closed. The damping reduces significantly when the gap is bigger than actually designed. This is shown in Fig.\,\ref{fig:ShutGapSizeSigDamp} in Chap.\,\ref{subsubsec:motorflow}. With a gap size of about 0.1\,mm instead of 0.01\,mm the damping factor is only about a factor 25. Other reasons are that the portion of the beam which scatters on the antechamber outer walls gets thermalized in the vacuum chamber and adds to the signal intensity. In the outer space, the gas scatters on the antechamber but does not reach the ionization region because it will flow around the instrument.
 	
-	\begin{comment}	
-	\begin{table}
-		\begin{center}
-			\begin{tabular}{|c|c|c|}
-				\hline
-				\multirow{2}{*}{Configuration} & \multicolumn{2}{c|}{Species Area [a.u.]} \\
-				\cline{2-3}
-				& \textsuperscript{129}Xe & \textsuperscript{132}Xe \\ \hline
-				Shutter open  & 36.97 ±0.07 & 36.7 ±0.06\\
-				Shutter close &	6.76 ±0.07 & 6.7 ±0.05\\
-				Background & 3.87 ±0.05 & 3.73 ±0.03 \\
-				\hline
-			\end{tabular}
-		\end{center}
-		\caption{The signal intensity is given for different shutter positions. It is proportional to the number of measured particles. The background was determined by shooting with the beam onto the outer structure of NIM.}
-%		\label{tab:measShutMot}
-	\end{table}
-		% IsoArea [10^9]
-		
-	\begin{table}
-		\begin{center}
-			\begin{tabular}{|c|c|c|c|c|}
-				\hline
-				\multirow{2}{*}{Configuration} & \multicolumn{4}{c|}{Species Area [a.u.]} \\
-				\cline{2-5}
-				&N\textsubscript{2}& CO\textsubscript{2} & \textsuperscript{129}Xe & \textsuperscript{132}Xe \\ \hline
-				Shutter open & 18.36 ±0.07 & 10.76 ±0.06 & 36.97 ±0.07 & 36.7 ±0.06\\
-				Shutter close & 19.57 ±0.07 & 12.04 ±0.06 &	6.76 ±0.07 & 6.7 ±0.05\\
-				Background & 18.43 ±0.07 & 11 ±0.06 & 3.87 ±0.05 & 3.73 ±0.03 \\
-				\hline
-			\end{tabular}
-		\end{center}
-		\caption{The signal intensity is given for different shutter positions. It is proportional to the number of measured particles. The background was determined by shooting with the beam onto the outer structure of NIM. N\textsubscript{2} and CO\textsubscript{2} are part of the residual gas and Xe is the test gas in the neutral particle beam.}
-%		\label{tab:measShutMot}
-	\end{table}
+%---------------------------------------------------------------------------------------------------------
+	\subsection{Entrance adaption} % Ion and e- distribution in the ionisation region. Entrance adaption
+	In the following section we look where the ions in the ionisation region have to be generated that they actually reach the detector and we look at the distribution electrons which are used to ionise the neutral particles.
 	
-	\begin{table}
-	\begin{center}
-		\begin{tabular}{|c|c|c|c|c|c|c|c|c|}
-			\hline
-			\multirow{2}{*}{Configuration} & \multicolumn{4}{c|}{m/$\Delta$m}& \multicolumn{4}{c|}{SNR} \\
-			\cline{2-9}
-			&N\textsubscript{2}& CO\textsubscript{2} & \textsuperscript{129}Xe & \textsuperscript{132}Xe & N\textsubscript{2} & CO\textsubscript{2} &\textsuperscript{129}Xe&\textsuperscript{132}Xe\\ \hline
-			Shutter open & 307$\pm$25& 330$\pm$23 & 361$\pm$16& 373$\pm$17 & 550.8 & 309.9 & 735.7 & 740.2\\
-			Shutter close &307$\pm$25& 330$\pm$23 & 361$\pm$16& 365$\pm$16 & 540.3 & 315.4 & 120.8 & 121.6\\
-			Background &307$\pm$25& 330$\pm$23 & 353$\pm$15& 357$\pm$16 & 631.6 & 360.2 & 85.4 & 84\\
-			\hline
-		\end{tabular}
-	\end{center}
-	\caption{Mass resolution m/$\Delta$m and Signal-to-Noise Ratio for different shutter positions. N\textsubscript{2} and CO\textsubscript{2} are part of the residual gas and Xe is the test gas in the neutral particle beam.}
-%	\label{tab:measShutMot}
-	\end{table}
+	\begin{comment}
+		\begin{figure}[h] % PFM entrance side and Top view. enlarge picture incase there is enough text.
+			\centering
+			\includegraphics[width=\textwidth]{Experiments/PFMEntrance_SideTop_View.png}
+			\caption{Side view (left) and top view (right) of the entrance slit.}
+			\label{fig:PFMentrSideTopSchema}
+		\end{figure}
+	\end{comment}
 	
-	\end{comment}	
-	
+	\begin{figure}[h] % Entrance schema.
+		\begin{subfigure}[t]{\textwidth}
+			\centering
+			\includegraphics[width=.8\textwidth]{Experiments/PFMEntrance_Side_Schema.png}
+		%	\caption{Side view.}
+		\end{subfigure}
+		\par\bigskip
+		\begin{subfigure}[b]{\textwidth}
+			\centering
+			\includegraphics[width=.85\textwidth]{Experiments/PFMEntrance_Top_Schema.png}
+		%	\caption{Top view}
+		\end{subfigure}
+		\caption{Side (top) and top view (bottom) of the entrance slit. The violet arrows mark the influx of the neutral gas and the blue arrows mark the electron beam.}
+		\label{fig:PFMentrSideTopSchemas}
+	\end{figure}
 
-	
-%--------------------------------------------------------------------------------
-	\subsection{Entrance adaption}
-	Due to a redesign of the ion source, an adaption of the entrance electrode IS~3 was necessary (Electrode with 0~V in Fig.\ref{fig:IsAdapt}). Simulations were done to see how big the impact of that design adaption was. Fig.~\ref{fig:IsAdapt} shows the old design (bottom) and the new design (top) of the ionisation region with the voltages applied. In dark blue is the flight path if the electrons and light blue shows the potential lines. The adaption of the corresponding electrode had not big impact on the flight path of the electrons.
-	
+
+	\begin{figure}[h] % Sim ions which reach the detector. Caption
+		\begin{subfigure}[t]{.5\textwidth}
+			\centering
+			\includegraphics[width=.8\textwidth]{Experiments/PFMEntrance_Side_thSim.png}
+			\caption{Side view, thermal mode.}
+		\end{subfigure}
+		\begin{subfigure}[t]{.5\textwidth}
+			\centering
+			\includegraphics[width=.8\textwidth]{Experiments/PFMEntrance_Side_nSim.png}
+			\caption{Side view, neutral mode.}
+		\end{subfigure}
+		\begin{subfigure}[b]{.5\textwidth}
+			\centering
+			\includegraphics[width=.8\textwidth]{Experiments/PFMEntrance_Top_thSim.png}
+			\caption{Top view, thermal mode.}
+			\label{fig:PFMentrSideTopSimThTop}
+		\end{subfigure}
+		\begin{subfigure}[b]{.5\textwidth}
+			\centering
+			\includegraphics[width=.8\textwidth]{Experiments/PFMEntrance_Top_nSim.png}
+			\caption{Top view, neutral mode.}
+		\end{subfigure}
+		\caption{Simulated ions marked as small arrows starting at different positions in the entrance slit. The ions in n-mode enter the entrance with 4~km/s. The blue ions reach the detector where the orange ions hit the structure during their flight to the detector.}
+		\label{fig:PFMentrSideTopSim}
+	\end{figure}
 	\begin{figure}[h]
 		\centering
 		\includegraphics[width=.7\textwidth]{Experiments/IS_adaption.png}
-		\caption{text}
+		\caption{Top: New entrance with enlarged hole for the electron beam. Bottom: Old entrance with additional ring to reduce the diameter of hole.}
 		\label{fig:IsAdapt}
 	\end{figure}
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=.7\textwidth]{Experiments/IS_adaption_TopView.png}
+		\caption{Top view into the entrance of NIM with simulated electron beam (dark blue) and potential line (light blue).}
+		\label{fig:IsAdaptTop}
+	\end{figure}
+	
+	Fig.~\ref{fig:PFMentrSideTopSchemas}~top shows the ionization region from the side. The antechamber is on the top where the neutral particles from the thermal mode come from (violet arrow) and the generated ions will be pulled into the spectrometer with the inner pulser grid $IS~5$. The violet arrows mark the inflow of the neutral gas once coming from the antechamber (th-Mode) and once coming from the side (n-Mode). The blue arrow marks the flight direction of the electrons emitted by the filament to ionise the neutral gas. Fig.~\ref{fig:PFMentrSideTopSchemas}~bottom shows the top view of the ionisation region when looking from the antechamber into the spectrometer. The entrance slit $IS~3$ has a special form because on the right side, the two filaments reach into the source and bloc part of the field-of-view and on the left side there is supporting structure reaching into the source to support the antechamber from the other side. In n-Mode, the gas can enter the ionisation region from every direction in the yz-plane except from where the filament and the supporting structure are resulting in a field-of-view of 300°. For the lab measurements, the gas inflow direction is usually from the bottom as it is also shown in Fig.~\ref{exp:PFMIntCharEnt}. For the simulations, a gas inflow direction parallel to the electron beam was chosen as it is marked in Fig.~\ref{fig:PFMentrSideTopSchemas}~bottom.\\
+	Here we were interested in where the ions have to be generated in th- and n-mode to actually reach the detector. The ions were generated in a cuboid volume with a height of 2~mm because that is the height of the entrance slit and with a square base area of 8x8~mm. Fig.~\ref{fig:PFMentrSideTopSim} shows the simulated data left for thermal mode where the particles have thermal velocity and right for the neutral mode where the incoming particles have a velocity of 4~km/s coming from negative z-direction. The particles are displayed as velocity vectors. The ions marked in blue are the ones reaching the detector and the orange ones hit the structure somewhen during their flight to the detector. The simulated particles had unit masses from 1 up to 1000~m/z. The pictures show nicely that only ions reach the detector which are generated above the inner extraction grid $IS~5$ which is the one the extraction pulse is applied for ion extraction. In thermal mode, also some ions generated over the outer grid reach the detector. They are visible as a small blue ring close to the structure separating the inner and the outer grid ($IS~5$ and $IS~6$) in Fig.~\ref{fig:PFMentrSideTopSimThTop}). In thermal mode the neutral particle flow comes through the pink structure and is directed over the inner pull grid. Only a small amount of gas reaches the outer grid. In neutral mode, only ions generated over the inner grid reach actually the detector due to their velocity perpendicular to the x-axis of the instrument.\\
+	In the next section, we look at the flight path of the electrons which are used to ionise the neutral gas. During vibration tests of the sensor, a weakness in the structure of the ion source was identified leading to a small redesign. The opening for the electron beam in the entrance electrode $IS~3$ had to be enlarged (Fig.~\ref{fig:IsAdapt}). Simulations were done to see how big the impact of that design adaption was. Fig.~\ref{fig:IsAdapt} bottom panel shows the old design with an additional ring to reduce the diameter of that hole and the top panel shows the new design without the additional ring in the entrance electrode. Dark blue is the flight path of the electrons and light blue shows the potential lines. The adaption of the corresponding electrode had not big impact on the flight path of the electrons. Fig.~\ref{fig:IsAdaptTop} shows the top view from the entrance. The porous structure is the outer extraction grid $IS~6$. The inner grid is covered by the electron beam. In the simulation model, only one filament was simulated because it was sufficient for these simulations. Between the two potentials line which mark the 50~V ring is the electrode $IS~4$. We see nicely in Fig.~\ref{fig:IsAdapt} and Fig.~\ref{fig:IsAdaptTop} that the electron beam covers the whole volume over the inner extraction grid.
+	
 	
 	% Filament repeller simulation tests. Noch Graphiken einmal einfügen. Die wichtigsten.
 	% Um herauszufinden, wie wichtig die Position des Filaments ist.
@@ -226,6 +225,67 @@
 			\label{fig:ExpSimRep}
 		\end{figure}
 	\end{comment}
+
+%----------------------------------------------------------------------------------------
+	\subsection{Shutter Performance Test \notes{finished}}
+	When measuring with the neutral gas channel, the aim is that the particles are measured directly without any interaction with the structure of the instrument. Therefore, a shutter between the antechamber and the ionization region was required to close the particle entrance from the antechamber. In this section the performance of the shutter was tested. According to the model stated in Chap.\ref{subsubsec:motorflow} the shutter should damp the signal by a factor 600.\\
+	These tests were performed with the NIM PFM. The PFM was operated with laboratory electronics. The tests were performed at the CASYMIR test facility. The used particle beam consisted of hydrogen and xenon with a velocity of 2\,\si{\kilo\meter\per\second}. Three different measurements were performed: One with the beam directing onto the antechamber with the shutter open, one with the shutter closed and a background measurement, where the particle beam was pointed onto the outer structure of NIM to estimate how much of the signal arises from the test gas scattering into the ionization region when the beam is directed in an arbitrary direction. This background was subtracted from both signals before they were divided through each other to determine the damping factor $G_{close}$ of the shutter.\\
+	The resulting damping factor of the shutter is 12 instead of the required 1000. The biggest impact has the actual thickness of the gap between the shutter and the antechamber when the shutter is closed. The damping reduces significantly when the gap is bigger than actually designed. This is shown in Fig.\,\ref{fig:ShutGapSizeSigDamp} in Chap.\,\ref{subsubsec:motorflow}. With a gap size of about 0.1\,mm instead of 0.01\,mm the damping factor is only about a factor 25. Other reasons are that the portion of the beam which scatters on the antechamber outer walls gets thermalized in the vacuum chamber and adds to the signal intensity. In the outer space, the gas scatters on the antechamber but does not reach the ionization region because it will flow around the instrument.
+	
+	\begin{comment}	
+	\begin{table}
+	\begin{center}
+	\begin{tabular}{|c|c|c|}
+	\hline
+	\multirow{2}{*}{Configuration} & \multicolumn{2}{c|}{Species Area [a.u.]} \\
+	\cline{2-3}
+	& \textsuperscript{129}Xe & \textsuperscript{132}Xe \\ \hline
+	Shutter open  & 36.97 ±0.07 & 36.7 ±0.06\\
+	Shutter close &	6.76 ±0.07 & 6.7 ±0.05\\
+	Background & 3.87 ±0.05 & 3.73 ±0.03 \\
+	\hline
+	\end{tabular}
+	\end{center}
+	\caption{The signal intensity is given for different shutter positions. It is proportional to the number of measured particles. The background was determined by shooting with the beam onto the outer structure of NIM.}
+	%		\label{tab:measShutMot}
+	\end{table}
+	% IsoArea [10^9]
+	
+	\begin{table}
+	\begin{center}
+	\begin{tabular}{|c|c|c|c|c|}
+	\hline
+	\multirow{2}{*}{Configuration} & \multicolumn{4}{c|}{Species Area [a.u.]} \\
+	\cline{2-5}
+	&N\textsubscript{2}& CO\textsubscript{2} & \textsuperscript{129}Xe & \textsuperscript{132}Xe \\ \hline
+	Shutter open & 18.36 ±0.07 & 10.76 ±0.06 & 36.97 ±0.07 & 36.7 ±0.06\\
+	Shutter close & 19.57 ±0.07 & 12.04 ±0.06 &	6.76 ±0.07 & 6.7 ±0.05\\
+	Background & 18.43 ±0.07 & 11 ±0.06 & 3.87 ±0.05 & 3.73 ±0.03 \\
+	\hline
+	\end{tabular}
+	\end{center}
+	\caption{The signal intensity is given for different shutter positions. It is proportional to the number of measured particles. The background was determined by shooting with the beam onto the outer structure of NIM. N\textsubscript{2} and CO\textsubscript{2} are part of the residual gas and Xe is the test gas in the neutral particle beam.}
+	%		\label{tab:measShutMot}
+	\end{table}
+	
+	\begin{table}
+	\begin{center}
+	\begin{tabular}{|c|c|c|c|c|c|c|c|c|}
+	\hline
+	\multirow{2}{*}{Configuration} & \multicolumn{4}{c|}{m/$\Delta$m}& \multicolumn{4}{c|}{SNR} \\
+	\cline{2-9}
+	&N\textsubscript{2}& CO\textsubscript{2} & \textsuperscript{129}Xe & \textsuperscript{132}Xe & N\textsubscript{2} & CO\textsubscript{2} &\textsuperscript{129}Xe&\textsuperscript{132}Xe\\ \hline
+	Shutter open & 307$\pm$25& 330$\pm$23 & 361$\pm$16& 373$\pm$17 & 550.8 & 309.9 & 735.7 & 740.2\\
+	Shutter close &307$\pm$25& 330$\pm$23 & 361$\pm$16& 365$\pm$16 & 540.3 & 315.4 & 120.8 & 121.6\\
+	Background &307$\pm$25& 330$\pm$23 & 353$\pm$15& 357$\pm$16 & 631.6 & 360.2 & 85.4 & 84\\
+	\hline
+	\end{tabular}
+	\end{center}
+	\caption{Mass resolution m/$\Delta$m and Signal-to-Noise Ratio for different shutter positions. N\textsubscript{2} and CO\textsubscript{2} are part of the residual gas and Xe is the test gas in the neutral particle beam.}
+	%	\label{tab:measShutMot}
+	\end{table}
+	
+	\end{comment}	
 
 %--------------------------------------------------------------------------------------------
 		\subsection{Pulser \notes{finished}}

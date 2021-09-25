@@ -1,4 +1,4 @@
-\begin{thebibliography}{24}
+\begin{thebibliography}{29}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -11,10 +11,25 @@ D.~Abplanalp.
   Research}.
 \newblock Universität Bern, 2009.
 
+\bibitem[Arblaster(2016)]{Arblaster2016}
+J.~W. Arblaster.
+\newblock {Selected electrical resistivity values for the platinum group of
+  metals Part II: Rhodium and Iridium:}.
+\newblock \emph{Johnson Matthey Technology Review}, 60\penalty0 (1):\penalty0
+  4--11, 2016.
+\newblock \doi{10.1595/205651316X691618}.
+
 \bibitem[Boutonnet and Varga(2017)]{SOC_Crema3p2}
 A.~Boutonnet and G.~Varga.
 \newblock \emph{JUICE- Jupiter Icy moons Explorer Consolidated Report on
   Mission Analysis (CReMA)}, esa document jui-esoc-moc-rp-001 edition, 04 2017.
+
+\bibitem[Burgess and Waltenberg(1914)]{Burgess1914}
+G.~K. Burgess and R.~G. Waltenberg.
+\newblock {The emissivity of metals and oxides, II: Measurements with the
+  micropyrometer}.
+\newblock \emph{Physical Review}, 4\penalty0 (6):\penalty0 546--547, 1914.
+\newblock \doi{10.1103/PhysRev.4.546}.
 
 \bibitem[Cardarelli(2008)]{MaterHandbookCardaelli}
 F.~Cardarelli.
@@ -40,6 +55,18 @@ R.~G. Fausch.
 \newblock \emph{Mass Spectrometry for In Situ Planetary Research}.
 \newblock Universität Bern, 2020.
 
+\bibitem[Fohn et~al.(2021)Fohn, Galli, Vorburger, Tulej, Lasi, Riedo, Fausch,
+  Althaus, Brungger, Fahrer, Gerber, Luthi, Munz, Oeschger, Piazza, and
+  Wurz]{Foehn2021}
+M.~Fohn, A.~Galli, A.~Vorburger, M.~Tulej, D.~Lasi, A.~Riedo, R.~G. Fausch,
+  M.~Althaus, S.~Brungger, P.~Fahrer, M.~Gerber, M.~Luthi, H.~P. Munz,
+  S.~Oeschger, D.~Piazza, and P.~Wurz.
+\newblock {Description of the Mass Spectrometer for the Jupiter Icy Moons
+  Explorer Mission}.
+\newblock \emph{IEEE Aerospace Conference Proceedings}, 2021-March, 2021.
+\newblock ISSN 1095323X.
+\newblock \doi{10.1109/AERO50100.2021.9438344}.
+
 \bibitem[Graf et~al.(2004)Graf, Altweg, Balsiger, Jäckel, Kopp, Langer,
   Luithardt, Westermann, and Wurz]{CASYMIR_Graf2004}
 S.~Graf, K.~Altweg, H.~Balsiger, A.~Jäckel, E.~Kopp, U.~Langer, W.~Luithardt,
@@ -64,6 +91,10 @@ A.~E. Hedin, C.~P. Avery, and C.~D. Tschetter.
   4637--4648, nov 1964.
 \newblock \doi{10.1029/jz069i021p04637}.
 \newblock URL \url{https://doi.org/10.1029%2Fjz069i021p04637}.
+
+\bibitem[Ho()]{Ho_1972}
+R.~W. L. P.~E. Ho, C. Y.~Powell.
+\newblock Thermal conductivity of the elements.
 
 \bibitem[Hofer(2015)]{Diss_Hofer}
 L.~Hofer.
@@ -161,6 +192,14 @@ A.~Vorburger and P.~Wurz.
 \newblock \doi{https://doi.org/10.1016/j.icarus.2018.03.022}.
 \newblock URL
   \url{https://www.sciencedirect.com/science/article/pii/S0019103517305377}.
+
+\bibitem[Vorburger et~al.(2015)Vorburger, Wurz, Lammer, Barabash, and
+  Mousis]{Vorburger2015}
+A.~Vorburger, P.~Wurz, H.~Lammer, S.~Barabash, and O.~Mousis.
+\newblock {Monte-Carlo simulation of Callisto's exosphere}.
+\newblock \emph{Icarus}, 262:\penalty0 14--29, 2015.
+\newblock ISSN 10902643.
+\newblock \doi{10.1016/j.icarus.2015.07.035}.
 
 \bibitem[{W{\"u}est} et~al.(2007){W{\"u}est}, {Evans}, and {von
   Steiger}]{DensEnhan_Wurz_07}
