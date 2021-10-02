@@ -4,7 +4,7 @@
 \usepackage{siunitx}            % correct presentation of numbers and units
 \usepackage{lmodern}            % other caracter type
 \renewcommand{\familydefault}{\sfdefault} % man kann neue Befehle so definieren
-\newcommand{\unit}[1]{\ensuremath{\, \mathrm{#1}}}
+%\newcommand{\unit}[1]{\ensuremath{\, \mathrm{#1}}}
 \newcommand{\degree}{\ensuremath{^\circ}}
 \usepackage{amssymb, amsmath, cancel, ulem, graphicx, float, tabularx, multirow, bm}
 \usepackage{braket}     % Für QT
@@ -12,6 +12,7 @@
 \usepackage{caption}
 \usepackage{subcaption}
 \usepackage{mathtools}
+\usepackage{tablestyles}
 \usepackage{enumitem}
 \usepackage{tikz}
 \usepackage{graphicx}
@@ -34,11 +35,16 @@
 \usepackage[noabbrev]{cleveref}
 \newcommand{\sectionbreak}{\clearpage} % jedes Kapitel auf separate Seite starten
 \renewcommand{\UrlFont}{\ttfamily\footnotesize} % font size url verkleinern
-\usepackage[font=scriptsize,labelfont=bf]{caption} % setzten der Schriftgrösse von caption
-\usepackage[font=scriptsize,labelfont=bf]{subcaption} % setzten der Schriftgrösse von subcaption
+
+\usepackage[font=normalsize,labelfont=bf]{caption} % setzten der Schriftgrösse von caption
+%\usepackage[font=scriptsize,labelfont=bf]{subcaption} % setzten der Schriftgrösse von subcaption
+
+\DeclareCaptionFont{normalsize}{\normalsize\fontfamily{ptm}}
+\captionsetup{textfont={normalsize}}
+
 \usepackage{textgreek}
 \usepackage{etoolbox}
-\AtBeginEnvironment{tabular}{\footnotesize} % scriptsize or tiny (ist dann aber suuuuuper klein ;))
+\AtBeginEnvironment{tabular}{\normalsize\fontfamily{ptm}\selectfont} % Setzt Schriftart auf Times NewRoman
 
 \setlength\parindent{0pt}
 \setlength{\parskip}{6pt}
@@ -56,11 +62,15 @@
 \lfoot{} \cfoot{\thepage}	% \thepage = page number at this position
 \renewcommand\headrulewidth{2pt}
 \renewcommand\footrulewidth{0.4pt}
+\newcommand{\notes}[1]{{\color{red}{#1}}}
+%\newcommand{\notes}[1]{} To delet all comments
 
+	
 
 \begin{document}
 \renewcommand{\arraystretch}{1.5} % Macht Abstand der einzelnen Zeilen in einer Tabelle grösser
 \fontfamily{ptm}\selectfont			% Setzt Schriftart auf Times NewRoman
+
 \begin{titlepage}
 	
 	\begin{flushright}
@@ -72,7 +82,7 @@
 		\Large Inauguraldissertation der Philosophisch-naturwissenschaftlichen Fakultät der Universität Bern\\[2cm]
 		\Large vorgelegt von\\[0.1cm]
 		\Large Martina Föhn\\[1cm]
-		\Large 2021\\[1.5cm]
+		\Large 2021\\[1.5cm] % Date of the Defence
 		\Large Leiter der Arbeit\\[0.1cm]
 		\Large Prof. Dr. Peter Wurz\\[1cm]
 		\Large Physikalisches Institut der Universität Bern\\
@@ -148,7 +158,6 @@
 	\null
 	\newpage
 	
-	% Zeiten, Grammatik
 	\pagenumbering{arabic}
 
 	\input{Introduction}
@@ -161,8 +170,8 @@
 	% Mass Analyser, mass spectrometer. Most important formulas. dm/m = dt/t...
 	% Requirements: Power, mass, mass resolution,...
 	\newpage
-	\input{Setup}
-	% NIM Instrument description overview. Startconfiguration. Testanlagen CASYMIR, SATANS
+	\input{Instrument}
+	% NIM Instrument description overview. Startconfiguration.
 	\clearpage
 	\newpage
 	\thispagestyle{empty}
@@ -187,6 +196,7 @@
 	My thanks go to:
 	
 	Prof. Dr. Peter Wurz for the opportunity to work on such a versatile experiment. The work was very instructive from the physical and the technical point of view. I also appreciated the educational discussions.
+	Enduring my shenanigans.
 	
 	Stefan Meyer who introduced me to the work with the ILENA test facility and who had always an open ear for my questions at the beginning of this thesis.
 		
