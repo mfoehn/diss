@@ -49,7 +49,8 @@
 		\frac{m}{dm} &= \frac{t}{2~dt} = \frac{\mu}{2\cdot FWHM}
 		\label{eq:massRes}
 	\end{align}
-	With $\mu$ the centre of the mass peak in the time domain and $FWHM$ is the full width at half maximum of the mass peak \cite{LecNot_Wurz2017}.\\
+	With $\mu$ the centre of the mass peak in the time domain and $FWHM$ is the full width at half maximum of the mass peak \cite{LecNot_Wurz2017}.
+	\\
 	
 	In the following section, the different contributions affecting the mass resolution are analysed. The focus is on the contributions originating from the ion source because they have the biggest impact on the mass resolution of the instrument.\\
 	The total time spread $dt_i$ of the signal of a particle species $i$ at the detector is:
@@ -57,13 +58,30 @@
 		dt_i = \sqrt{\sum_{k} dt_k^2} = \sqrt{dt_D^2 + dt_{ADC}^2 + dt_{th}^2 + dt_{s}^2 + dt_{tfall}^2} 
 	\end{equation}
 	With the different contributions $dt_k$. When an ion hits the detector, it generates a charge pulse with pulse width $dt_D$. For the NIM detector, the pulse width is $\sim$~0.7~ns. The generated pulse is converted into a digital signal with an analog-to-digital converter (ADC). The ADC used in the laboratory has a sampling rate of 4~GHz resulting in a time resolution $dt_{ADC}$ of 0.25~ns. The flight ADC has a maximal sampling rate of 2~GHz corresponding to a time resolution of 0.5~ns.\\
-	\begin{figure}[h] % space and velocity deviation.
-		\centering
-		\includegraphics[width= .9\textwidth]{Bilder/ISStartPosThermEn.png}
-		\caption{Flight path of ions with different thermal energy (top panel) and start positions (lower panel). $v_{init}$ is the initial velocity of the ions and $dt_{th}$ the turn-around time. $TF1$ and $TF2$ are the locations of the first and second time focus respectively.}
-		\label{fig:thISStartPosThermEn}
-	\end{figure}
-	\begin{figure}[h!]
+
+
+	The time spreads resulting from the thermal energy of the ions $dt_{th}$, from the different start positions of the ions within the ionisation region $dt_s$ and from the fall time of the high voltage pulse $dt_{tfall}$ are coupled because they all affect the energy deviation of the ions. Initially, the ions in the ion-source have thermal energy $W_{th}$:
+	\begin{equation}
+		W_{th} = \frac{3}{2}\cdot k_B \cdot T
+	\end{equation}
+	With $k_B$ the Boltzmann constant and $T$ the temperature. The thermal energy leads to an initial velocity distribution of the ions with a mean velocity of $v_{init}$ (Fig.\,\ref{fig:thISStartPosThermEn} top panel). Ions number 1 and 3 have the same thermal energy but one is directed towards the extraction grid where the other one is directed towards the backplane. When a high voltage pulse is applied on the extraction grid, ion number 3 has to be turned around. The time difference between ions 1 and 3 is called turn-around time. At a certain point in time, ion 3 will overtake ions with less energy (ion 2). The turn-around time cannot be corrected with the ion optics. The only option to reduce the turn-around time would be to cool the ions, which is not possible for a space instrument.\\
+	The total energy $W$ the ions get in the ionisation region is:
+	\begin{equation}
+		W = \int_{s_{init}}^{s_0} q\cdot E(t)\cdot ds
+		\label{eq:WionsISposEt}
+	\end{equation}
+
+	\begin{figure}[H] % space and velocity deviation.
+	\centering
+	\includegraphics[width= .9\textwidth]{Bilder/ISStartPosThermEn.png}
+	\caption{Flight path of ions with different thermal energy (top panel) and start positions (lower panel). $v_{init}$ is the initial velocity of the ions and $dt_{th}$ the turn-around time. $TF1$ and $TF2$ are the locations of the first and second time focus respectively.}
+	\label{fig:thISStartPosThermEn}
+\end{figure}
+
+	With $s_{init}$ the initial position of the ions, $s_0$ the distance from the centre of the ionisation region to the acceleration grid, $q$ the particle charge and $E(t)$ the electric field strength depending on the time $t$. When the ions start at different positions in the ionisation region $s_{init}$, they receive a different amount of energy because their flight distance in the acceleration field is different (Fig.\,\ref{fig:thISStartPosThermEn} lower panel). At a certain distance on the flight path, ions with higher energy will overtake ions with lower energy. The time deviation induced by the different start positions of the ions is $dt_{s}$. With a two-field ion source, like NIM, $dt_s$ can be minimized at the first time focusing point $TF1$. With an ion-mirror ions with an energy deviation up to 10\% are refocused. Ions with higher energy penetrate deeper into the ion-mirror resulting in a longer flight path of the higher energetic ions. The best position for the detector is when all ions with different energies are at the same position, which is at the time focus of the ion mirror $TF2$.\\
+	% This point is at around $2\cdot s_0$
+	
+	\begin{figure}[H]
 		\begin{subfigure}{0.5\textwidth}
 			\centering
 			\includegraphics[width=\textwidth]{Bilder/PulserShapeTheoAna.png}
@@ -85,19 +103,7 @@
 		\caption{Top panel: Electric field $E(s)$ an ion experiences, as a function of the distance between the centre of the ionisation region and the extraction grid $s_0$ for two hydrogen (H\textsubscript{1}) and oxygen (O\textsubscript{1}). $s_i(t_{fall})$ is the position of the corresponding species at the fall time $t_{fall}$. Lower panel: Energy $W(s)$ of the ions as a function of their position.}
 		\label{fig:PulsInt}
 	\end{figure}
-
-	The time spreads resulting from the thermal energy of the ions $dt_{th}$, from the different start positions of the ions within the ionisation region $dt_s$ and from the fall time of the high voltage pulse $dt_{tfall}$ are coupled because they all affect the energy deviation of the ions. Initially, the ions in the ion-source have thermal energy $W_{th}$:
-	\begin{equation}
-		W_{th} = \frac{3}{2}\cdot k_B \cdot T
-	\end{equation}
-	With $k_B$ the Boltzmann constant and $T$ the temperature. The thermal energy leads to an initial velocity distribution of the ions with a mean velocity of $v_{init}$ (Fig.\,\ref{fig:thISStartPosThermEn} top panel). Ions number 1 and 3 have the same thermal energy but one is directed towards the extraction grid where the other one is directed towards the backplane. When a high voltage pulse is applied on the extraction grid, ion number 3 has to be turned around. The time difference between ions 1 and 3 is called turn-around time. At a certain point in time, ion 3 will overtake ions with less energy (ion 2). The turn-around time cannot be corrected with the ion optics. The only option to reduce the turn-around time would be to cool the ions, which is not possible for a space instrument.\\
-	The total energy $W$ the ions get in the ionisation region is:
-	\begin{equation}
-		W = \int_{s_{init}}^{s_0} q\cdot E(t)\cdot ds
-		\label{eq:WionsISposEt}
-	\end{equation}
-	With $s_{init}$ the initial position of the ions, $s_0$ the distance from the centre of the ionisation region to the acceleration grid, $q$ the particle charge and $E(t)$ the electric field strength depending on the time $t$. When the ions start at different positions in the ionisation region $s_{init}$, they receive a different amount of energy because their flight distance in the acceleration field is different (Fig.\,\ref{fig:thISStartPosThermEn} lower panel). At a certain distance on the flight path, ions with higher energy will overtake ions with lower energy. The time deviation induced by the different start positions of the ions is $dt_{s}$. With a two-field ion source, like NIM, $dt_s$ can be minimized at the first time focusing point $TF1$. With an ion-mirror ions with an energy deviation up to 10\% are refocused. Ions with higher energy penetrate deeper into the ion-mirror resulting in a longer flight path of the higher energetic ions. The best position for the detector is when all ions with different energies are at the same position, which is at the time focus of the ion mirror $TF2$.\\
-	% This point is at around $2\cdot s_0$
+	
 	Ideally, the shape of the extraction pulse is a rectangle. Fig.\,\ref{subfig:theoPulseShape}) shows the shape of a realistic extraction pulse. The pulse needs the time $t_{fall}$ to build up the extraction potential on the extraction grid. Fig.\,\ref{fig:PulsInt}~top shows the changing electric field as a function of the position for atomic hydrogen (H\textsubscript{1}) and oxygen (O\textsubscript{1}) in case when these two species start at the same position. The total energy $W$ of the ions corresponds to the area under the curves. The energy as a function of the flight distance $s$ in the ionisation region and is plotted on the bottom panel of Fig.\,\ref{fig:PulsInt}. Hydrogen is lighter than oxygen and therefore, it leaves the ionisation region earlier. This results in a smaller amount of energy for hydrogen than for oxygen. The shorter the fall time of the high~voltage pulse is, the smaller is the energy difference because it shifts the position of the ions at the fall time $s_i(t_{fall})$ towards zero. When looking at the shape of the falling edge of the pulse (Fig.\,\ref{subfig.PulserFallTimeShapes}), it is more important to have a small fall time with an overshoot than a pulse slowly converging to the maximum because the resulting energy deviation in the first case is much smaller than in the second.\\
 	
 	In the following section the influence of the fall time of the high~voltage pulse $t_{fall}$ in combination with the longitudinal spacial spread $\Delta s$ of the ionisation region and the thermal energy of the ions on the mass resolution is analysed. To investigate the impact of these effects, this model does not include any focusing lenses and has no ion-mirror.\\
@@ -152,14 +158,15 @@
 	\begin{equation}
 		R = 1 - \frac{m_i/\Delta m_i}{m_{200}/\Delta m_{200}}
 	\end{equation}
-	The mass resolution reaches a plateau for high mass ions (see Fig.\,\ref{fig:Simtfall}~left). The deviation $R$ is a measure by what fraction the mass resolution of the low mass particles deviates from that plateau. The mass resolution of mass/charge ratio 200 was taken as a reference.\\
-	\begin{figure}[h] % Fall time plots
+	The mass resolution reaches a plateau for high mass ions (see Fig.\,\ref{fig:Simtfall}~left). The deviation $R$ is a measure by what fraction the mass resolution of the low mass particles deviates from that plateau. The mass resolution of mass/charge ratio 200 was taken as a reference.
+	\begin{figure}[H] % Fall time plots
 		\centering
 		\includegraphics[width=\textwidth]{Bilder/PulseSimMassRes_Norm.png}
 		\caption{Left: Calculated mass resolution as a function of the mass/charge ratio of the ions for three different fall times of the extraction pulse. Right: relative deviation of the mass resolution from the mass resolution plateau as a function of the mass/charge ratio.}
 		\label{fig:Simtfall}
 	\end{figure}
-	\begin{figure}[h!] % Lab WLE measurement
+	The calculations revealed that the impact of the ion temperature is negligible compared to the impact of the spacial spread $\Delta s$ and the pulse fall time $t_{fall}$. The impact of $t_{fall}$ is shown in Fig.\,\ref{fig:Simtfall} left. The position deviation is $\pm$~0.4~mm which corresponds to the diameter of the electron beam in the ionization region. With decreasing fall time, the deviation in mass resolution decreases. This is also visible in the right figure. An improvement in the fall time by one decade results in an improvement of 1~decade of the relative error. With a fall time of 1~ns, the maximum relative deviation is only 10\textsuperscript{-3}. The impact of the fall time is also visible in measurements. Fig.\,\ref{fig:LabWLE} shows measurements with two different pulse generators with fall times of 1.5~ns and 3.5~ns.
+	\begin{figure}[H] % Lab WLE measurement
 		\centering
 		\includegraphics[width=.8\textwidth]{Bilder/PulseLabWLEm480.png}
 		\caption{Measurement results of two different pulser generators with 1.5 ns and 3.5 ns fall time. Crosses are measurement points and solid lines are trend lines.}
@@ -171,7 +178,6 @@
 		\caption{Left: Calculated mass resolution as a function of the spacial spread $\Delta s$ for three different pulser fall times. Right: relative deviation of the mass resolution from the plateau as a function of the mass/charge ratio.}
 		\label{fig:SimtfallPos}
 	\end{figure}
-	The calculations revealed that the impact of the ion temperature is negligible compared to the impact of the spacial spread $\Delta s$ and the pulse fall time $t_{fall}$. The impact of $t_{fall}$ is shown in Fig.\,\ref{fig:Simtfall} left. The position deviation is $\pm$~0.4~mm which corresponds to the diameter of the electron beam in the ionization region. With decreasing fall time, the deviation in mass resolution decreases. This is also visible in the right figure. An improvement in the fall time by one decade results in an improvement of 1~decade of the relative error. With a fall time of 1~ns, the maximum relative deviation is only 10\textsuperscript{-3}. The impact of the fall time is also visible in measurements. Fig.\,\ref{fig:LabWLE} shows measurements with two different pulse generators with fall times of 1.5~ns and 3.5~ns.\\
 	Fig.\,\ref{fig:SimtfallPos}~left shows the mass resolution as a function of the position deviation $\Delta s$ for mass 1~u. The ionisation region has a diameter of 2~mm. Therefore the maximal deviation of the ions is 1~mm. With increasing $\Delta s$ the mass resolution drops very rapidly. Therefore it is very important to focus the ions in the centre of the ionisation region. The better the ions are focused, the better is the mass resolution. The relative deviation increases significantly for position deviations close to 1~mm because there, some ions already leave the source when the high voltage pulse is not fully applied.\\
 
 
@@ -370,19 +376,24 @@
 		a = y_0 + y_1\left(1-e^{-\frac{L/R}{t_1}}\right) + y_2\left(1-e^{-\frac{L/R}{t_2}}\right)
 		\label{eq:MolFloConFitFunc}
 	\end{equation}
-	The fit parameters are listed in Table~\ref{tab:thMolFloConFiPara}.
-	\begin{table}[h!]
+	
+	\begin{table}[H]
 		\begin{center}
-			\begin{tabular}{l r| l r }
+			\begin{tabular}{|l r| l r|}
+				\hline
 				$y_0$	& $0.998 \pm 0.001$ & $t_1$	& $7.4 \pm 0.3$	\\
 				$y_1$	& $-0.48 \pm 0.01$ & $t_2$	& $1.13 \pm 0.04$ \\
 				$y_2$ 	& $-0.45 \pm 0.01$	& &\\
+				\hline
 			\end{tabular}
 		\end{center}
 		\caption{Fit parameters of Eq.\,\eqref{eq:MolFloConFitFunc}.}
 		\label{tab:thMolFloConFiPara}
 	\end{table}
-	For the two gas entrance openings of the antechamber $a$ is 1 because they have a sharp edge and therefore the length of the opening is close to zero. The opening between the antechamber and the entrance has a length-to-diameter ratio of 8 resulting in a $a = 0.23$. The amount of gas flowing through this opening relative to the total outflow is:
+The fit parameters are listed in Table~\ref{tab:thMolFloConFiPara}.
+For the two gas entrance openings of the antechamber $a$ is 1 because they have a sharp edge and therefore the length of the opening is close to zero. 
+The opening between the antechamber and the entrance has a length-to-diameter ratio of 8 resulting in a $a = 0.23$. 
+The amount of gas flowing through this opening relative to the total outflow is:
 	\begin{align}
 		G_{open} & = \frac{C_{aIs}}{C_{aIs} + 2\cdot C_{aHi}} \label{eq:GAntOpen}\\
 		G_{open} & = \frac{\frac{r_{aIs}^2\cdot a\cdot \bar{v}}{4}}{\frac{r_{aIs}^2\cdot a\cdot \bar{v}}{4} + 2\frac{r_{aHi}^2\cdot \bar{v}}{4}}\\
@@ -405,16 +416,16 @@
 		\label{tab:thDensEnhan}
 	\end{table}
 
-	In the following section the different parameters of the density enhancement equation Eq.~\eqref{eq:thDensEnhan} were varied to determine their impact. For this analysis the particle density in the ionization region $n_{cs}$ was divided by the particle density of the test gas $n_a$ outside of the antechamber and $n_a$ was set 1 to get the amplification of the antechamber. For this analysis the parameters were set according to Table\,\ref{tab:thDensEnhan} unless otherwise mentioned. The temperatures are the ones used in the laboratory. The used particle velocity was 2.5~km/s because it is the velocity of the spacecraft in Ganymede orbit and therefore the velocity at which most of the measurements will be done.	The particle reflection coefficient $k$ of the inner coating of the antechamber was set 1 assuming an ideal coating reflecting all particles. The transmission probability $a$ of the hole connecting the antechamber with the ionization region, the radius of the antechamber entrance holes $r_{aHi}$, the radius of the hole connecting the antechamber with the ionization region $r_{aIs}$ and the angular position of the entrance holes $\theta_0$ are defined by the geometry of the antechamber. $\chi$ was set to 0\degree. The main gas inflow direction lies then between the two entrance holes. The used test gas was water with a unit mass of 18~u.\\
-	The first parameter that was varied was the gas temperature $T_a$. This temperature can be varied between 0 and 1000~K without significantly influencing the density enhancement of the antechamber (Fig.\,\ref{th:densEnhTaTs}). When looking closer, a slight increase in density enhancement is observed with increasing temperature.\\
-	\begin{figure}[h] % T_a T_s
+	In the following section the different parameters of the density enhancement equation Eq.~\eqref{eq:thDensEnhan} were varied to determine their impact. For this analysis the particle density in the ionization region $n_{cs}$ was divided by the particle density of the test gas $n_a$ outside of the antechamber and $n_a$ was set 1 to get the amplification of the antechamber. For this analysis the parameters were set according to Table\,\ref{tab:thDensEnhan} unless otherwise mentioned. The temperatures are the ones used in the laboratory. The used particle velocity was 2.5~km/s because it is the velocity of the spacecraft in Ganymede orbit and therefore the velocity at which most of the measurements will be done.	The particle reflection coefficient $k$ of the inner coating of the antechamber was set 1 assuming an ideal coating reflecting all particles. The transmission probability $a$ of the hole connecting the antechamber with the ionization region, the radius of the antechamber entrance holes $r_{aHi}$, the radius of the hole connecting the antechamber with the ionization region $r_{aIs}$ and the angular position of the entrance holes $\theta_0$ are defined by the geometry of the antechamber. $\chi$ was set to 0\degree. The main gas inflow direction lies then between the two entrance holes. The used test gas was water with a unit mass of 18~u.
+	\begin{figure}[H] % T_a T_s
 		\centering
 		\includegraphics[width= .7\textwidth]{Bilder/Ta_Ts.png}
 		\caption{Density enhancement $n_{cs}/n_a$ of the antechamber as a function of the ambient gas temperature $T_a$ and the temperature of the antechamber wall $T_s$ according to Eq.\eqref{eq:thDensEnhan}.}
 		\label{th:densEnhTaTs}
 	\end{figure}
+	The first parameter that was varied was the gas temperature $T_a$. This temperature can be varied between 0 and 1000~K without significantly influencing the density enhancement of the antechamber (Fig.\,\ref{th:densEnhTaTs}). When looking closer, a slight increase in density enhancement is observed with increasing temperature.\\
 	The temperature of the antechamber $T_s$ has a bigger impact on the density enhancement. Ideally this temperature should be as low as possible to slow down the particles when they hit the chamber inner walls (see also Eq.~\eqref{eq:thDensEnhan}). When the temperature of the antechamber is too low, the gas condenses at the antechamber walls. Therefore, the particle reflection coefficient of the $k$ will decrease with decreasing temperature depending on the particle species. For this calculation, this effect was ot taken into account. In flight, the antechamber is kept at temperatures higher than --17\,\si{\degreeCelsius} during measurements to avoid condensation on the antechamber walls.\\
-	\begin{figure}[h] % raHi raIs
+	\begin{figure}[H] % raHi raIs
 		\centering
 		\includegraphics[width= .7\textwidth]{Bilder/raHi_raIs.png}
 		\caption{Density enhancement $n_{cs}/n_a$ of the antechamber as a function of the entrance hole radius $r_{aHi}$ and the radius connecting the antechamber with the ionisation region $r_{aIs}$.}
@@ -434,8 +445,9 @@
 		\caption{Density enhancement $n_{cs}/n_a$ of the antechamber as a function of the particle mass $m$.}
 		\label{th:densEnhm}
 	\end{figure}
-	Fig.~\ref{th:densEnhm} shows the density enhancement of the antechamber as a function of the particles unit mass~[u]. The figure shows that higher mass species have a higher density enhancement factor than low mass species. Since the higher mass species are usually of low abundance in the icy moons exospheres \cite{Vorburger2015,Vorburger_2018}, this mass dependence of the density enhancement factor is very helpful.\\
-	\begin{figure}[h!] % velocity
+	Fig.~\ref{th:densEnhm} shows the density enhancement of the antechamber as a function of the particles unit mass~[u]. The figure shows that higher mass species have a higher density enhancement factor than low mass species. Since the higher mass species are usually of low abundance in the icy moons exospheres \cite{Vorburger2015,Vorburger_2018}, this mass dependence of the density enhancement factor is very helpful.
+
+	\begin{figure}[H] % velocity
 		\centering
 		\includegraphics[width= .7\textwidth]{Bilder/velocityV1.png}
 		\caption{Density enhancement $n_{cs}/n_a$ of the antechamber as a function of the spacecraft velocity $v_{sc}$ for different species expected in the icy moons exospheres.}
@@ -531,17 +543,19 @@
 		C_{hole} &= \frac{r_{aIs}^2\cdot\pi\cdot\bar{v}\cdot a_{hole}}{4}\\
 		C_{bot}  &= \frac{r_{aIs}^2\cdot\pi\cdot\bar{v}\cdot a_{bot}}{4}
 	\end{align}
-	\begin{table}[h]
+	\begin{table}[H]
 		\begin{center}
-			\begin{tabular}{l r| l r }
+			\begin{tabular}{|l r| l r| }
+				\hline
 				$a_{top}$	& 0.73 	& $h_{top}$		& 1.5\,mm	\\
 				$a_{gap}$	& 0.07 	& $h_{gap}$		& 0.01\,mm \\
 				$a_{hole}$ 	& 0.67 	& $h_{hole}$ 	& 2\,mm\\
 				$a_{bot}$ 	& 0.28 	& $h_{bot}$ 	& 12\,mm\\
 				$r_{aIs}$ 	& 2\,mm & $l_{gap}$ 	& 7\,mm\\
+				\hline
 			\end{tabular}
 		\end{center}
-		\caption{Nominal transmission probabilities $a_i$, tube heights $h_i$, tube radius $r_{aIs}$ and minimal gap length $l_{gap}$ when the shutter between the antechamber and the ionisation region is closed.}
+		\caption{Nominal transmission probabilities $a$, tube heights $h$, tube radius $r_{aIs}$ and minimal gap length $l_{gap}$ when the shutter between the antechamber and the ionisation region is closed.}
 		\label{tab:thMolFloConMotClosPara}
 	\end{table}
 	With $a_{top}$, $a_{gap}$, $a_{hole}$ and $a_{bot}$ the transmission probabilities of the different sections (Eq.\,\eqref{eq:MolFloConFitFunc}) and $h_{top}$, $h_{gap}$, $h_{hole}$ and $h_{bot}$ the height of the different sections. $r_{aIs}$ is the radius of the tube connecting the antechamber with the ionisation region and $l_{gap}$ is the minimal distance between the hole in the shutter and the tube connecting the antechamber with the ionisation region. The nominal values for these parameters are listed in Table\,\ref{tab:thMolFloConMotClosPara}. The average velocity $\bar{v}$ cancels out during the derivation of the geometry factor. The molecular flow conductance of the tube when the shutter is closed $C_{tot}$ is:
@@ -557,13 +571,13 @@
 		G_{close} = \frac{C_{tot}}{C_{tot} + 2\cdot C_{aHi}}
 	\end{equation}
 	The geometry factor for the tube when the shutter is open was calculated with Eq.\,\eqref{eq:geoOpenTube}.\\
-	\begin{figure}[h]
+	Fig.\,\ref{fig:ShutGapSizeSigDamp} shows the damping factor $G_{open}/G_{close}$ as a function of the gap size $h_{gap}$ of the gap between the shutter and antechamber. With increasing gap size, the damping factor reduces significantly. The requirement was to damp the signal from the antechamber by a factor 1000 when the shutter is closed. With the nominal gap size of 0.01\,mm, the shutter damps the signal by a factor 600, which is close enough to the requirement. When the gap size is about 0.1\,mm the damping factor is only about 25. This can happen when the shutter is not properly fabricated and the tolerances are therefore bigger than originally designed.\\
+		\begin{figure}[H]
 		\centering
 		\includegraphics[width=.8\textwidth]{Bilder/ShutGapSizeSigDamp.png}
 		\caption{Damping factor $G_{open}/G_{close}$ of the shutter as a function of the gap size $h_{gap}$ of the gap between the shutter and antechamber.}
 		\label{fig:ShutGapSizeSigDamp}
 	\end{figure}
-	Fig.\,\ref{fig:ShutGapSizeSigDamp} shows the damping factor $G_{open}/G_{close}$ as a function of the gap size $h_{gap}$ of the gap between the shutter and antechamber. With increasing gap size, the damping factor reduces significantly. The requirement was to damp the signal from the antechamber by a factor 1000 when the shutter is closed. With the nominal gap size of 0.01\,mm, the shutter damps the signal by a factor 600, which is close enough to the requirement. When the gap size is about 0.1\,mm the damping factor is only about 25. This can happen when the shutter is not properly fabricated and the tolerances are therefore bigger than originally designed.\\
 	When measuring with the open source channel, a small amount of gas will enter in addition the ion-source through the antechamber. The open source slit is in the y-/z-plane and therefore $\chi$ is 90° (Fig.~\ref{fig:thAntIs}). When the shutter is closed, about 0.05\% of the signal originates from the antechamber, assuming a damping factor of 600.
 	
 %-----------------------------------------------------------------------------------------		
@@ -650,7 +664,7 @@
 %-------------------------------------------------------------------------------------------------------------------------	
 	\subsubsection{Dead time}
 	In this chapter, the dead time $\tau$ of the MCPs used in the NIM detector is derived. The dead time is the time one single channel of the MCP needs to replenish 63\% of its charge. After 5$\tau$ the channel is fully recharged. When the ion count rate is too high, an ion will hit the channel during the time the channel is recharging. This results in a lower gain because the channel is not fully charged during the time of the event. Therefore, it is important to know the dead time to get an estimation of the upper limit of the count rate of the detector.\\
-	\begin{figure}[h]
+	\begin{figure}[H]
 		\centering
 		\includegraphics[width=.4\textwidth]{Bilder/MCP_hex.jpg}
 		\caption{MCP honeycomb structure \cite{Diss_Neuland}.}
