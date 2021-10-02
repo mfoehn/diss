@@ -8,11 +8,11 @@
 		\label{fig:NIMSketch}
 	\end{figure}
 	
-	\notes{Proofread} NIM is a time-of-flight mass spectrometer consisting of an ion-source, a mass analyser and a detector. Fig.~\ref{fig:NIMSketch} shows a schema of the NIM ion-optical system. Gaseous particles enter the ion-source either through a closed source antechamber where they get thermalized or directly through an entrance slit. When particles enter through the antechamber, the measuring mode is called thermal mode (th-mode). When neutral particles enter through the entrance slit, the mode is called neutral mode (n-mode) and when ions enter the slit, the mode is called ion mode (i-mode). The neutral particles are ionized by electron impact ionization. A filament is heated until it emits electrons. The electrons are accelerated up to an energy of about -70~eV. In the ionization region, the electrons knock out electrons from the neutral gas generating positive ions. The ions are then accelerated to an energy of about 250~eV by applying a high voltage pulse on the extraction grid. NIM has a two-field ion source meaning that with the ion-optical lenses the ions are additionally accelerated and focused to compensate when the ions have different initial energies. Light species fly faster through the spectrometer than heavier ones resulting in a separation of the species by their mass. An ion-mirror is used to increase the flight distance and to refocus ions of the same species with different energies. The ions are detected with a Multi-Channel-Plate (MCP) detector.\\
+	NIM is a time-of-flight mass spectrometer consisting of an ion-source, a mass analyser and a detector. Fig.~\ref{fig:NIMSketch} shows a schema of the NIM ion-optical system. Gaseous particles enter the ion-source either through a closed source antechamber where they get thermalized or directly through an entrance slit. When particles enter through the antechamber, the measuring mode is called thermal mode (th-mode). When neutral particles enter through the entrance slit, the mode is called neutral mode (n-mode) and when ions enter the slit, the mode is called ion mode (i-mode). The neutral particles are ionized by electron impact ionization. A filament is heated until it emits electrons. The electrons are accelerated up to an energy of about -70~eV. In the ionization region, the electrons knock out electrons from the neutral gas generating positive ions. The ions are then accelerated to an energy of about 250~eV by applying a high voltage pulse on the extraction grid. NIM has a two-field ion source meaning that with the ion-optical lenses the ions are additionally accelerated and focused to compensate when the ions have different initial energies. Light species fly faster through the spectrometer than heavier ones resulting in a separation of the species by their mass. An ion-mirror is used to increase the flight distance and to refocus ions of the same species with different energies. The ions are detected with a Multi-Channel-Plate (MCP) detector.\\
 	This chapter gives an overview from the theoretical perspective over the different subunits of the NIM ion-optical system.	Chap.~\ref{sec:Exp} shows test results of the different subunits and performance tests of the NIM Prototype, the NIM Proto~Flight~Model (PFM) and the Fligh~Spare (FS) models.
 	
 %---------------------------------------------------------------------------------------------------------------
-	\subsection{Mass Resolution}\label{chap:massRes}
+	\subsection{Mass Resolution \notes{Corrections completed}}\label{chap:massRes}
 	The generated ions in the ion-source are trapped in the centre by the potentials of the electrodes and the electron beam. The ions are extracted by a high voltage pulse applied onto the extraction grid. All ions are accelerated to the same energy $W$:
 	\begin{equation}
 		W = \int_{0}^{s_0}q E_s ds =  \frac{q U_0}{2}
@@ -177,7 +177,7 @@
 
 
 %------------------------------------------------------------------------------------------------------------------------
-	\subsection{Signal-to-Noise Ratio \notes{finished}} % Continue here
+	\subsection{Signal-to-Noise Ratio \notes{finished}}
 	The Signal-to-Noise Ratio (SNR) is defined as the ratio of the background corrected mass peak amplitude $I_{p}$ and the standard deviation of the base line $\sigma_{Base}$ \cite{Agilent_TechNote_SNR,Master_Meyer}: % Technical Note Agilent and Masterarbeit Stefan.
 	\begin{equation}
 		SNR = \frac{I_{p}}{\sigma_{Base}}
@@ -186,13 +186,9 @@
 	The number of detected ions is proportional to the area under the detected mass peak. Therefore, a better focusing of the ions leads to a higher and narrower signal peak resulting in a better mass resolution and signal-to-noise ratio. This is a special feature of time-of-flight mass spectrometers. For magnetic sector instruments, the mass resolution is improved by limiting the phase space leading to a loss in signal intensity and therefore a worse signal-to-noise ratio. The noise in the spectrum originates from different sources such as from the electronics operating the instrument. Noise with a fixed frequency is subtracted later from the signal. The random noise induced by high energetic particles from Jupiter's harsh radiation field is damped by shielding the detector with a tungsten copper shield \cite{Foehn2021}. In addition, NIM has a special designed ion-storage source to store the produced ions during the time when no extraction pulse is applied at the ion extraction grid (Chap.~\ref{chap:IonStor}). Ions which are produced and not stored in the ionization region are lost and also contribute to the random noise of the measured signal \cite{Diss_Abplanalp}. 
 
 
-%----------------------------------------------------------------------------------------------------------------------
+%-----------------------------------------------------------------------------------------------------------
 	\subsection{Filament \notes{Draft}}
-		% Describe here the requirements for the filament (operation time, enhanced coating, longer wires (Ref. to Pic) vib test, conditioning). Give only a short summary with reference to Rico's diss because there the longe term test is explained in detail. Only summarize here the key points relevant for NIM.
-		% Followed by the power estimation accoring to a very rough estimations and the plot with the EM and flight board showing that the boards are almost able to provide the needed power.
-		
-		% Mention expected minimal lifetime for the filaments for the mission.
-		NIM uses special designed Y\textsubscript{2}O\textsubscript{3} filaments provided by \textit{Kimball Physics, Wilton, USA} which have an enhanced coating Y\textsubscript{2}O\textsubscript{3} to enhance the filament lifetime to 10'000~h of operation time. In addition, they have longer filament wires to reduce the power loss by thermal conductivity (Fig.~\ref{fig:Y2O3Fil}). The longer wires make the filament more delicate in terms of mechanical stress. Therefore, a vibration and shock test was done which showed no anomalies in terms of performance between the normal Y\textsubscript{2}O\textsubscript{3} and the special designed Y\textsubscript{2}O\textsubscript{3} filaments \cite{Diss_Fausch}. In the following section a power estimation is done and a characterisation of the NIM PFM and FS filament controller boards.
+		NIM uses special designed Y\textsubscript{2}O\textsubscript{3} filaments provided by \textit{Kimball Physics, Wilton, USA} to ionise neutral particles entering the ionisation region. These filaments have an enhanced coating Y\textsubscript{2}O\textsubscript{3} to enhance the filament lifetime to 10'000~h of operation time. In addition, they have longer filament wires to reduce the power loss by thermal conductivity (Fig.~\ref{fig:Y2O3Fil}). The longer wires make the filament more delicate in terms of mechanical stress. Therefore, a vibration and shock test were done which showed no anomalies in terms of performance between the normal Y\textsubscript{2}O\textsubscript{3} and the special designed Y\textsubscript{2}O\textsubscript{3}e filaments \cite{Diss_Fausch}. In the following sections a power estimation of these filaments is done and also a characterisation of the NIM PFM and FS filament controller boards which provide the power for the filaments in the NIM PFM and FS instruments.
 		\begin{figure}[h]
 			\centering
 			\includegraphics[width=.5\textwidth]{Bilder/Y2O3_filament.png}
@@ -200,16 +196,16 @@
 			\label{fig:Y2O3Fil}
 		\end{figure}
 		
-%---------------------------------------------------------------------------------------------------------------------------
-		\subsubsection{Power Calculation \notes{Proofread}}
-		In this chapter, the power of the Y\textsubscript{2}O\textsubscript{3}e filaments (Fig.~\ref{fig:Y2O3Fil}) used in the NIM instrument is estimated and compared with the power consumption of the standard filaments Y\textsubscript{2}O\textsubscript{3} filaments.\\
-		%The filament wires consists of a tungsten rhenium alloy (W3Re) with a tantalum (Ta) disc coated with Yttrium oxide (Y\textsubscript{2}O\textsubscript{3}) as electron emitting material (Fig.~\ref{fig:Y2O3Fil}).
-		The Y\textsubscript{2}O\textsubscript{3} is heated up until it emits electrons. The required temperature depends on the emission current. The Richardson law gives the emission current density $j$ for a material as a function of the temperature $T_d$:
+
+		\subsubsection{Power Calculation \notes{finished}}
+		In this chapter, the power of the Y\textsubscript{2}O\textsubscript{3}e filaments (Fig.~\ref{fig:Y2O3Fil}) used in the NIM instrument is estimated and compared with the power consumption of the standard filaments Y\textsubscript{2}O\textsubscript{3} filaments.
+		% The filament wires consists of a tungsten rhenium alloy (W3Re) with a tantalum (Ta) disc coated with Yttrium oxide (Y\textsubscript{2}O\textsubscript{3}) as electron emitting material (Fig.~\ref{fig:Y2O3Fil}).
+		The Y\textsubscript{2}O\textsubscript{3} is heated up by the heated current $I_{heat}$ until it emits electrons. The required temperature depends on the desired emission current $I_{em}$. The Richardson law gives the emission current density $j$ for a material as a function of the temperature $T_d$:
 		\begin{equation}
 			j = A_GT_d^2e^{-\frac{W}{k_bT_d}}
 			\label{eq:Richardson}
 		\end{equation} % May further explain the Richardson constant. During proofreading.
-		With $A_G$ the Richardson constant which is for Y\textsubscript{2}O\textsubscript{3} 10\textsuperscript{4}~\si{\ampere\per\square\meter\per\square\kelvin} \cite{MaterHandbookCardaelli}. $W$ is the work function of Y\textsubscript{2}O\textsubscript{3} which is 2.4~eV~\cite{MaterHandbookCardaelli} and $k_B$ the Boltzmann constant. The emission current $I_{em}$ is the current density multiplied by the area $A_{d}$ of the filament disk:
+		With $A_G$ the Richardson constant which is for Y\textsubscript{2}O\textsubscript{3} 10\textsuperscript{4}~\si{\ampere\per\square\meter\per\square\kelvin} \cite{MaterHandbookCardaelli}, $W$ is the work function of Y\textsubscript{2}O\textsubscript{3} which is 2.4~eV \cite{MaterHandbookCardaelli} and $k_B$ the Boltzmann constant. The emission current $I_{em}$ is the current density multiplied by the area $A_{d}$ of the filament disk:
 		\begin{equation}
 			I_{em} = j\cdot A_{d}
 		\end{equation}
@@ -217,28 +213,26 @@
 		\begin{equation}
 			P_{R} = P_{cond} + P_{rad}
 		\end{equation}
-		The power lost through conductivity is:
+		The power lost through thermal conductivity is:
 		\begin{equation}
 			P_{cond} = 2\cdot A_{w}k\frac{dT}{l_{w}}
 		\end{equation}
-		With $A_{w}$ the wire cross section, $k$ the thermal conductivity (150~W/Km for W3Re \cite{thermcondTungst} and 150~W/Km for Ir \cite{Ho_1972}). $dT$ is the temperature difference between the disk and the filament base and $l_{w}$ the wire length. The factor 2 is because there are two legs connecting the disk with the base.\\ % Only further explanation of the choos of k if someone asks (Average between the base and filament disk was taken.)
+		With $A_{w}$ the wire cross section, $k$ the thermal conductivity (150~W/Km for W3Re \cite{thermcondTungst} and 150~W/Km for Ir \cite{Ho_1972}). $dT$ is the temperature difference between the disk and the filament base and $l_{w}$ the wire length. The factor 2 is because there are two legs connecting the disk with the base. % Only further explanation of the choose of k if someone asks (Average between the base and filament disk was taken.)
 		The power lost through thermal radiation $P_{rad}$ is the sum of the power lost by the wire $P_{wire}$ and by the disk $P_{disk}$:
 		\begin{align}
 			P_{rad} =& P_{wire} + P_{disk}\\
 					=& 2\sigma\cdot\epsilon_{w}\cdot A_w T_w^4 + \sigma\cdot\epsilon_{df}\cdot A_d T_d^4 + \sigma\cdot\epsilon_{db}\cdot A_d T_d^4
 		\end{align}
-		With $\sigma$ the Stefan-Boltzmann constant, $\epsilon_{w}$ the emissivity of the wire material (0.2 for W3Re \cite{thermcondTungst} and 0.3 for Ir \cite{Burgess1914}), $\epsilon_{df}$ the emissivity of the coating (0.5 for Y\textsubscript{2}O\textsubscript{3} \cite{ThermEmiss_Y2O3}), $\epsilon_{db}$ the emissivity of the disk material (0.325 for Ta \cite{ThermalEmiss_Ta} and 0.3 for Ir \cite{Burgess1914}) and $T_w$ the temperature of the wire. The thermal emission depends strong on the temperature. To estimate the radiation power of the wire, the temperature profile was a assumed to be linear resulting in:
-
+		With $\sigma$ the Stefan-Boltzmann constant, $\epsilon_{w}$ the emissivity of the wire material (0.2 for W3Re \cite{thermcondTungst} and 0.3 for Ir \cite{Burgess1914}), $\epsilon_{df}$ the emissivity of the coating (0.5 for Y\textsubscript{2}O\textsubscript{3} \cite{ThermEmiss_Y2O3}), $\epsilon_{db}$ the emissivity of the disk material (0.325 for Ta \cite{ThermalEmiss_Ta} and 0.3 for Ir \cite{Burgess1914}) and $T_w$ the temperature of the wire. The thermal emission depends strong on the temperature. To estimate the radiation power of the wire, the temperature profile was assumed to be linear resulting in:
 		\begin{equation}
 			P_{wire} = 2\sigma\cdot\epsilon_{w}\cdot2r\pi\int_{0}^{l_w} \left(\frac{dT}{l_w} + T_{base}\right)^4\cdot dl
 		\end{equation}
-		With $r$ the wire radius and $T_{Base}$ the temperature of the filament base.% Power calculation with the resistivity and then the final comparison.
-		The power generated by ohmic losses $P_R$ is:
+		With $r$ the wire radius and $T_{Base}$ the temperature of the filament base. The power generated by ohmic losses $P_R$ is:
 		\begin{align}
-			P_R = RI^2&\\
-				= \rho\frac{l_w}{A_w}\cdot I^2&
+			P_R = RI_{heat}^2&\\
+				= \rho\frac{l_w}{A_w}\cdot I_{heat}^2&
 		\end{align}
-		With $\rho$ the electric resistivity of the wire (0.45~\si{\micro\ohm\meter} for W3Re \cite{thermResistTungst} and 45~\si{\micro\ohm\meter} for Ir \cite{Arblaster2016}). The resulting power matches the values measured in the laboratory with a deviation of about 10\% which is good enough for this rough estimation. The Y\textsubscript{2}O\textsubscript{3}e filaments consume about 40\% less power than the standard Y\textsubscript{2}O\textsubscript{3} filaments. The biggest loss in power is through thermal conductivity which makes about 70-80\% of the whole power loss for the two filament types.
+		With $\rho$ the electric resistivity of the wire (0.45~\si{\micro\ohm\meter} for W3Re \cite{thermResistTungst} and 0.45~\si{\micro\ohm\meter} for Ir \cite{Arblaster2016}). The resulting power matches the values measured in the laboratory with a deviation of about 10\% which is good enough for this rough estimation. The Y\textsubscript{2}O\textsubscript{3}e filaments consume about 40\% less power than the standard Y\textsubscript{2}O\textsubscript{3} filaments. The biggest loss in power is through thermal conductivity which makes about 70-80\% of the whole power loss for the two filament types.
 		
 		% Pcond		New = 0.62 W;	Old = 1.12 W;
 		% PWire		New = 0.13 W;	Old = 0.09 W;
@@ -251,25 +245,24 @@
 		\begin{figure}[h]
 			\centering
 			\includegraphics[width=.7\textwidth]{Bilder/Fil_SampGraph.png}
-			\caption{Electrical characteristics of a sample filament and the load line of an electronic board (black). The red line show different power levels.}
+			\caption{Electrical characteristics of a sample filament (blue) and the load line of an electronic board (black). The red lines show different power levels.}
 			\label{fig:FilSampGraph}
 		\end{figure}
 		\begin{figure}[h]
 			\centering
 			\includegraphics[width=\textwidth]{Bilder/Filament_RicosGraph.png}
-			\caption{Electrical characteristics of selected Y\textsubscript{2}O\textsubscript{3} filaments and the PFM and FS controller boards showing the maximal I-V capabilities of the two power supplies at nominal supply voltage of 12.0~V and reduced supply voltage of 11.4~V. The red hyperbolas in the background show the power levels \cite{Diss_Fausch}.}
+			\caption{Electrical characteristics of selected Y\textsubscript{2}O\textsubscript{3}e filaments and the NIM PFM and FS controller boards showing the maximal I-V capabilities of the two power supplies at nominal supply voltage of 12.0~V and reduced supply voltage of 11.4~V. The red hyperbolas in the background show the power levels (adapted from \cite{Diss_Fausch}).}
 			\label{fig:FilRico}
 		\end{figure}
-				
-		\subsubsection{Flight Filament Controller Board Characterisation}
-		% In this chapter the performance of the PFM and FS filament controller boards is discussed. First we discuss a theoretical curve and later on we show the performance of the PFM and FS board with different filaments.\\
-		Fig.~\ref{fig:FilSampGraph} shows the electrical characteristics of a theoretical filament (blue) and the load line of a filament controller board (black). The intersection of the load line with the x-axis corresponds to the maximal current the filament controller can supply and the intersection with the y-axis corresponds to the maximal voltage. Every point below the load line can be reached by the controller board. The red curves show the lines of constant power. Depending on the desired emission current, the filament disk has to be heated to a certain temperature (Eq.~\eqref{eq:Richardson}). The higher the temperature is the higher is the power consumption of the filament due to power losses through thermal conductivity and thermal radiation. Therefore, a higher emission current requires higher power. The crosses mark the intersections of the filament with the power lines and give the required settings.\\
-		Fig.~\ref{fig:FilRico} shows the electrical characteristics of the NIM PFM (black) and FS (grey) controller boards once for nominal supply voltage of 12.0~V and once for the minimal supply voltage of 11.4~V from the spacecraft. The blue line shows the theoretical behaviour of the Y\textsubscript{2}O\textsubscript{3} filament. At the current state, long term tests with filaments at different emission currents are running to verify their operation time of 10'000~h. The filaments displayed in this graphic are the once with the worst electrical characteristics from each batch. Filament 525-2343B had a target emission current of 50~\si{\micro\ampere} and filament 525-2338B a target emission current of 300~\si{\micro\ampere}. For a bad filament such as 525-2338B the flight controller boards could not provide the required power. If the target emission is 50~\si{\micro\ampere} the two boards can provide the power even after 2300~h of operation time. The difference in performance between the theoretical curve and the filaments in our test set is that for the theoretical curve the extraction fields were applied to optimize the emission current with the lowest power possible. The test setup for the long term test is a replicate of the electron extraction region of NIM. The applied voltages are set to focus the electron beam in NIM's ionisation region. Therefore, the filament is more stressed than in a setup which is optimized to extract the electrons from the filament \cite{Diss_Fausch}.
 		
-
-
+		\subsubsection{Flight Filament Controller Boards Characterisation}
+		In this chapter the electrical characteristics of the NIM PFM and FS controller boards used to power the electron emitting filaments in the NIM instrument is discussed.\\
+		Fig.~\ref{fig:FilSampGraph} shows the electrical characteristics of the load line of a sample filament controller board (black) and a theoretical filament (blue). The intersection of the load line with the x-axis corresponds to the maximal current the filament controller board can provide and the intersection with the y-axis corresponds to the maximal voltage. Every point below the load line can be reached by the controller board. The red curves show the lines of constant power. Depending on the desired emission current, the filament disk has to be heated to a certain temperature (Eq.~\eqref{eq:Richardson}). The higher the temperature is, the higher is the power consumption of the filament due to power losses through thermal conductivity and thermal radiation.	Therefore, a higher emission current requires higher power. The current and voltage settings for a given emission current are the intersection of the filament line with the corresponding power line. For two emission currents, these points are marked as black crosses as an example.\\
+		Fig.~\ref{fig:FilRico} shows the electrical characteristics of the NIM PFM (black) and FS (grey) controller boards once for nominal supply voltage of 12.0~V and once for the minimal supply voltage of 11.4~V from the spacecraft. The blue line shows the nominal behaviour of a Y\textsubscript{2}O\textsubscript{3}e filament. At the current state, long term tests with filaments at different emission currents are running to verify their operation time of 10'000~h. The filaments displayed in this graphic are the once with the worst electrical characteristics from each batch. Filament 525-2343B has a target emission current of 50~\si{\micro\ampere} and filament 525-2338B has a target emission current of 300~\si{\micro\ampere}. For a bad filament such as 525-2338B the flight controller boards could not provide the required power. If the target emission is 50~\si{\micro\ampere} the two boards can provide the power even after 2300~h of operation time. The difference in performance between the nominal filament and the filaments used in our tests originates from the different test setups in which the filaments were tested. The extraction fields in the test setup of the nominal filament were set to optimize electron emission to minimize power consumption. This is not a realistic case for a flight instrument where the extraction fields also have to focus the electron beam in the ionization region. Therefore, the test setup for the long term tests was built as a replicate of NIM's electron extraction region. The applied extraction voltages are set to nominal values used during filament operation. Therefore, the filaments are more stressed than in a setup which is optimized to extract the electrons from the filament disk \cite{Diss_Fausch}.
+		
+		
 %------------------------------------------------------------------------------------------------------	
-	\subsection{Ion Storage \notes{finished}}\label{chap:IonStor}
+	\subsection{Ion Storage \notes{Corrections completed}}\label{chap:IonStor}
 	Ion storage of positive ions in the ionisation region is mainly achieved by the negative space charge potential of the electron beam. Together with the other focusing electrodes in the ionization region, a 3D trapping field is generated to store the ions during the time when no high-voltage pulse is applied on the extraction grid ($IS5$ in Fig.~\ref{fig:ISZoom}). Ion storage is important because of the duty cycle of TOF instruments with pulsed extraction, where every ion generated outside the extraction pulse is lost in case it is not stored. NIM has a nominal duty cycle of 10~kHz and the pulse duration of the extraction pulse is 1-2~$\mu$s. In the remaining 98~$\mu$s per cycle ions are produced which have to be stored in the source between two extraction pulses. Lost ions add to the random noise level. In the following section, the potential in the centre of the electron beam is calculated. The electron emission current $I_{e}$ is:
 	\begin{equation}
 		I_{e} = n_e q_0 v\pi R_e^2
@@ -377,7 +370,7 @@
 		a = y_0 + y_1\left(1-e^{-\frac{L/R}{t_1}}\right) + y_2\left(1-e^{-\frac{L/R}{t_2}}\right)
 		\label{eq:MolFloConFitFunc}
 	\end{equation}
-	The fit parameters are listed in Table\,\ref{tab:thMolFloConFiPara}.
+	The fit parameters are listed in Table~\ref{tab:thMolFloConFiPara}.
 	\begin{table}[h!]
 		\begin{center}
 			\begin{tabular}{l r| l r }
@@ -414,49 +407,49 @@
 
 	In the following section the different parameters of the density enhancement equation Eq.~\eqref{eq:thDensEnhan} were varied to determine their impact. For this analysis the particle density in the ionization region $n_{cs}$ was divided by the particle density of the test gas $n_a$ outside of the antechamber and $n_a$ was set 1 to get the amplification of the antechamber. For this analysis the parameters were set according to Table\,\ref{tab:thDensEnhan} unless otherwise mentioned. The temperatures are the ones used in the laboratory. The used particle velocity was 2.5~km/s because it is the velocity of the spacecraft in Ganymede orbit and therefore the velocity at which most of the measurements will be done.	The particle reflection coefficient $k$ of the inner coating of the antechamber was set 1 assuming an ideal coating reflecting all particles. The transmission probability $a$ of the hole connecting the antechamber with the ionization region, the radius of the antechamber entrance holes $r_{aHi}$, the radius of the hole connecting the antechamber with the ionization region $r_{aIs}$ and the angular position of the entrance holes $\theta_0$ are defined by the geometry of the antechamber. $\chi$ was set to 0\degree. The main gas inflow direction lies then between the two entrance holes. The used test gas was water with a unit mass of 18~u.\\
 	The first parameter that was varied was the gas temperature $T_a$. This temperature can be varied between 0 and 1000~K without significantly influencing the density enhancement of the antechamber (Fig.\,\ref{th:densEnhTaTs}). When looking closer, a slight increase in density enhancement is observed with increasing temperature.\\
-	The temperature of the antechamber $T_s$ has a bigger impact on the density enhancement. Ideally this temperature should be as low as possible to slow down the particles when they hit the chamber inner walls (see also Eq.~\eqref{eq:thDensEnhan}). When the temperature of the antechamber is too low, the gas condenses at the antechamber walls. Therefore, the particle reflection coefficient of the $k$ will decrease with decreasing temperature depending on the particle species. For this calculation, this effect was ot taken into account. In flight, the antechamber is kept at temperatures higher than --17\,\si{\degreeCelsius} during measurements to avoid condensation on the antechamber walls.
-	\begin{figure}[h!] % T_a T_s
+	\begin{figure}[h] % T_a T_s
 		\centering
 		\includegraphics[width= .7\textwidth]{Bilder/Ta_Ts.png}
 		\caption{Density enhancement $n_{cs}/n_a$ of the antechamber as a function of the ambient gas temperature $T_a$ and the temperature of the antechamber wall $T_s$ according to Eq.\eqref{eq:thDensEnhan}.}
 		\label{th:densEnhTaTs}
 	\end{figure}
-	The radius $r_{aIs}$ of the hole connecting the antechamber with the ionisation region has to be as big as possible. A bigger radius leads to a smaller length-to-diameter ratio resulting in a bigger transition probability $a$. The amount of gas flowing into the ionisation region increases (Fig.\,\ref{th:densEnhraHiraIs}).\\
-	According to Eq.\,\eqref{eq:thDensEnhan}, the radius of the entrance holes $r_{aHi}$ should be small to reach a high gain. When the entrance holes are big, a big amount of gas flows out through them. From that perspective, the biggest gain is achieved when the radius of the entrance hole is close to zero. Eq.\,\eqref{eq:thDensEnhan} does not take into account that at a certain opening radius is needed to allow particles to enter the antechamber for being amplified.\\
-	\begin{figure}[h!] % raHi raIs
+	The temperature of the antechamber $T_s$ has a bigger impact on the density enhancement. Ideally this temperature should be as low as possible to slow down the particles when they hit the chamber inner walls (see also Eq.~\eqref{eq:thDensEnhan}). When the temperature of the antechamber is too low, the gas condenses at the antechamber walls. Therefore, the particle reflection coefficient of the $k$ will decrease with decreasing temperature depending on the particle species. For this calculation, this effect was ot taken into account. In flight, the antechamber is kept at temperatures higher than --17\,\si{\degreeCelsius} during measurements to avoid condensation on the antechamber walls.\\
+	\begin{figure}[h] % raHi raIs
 		\centering
 		\includegraphics[width= .7\textwidth]{Bilder/raHi_raIs.png}
 		\caption{Density enhancement $n_{cs}/n_a$ of the antechamber as a function of the entrance hole radius $r_{aHi}$ and the radius connecting the antechamber with the ionisation region $r_{aIs}$.}
 		\label{th:densEnhraHiraIs}
 	\end{figure}
-	It is very important to take materials with a high particle reflection coefficient $k$ for the coating of the antechamber's inner surface. The particle reflection coefficient gives the probability of a particle being re-emitted when hitting the surface thus this value has to be close to 1. NIM has a gold coated antechamber because gold it is electrically conductive preventing the surface from charging in the strong radiation field of Jupiter. In addition, gold is chemically inert and therefore, there is a low probability of building chemical bonds with the test gas. Fig.\,\ref{th:densEnhk} shows the density enhancement of the antechamber as a function of $k$. Already a change of 1\textperthousand~ has a huge impact. The impact of $k$ also depends on $\omega$. A small $\omega$ implies a big surface area with which the particles interact before being detected. The bigger the number of interactions is, the bigger is the influence of $k$. The $\omega$ of NIM's antechamber is about 5.06°, which is very small and therefore a small change in $k$ has a big impact on the density enhancement.\\
-	\begin{figure}[h!] % k
+	The radius $r_{aIs}$ of the hole connecting the antechamber with the ionisation region has to be as big as possible. A bigger radius leads to a smaller length-to-diameter ratio resulting in a bigger transition probability $a$. The amount of gas flowing into the ionisation region increases (Fig.\,\ref{th:densEnhraHiraIs}). According to Eq.\,\eqref{eq:thDensEnhan}, the radius of the entrance holes $r_{aHi}$ should be small to reach a high gain. When the entrance holes are big, a big amount of gas flows out through them. From that perspective, the biggest gain is achieved when the radius of the entrance hole is close to zero. Eq.\,\eqref{eq:thDensEnhan} does not take into account that at a certain opening radius is needed to allow particles to enter the antechamber for being amplified.\\
+	\begin{figure}[h] % k
 		\centering
 		\includegraphics[width= .7\textwidth]{Bilder/k.png}
 		\caption{Density enhancement $n_{cs}/n_a$ of the antechamber as a function of the particle reflection coefficient $k$.}
 		\label{th:densEnhk}
 	\end{figure}
-	Fig.~\ref{th:densEnhm} shows the density enhancement of the antechamber as a function of the particles unit mass\,[u]. The figure shows that higher mass species have a higher density enhancement factor than low mass species. Since the higher mass species are usually of low abundance in the icy moons exospheres \cite{Vorburger2015,Vorburger_2018}, this mass dependence of the density enhancement factor is very helpful.\\
+	It is very important to take materials with a high particle reflection coefficient $k$ for the coating of the antechamber's inner surface. The particle reflection coefficient gives the probability of a particle being re-emitted when hitting the surface thus this value has to be close to 1. NIM has a gold coated antechamber because gold it is electrically conductive preventing the surface from charging in the strong radiation field of Jupiter. In addition, gold is chemically inert and therefore, there is a low probability of building chemical bonds with the test gas. Fig.\,\ref{th:densEnhk} shows the density enhancement of the antechamber as a function of $k$. Already a change of 1\textperthousand~ has a huge impact. The impact of $k$ also depends on $\omega$. A small $\omega$ implies a big surface area with which the particles interact before being detected. The bigger the number of interactions is, the bigger is the influence of $k$. The $\omega$ of NIM's antechamber is about 5.06°, which is very small and therefore a small change in $k$ has a big impact on the density enhancement.\\
 	\begin{figure}[h!] % mass
 		\centering
 		\includegraphics[width= .7\textwidth]{Bilder/mV1.png}
 		\caption{Density enhancement $n_{cs}/n_a$ of the antechamber as a function of the particle mass $m$.}
 		\label{th:densEnhm}
 	\end{figure}
-	Fig.\,\ref{th:densEnhvelo} shows the density enhancement of the antechamber as a function of the spacecraft velocity for different species. We expect H\textsubscript{2}O and different radiolysis products such as H\textsubscript{2}, O\textsubscript{2} or HO in the icy moons' exosphere. Absorption lines in the near infrared recorded by the Near Infrared Mapping Spectrometer (NIMS) on board of the Galileo spacecraft indicate CO\textsubscript{2} bond to other solid materials in the soil. Sulphur is ejected by the Galilean moon Io and is therefore part of the Jupiter's plasma torus. The sulphur compounds are a result of the ion bombardment on the icy moons' surface. Sulphur reacts with water resulting in various different compounds such as sulphur dioxide (SO\textsubscript{2}) or sulphuric acid (H\textsubscript{2}SO\textsubscript{4}) \cite{Collins_2014}. Fig.\,\ref{th:densEnhvelo} shows that with increasing flyby velocity, the particles get more amplified. Heavier species are stronger amplified than light ones as it was already shown in Fig.\,\ref{th:densEnhm}.\\
+	Fig.~\ref{th:densEnhm} shows the density enhancement of the antechamber as a function of the particles unit mass~[u]. The figure shows that higher mass species have a higher density enhancement factor than low mass species. Since the higher mass species are usually of low abundance in the icy moons exospheres \cite{Vorburger2015,Vorburger_2018}, this mass dependence of the density enhancement factor is very helpful.\\
 	\begin{figure}[h!] % velocity
 		\centering
-		\includegraphics[width= .8\textwidth]{Bilder/velocity.png}
+		\includegraphics[width= .7\textwidth]{Bilder/velocityV1.png}
 		\caption{Density enhancement $n_{cs}/n_a$ of the antechamber as a function of the spacecraft velocity $v_{sc}$ for different species expected in the icy moons exospheres.}
 		\label{th:densEnhvelo}
 	\end{figure}
-	Fig.\,\ref{th:densEnhChiTheta} shows the density enhancement of the antechamber as a function of different particle influx angles $\chi$. $\chi$ is measured in the x-/y- plane (Fig.\,\ref{fig:thAntIs}). The function was evaluated for different positions of the entrance holes. The minimal angle the two entrance holes can be apart from each other without overlapping is 3.6\si{\degree}. The holes of the PFM antechamber are at $\theta_0 = \pm30\,\si{\degree}$. With that configuration the biggest signal intensity is measured with a spacecraft ramp direction of 0\si{\degree}. When the two holes are at $\pm$60\si{\degree} the intensity distribution has a plateau between $\pm$60\,\si{\degree} and also a wider angular range. This is an interesting feature under certain circumstance. For NIM it is unnecessary because the spacecraft blocs the field of view (FoV) for angles bigger than 100\degree (see also Chap.\,\ref{subsubsec:Calfly}).
+	Fig.~\ref{th:densEnhvelo} shows the density enhancement of the antechamber as a function of the spacecraft velocity for different species. We expect H\textsubscript{2}O and different radiolysis products such as H\textsubscript{2}, O\textsubscript{2} or HO in the icy moons' exosphere. Absorption lines in the near infrared recorded by the Near Infrared Mapping Spectrometer (NIMS) on board of the Galileo spacecraft indicate CO\textsubscript{2} bond to other solid materials in the soil. Sulphur is ejected by the Galilean moon Io and is therefore part of the Jupiter's plasma torus. The sulphur compounds are a result of the ion bombardment on the icy moons' surface. Sulphur reacts with water resulting in various different compounds such as sulphur dioxide (SO\textsubscript{2}) or sulphuric acid (H\textsubscript{2}SO\textsubscript{4}) \cite{Collins_2014}. Fig.\,\ref{th:densEnhvelo} shows that with increasing flyby velocity, the particles get more amplified. Heavier species are stronger amplified than light ones as it was already shown in Fig.\,\ref{th:densEnhm}.\\
 	\begin{figure}[h!] % chi theat
 		\centering
 		\includegraphics[width= .8\textwidth]{Bilder/Chi_theta0.png}
-		\caption{Density enhancement $n_{cs}/n_a$ of the antechamber as a function of the gas influx direction $\chi$ for different positions of the two entrance holes $\theta_0$. $\theta_0=30\degree$ is the position of the holes in flight configuration.}
+		\caption{Density enhancement $n_{cs}/n_a$ of the antechamber as a function of the angle $\chi$ between the gas inflow direction and the x-axis of the instrument for different positions of the two entrance holes $\theta_0$. $\theta_0=30\degree$ is the position of the holes in flight configuration.}
 		\label{th:densEnhChiTheta}
 	\end{figure}
+	Fig.~\ref{th:densEnhChiTheta} shows the density enhancement of the antechamber as a function of different particle influx angles $\chi$. $\chi$ is measured in the x-/y-~plane of NIM's coordinate system (see Fig.~\ref{fig:thAntIs}). The function was evaluated for different positions of the entrance holes. The minimal angle the two entrance holes can be apart from each other without overlapping is 3.6\si{\degree}. The holes of the PFM antechamber are at $\theta_0 = \pm30\,\si{\degree}$. With that configuration the biggest signal intensity is measured with a spacecraft ramp direction of 0\si{\degree}. When the two holes are at $\pm$60\si{\degree} the intensity distribution has a plateau between $\pm$60\,\si{\degree} and also a wider angular range. This is an interesting feature under certain circumstance. For NIM it is unnecessary because the spacecraft blocs the field of view (FoV) for angles bigger than 100\degree~(see also Chap.\,\ref{subsubsec:Calfly}).
+	\newpage
 	
 %-------------------------------------------------------------------------------------------		
 	\subsection{Field-of-View Analysis \notes{finished}}\label{subsubsec:Calfly}
@@ -469,52 +462,52 @@
 	\begin{figure}[h!]
 		\centering
 		\includegraphics[width = .7\textwidth]{Bilder/NIM_pointing_2031JAN15185200.png}
-		\caption{Fourth Callisto flyby of trajectory 141a \cite{SOC_Crema3p2} 1\,h before closest approach 15'600\,km above Callisto's surface.}
+		\caption{Fourth Callisto flyby of CReMA~3.2 trajectory~141a \cite{SOC_Crema3p2} 1~h before closest approach 15'600~km above Callisto's surface.}
 		\label{fig:FlybyCal1852}
 	\end{figure}
 	\begin{figure}[h!]
 		\centering
 		\includegraphics[width = .7\textwidth]{Bilder/NIM_pointing_2031JAN15194200.png}
-		\caption{Fourth Callisto flyby of trajectory 141a \cite{SOC_Crema3p2} 10\,min before closest approach 1'560\,km above Callisto's surface.}
+		\caption{Fourth Callisto flyby of CReMA~3.2 trajectory~141a \cite{SOC_Crema3p2} 10~min. before closest approach 1'560~km above Callisto's surface.}
 		\label{fig:FlybyCal1942}
 	\end{figure}
 	\begin{figure}[h!]
 		\centering
 		\includegraphics[width = .7\textwidth]{Bilder/NIM_pointing_2031JAN15194700.png}
-		\caption{Fourth Callisto flyby of trajectory 141a \cite{SOC_Crema3p2} 5\,min before closest approach 580\,km above Callisto's surface.}
+		\caption{Fourth Callisto flyby of CReMA~3.2 trajectory~141a \cite{SOC_Crema3p2} 5~min. before closest approach 580~km above Callisto's surface.}
 		\label{fig:FlybyCal1947}
 	\end{figure}
 	\begin{figure}[h!]
 		\centering
 		\includegraphics[width = .7\textwidth]{Bilder/NIM_pointing_2031JAN15195200_tilt.png}
-		\caption{Fourth Callisto flyby of trajectory 141a \cite{SOC_Crema3p2} closest approach 200\,km above Callisto's surface with the spacecraft solar panels oriented toward the sun to maximizes power generation.}
+		\caption{Fourth Callisto flyby of CReMA~3.2 trajectory~141a \cite{SOC_Crema3p2} closest approach 200~km above Callisto's surface with the spacecraft solar panels oriented toward the Sun to maximizes power generation.}
 		\label{fig:FlybyCal1952sol}
 	\end{figure}
 	\begin{figure}[h!]
 		\centering
 		\includegraphics[width = .7\textwidth]{Bilder/NIM_pointing_2031JAN15195200.png}
-		\caption{Fourth Callisto flyby of trajectory 141a \cite{SOC_Crema3p2} closest approach 200\,km above Callisto's surface with solar panels tilted to leave open NIM's field-of-view of the n-Mode.}
+		\caption{Fourth Callisto flyby of CReMA~3.2 trajectory~141a \cite{SOC_Crema3p2} closest approach 200~km above Callisto's surface with solar panels tilted to leave unobstructed NIM's field-of-view of the n-Mode.}
 		\label{fig:FlybyCal1952}
 	\end{figure}
 	\begin{figure}[h!]
 		\centering
 		\includegraphics[width = .7\textwidth]{Bilder/NIM_pointing_2031JAN15195700.png}
-		\caption{Fourth Callisto flyby of trajectory 141a \cite{SOC_Crema3p2} 5\,min after closest approach 640\,km above Callisto's surface.}
+		\caption{Fourth Callisto flyby of CReMA~3.2 trajectory~141a \cite{SOC_Crema3p2} 5~min. after closest approach 640~km above Callisto's surface.}
 		\label{fig:FlybyCal1957}
 	\end{figure}
-	In the following section, the fourth Callisto flyby of trajectory 141a \cite{SOC_Crema3p2} is analysed. Fig.\,\ref{fig:FlybyCal1852}\,- Fig.\,\ref{fig:FlybyCal1957} show the changing FoV of the NIM instrument at different times. The reference coordinate system for these graphics is the ecliptic coordinate system. During the flyby, the spacecraft changes its orientation leading to a distortion of the different objects in the figures. The entrance holes of the antechamber are marked as blue circles, the FoVs of the entrance holes are marked as dashed blue lines, the entrance slit is the blue, striped band with the sinusoidal shape. The solar panels and the rim antenna of the spacecraft are marked in red. The gas inflow direction is marked as an orang star. Fig.\,\ref{fig:FlybyCal1852} shows the FoV 1\,h before closest approach 15'600\,km above Callisto's surface. The gas inflow direction is in between the two entrance holes. As the spacecraft moves closer to the moon, the gas inflow direction moves towards the entrance slit. Due to the narrow FoV of 10\degree of the entrance slit and the short time window during which the gas inflow direction points on the entrance slit, NIM changes already 5\,min before closest approach from thermal to neutral mode (Fig.\,\ref{fig:FlybyCal1947}). At this time, the gas inflow direction is still in the FoV of the antechamber. The time to switch between the two modes should be as small as possible to minimize the number of lost measurements. These measurements are very crucial because the closer the spacecraft gets to the moon's surface, the higher is the exospheric pressure and therefore the signal intensity. 5\,min after closest approach, the gas inflow direction is below the FoV of the neutral gas channel and NIM takes background measurements (Fig.\,\ref{fig:FlybyCal1957}). In addition, the spacecraft structure blocs angles higher than 100\si{\degree}. The gas striking the spacecraft sputters particles from the spacecraft's surface. NIM is not able to determine if these particles are part of the moons exosphere of if they originate from the spacecraft. In general, the solar panels are adjusted perpendicular to the sun to maximize power generation. 10\,min before closest approach, the solar panels are tilted to leave open the FoV of NIM to measure with the neutral gas mode. In case the solar panels would stay perpendicular to the sun, the gas would graze the surface of the solar panel as it is shown in Fig.\,\ref{fig:FlybyCal1952sol}. Fig.\,\ref{fig:FlybyCal1952} shows the same scenario but with the solar panels tilted to leave open NIM's FoV of the neutral gas channel.\\
+	In the following section, the fourth Callisto flyby of JUICE according to the Consolidated Report on Mission Analysis (CReMA) version 3.2 trajectory 141a \cite{SOC_Crema3p2} is analysed as an example of the expected particle flux directions during a flyby. Fig.\,\ref{fig:FlybyCal1852}~-- Fig.\,\ref{fig:FlybyCal1957} show the changing FoV of the NIM instrument at different times. The reference coordinate system for these graphics is the ecliptic coordinate system. During the flyby, the spacecraft changes its orientation leading to a different appearance of the objects in the figures. The centres of the entrance holes of the antechamber are marked as blue circles, the FoVs of the entrance holes of the antechamber are marked as dashed blue lines (actually, the 30° radius line of the FoV), the entrance slit at the open source entrance is the blue, striped band with the sinusoidal shape. The solar panels and the rim antenna of the spacecraft are marked in red. The gas inflow direction is marked as an orang asterisk. Fig.\,\ref{fig:FlybyCal1852} shows the FoV 1~h before closest approach 15'600~km above Callisto's surface. The gas inflow direction is in between the two entrance holes thus both holes collect gas from Callisto's exosphere. As the spacecraft moves closer to the moon, the gas inflow direction moves towards the entrance slit. 5~min. before closest approach, NIM changes from thermal to neutral mode because of the narrow FoV of 10\degree~of the entrance slit and the short time window during which the gas inflow direction is within the FoV of the entrance slit (Fig.\,\ref{fig:FlybyCal1947}). At this time, the gas inflow direction is still in the FoV of the antechamber. The design goal for the switch over between the two modes is 1~s to minimize the number of lost measurements. These measurements are very crucial because the closer the spacecraft gets to the moon's surface, the higher is the exospheric density (\notes{Fig. Audrey Ref.!!!}) and therefore the signal intensity. 5~min. after closest approach, the gas inflow direction is below the FoV of the neutral gas channel and NIM takes background measurements (Fig.\,\ref{fig:FlybyCal1957}). In addition, the spacecraft structure blocs angles higher than 100°. The gas striking the spacecraft sputters particles from the spacecraft's surface. NIM is not able to determine if these particles are part of the moons exosphere or if they originate from the spacecraft. In general, the solar panels are adjusted perpendicular to the Sun to maximize power generation. 10~min. before closest approach, the solar panels are tilted to leave the FoV of NIM unobstructed to measure with the neutral gas mode. In case the solar panels would stay perpendicular to the Sun, the gas would graze the surface of the solar panel as it is shown in Fig.\,\ref{fig:FlybyCal1952sol}. Fig.\,\ref{fig:FlybyCal1952} shows the same scenario but with the solar panels tilted to leave NIM's FoV unobstructed for the neutral gas channel.\\
 	\begin{figure}[h!]
 		\centering
 		\includegraphics[width=.8\textwidth]{Bilder/Chi_theta0_flyby.png}
-		\caption{Gain $n_{cs}/n_a$ of the antechamber as a function of the gas inflow direction $\chi$. The blue circles mark the entrance hole positions and the red area marks the FoV. The stars mark the gas influx direction from 1\,h before until 5\,min after closest approach of trajectory 141a \cite{SOC_Crema3p2}.}
+		\caption{Density enhancement $n_{cs}/n_a$ of the antechamber as a function of the angle $\chi$ between the gas inflow direction and the x-axis of the instrument for different positions of the two entrance holes $\theta_0$. The blue circles mark the entrance hole positions and the red area marks the FoV. The asterisks mark the gas influx direction from 1~h before until 5~min after closest approach of CReMA~3.2 trajectory 141a \cite{SOC_Crema3p2}.}
 		\label{fig:densEnhChiFlyby}
 	\end{figure}
-	Fig.\,\ref{fig:densEnhChiFlyby} shows the gain of the antechamber with the total FoV of the two entrance holes marked as red area $\pm$30\degree around the position of the two entrance holes. The orange stars mark the gas inflow direction for the various scenarios mentioned above. Depending on the flyby, the main gas inflow direction is from the $+\chi$ or $-\chi$ side. Therefore, it was decided to make two entrance holes to allow measurements with angles different to the main direction to enlarge the FoV of the antechamber. The holes should also not be too close at the entrance because structures of the spacecraft bloc angles bigger than 100\degree and an amplification of such big angles would be useless.
+	Fig.\,\ref{fig:densEnhChiFlyby} shows the density enhancement of the antechamber with the total FoV of the two entrance holes marked as red area $\pm$30\degree around the position of the two entrance holes. The orange asterisks mark the gas inflow direction for the various scenarios mentioned above. Depending on the flyby, the main gas inflow direction is from the $+\chi$ or $-\chi$ side. Therefore, it was decided to make two entrance holes in the antechamber to allow measurements with angles different to the main direction to enlarge the FoV of the antechamber. The holes should also not be too close at the entrance because structures of the spacecraft bloc angles bigger than 100° and an the density enhancement at such big angles would be useless.
 	
 	
 %----------------------------------------------------------------------------------		
 	\subsection{Shutter Performance \notes{finished}} \label{subsubsec:motorflow}
-	With the open-source entrance, NIM is able to measure neutral particles and ions directly without any interaction with the structure. Therefore, NIM has a shutter to close the entrance to the antechamber. This shutter is mounted between the ionization region and the antechamber (Fig.\,\ref{fig:shutterMotor} left). When the shutter is open, the gas flows right through the hole into the ionization region. When the shutter is closed, the hole moves to the side as it is indicated in Fig.\,\ref{fig:shutterMotor}~right. The shutter does not close the hole perfectly and therefore a small amount of gas flows through the gap around the shutter into the ionisation region. In the following section, the damping factor of the shutter is determined.\\
+	With the open-source entrance, NIM is able to measure neutral particles and ions directly without any interaction with the structure. Since the n-mode and the th-mode use the same ion-source, NIM has a shutter to close the entrance to the antechamber. This shutter is mounted between the ionisation region and the antechamber (Fig.~\ref{fig:shutterMotor}~left). When the shutter is open, the gas flows from the antechamber right through the hole into the ionisation region. When the shutter is closed, the hole in the shutter moves to the side as it is indicated in Fig.~\ref{fig:shutterMotor} right panel. The shutter does not close the hole perfectly and therefore a small amount of gas flows through the gap around the shutter into the ionisation region. In the following section, the molecular flow conductance of the closed shutter is determined.\\
 	\begin{figure}[h!]
 		\begin{subfigure}{0.5\textwidth}
 			\centering
@@ -524,14 +517,14 @@
 			\centering
 			\includegraphics[width=.8\textwidth]{Bilder/Shutter_topview.png}
 		\end{subfigure}
-	\caption{Left: side view with shutter when shutter is closed. Right: Top view with open shutter. When the shutter is closing the central hole moves to the red position.}
+	\caption{Left: side view when shutter is closed. Right: Top view with open shutter. When the shutter is closing, the central hole of the shutter blade moves to the red position.}
 	\label{fig:shutterMotor}
 	\end{figure}
-	The molecular flow conductance is:
+	The molecular flow conductance $C$ is:
 	\begin{equation}
 		C = \frac{A\cdot\bar{v}\cdot a}{4}
 	\end{equation}
-	With $A$ the cross-section of the tube, $\bar{v}$ the average velocity of the thermalized gas flowing through the opening and $a$ the transmission probability depending on the length-to-diameter ratio of the tube. When the shutter is closed, the conductance of the tube $C_{tot}$ is divided into four terms: The conductance of the upper part of the tube $C_{top}$, the conductance of the gap between the shutter and pocket $C_{gap}$, the conductance of the hole in the shutter $C_{hole}$ and the conductance of the lower part of the tube connecting the antechamber with the ionization region $C_{bot}$ (Fig.\ref{fig:shutterMotor} left):
+	With $A$ the cross-section of the tube connecting the antechamber and the ionisation region, $\bar{v}$ the average velocity of the thermalised gas flowing through the opening and $a$ the transmission probability depending on the length-to-diameter ratio of the tube (Eq.~\eqref{eq:MolFloConFitFunc}). When the shutter is closed, the conductance of the tube $C_{tot}$ is divided into four terms: The conductance of the upper part of the tube $C_{top}$, the conductance of the gap between the shutter blade and the pocket $C_{gap}$, the conductance of the hole in the shutter $C_{hole}$ and the conductance of the lower part of the tube connecting the antechamber with the ionisation region $C_{bot}$ (Fig.\,\ref{fig:shutterMotor}~left):
 	\begin{align}
 		C_{top}  &= \frac{r_{aIs}^2\cdot\pi\cdot\bar{v}\cdot a_{top}}{4}\\
 		C_{gap}  &= \frac{2\cdot r_{aIs}\cdot \pi \cdot h_{gap}\cdot\bar{v}\cdot a_{gap}}{4}\\
@@ -548,10 +541,10 @@
 				$r_{aIs}$ 	& 2\,mm & $l_{gap}$ 	& 7\,mm\\
 			\end{tabular}
 		\end{center}
-		\caption{Nominal transmission probabilities $a_i$, tube heights $h_i$, tube radius $r_{aIs}$ and minimal gap length $l_{gap}$ when the shutter between the antechamber and the ion-source is closed.}
+		\caption{Nominal transmission probabilities $a_i$, tube heights $h_i$, tube radius $r_{aIs}$ and minimal gap length $l_{gap}$ when the shutter between the antechamber and the ionisation region is closed.}
 		\label{tab:thMolFloConMotClosPara}
 	\end{table}
-	With $a_{i}$ the transmission probabilities of the different sections (Eq.\,\eqref{eq:MolFloConFitFunc}), $h_i$ the height of the different sections, $r_{aIs}$ the radius of the antechamber hole and $l_{gap}$ the minimal distance between the hole in the shutter and the tube connecting the antechamber with the ionization region. The nominal values for these parameters are listed in Table\,\ref{tab:thMolFloConMotClosPara}. The average velocity $\bar{v}$ cancels out during the derivation of the geometry factor. The conductance of the tube $C_{tot}$ is:
+	With $a_{top}$, $a_{gap}$, $a_{hole}$ and $a_{bot}$ the transmission probabilities of the different sections (Eq.\,\eqref{eq:MolFloConFitFunc}) and $h_{top}$, $h_{gap}$, $h_{hole}$ and $h_{bot}$ the height of the different sections. $r_{aIs}$ is the radius of the tube connecting the antechamber with the ionisation region and $l_{gap}$ is the minimal distance between the hole in the shutter and the tube connecting the antechamber with the ionisation region. The nominal values for these parameters are listed in Table\,\ref{tab:thMolFloConMotClosPara}. The average velocity $\bar{v}$ cancels out during the derivation of the geometry factor. The molecular flow conductance of the tube when the shutter is closed $C_{tot}$ is:
 	\begin{equation}
 		\frac{1}{C_{tot}} = \frac{1}{C_{top}} + \frac{2}{C_{gap}} + \frac{1}{C_{hole}} + \frac{1}{C_{bot}}
 	\end{equation}
@@ -570,100 +563,37 @@
 		\caption{Damping factor $G_{open}/G_{close}$ of the shutter as a function of the gap size $h_{gap}$ of the gap between the shutter and antechamber.}
 		\label{fig:ShutGapSizeSigDamp}
 	\end{figure}
-	Fig.\,\ref{fig:ShutGapSizeSigDamp} shows the damping factor $G_{open}/G_{close}$ as a function of the gap size $h_{gap}$ of the gap between the shutter and antechamber. With increasing gap size, the damping factor reduces significantly. The requirement was to damp the signal by a factor 1000 when the shutter is closed. With the nominal gap size of 0.01\,mm, the shutter damps the signal by a factor 600. When the gap size is about 0.1\,mm the damping factor is only about 25. This can happen when the shutter is not properly fabricated and the tolerances are therefore bigger than originally designed.\\
-	When measuring with the open source channel, a small amount of gas will enter the ion-source through the antechamber. The open source slit is in the y-/z-plane and therefore $\chi$ is 90\si{\degree} (Fig.\ref{fig:thAntIs}). When the shutter is closed, about 0.05\% of the signal originates from the antechamber.
+	Fig.\,\ref{fig:ShutGapSizeSigDamp} shows the damping factor $G_{open}/G_{close}$ as a function of the gap size $h_{gap}$ of the gap between the shutter and antechamber. With increasing gap size, the damping factor reduces significantly. The requirement was to damp the signal from the antechamber by a factor 1000 when the shutter is closed. With the nominal gap size of 0.01\,mm, the shutter damps the signal by a factor 600, which is close enough to the requirement. When the gap size is about 0.1\,mm the damping factor is only about 25. This can happen when the shutter is not properly fabricated and the tolerances are therefore bigger than originally designed.\\
+	When measuring with the open source channel, a small amount of gas will enter in addition the ion-source through the antechamber. The open source slit is in the y-/z-plane and therefore $\chi$ is 90° (Fig.~\ref{fig:thAntIs}). When the shutter is closed, about 0.05\% of the signal originates from the antechamber, assuming a damping factor of 600.
 	
 %-----------------------------------------------------------------------------------------		
-%		\subsubsection{Pressure calibration of the NIM Sensor \notes{May will be deleted.}}
-	% This chapter comes after the calculation of the detector gain because the gain of the detector is part of the pressure calculation. Proper error estimation of the paramaeters as far as possible.
-	% More detailed explanation about the NIM ion source, function of the different specific electrodes. Or explain it later in detail when discussing the simulations in detail. See paper as a guide line. Especially for the ion storage part.
-	
-%		\textcolor{red}{see also density enhancement book for that derivation!!!}
 
+	\begin{comment}
+	\subsubsection{Pressure calibration of the NIM Sensor \notes{May will be deleted.}}
+	This chapter comes after the calculation of the detector gain because the gain of the detector is part of the pressure calculation. Proper error estimation of the paramaeters as far as possible.
+	More detailed explanation about the NIM ion source, function of the different specific electrodes. Or explain it later in detail when discussing the simulations in detail. See paper as a guide line. Especially for the ion storage part.
+	\textcolor{red}{see also density enhancement book for that derivation!!!}
 	To calculate the number of ions produced in the ion source we use:
 	\begin{equation}
-	I_{ion} = \beta\cdot Q_{ion}\cdot L\cdot n\cdot I_{em}
+		I_{ion} = \beta\cdot Q_{ion}\cdot L\cdot n\cdot I_{em}
 	\end{equation}
 	With $\beta$ the extraction efficiency which is 1, % Noch schauen auf welchen Wert wir diese setzen wollen. 1= sehr gute Quelle, 0.01 = 1mus/100mus = Pulslänge Pulser/ Länge 1 Zyklus. Noch diskutieren, welche Werte beta haben kann oder einfach etwas setzen? Da die ersten Messresultate gut sind, würde ich eher auf 1 setzen. Abschätzung? Auf Unterschiede beim Spannungsset hinweisen -> beeinflusst beta massgeblich.
 	$L$ as the effective ionising path in our case 4~\si{\milli\metre}, $n$ the particle density, $I_{em}$ the electron emission current from the filament and $Q_{ion}$ the ionising cross section. The cross sections of species used in our calibration can be found in table % Ref. auf Tabelle und nur auf Stefans Diss verweisen oder die 4 Originalpaper zusammen suchen. Tabelle einfügen.
-	
 	\textcolor{red}{Write something about the radiation shielding concept? Or just make a reference to the paper because it gives an overview over the concept as far as it is necessary.}
-	
-	\subsection{Detector Parameters \notes{Draft}}\label{sec:DetParam} % Clean up this chapter when finalizing the detector chapter.
-	% All relevant parameters
-	% Gain
-	% dead time, R, C, number of channels. Calculation of the number of channels out of the data sheet (Diss Maike) charging behaviour. Is this really needed for the analysis I do? I case I should have to test with the FS, it would be nice to include that calculation and the timing resulting out from that. Otherwise it is just a nice part of theory but is not used for anything. Set up something, just that the chapter is completed (sort of).
-	% Compare the performance of the diode with the performance of the resistor. Depending on the results, find arguments.. No time for that :(
-	
-	% State here clearly how the MCPs work with the electron avalange. May also with a pitcure.
-	
-	In this section we calculated some important parameters of the detector such as the dead time and the gain. % And further values if needed.
-	
-	\textbf{Dead time}\\
-	
-	\begin{figure}[h]
-		\centering
-		\includegraphics[width=.4\textwidth]{Bilder/MCP_hex.jpg}
-		\caption{MCP honeycomb structure \cite{Diss_Neuland}.}
-		\label{fig:MCPhex} % Ref. Maike Diss
-	\end{figure}
-	The number of channels $N$ of an MCP is its active area $A_{act}$ divided by the area of one channel $A_{hex}$. The MCP has a honeycomb like structure (Fig.\,\ref{fig:MCPhex}). Thus, the area of one channel is the area of a hexagon:
-	\begin{equation}
-		N = \frac{A_{act}}{A_{hex}} = \frac{2\cdot\pi r^2_{act}}{\sqrt{3}p^2}
-	\end{equation}
-	$r_{act}$ is the radius of the active area of the MCP which is for our MCPs 8\,\si{\milli\meter} and p is the distance between the centres of two channels which is 6\,\si{\micro\meter}. This results in $1.6\cdot10^6$ channels.\\
-	The resistance of a single channel is the resistance of the whole MCP plate $R_{MCP}$ times the number of channels $N$:
-	\begin{equation}
-		R_{ch} = R_{MCP}\cdot N
-	\end{equation}
-	Its resistance depends on the voltage applied over the plate. For a nominal voltage of 1000\,\si{\volt} $R_{MCP}$ is $\sim$70\,\si{\mega\ohm} resulting in channel resistance of about $10^{14}$\,\si{\ohm}.\\
-	The MCPs consist of two different materials: the structure (grey) consists of a type of lead glass and the hole, which can be approximated with vacuum (white) (Fig.\ref{fig:MCPhex}). The area of the structure is equal to the area of the hexagon $A^{hex}_{ch}$ minus the area of the channel hole $A^{hole}_{ch}$. the capacitance of one channel $C_{ch}$ is:
-	\begin{equation}
-		C_{ch} = \frac{\epsilon_0  (\epsilon_r \cdot (A^{hex}_{ch} - A^{hole}_{ch})+ A^{hole}_{ch})}{l_{ch}}
-	\end{equation}
-	With $\epsilon_0$ the vacuum permittivity, $\epsilon_r$ the relative permittivity of lead glass and $l_{ch}$ the MCP thickness which is 0.3\,\si{\milli\meter}. The relative electric permittivity depends strong on the conditions under which the material is used for example under which voltage, frequency or temperature the MCPs are used. Furthermore, the manufacturer does not give details about the material characteristics as it is a company secret. In \cite{Diss_Neuland} is an analysis of different values for $\epsilon_r$ found in literature. These values are between 6 and 20. With these values, the resulting capacity is 5\,\si{\atto\farad} per channel. The dead time of a single MCP channel is the channel resistance $R_{ch}$ times the channel capacitance $C_{ch}$:
-	\begin{equation}
-		\tau = R_{ch}\cdot C_{ch}
-	\end{equation}
-	This results in a dead time of 500\,\si{\micro\second}. A typical waveform has a duration of about 100\,\si{\micro\second}. When an ion hits a channel, this channel would be blind for the next five waveforms. With $1.6\cdot10^6$ channels and assuming a uniform distribution of particles on the MCP surface, saturation is assumed at particle rates higher than $10^9$ particles/\si{\second}. % Do we really want to have this in? Because saturation really starts at 10^6 #/sec already due to other effects. If so, make at least a short remark to which effects.
-	\begin{equation}
-		U(t) = U_0\cdot(1- e^{-t/\tau})
-	\end{equation}
-	It is the time needed to recharge a single channel to approximately 63\% of its original charge. After $5\tau$ 99\% of the original charge is replenished. % Is only half true. Only under the assumption that all of the charge is extracted out of the MCP. May later further discussion and revision.
-	
-	
-	
-	% Atempt to calculate the acctual voltage drop of the MCP voltage in dependence of the count rate by taking into account the capacitorloading curve and the option of a possible paralyzability of the detector. To make that properly, a simulation would be necessary. Not relevant.
-	
-	\begin{comment}
-		1 particle with tau as the dead time. Voltage of 1 channel when 1 particle hits the channel. We assume, that we do not get into saturation. At what particle rate does the voltage start to break down. When a particle hits the channel when the voltage is not full replenished, it empties the channel again.
-		For a first approximation, wait for 5*tau until 99% of the voltage is recovered.
-		Uch(tion) = U_0\cdot(1- e^{-tion/\tau}) % tion is the time when an ion triggers a signal.
-		Assumption of this formula is that one ion empties the hole channel -> it extracts alls the current in the channel -> all ions should have the same amount of current = the same gain.
-		
-		1.6*10^6 particles/second -> 1#/6*10^-7 sec.
-		
-		ion arriving rate is constant and the ions distributed homogenious over the MCP plate
-				
-		tZero = countRate % time which resets your voltage to 0V of the channel.
-		t_rate = 5*tau.
-		Umcp = sum(Uch)/#Channels
-		
-		Temporal the count rate is much higher than the value averaged over 1 sec. -> The gain will drop within one spectrum but will recover to a certain amount until the next spectrum. This calculation looks at total paralyzability.
-		
-		See Simulations by Maike for the whole calculation -> also the gain drop is displayed there. Just summarize it here because it is interesting :) and it also gives sort of an approximation of the voltage drop.
-		
 	\end{comment}
 
-	\textbf{Gain}\\
-	\begin{figure}[h] % Schema of the MCP detector. May explain it a bit better in the text to be able to reference it in the Setup.
+%-------------------------------------------------------------------------------------------------------------------------	
+	\subsection{Multichannel Plates \notes{finished}}\label{sec:DetParam}
+	To count single ions, NIM uses Multichannel Plates (MCPs) in its detector to amplify the signal. MCPs are thin glass plates consisting of many small channels. When an ion hits a channel, an electron is ejected and accelerated along the channel axis until it hits the opposite wall. There it ejects more electrons generating an electron avalanche. One single MCP is able to amplify the signal of an ion by a factor of 10\textsuperscript{4} \cite{Wiza_1979_MCP}. NIM has two MCPs in Chevron configuration (Fig.~\ref{fig:MCPPrincipleSchema}) to reach a gain of about 10\textsuperscript{6} (Chap.~\ref{chapExp:Det}).
+	\begin{figure}[h]
 		\centering
 		\includegraphics[width=.7\textwidth]{Bilder/MCP_PrinipleSchema.jpg}
-		\caption{Working principle of a Multi Channel Plates (MCPs) detector \cite{Wiza_1979_MCP,Diss_Meyer}.}
+		\caption{Working principle of a Multichannel Plates (MCPs) detector \cite{Wiza_1979_MCP,Diss_Meyer}.}
 		\label{fig:MCPPrincipleSchema}
 	\end{figure}
 	
-	The following derivation is based on the lecture notes of \cite{LecNot_Wurz2017}. When an incoming particle hits the MCP channel wall there is a certain chance that it ejects an electron. By applying an electric field $E$ over the MCP plate, this electron gets accelerated until it hits the opposite wall, where it ejects more electrons (Fig.\,\ref{fig:MCPPrincipleSchema}):
+	\subsubsection{Gain}
+	In this section, the gain of a single MCP is derived as a function of the voltage $U_{MCP}$ applied over the MCP. The derivation is based on the lecture notes of \cite{LecNot_Wurz2017}. When an incoming particle hits the MCP channel wall there is a certain probability that it ejects an electron. By applying an electric field $E$ over the MCP plate, this electron gets accelerated along the channel axis until it hits the opposite wall, where it ejects more electrons (Fig.~\ref{fig:MCPPrincipleSchema}):
 	\begin{equation}
 		E = \frac{U_{MCP}}{l} = \frac{F}{q_0} = \frac{a m_e}{q_0}
 	\end{equation}
@@ -676,17 +606,17 @@
 		s = \frac{1}{2}at^2 = \frac{U_{MCP}\cdot q_0\cdot t^2}{l\cdot m_e\cdot 2}
 		\label{eq:DetGainChFlightDist}
 	\end{equation}
-	With $t$ the flight time of the electron until it hits the wall again. Assuming the initial velocity $v_{init}$ of the initial secondary electron is perpendicular to the channel wall, the flight distance until it hits the opposite channel wall is the channel diameter $d$. $t$ can be written as:
+	With $t$ the flight time of the electron until it hits the wall again. Assuming the initial velocity $v_{init}$ of the initial secondary electron is perpendicular to the channel wall, the flight distance until it hits the opposite channel wall is the channel diameter $d$. The flight time $t$ can be written as:
 	\begin{equation}
 		t = \frac{d}{v_{init}}
 		\label{eq:DetGainChFlightTime}
 	\end{equation}
-	$v_{init}$ can be derived from the electron's initial kinetic energy $U_{init}$:
+	$v_{init}$ is derived from the electron's initial kinetic energy $U_{init}$:
 	\begin{equation}
 		U_{init} = \frac{1}{2}m_e v_{init}^2 \rightarrow v_{init} = \sqrt{\frac{2U_{init}}{m_e}}
 		\label{eq:DetGainEkin}
 	\end{equation}
-	In inserting Eq.\eqref{eq:DetGainChFlightTime} and Eq.\eqref{eq:DetGainEkin} in Eq.\eqref{eq:DetGainChFlightDist} leads to:
+	where $U_{init}$ is the mean energy of a released electron (secondary electron) upon electron impact on the surface. By inserting Eq.\eqref{eq:DetGainChFlightTime} and Eq.\eqref{eq:DetGainEkin} in Eq.\eqref{eq:DetGainChFlightDist} leads to:
 	\begin{equation}
 		s = \frac{q_0 \cdot U_{MCP}\cdot d^2}{l\cdot 4U_{init}}
 		\label{eq:DetGainDistECh}
@@ -714,42 +644,49 @@
 	\begin{equation}
 		G_{ch} = \left(A\frac{U_{MCP}}{2\alpha\sqrt{U_{init}}}\right)^{\frac{4\cdot U_{init}\cdot\alpha^2}{U_{MCP}}}
 	\end{equation}
-	With $A$ in approximately 0.2 $\left(\frac{1}{eV}\right)^{1/2}$, % Ref. to Wiza
-	$U_{MCP}$ in [eV], $\alpha$ is a dimensionless number and $U_{init}$ in the range of a few [eV].
-	% cite here Wiza as done in Stefans diss
+	With $A$ approximately 0.2 $\left(\frac{1}{eV}\right)^{1/2}$ \cite{Wiza_1979_MCP}, $U_{MCP}$ in [eV], $\alpha$ is a dimensionless number and $U_{init}$ in the range of a few [eV].
+	
+	
+%-------------------------------------------------------------------------------------------------------------------------	
+	\subsubsection{Dead time}
+	In this chapter, the dead time $\tau$ of the MCPs used in the NIM detector is derived. The dead time is the time one single channel of the MCP needs to replenish 63\% of its charge. After 5$\tau$ the channel is fully recharged. When the ion count rate is too high, an ion will hit the channel during the time the channel is recharging. This results in a lower gain because the channel is not fully charged during the time of the event. Therefore, it is important to know the dead time to get an estimation of the upper limit of the count rate of the detector.\\
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=.4\textwidth]{Bilder/MCP_hex.jpg}
+		\caption{MCP honeycomb structure \cite{Diss_Neuland}.}
+		\label{fig:MCPhex}
+	\end{figure}
+	The number of channels $N$ of an MCP is its active area $A_{act}$ divided by the area of one channel $A_{hex}$. The MCP has a honeycomb like structure (Fig.~\ref{fig:MCPhex}). Thus, the area of one channel is the area of a hexagon:
+	\begin{equation}
+		N = \frac{A_{act}}{A_{hex}} = \frac{2\cdot\pi r^2_{act}}{\sqrt{3}p^2}
+	\end{equation}
+	$r_{act}$ is the radius of the active area of the MCP, which is for the NIM MCPs 8~mm and $p$ is the distance between the centres of two channels which is 6~\si{\micro\meter}. This results in $1.6\cdot10^6$ channels of a NIM MCP. The resistance of a single channel is the resistance of the whole MCP plate $R_{MCP}$ times the number of channels $N$:
+	\begin{equation}
+		R_{ch} = R_{MCP}\cdot N
+	\end{equation}
+	The channel resistance depends on the voltage applied over the plate. For a nominal voltage of 1000~\si{\volt} $R_{MCP}$ is $\sim$70~\si{\mega\ohm} resulting in a channel resistance of about $10^{14}$\,\si{\ohm}. The MCPs consist of two different materials: the structure (grey), which consists of a type of lead glass and the hole, which is approximated with vacuum (white) (Fig.~\ref{fig:MCPhex}). The area of the structure is equal to the area of the hexagon $A^{hex}_{ch}$ minus the area of the channel hole $A^{hole}_{ch}$. The capacitance of one channel $C_{ch}$ is:
+	\begin{equation}
+		C_{ch} = \frac{\epsilon_0  (\epsilon_r \cdot (A^{hex}_{ch} - A^{hole}_{ch})+ A^{hole}_{ch})}{l_{ch}}
+	\end{equation}
+	With $\epsilon_0$ the vacuum permittivity, $\epsilon_r$ the relative permittivity of lead glass and $l_{ch}$ the MCP thickness which is 0.3~mm. The manufacturer does not give details about the material characteristics as it is a company secret. In \cite{Diss_Neuland} is an analysis of different values for $\epsilon_r$ found in literature. These values are between 6 and 20. With these values, the resulting capacity is 5~\si{\atto\farad} per channel. The dead time of a single MCP channel is the channel resistance $R_{ch}$ times the channel capacitance $C_{ch}$:
+	\begin{equation}
+		\tau = R_{ch}\cdot C_{ch}
+	\end{equation}
+	This results in a dead time of $\tau =$ 500~\si{\micro\second}. With a duration of about 100~\si{\micro\second} for the recording time of one waveform, this channel would be blind for the time when the next five waveforms are recorded. With $1.6\cdot10^6$ channels and assuming a uniform distribution of ions on the MCP surface, saturation is assumed at particle rates $I_p$ higher than $10^9$ particles/\si{\second}. The current drawn by the MCPs due to that high count rate is the particle count rate $I_p$ times the MCP gain $G$ and the elementary charge $q_0$
+	\begin{equation}
+		I_{MCP} = I_p\cdot G \cdot q_0
+	\end{equation}
+	resulting in a current of $\sim$100~\si{\micro\ampere}. The MCPs have a leakage current between 6--30~\si{\micro\ampere}. The additional current drawn by the NIM detector due to the amplification of the ions is lower than a few \si{\micro\ampere} resulting in two decades of margin before the detector reaches saturation.
+	
+	
+	
+	
 
 	
-	% Explain as far as it is needed for the analysis of the detector results. Predictions, extrapolations on how the detector UMCP depends on UStack. Not quite clear which model we have to take for what reasons. Why a quadratic funtion at all. What other model will be more justified... Hmm... Have a look on how big this calculation is and may put it to the detector results in the experiments chapter.
-	
-	% Calculation of the detector current is part of the setup as there is a picture of the PS #2 and the cooresponding explanation of the measurement.
-	% Include the circuit diagram of the detector. Explanation of the different components? Maybe? Change from diode to resistor? Reasons? (more robust but voltage over MCPs is not so easy to derive anymore)
-	
-	
-	% Reference: Bieler Diss 2012, Wurz 2011, Scherer 1999, Meyer 2013 Data Analysis, Wells 2011
-	
-	
-	% MCP detector. Gain calculation. How the detecotr works. Didn't do anything for further developement. But a lot of tests on the Galerie with not so a big output. There is about 1 graph where the gain curve is actually used. So this chapter is justified.
-	% Dead time discussion is for nothing because it only shows that we do not reach the limit of our instrument. Only to show some nice calculation.
-	
-	
-\begin{comment}
-	
-	Explain how a TOF works. Source, reflectron, detector.
-	Explanation of the antechamber at the end after explaining the different parts.
-	
-	Detection efficiency Ionsource, MCP? -> y-Achse
-	Mass Analyser, mass spectrometer.
-	Requirements: Power, mass, mass resolution,... (At the end or at the beginning. Introduction)
-	
-\end{comment}
-
-
-%------------------------------------------------------------------------------------------------------------------
-	
 	
 
 
 
 
 
-		
+	

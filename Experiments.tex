@@ -8,7 +8,7 @@
 
 %-----------------------------------------------------------------------------------
 	\subsection{Flight Ion-Mirror \notes{Finished}}
-	In this section the performance of two ion-mirrors is compared. As described in chapter~\ref{subsec:setupInst}, the prototype ion-mirror consists of several ring-electrodes connected with each other with resistors to generate a linear voltage gradient. The flight ion-mirror consists of a ceramic tube with two resistance spirals replacing some of the ring-electrodes. Fig.\,\ref{fig:ExpRefl} left shows the prototype ion-mirror and Fig.\,\ref{fig:ExpRefl} right shows the flight ion-mirror mounted to the NIM prototype in the test setup. An ion-mirror of the same type as the flight ion-mirror was also used in the RTOF mass spectrometer which flew in ROSINA \cite{Diss_Scherer} and the in the NGMS \cite{Diss_Hofer}. From the electrical point of view, the two ion-mirror types behave the same.\\
+	In this section the performance of two ion-mirrors is compared. As described in chapter~\ref{sec:setup}, the prototype ion-mirror consists of several ring-electrodes connected with each other with resistors to generate a linear voltage gradient. The flight ion-mirror consists of a ceramic tube with two resistance spirals replacing some of the ring-electrodes. Fig.\,\ref{fig:ExpRefl} left shows the prototype ion-mirror and Fig.\,\ref{fig:ExpRefl} right shows the flight ion-mirror mounted to the NIM prototype in the test setup. An ion-mirror of the same type as the flight ion-mirror was also used in the RTOF mass spectrometer which flew in ROSINA \cite{Diss_Scherer} and the in the NGMS \cite{Diss_Hofer}. From the electrical point of view, the two ion-mirror types behave the same.\\
 	\begin{figure}[h]
 		\begin{subfigure}{0.5\textwidth}
 			\centering
@@ -97,8 +97,8 @@
 	When comparing Fig.\,\ref{fig:AnteMeasData}~a) and c), the artefacts successfully vanished after the redesign. The higher intensity at angle +90\degree is most probable an outlier because it appears in both the thermal (Fig.\,\ref{fig:AnteMeasData}~b)) and the neutral mode figure (Fig.\,\ref{fig:AnteMeasData}~d)) of the measurements with the new antechamber. The lower measured signal intensity for the measurements with the new antechamber is a result of having an additional entrance hole which was necessary because of the flyby trajectories (see Chap.\ref{subsubsec:Densenhan}).\\
 	Fig.\ref{fig:AnteMeasData}~b) shows measurements conducted with the neutral gas mode with the old antechamber attached and Fig.\ref{fig:AnteMeasData}~d) shows measurements conducted with the neutral gas mode when the new antechamber was attached. At position $\pm$30\degree and $\pm$90\degree are pillars holding the stack of the ion-optical lenses together. When the beam hits these pillars, the particles scatter in all directions leading to a damping of the signal. For the neutral gas channel, no difference in the signal distribution and intensity is expected because a change in the antechamber design does not influence the signal measured with the neutral gas channel. The observed signal of the neutral gas mode when the new antechamber is attached, is significantly higher than with the old antechamber. This is due to a better voltage set. A different voltage set for the voltages in the ionization region changes the distribution of the electron beam thus leading to a different ion distribution in the ionization region. This leads to a different angular distribution of the signal for the neutral gas channel when comparing the results of the two measurement series. 
 	
-%-------------------------------------------------------------------------------------	
-	\subsection{Signal Distribution \notes{finished}} % Think of a good Chapter name
+%---------------------------------------------------------------------------------------------------------
+	\subsection{Density Enhancement \notes{finished}}
 	\begin{figure}[h!]
 		\centering
 		\includegraphics[width=\textwidth]{Experiments/2D_scan_anteEntr.jpg}
@@ -117,8 +117,8 @@
 		\caption{Left: Zoom on the entrance when shooting with the neutral particle beam at the structure of the NIM PFM instrument. Right: Top view on the entrance.}
 		\label{exp:PFMIntCharEnt}
 	\end{figure}
-	\notes{Chapter name could be improved}. For the first tests with the NIM PFM, the front side of the NIM instrument was scanned with the neutral particle beam to find the position of the entrance slit and the antechamber entrance hole to align the beam properly with the instrument. Fig.\,\ref{exp:PFMIntCharTot}~left shows the scan of the front side and Fig.\,\ref{exp:PFMIntCharTot}~right shows the corresponding structural part. The antechamber entrance hole is clearly visible as a small dot. Fig.\,\ref{exp:PFMIntCharAnt} shows a zoom with a better resolution of the entrance hole which shows a nice Gaussian distribution. When looking at the entrance slit, there are two positions with increased intensities. The zoom on Fig.\,\ref{exp:PFMIntCharEnt} reveals that the positions of biggest intensity is were the beam hits the structure covering the two electron emitting filaments. The other intensity maximum is where the beam hits the supporting structure opposite of the filament bloc. When the gas hits these structures, the gas slows down leading to a local increase of the gas density. Therefore, the structure partially thermalizes the gas similar as the closed source antechamber. This was not intended because with the neutral gas channel the aim is to measure incoming particles directly without any interaction with the structure. In the design of the PFM, the filament bloc and the supporting structure act like a funnel directing the sputtered gas to the central grid. The intensity amplification when shooting on the filament bloc is unavoidable. For the supporting structure opposite of the filament, a pillar instead of the plate like structure would have been the better option. When the gas hits the pillar, the pillar scatters the gas in all direction instead of scattering only in the direction of the central grid. This phenomenon was observed when doing a similar measurement with the NIM prototype (Fig.\,\ref{exp:ProtoIntCharEnt}).\\
-	The ion-source of the prototype had six pillars holding the different focusing lenses together. In Fig.\,\ref{exp:ProtoIntCharEnt} the pillars are marked as red circles. The electron emitting filament was opposite of the main gas inflow direction. For these measurements, the ionization region was scanned with the neutral particle beam at angles 0\degree and $\pm$60\degree to shoot between the pillars. When scanning from the front side, the signal intensity has a nice Gaussian shape. When shooting at angles of $\pm$60\degree the Gaussian distribution is visible when the neutral particle beam is aligned over the centre grid with an asymmetry toward the side of the filament. The filament bloc slows down the neutral particles leading to a small amplification of the signal. This amplification is less dominant than in the design of the PFM because the part of the filament structure seen by the beam is tilted outward. At distances bigger than $\pm$25\,mm from the centre, the signal drops again. This is where the beam is completely outside of the ionization region.
+	For the first tests with the NIM PFM, the front side of the NIM instrument was scanned with the neutral particle beam to find the position of the entrance slit and the antechamber entrance hole to align the beam properly with the instrument. Fig.\,\ref{exp:PFMIntCharTot}~left shows the scan of the front side and Fig.\,\ref{exp:PFMIntCharTot}~right shows the corresponding structural part. The antechamber entrance hole is clearly visible as a small dot. Fig.\,\ref{exp:PFMIntCharAnt} shows a zoom with a better resolution of the entrance hole which shows a nice Gaussian distribution. When looking at the entrance slit, there are two positions with increased intensities. The zoom on Fig.\,\ref{exp:PFMIntCharEnt} reveals that the positions of biggest intensity is were the beam hits the structure covering the two electron emitting filaments. The other intensity maximum is where the beam hits the supporting structure opposite of the filament bloc. When the gas hits these structures, the gas slows down leading to a local increase of the gas density. Therefore, the structure partially thermalizes the gas similar as the closed source antechamber. This was not intended because with the neutral gas channel the aim is to measure incoming particles directly without any interaction with the structure. In the design of the PFM, the filament bloc and the supporting structure act like a funnel directing the sputtered gas to the central grid. The intensity amplification when shooting on the filament bloc is unavoidable. For the supporting structure opposite of the filament, a pillar instead of the plate like structure would have been the better option. When the gas hits the pillar, the pillar scatters the gas in all direction instead of scattering only in the direction of the central grid. This phenomenon was observed when doing a similar measurement with the NIM prototype (Fig.\,\ref{exp:ProtoIntCharEnt}).\\
+	The ion-source of the prototype had six pillars holding the different focusing lenses together. In Fig.\,\ref{exp:ProtoIntCharEnt} the pillars are marked as red circles. The electron emitting filament was opposite of the main gas inflow direction. For these measurements, the ionization region was scanned with the neutral particle beam at angles 0\degree and $\pm$60\degree to shoot between the pillars. When scanning from the front side, the signal intensity has a nice Gaussian shape. When shooting at angles of $\pm$60\degree the Gaussian distribution is visible when the neutral particle beam is aligned over the centre grid with an asymmetry toward the side of the filament. The filament bloc slows down the neutral particles leading to a small amplification of the signal. This amplification is less dominant than in the design of the PFM because the part of the filament structure seen by the beam is tilted outward. At distances bigger than $\pm$25~mm from the centre, the signal drops again. This is where the beam is completely outside of the ionization region.
 	\begin{figure}[h!]
 		\centering
 		\includegraphics[width=\textwidth]{Experiments/Entrence_Proto_topview.png}
@@ -128,17 +128,10 @@
 	
 	
 %---------------------------------------------------------------------------------------------------------
-	\subsection{Entrance adaption} % Ion and e- distribution in the ionisation region. Entrance adaption
-	In the following section we look where the ions in the ionisation region have to be generated that they actually reach the detector and we look at the distribution electrons which are used to ionise the neutral particles.
-	
-	\begin{comment}
-		\begin{figure}[h] % PFM entrance side and Top view. enlarge picture incase there is enough text.
-			\centering
-			\includegraphics[width=\textwidth]{Experiments/PFMEntrance_SideTop_View.png}
-			\caption{Side view (left) and top view (right) of the entrance slit.}
-			\label{fig:PFMentrSideTopSchema}
-		\end{figure}
-	\end{comment}
+	\subsection{Entrance Ion and Electron Position Simulations}
+	% Ion and e- distribution in the ionisation region. Entrance adaption
+	% Simulation of ions to get an idea where they have to be generated that they actually reach the detector.
+	% Discuss with Peter why 2 extraction grids are needed for further explanation.
 	
 	\begin{figure}[h] % Entrance schema.
 		\begin{subfigure}[t]{\textwidth}
@@ -152,12 +145,11 @@
 			\includegraphics[width=.85\textwidth]{Experiments/PFMEntrance_Top_Schema.png}
 		%	\caption{Top view}
 		\end{subfigure}
-		\caption{Side (top) and top view (bottom) of the entrance slit. The violet arrows mark the influx of the neutral gas and the blue arrows mark the electron beam.}
+		\caption{Side (top) and top view (bottom) of the ionisation region. The violet arrows mark the gas inflow direction and the blue arrows mark the direction of the electron beam.}
 		\label{fig:PFMentrSideTopSchemas}
 	\end{figure}
 
-
-	\begin{figure}[h] % Sim ions which reach the detector. Caption
+	\begin{figure}[h] % Sim ions reach the detector th- & n-Mode.
 		\begin{subfigure}[t]{.5\textwidth}
 			\centering
 			\includegraphics[width=.8\textwidth]{Experiments/PFMEntrance_Side_thSim.png}
@@ -179,10 +171,30 @@
 			\includegraphics[width=.8\textwidth]{Experiments/PFMEntrance_Top_nSim.png}
 			\caption{Top view, neutral mode.}
 		\end{subfigure}
-		\caption{Simulated ions marked as small arrows starting at different positions in the entrance slit. The ions in n-mode enter the entrance with 4~km/s. The blue ions reach the detector where the orange ions hit the structure during their flight to the detector.}
-		\label{fig:PFMentrSideTopSim}
+		\caption{Simulated ions marked as small arrows starting at different positions in the ionisation region. The ions in n-mode enter the entrance with 4~km/s. Ion reaching the detector are marked in blue and ions hitting the structure during their flight to the detector are marked orange.}
+		\label{fig:PFMentrSideTopSimthnMode}
 	\end{figure}
-	\begin{figure}[h]
+	\begin{figure}[h] % Sim ions reach the detector i-Mode.
+		\begin{subfigure}[t]{.5\textwidth}
+			\centering
+			\includegraphics[width=.8\textwidth]{Experiments/PFMEntrance_Side_iSim.png}
+			\caption{Side view, ion mode.}
+		\end{subfigure}
+		\begin{subfigure}[t]{.5\textwidth}
+			\centering
+			\includegraphics[width=.8\textwidth]{Experiments/PFMEntrance_Top_iSim.png}
+			\caption{Top view, ion mode.}
+		\end{subfigure}
+		\caption{Simulated ions marked as small arrows starting at different positions in the entrance slit with a velocity of 4~km/s. The blue ions reach the detector where the orange ions hit the structure during their flight to the detector.}
+		\label{fig:PFMentrSideTopSimiMode}
+	\end{figure}
+	\begin{figure}[h] % SIMION Model of i-Mode ion flight path.
+		\centering
+		\includegraphics[width=.8\textwidth]{Experiments/Ionflys_imode.png}
+		\caption{SIMION model of NIM prototype with ion trajectories in optimised i-mode, from -y direction \cite{Diss_Meyer}.}
+		\label{fig:iModeIonFlyStefan}
+	\end{figure}
+	\begin{figure}[h!] % Electron beam
 		\centering
 		\includegraphics[width=.7\textwidth]{Experiments/IS_adaption.png}
 		\caption{Top: New entrance with enlarged hole for the electron beam. Bottom: Old entrance with additional ring to reduce the diameter of hole.}
@@ -190,15 +202,15 @@
 	\end{figure}
 	\begin{figure}[h]
 		\centering
-		\includegraphics[width=.7\textwidth]{Experiments/IS_adaption_TopView.png}
+		\includegraphics[width=.5\textwidth]{Experiments/IS_adaption_TopView.png}
 		\caption{Top view into the entrance of NIM with simulated electron beam (dark blue) and potential line (light blue).}
 		\label{fig:IsAdaptTop}
 	\end{figure}
-	
-	Fig.~\ref{fig:PFMentrSideTopSchemas}~top shows the ionization region from the side. The antechamber is on the top where the neutral particles from the thermal mode come from (violet arrow) and the generated ions will be pulled into the spectrometer with the inner pulser grid $IS~5$. The violet arrows mark the inflow of the neutral gas once coming from the antechamber (th-Mode) and once coming from the side (n-Mode). The blue arrow marks the flight direction of the electrons emitted by the filament to ionise the neutral gas. Fig.~\ref{fig:PFMentrSideTopSchemas}~bottom shows the top view of the ionisation region when looking from the antechamber into the spectrometer. The entrance slit $IS~3$ has a special form because on the right side, the two filaments reach into the source and bloc part of the field-of-view and on the left side there is supporting structure reaching into the source to support the antechamber from the other side. In n-Mode, the gas can enter the ionisation region from every direction in the yz-plane except from where the filament and the supporting structure are resulting in a field-of-view of 300°. For the lab measurements, the gas inflow direction is usually from the bottom as it is also shown in Fig.~\ref{exp:PFMIntCharEnt}. For the simulations, a gas inflow direction parallel to the electron beam was chosen as it is marked in Fig.~\ref{fig:PFMentrSideTopSchemas}~bottom.\\
-	Here we were interested in where the ions have to be generated in th- and n-mode to actually reach the detector. The ions were generated in a cuboid volume with a height of 2~mm because that is the height of the entrance slit and with a square base area of 8x8~mm. Fig.~\ref{fig:PFMentrSideTopSim} shows the simulated data left for thermal mode where the particles have thermal velocity and right for the neutral mode where the incoming particles have a velocity of 4~km/s coming from negative z-direction. The particles are displayed as velocity vectors. The ions marked in blue are the ones reaching the detector and the orange ones hit the structure somewhen during their flight to the detector. The simulated particles had unit masses from 1 up to 1000~m/z. The pictures show nicely that only ions reach the detector which are generated above the inner extraction grid $IS~5$ which is the one the extraction pulse is applied for ion extraction. In thermal mode, also some ions generated over the outer grid reach the detector. They are visible as a small blue ring close to the structure separating the inner and the outer grid ($IS~5$ and $IS~6$) in Fig.~\ref{fig:PFMentrSideTopSimThTop}). In thermal mode the neutral particle flow comes through the pink structure and is directed over the inner pull grid. Only a small amount of gas reaches the outer grid. In neutral mode, only ions generated over the inner grid reach actually the detector due to their velocity perpendicular to the x-axis of the instrument.\\
-	In the next section, we look at the flight path of the electrons which are used to ionise the neutral gas. During vibration tests of the sensor, a weakness in the structure of the ion source was identified leading to a small redesign. The opening for the electron beam in the entrance electrode $IS~3$ had to be enlarged (Fig.~\ref{fig:IsAdapt}). Simulations were done to see how big the impact of that design adaption was. Fig.~\ref{fig:IsAdapt} bottom panel shows the old design with an additional ring to reduce the diameter of that hole and the top panel shows the new design without the additional ring in the entrance electrode. Dark blue is the flight path of the electrons and light blue shows the potential lines. The adaption of the corresponding electrode had not big impact on the flight path of the electrons. Fig.~\ref{fig:IsAdaptTop} shows the top view from the entrance. The porous structure is the outer extraction grid $IS~6$. The inner grid is covered by the electron beam. In the simulation model, only one filament was simulated because it was sufficient for these simulations. Between the two potentials line which mark the 50~V ring is the electrode $IS~4$. We see nicely in Fig.~\ref{fig:IsAdapt} and Fig.~\ref{fig:IsAdaptTop} that the electron beam covers the whole volume over the inner extraction grid.
-	
+	This chapter shows at which start positions the ions in the ionisation region have to be when the extraction pulse is applied to successfully reach the detector. In addition, this chapter includes simulations of the flight path of the electron beam which is used to ionize the neutral particles.\\
+	Fig.~\ref{fig:PFMentrSideTopSchemas}~top shows the ionization region from the side. The pink tube opposite of IS5 is the tube connecting the antechamber with the ionization region. Neutral particles are ionized with an electron beam (blue arrow) and pulled into the spectrometer with the inner extraction grid IS5 (th-Mode and n-Mode). Ions penetrating the ionization region are pulled with the outer extraction grid IS6 into the spectrometer (i-Mode). Fig.~\ref{fig:PFMentrSideTopSchemas}~bottom shows the top view of the ionisation region when looking from the antechamber. On the right side are the two filaments used to generate the ionising electron beam and on the left side is a supporting structure to support the antechamber from the other side. In n-Mode and i-Mode, the gas can enter the ionisation region from every direction in the yz-plane except from where the filaments and the supporting structure are, resulting in a field-of-view of 300°. For the lab measurements, the gas inflow direction is from the bottom as it is also shown in Fig.~\ref{exp:PFMIntCharEnt}. For the simulations, a gas inflow direction parallel to the electron beam was chosen as it is marked in Fig.~\ref{fig:PFMentrSideTopSchemas}~bottom. The generated ions of the th- and n-Mode were generated in a cuboid volume with a height of 2~mm and a square base area of 8x8~mm. For the simulations of the i-mode, the base area was 20x20~mm because the ions are pulled with the outer extraction grid into the spectrometer.\\
+	Fig.~\ref{fig:PFMentrSideTopSimthnMode}~a) and c) show the simulated data for thermal mode where the particles have thermal velocity. Fig.~\ref{fig:PFMentrSideTopSimthnMode}~b) and d) show the simulated data for the neutral mode and Fig.~\ref{fig:PFMentrSideTopSimiMode} shows the simulated data for ion mode where the penetrating neutrals and ions respectively have a velocity of 4~km/s.	The particles are displayed as velocity vectors. The ions marked in blue are the ones reaching the detector and the orange ones hit the structure somewhen during their flight to the detector. The simulated particles have unit masses from 1 up to 1000~m/z.	Fig.~\ref{fig:PFMentrSideTopSimthnMode} shows that only ions reach the detector which are generated directly above the inner extraction grid IS5 which is also the one extracting the ions in these two modes. In thermal mode, also some ions generated over the outer grid IS6 reach the detector. They are visible as a small blue ring close to the structure separating the inner and the outer grid in Fig.~\ref{fig:PFMentrSideTopSimThTop})~c). In thermal mode the neutral particle flow comes through the pink structure and is directed over the inner pull grid. Therefore, only a small amount of gas reaches the outer grid. In neutral mode, only ions generated over the inner grid reach the detector due to their velocity perpendicular to the x-axis of the instrument. In ion mode, the ion optics is optimized for ions penetrating the ionisation region from the side as it is shown in Fig.~\ref{fig:iModeIonFlyStefan}. Due to their charge, ions react to the electric field as soon as they are close to the ion-optical lenses of the ionisation region. Their main starting position is therefore at the edge of the ionisation region and not in the centre as it is for the neutral particles. The ionisation of the neutral particles is focused on the central extraction grid and therefore, most of the ions are generated above the inner extraction grid IS5 when measuring with the thermal and the neutral mode channels start. When measuring with the ion mode, the ion-optical system is optimized for ions starting close the focusing lenses in the ionisation region as it is shown in the simulations in Fig.~\ref{fig:iModeIonFlyStefan} and Fig.~\ref{fig:PFMentrSideTopSimiMode}. The central grid is close to 0~V to additionally deflect the ions.\\
+	Fig.~\ref{fig:IsAdapt} and Fig.~\ref{fig:IsAdaptTop} show the flight path of the electrons which are used to ionise the neutral gas. During vibration tests of the sensor, a weakness in the structure of the ion source was identified. This lead to a small redesign where the opening for the electron beam in the entrance electrode IS3 had to be enlarged (Fig.~\ref{fig:IsAdapt}). Simulations were done to see how big the impact of that design adaption was. Fig.~\ref{fig:IsAdapt} bottom panel shows the old design with an additional ring to reduce the diameter of that hole and the top panel shows the new design without the ring in the entrance electrode. Dark blue is the flight path of the electrons and light blue shows the electric potential lines. The adaption of IS3 had not impact on the flight path of the electrons. As previously discussed, the aim is to ionise the cylinder volume above the inner pull grid because only ions generated in this volume will reach the detector. Therefore, the electron beam should cover the whole volume.	Fig.~\ref{fig:IsAdaptTop} shows the top view from the ionisation region. The porous ring structure is the outer extraction grid IS6. The inner grid is covered by the electron beam. In this model, only one filament is display. Between the two potentials lines which mark the 50~V ring is electrode IS4 which is on 130~V. Fig.~\ref{fig:IsAdapt}~top and Fig.~\ref{fig:IsAdaptTop} show, that with the applied voltages the electron beam covers the whole volume over the inner extraction grid.
+	\newpage
 	
 	% Filament repeller simulation tests. Noch Graphiken einmal einfügen. Die wichtigsten.
 	% Um herauszufinden, wie wichtig die Position des Filaments ist.
@@ -228,9 +240,9 @@
 
 %----------------------------------------------------------------------------------------
 	\subsection{Shutter Performance Test \notes{finished}}
-	When measuring with the neutral gas channel, the aim is that the particles are measured directly without any interaction with the structure of the instrument. Therefore, a shutter between the antechamber and the ionization region was required to close the particle entrance from the antechamber. In this section the performance of the shutter was tested. According to the model stated in Chap.\ref{subsubsec:motorflow} the shutter should damp the signal by a factor 600.\\
-	These tests were performed with the NIM PFM. The PFM was operated with laboratory electronics. The tests were performed at the CASYMIR test facility. The used particle beam consisted of hydrogen and xenon with a velocity of 2\,\si{\kilo\meter\per\second}. Three different measurements were performed: One with the beam directing onto the antechamber with the shutter open, one with the shutter closed and a background measurement, where the particle beam was pointed onto the outer structure of NIM to estimate how much of the signal arises from the test gas scattering into the ionization region when the beam is directed in an arbitrary direction. This background was subtracted from both signals before they were divided through each other to determine the damping factor $G_{close}$ of the shutter.\\
-	The resulting damping factor of the shutter is 12 instead of the required 1000. The biggest impact has the actual thickness of the gap between the shutter and the antechamber when the shutter is closed. The damping reduces significantly when the gap is bigger than actually designed. This is shown in Fig.\,\ref{fig:ShutGapSizeSigDamp} in Chap.\,\ref{subsubsec:motorflow}. With a gap size of about 0.1\,mm instead of 0.01\,mm the damping factor is only about a factor 25. Other reasons are that the portion of the beam which scatters on the antechamber outer walls gets thermalized in the vacuum chamber and adds to the signal intensity. In the outer space, the gas scatters on the antechamber but does not reach the ionization region because it will flow around the instrument.
+	When measuring with the neutral gas channel, the aim is that the particles are measured directly without any interaction with the structure of the instrument. Therefore, a shutter between the antechamber and the ionization region was required to close the particle entrance from the antechamber. In this section the performance of the shutter was tested. According to the model stated in Chap.~\ref{subsubsec:motorflow} the shutter should damp the signal by a factor 600.\\
+	These tests were performed with the NIM PFM. The PFM was operated with laboratory electronics. The tests were performed at the CASYMIR test facility. The used particle beam consisted of hydrogen and xenon with a velocity of 2~km/s. Three different measurements were performed: One with the beam directing onto the antechamber with the shutter open, one with the shutter closed and a background measurement, where the particle beam was pointed onto the outer structure of NIM to estimate how much of the signal arises from the test gas scattering into the ionization region when the beam is directed in an arbitrary direction. This background was subtracted from both signals before they were divided through each other to determine the damping factor $G_{close}$ of the shutter.\\
+	The resulting damping factor of the shutter is 12 instead of the required 1000. The biggest impact has the actual thickness of the gap between the shutter and the antechamber when the shutter is closed. The damping reduces significantly when the gap is bigger than actually designed. This is shown in Fig.~\ref{fig:ShutGapSizeSigDamp} in Chap.~\ref{subsubsec:motorflow}. With a gap size of about 0.1~mm instead of 0.01~mm the damping factor is only about a factor 25. Other reasons are that the portion of the beam which scatters on the antechamber outer walls gets thermalized in the vacuum chamber and adds to the signal intensity. In the outer space, the gas scatters on the antechamber but does not reach the ionization region because it will flow around the instrument.
 	
 	\begin{comment}	
 	\begin{table}
@@ -288,19 +300,19 @@
 	\end{comment}	
 
 %--------------------------------------------------------------------------------------------
-		\subsection{Pulser \notes{finished}}
+	\subsection{Pulser \notes{finished}}
 		% slit thickness of 2mm and m = 1u -> 3ns to leave the source
 		%							m = 2u -> 4.5ns H2
 		%							m = 10u -> 10ns
 		%							m = 100u -> 32ns
 		%							m = 130u -> 37ns
-	\begin{figure}[h!]
+	The high-voltage pulser is used to accelerate the generated ions in the ionisation region to a certain energy. During the time when no high voltage pulse is applied, the potential has to be stable at the bias voltage to allow ion storage as previously discussed in Chapter\,\ref{chap:IonStor}.\\
+	\begin{figure}[h]
 		\centering
 		\includegraphics[width=\textwidth]{Bilder/Pulser_theretical_shape.jpg}
 		\caption{Specifications for the pulse shape generated by a realistic pulser \cite{Diss_Meyer}.}
 		\label{fig:PulserTheoCurve}
 	\end{figure}
-	The high-voltage pulser is used to accelerate the generated ions in the ionisation region to a certain energy. During the time when no high voltage pulse is applied, the potential has to be stable at the bias voltage to allow ion storage as previously discussed in Chapter\,\ref{chap:IonStor}.\\
 	Fig.\,\ref{fig:PulserTheoCurve} shows a schema of a realistic high voltage pulse and Table\,\ref{tab:FlightPulserPerf} shows the characteristics of the flight pulser compared to the requirements. The fall time is the time to build up the negative high voltage on the extraction grid. this time has to be very short to give all ions the same amount of energy. When the fall time is long, low mass particles receive less energy resulting in a lower mass resolution for these species. A fall time of 1~ns lead to a 0.1\,\% lower mass resolution of hydrogen compared to a particle with mass 200~u. A fall time of 5~ns results in a deviation of 3\,\% (cf. Chap.\,\ref{chap:massRes}). The fall time of the flight pulser is a bit longer than according to the specifications. When applying a high voltage, the pulse overshoots its set value and drops slightly. The overshoot and the voltage drop result in a variation of the particle energy for the different species. The ringing of the high voltage, and the pulse drop of the flight pulser are within the specifications. The pulse duration has to be longer than 0.2\,\si{\micro\second} because that is the minimum time particles with masses of 1000\,u need to leave the ionisation region. With some margin, the specifications were set to 0.5\,\si{\micro\second}. The rise time to bias voltage should be smaller than 100\,ns to leave enough time for ion storage. This is well achieved with the flight pulser. The ripple of the bias voltage should be smaller than $\pm$50\,mV to generate a stable electric field during the time when no high-voltage is applied on the extraction grid. A variation by $\pm$100\,mV of the voltage of the electrode opposite of the pulser grid results in a visible variation of the signal intensity during hand optimisation with laboratory electronics. However, the baseline ripple of the flight pulser exceeds this value.\\
 	\begin{table}[h!]
 		\begin{center}
@@ -316,16 +328,17 @@
 		\label{tab:FlightPulserPerf}
 	\end{table}
 
+
 %--------------------------------------------------------------------------------------------
-	\subsection{Detector Tests \notes{Draft}}\label{chapExp:Det}
+	\subsection{Detector Tests \notes{finished}}\label{chapExp:Det}
 	
 	\begin{figure}[h] % Flat and folded detector. Make notes of the different parts.
 		\centering
-		\includegraphics[width=.8\textwidth]{Experiments/Detectors_fla_folded.png}
-		\caption{NIM PFM detectors ready for tests. Top: in flat configuration. Bottom: in folded configuration.}
+		\includegraphics[width=.7\textwidth]{Experiments/Detectors_fla_folded.png}
+		\caption{NIM flight detectors ready for tests. Top: flat configuration. Bottom: folded configuration.}
 		\label{fig:DetFlatFolded}
 	\end{figure}
-	\begin{figure}[h] % Detector gain curves during conditioning of both FS detectors.
+	\begin{figure}[h!] % Detector gain curves during conditioning of both FS detectors.
 	\begin{subfigure}{.5\textwidth}
 		\centering
 		\includegraphics[width=0.9\textwidth]{Experiments/Gain_Curves_SN4p5_4p7.png}
@@ -334,39 +347,50 @@
 		\centering
 		\includegraphics[width=0.9\textwidth]{Experiments/SN4p7_discharge.png}
 	\end{subfigure}
-		\caption{Left: Gain curves of two NIM PFM detectors. The difference in gain is because for each measurement curve, a different set of MCPs was used. Right: Gain curves of a folded NIM PFM detector. The lower gain curve was recorded after a discharge at an MCP voltage of 1.8\si{\kilo\volt}.}
+		\caption{Left: Gain curves of two NIM FS detectors. The difference in gain is because for each measurement curve, a different set of MCPs was used. Right: Gain curves of a folded NIM FS detector. The lower gain curve was recorded after a discharge at an MCP voltage of 1.8~kV.}
 		\label{fig:SN4p54p7Gain}
 	\end{figure}
 	\begin{figure}[h] % Theoretical gain curve as a function of time
 		\centering
-		\includegraphics[width=.7\textwidth]{Experiments/MCP_relGain_timeevol.png}
+		\includegraphics[width=.5\textwidth]{Experiments/MCP_relGain_timeevol.png}
 		\caption{Relative gain of an MCP as a function of operation time \cite{LecNot_Wurz2017}.}
 		\label{fig:MCPrelGainTime}.
 	\end{figure}
-	\begin{figure}[h] % FS gain Curve
+	\begin{figure}[h!] % FS gain Curve
 		\centering
 		\includegraphics[width=.7\textwidth]{Experiments/GainDetFSLabEl.png}
-		\caption{Gain curves measured with the FS instrument.}
+		\caption{Gain curves of the detectors measured with the NIM FS ion-optical system.}
 		\label{fig:MCPGainCurve4p7}
 	\end{figure}
-	\begin{figure}[h] % Calibraton curve
+	\begin{figure}[h!] % Calibraton curve
 		\centering
-		\includegraphics[width=.7\textwidth]{Experiments/PFM_UstackUmccp_TimeEvol.png}
-		\caption{MCP voltage (U\textsubscript{MCP}) as a function of the voltage applied between the MCP front and the anode (U\textsubscript{stack}). The fit coefficients of the function $U_{MCP} = a\cdot U_{stack} +b$ are: a = 0.932, b = 12 V.}
+		\includegraphics[width=.8\textwidth]{Experiments/PFM_UstackUmccp_TimeEvol.png}
+		\caption{MCP voltage (U\textsubscript{MCP}) as a function of the voltage applied between the MCP front and the anode (U\textsubscript{stack}) for different measurement series with the PFM (black symbols) and the FS instrument (red squares) with the quadratic extrapolation.}
 		\label{fig:PFMUstackUmcpTimeEvol}
-	\end{figure}
-	This chapter describes the testing procedure of the flight detectors and shows performance results.\\
-	The flight detectors consists of a flexible PCB (Printed Circuit Board) with a peek housing for the MCPs. The flex PCB was needed to reduced the detector volume and therefore to reduced the volume, which has to be shielded against the strong radiation in Jupiter's radiation field. The detectors are tested in flat configuration with test MCPs and in folded configuration with flight MCPs (Fig.\,\ref{fig:DetFlatFolded}). The detectors were put in a vacuum chamber and baked out for 2~days. Earliest one day after bake out, the conditioning was started. The conditioning procedure is attached in the Appendix (Chap.~\ref{sec:appendix}). Depending on the outgas behaviour of the detector, the conditioning took 2.5 to 4.5~h. After the conditioning, the measurements of the detector gain were performed. Fig.\ref{fig:SN4p54p7Gain}~left shows the gain curves of two FS detectors in the two configurations. The conditioning and the measurements in the folded configuration were done up to lower voltages to spare the potential flight MCPs. The gain of the MCPs depends on different factors. As described in chapter~\ref{sec:DetParam} the gain is a function of the voltage applied over the MCPs as it is shown in Fig.~\ref{fig:SN4p54p7Gain}. The MCPs also degrade over time. This process depends on the residual gas pressure at which the MCPs are operated and the residual gas composition. The rapid decline in gain during the first few operation hours is a result of cleaning the channels through operation (Fig.~\ref{fig:MCPrelGainTime}). When the MCPs were exposed to air, water and other substances deposit in the MCP channels. During operation, these deposits are sputtered and the surface of the channels are cleaned. After a few hours, the gain reaches a plateau. % May search here more literature to reference it.
-	In flat configuration SN~4.7 has a lower gain than SN~4.4 because its conditioning took longer than the conditioning of detector SN~4.4. Therefore it was cleaned better. In the folded state, SN~4.4 was 3~days longer in vacuum than SN~4.7 and had therefore more time to outgase. Fig.~\ref{fig:SN4p54p7Gain} right shows a zoom on the two measurement series of SN~4.7 both recorded in folded configuration. During the first measurement series, a discharge happened when the MCP voltage was at 1.8~kV. To amplify a signal, a minimal voltage has to be applied over the MCPs. When they are barely used, this voltage is in the range of 1.6~kV. During ageing, the decrease in gain can partially be compensated by increasing the voltage. When an ion induces an electron avalanche, the electrons are free in the channel and their main moving direction is towards the channel output. When a discharge suddenly lowers the applied acceleration voltage, these free electrons get pushed towards the channels walls due to space charge. These electrons destroy the conductive coating leading to a signal reduction of about 30\% per discharge. The higher the applied MCP voltage is, the higher is the signal loss.\\ % Literature. 30% or in that measurement even more depending on which level the discharge happened.
+	\end{figure} % ax^2 + bx. PFM: a = (-1.25\pm 0.0.5)e-5, b = 0.96\pm 0.001 FS: a = (-1.54\pm 0.0.5)e-5, b = 0.96\pm 0.001
+
+	This chapter describes the testing procedure of the flight detectors and shows calibration results. The flight detectors consist of a flexible PCB (Printed Circuit Board) with a peek housing for the MCPs (Chap.~\ref{sec:setup}). Due to Jupiter's harsh radiation environment, the NIM detector has to be shielded with a tungsten copper shielding. To minimize the shielding mass, a flex PCB was used to fold the detector into the small peek structure to minimize the detector volume. The detectors are tested in flat configuration with test MCPs and in folded configuration with flight MCPs (Fig.~\ref{fig:DetFlatFolded}). The detectors were put in a vacuum chamber and baked out for 2~days. The conditioning was started one day after bake out when a residual gas pressure lower than $5\cdot10^{-8}$~mbar was reached. The conditioning procedure is attached in the Appendix Chap.~\ref{sec:appendix}. Depending on the outgas behaviour of the detector, the conditioning took 2.5 to 4.5~h. After the conditioning, the measurements of the detector gain were performed. Fig.~\ref{fig:SN4p54p7Gain}~left shows the gain curves of two FS detectors in flat and folded configuration. The conditioning and the measurements in the folded configuration were done up to lower voltages to spare the potential flight MCPs. The gain of the MCPs depends on different factors. As described in chapter~\ref{sec:DetParam} the gain is a function of the voltage applied over the MCPs as it is shown in Fig.~\ref{fig:SN4p54p7Gain}. The MCPs also degrade over time. This process depends on the residual gas pressure at which the MCPs are operated and the residual gas composition. The rapid decline in gain during the first few operation hours is a result of cleaning the channels through operation (Fig.~\ref{fig:MCPrelGainTime}). When the MCPs were exposed to air, water and other substances deposit in the MCP channels. During operation, these deposits are sputtered and the surface of the channels are cleaned. After a few hours of operation, the gain reaches a plateau. In flat configuration SN~4.7 has a lower gain than SN~4.4 because its conditioning took longer than the conditioning of detector SN~4.4. Therefore it was cleaned better. In the folded state, SN~4.4 was 3~days longer in vacuum than SN~4.7 and had therefore more time to outgase. Fig.~\ref{fig:SN4p54p7Gain} right shows a zoom on the two measurement series of SN~4.7 both recorded in folded configuration. During the first measurement series, a discharge happened when the MCP voltage was at 1.8~kV. To amplify a signal, a minimal voltage has to be applied over the MCPs. When they are barely used, this voltage is in the range of 1.6~kV. During ageing, the decrease in gain can partially be compensated by increasing the voltage. When an ion induces an electron avalanche, the electrons are free in the channel and their main moving direction is towards the channel output. When a discharge suddenly lowers the applied acceleration voltage, these free electrons get pushed towards the channels walls due to space charge. These electrons destroy the conductive coating of the channels leading to a signal reduction of about 30\% per discharge. The higher the applied MCP voltage is, the higher is the signal loss.\\
 	Fig.~\ref{fig:MCPGainCurve4p7} shows the gain curve of detector SN~4.7 recorded when it was build into the NIM FS instrument. H\textsubscript{2} and H\textsubscript{2}O are part of the residual gas and \textsuperscript{84}Kr is the used test gas. The curves follow nice the theoretical curve. The initial energy of the first electron $U_{init}$ is about 6~eV and the probability $A$ to emit the first electron is in the range of 0.3~eV\textsuperscript{-1/2} for the three species.\\
-	Fig.~\ref{fig:PFMUstackUmcpTimeEvol} shows the relation between the voltage applied over the MCPs $U_{MCP}$ as a function of the voltage $U_{stack}$ applied between the MCP front and the anode for the PFM and the FS detector. The MCPs in the two detectors have similar resistances. Therefore, the FS detector can be used to analyse the long term behaviour. Due to the similar resistances, the measurement data of the two detectors overlap. For the PFM detector, a longer measurement campaign was done to characterize the PFM instrument (Chap.~\ref{sec:paper}). During that campaign, this curve was recorded frequently every time the instrument was turned on. The resistance did not seem to change during the short time of the measurement campaign.
+	\begin{table}[h!] % Fit params of Calibration
+		\begin{center}
+			\begin{tabular}{c|c|c|}
+				& PFM	& FS\\ \hline
+				a	& $(-1.25 \pm 0.05)\cdot10^{-5}$ & $(-1.54 \pm 0.05)\cdot10^{-5}$ \\
+				b 	& $0.96 \pm 0.001$	& $0.96 \pm 0.001$\\
+			\end{tabular}
+		\end{center}
+		\caption{Fit parameters of the quadratic interpolation for the PFM and the FS detector for the function: U\textsubscript{MCP} = a$\cdot$U\textsubscript{stack}\textsuperscript{2} + b$\cdot$U\textsubscript{stack}.}
+		\label{tab:UstackUmcpFitParams}
+	\end{table}
+	The NIM flight detector has a resistor built in between the MCPs and the anode to accelerate the electrons from the MCPs towards the anode. The flight power supply sets the voltage between the MCP front and the anode $U_{stack}$. To determine the relation between the voltage over the MCPs $U_{MCP}$ and the stack voltage $U_{stack}$ a calibration was done with the laboratory power supplies. Fig.~\ref{fig:PFMUstackUmcpTimeEvol} shows the results of that calibration for the PFM and the FS detector with an quadratic extrapolation up to 2.4~kV for the MCP voltage. 2.4~kV is the upper voltage limit of the MCPs according to the manufacture. The fitparameters are in Table~\ref{tab:UstackUmcpFitParams}. The MCPs in the two detectors have similar resistances which is the reason why the measurement data of the two detectors overlap. For the PFM detector, a longer measurement campaign was done to characterize the PFM instrument (Chap.~\ref{sec:paper}). During that campaign, this curve was recorded frequently every time the instrument was turned on. The resistance did not change significantly during the short time of the measurement campaign.
+	
 	
 	% Measuring settings. Turn the drift voltage up to -2.5 kV and then slowly increase the anode voltage to the value you want to measure. The gain is calculated with the software by doing a Simpson 3/8 integration of the peak = Q.
 
 	% Discharge pulse shape discussion.
 	% Detector with broken anode is detector EM4. Look if there are any specifications. Seems to have most probable the same configuration as the other detectors. -> Sufficient for the data analysis but it would be good to have the datasheet.	
 	% Fig. \notes{bla} shows the signal shapes of different detector configurations beginning with the shape of a detector with a broken diode. The other figure shows the signal shape of a detector with a functioning resistor. The most remarkable feature is that the signal height of the detector is much smaller and much broader that the signal shape of the other configurations. In addition, the first overshoot is much lager due to the impedance mismatch caused by the broken diode. A broken diode gets conductive and therefore the potential at the MCP backside is equal to the potential of the anode. The electrons are not additionally accelerated and therefore the resulting signal is smaller than the signal with a functioning diode.\\
-
+	\newpage
 		
 %---------------------------------------------------------------------------------------------	
 	\subsection{Sensor performance tests}
