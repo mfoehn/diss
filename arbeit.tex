@@ -78,11 +78,11 @@
 	\end{flushright}
 	
 	\begin{center} % Titelseite nach Unistandart einfügen ;)
-		\huge \bfseries Application of Surface Physics for Instruments in Space Science\\[2cm]
-		\Large Inauguraldissertation der Philosophisch-naturwissenschaftlichen Fakultät der Universität Bern\\[2cm]
+		\huge \bfseries Calibration of the Neutral Gas and Ion Mass Spectrometer for the JUpiter ICy moons Explorer \\[2cm]
+		\Large Inauguraldissertation der Philosophisch-naturwissenschaftlichen Fakultät der Universität Bern\\[1.5cm]
 		\Large vorgelegt von\\[0.1cm]
-		\Large Martina Föhn\\[1cm]
-		\Large 2021\\[1.5cm] % Date of the Defence
+		\Large Martina Föhn\\[0.8cm]
+		\Large 2021\\[1cm] % Date of the Defence
 		\Large Leiter der Arbeit\\[0.1cm]
 		\Large Prof. Dr. Peter Wurz\\[1cm]
 		\Large Physikalisches Institut der Universität Bern\\
@@ -98,8 +98,18 @@
 	\newpage
 	\pagenumbering{roman}
 	\begin{abstract}
-
+		% Intro is ok. Somehow improve it to let it be more like advertising the thesis instead of a Praktikumsbericht...
+		\noindent
+		The JUpiter ICy moons Explorer (JUICE) of the European Space Agency (ESA) has the purpose to investigate Jupiter and his icy moons Europa, Ganymede and Callisto. JUICE will investigate the Jupiter system as a potential habitable system because the three icy moons have subsurface oceans where life might be possible. On board of JUICE is the Particle Environment Package (PEP), which consists of six individual sensors measuring electrons, ions and neutral particles in an energy range from meV up to MeV. One of these six sensors is the Neutral gas and Ion mass spectrometer (NIM). The NIM instrument is designed to measure the chemical and isotope composition of the icy moons' exospheres during the flybys of JUICE on the icy moons and also during JUICE final destination on Ganymede. The chemical and isotope composition allow a better understanding of the formation processes involved in the formation of the icy moons and our solar system.\\
+		
+		\noindent
+		NIM is a time-of-flight mass spectrometer able to measure thermal neutral molecules and ionospheric ions. This contribution shows the journey from finalizing the flight design of the NIM instrument to the actual testing and delivery of the NIM Proto-Flight (PFM) sensor in December 2020 to the JUICE spacecraft. On this journey, different flight components were tested and analysed as they came available during the development and finalization of the Proto-Flight (PFM) and Flight-Spare (FS) sensor.	The two NIM sensors have a demonstrate mass resolution $m/\Delta m$ of 750 (FWHM) for the PFM and 850 for the FS. Both sensors have a SNR of almost 6 decades.\\
+		
+		% Hier könnte ihre Werbung stehen...
+		
+		
 	\end{abstract}
+
 %----------------------------------------------------------------------------------
 	\newpage
 	\thispagestyle{empty}
@@ -114,44 +124,37 @@
 	\newpage
 	
 	\section*{List of Acronyms}
-	% Noch alte Tabelle von Masterarbeit
-	
+
+	% Introduction finished. Continue with Theory part with the abbreviations.	
 	\begin{tabular}{>{\bfseries}l|l}
 		
-		BCVD  & Boron-doped Chemical Vapour Deposition \\ 
-		
-		DLC   & Diamond-Like Carbon surface \\ 
-		
-		EMG   & Exponentially Modified Gaussian \\ 
-		
-		ENA   & Energetic Neutral Atoms \\ 
-		
-		FWHM  & Full Width at Half Maximum \\ 
-		
-		IBEX  & Interstellar Boundary EXplorer \\ 
-		
-		ILENA & Imager for Low Energetic Neutral Atoms \\ 
-		
-		IMAP  & Interstellar Mapping and Acceleration Probe \\ 
-		
-		JNA   & Jovian Neutral Atom Analyser \\ 
-		
-		JUICE & JUpiter ICy moon Explorer \\ 
-		
-		L1    & Lagrange 1 \\
-		
-		LISM  & Local InterStellar Medium\\
-		
-		MCA   & MultiChannel Analyzer \\ 
-		
-		MCP   & MultiChannel Plate \\ 
-		
-		PA    & PostAcceleration voltage \\ 
-		
-		PEP   & Particle Environment Package \\
-		
-		RPA   & Retarding Potential Analyser \\
-		
+		ADC		& Analog-to-Digital Converter \\
+		ESA		& European Space Agency \\
+		FoV		& Field-of-View\\
+		FS		& Flight-Spare Model\\
+		FWHM  	& Full Width at Half Maximum \\ 
+		JDC		& Jovian plasma Dynamics and Composition analyzer \\
+		JEI		& Jovian Electrons and Ions\\
+		JENI	& Jovian Energetic Neutrals and Ions\\
+		JNA		& Jovian Neutrals Analyzer \\
+		JoEE	& Jovian Energetic Electrons \\
+		JUICE 	& JUpiter ICy moon Explorer \\ 
+		MCP		& Multi-Channel-Plate \\
+		MEAP	& Mars Environment Analog Platform \\
+		NIM	  	& Neutral Gas and Ion Mass Spectrometer \\
+		NGMS	& Neutral Gas Mass Spectrometer \\
+		P-BACE	& Polar Balloon Atmospheric Composition Experiment \\
+		PCB		& Printed Circuit Board \\
+		PEP   	& Particle Environment Package \\
+		PFM		& Proto-Flight Model \\
+		ROSINA	& Rosetta Orbiter Spectrometer for Ion and Neutral Analysis\\
+		RTG		& Radioisotope Thermoelectric Generators\\
+		RTOF	& Reflectron Time-Of-Flight mass spectrometer\\
+		S/C		& Spacecraft\\
+		SNR		& Signal-to-Noise Ratio \\
+		TF		& Time focus \\
+		TOF		& Time-Of-Flight \\
+
 	\end{tabular}
 	\newpage
 	\thispagestyle{empty}
@@ -166,18 +169,14 @@
 	\null
 	\newpage
 	\input{Theory}
-	% Detectione efficiency Ionsource, MCP? -> y-Achse
-	% Mass Analyser, mass spectrometer. Most important formulas. dm/m = dt/t...
-	% Requirements: Power, mass, mass resolution,...
 	\newpage
 	\input{Instrument}
-	% NIM Instrument description overview. Startconfiguration.
 	\clearpage
 	\newpage
 	\thispagestyle{empty}
 	\null
 	\newpage
-	\input{Experiments} % Sämtliche Experimente/ Tests einmal da rein unter der Annahme, dass das Instrument schon beschrieben wurde. Wichtige Teile, welche ins Setup gehören gleich eine Notiz in Setup machen.
+	\input{Experiments}
 	\clearpage
 	\input{Conclusion}
 	\newpage
@@ -191,18 +190,31 @@
 	\input{Appendix}
 	\clearpage
 	
-	\section*{Acknowledgement} % Noch die alte vo der Masterarbeit
+	\section*{Acknowledgement}
 	
+	% More details.
 	My thanks go to:
 	
-	Prof. Dr. Peter Wurz for the opportunity to work on such a versatile experiment. The work was very instructive from the physical and the technical point of view. I also appreciated the educational discussions.
-	Enduring my shenanigans.
+	Prof. Dr. Peter Wurz for the opportunity to work on the NIM instrument giving me a very good insight on how such projects work. The work was very instructive from the physical and the technical point of view. I also appreciated the educational discussions.
+%	Enduring my shenanigans.
 	
-	Stefan Meyer who introduced me to the work with the ILENA test facility and who had always an open ear for my questions at the beginning of this thesis.
+	Stefan Meyer who introduced me to the NIM instrument and made me familiar with all the other teams members.
 		
 	Harald Mischler and the team from the mechanic's workshop of the University of Bern and also to my office colleagues Georg Bodmer, Adrian Etter and Joël Gonseth for their technical support in the laboratory and the amusing discussions in our office.
+
+	Daniele Piazza, Michael Gerber and Stefan Brüngger from the mechanical construction.
 	
-	my friends with whom I had so many distracting and constructive discussions especially during our weekly coffee breaks.
+	Matthias Lüthi, Severin Oegschger, Andreas Nentwig, Michael Althaus, Philipp Fahrer and Hans~Peter Munz for the electronics workshop.
+	
+	André Galli as an office mate and also for the very stimulating discussions especially during the time writing this thesis.
+	
+	The Wabschli-WG namely Marc Trautmann, Jonathan Gasser, Viviane Tanner and Sabrina Waldburger.
+	
+	My family
+	
+	The members of the Dinner's club, the Friday beer and the Alpweeked. Especially Lukas Jaun.
+
+	Colleagues at the institute for their
 	
 	\newpage
 	\thispagestyle{empty}
