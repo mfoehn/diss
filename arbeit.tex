@@ -100,13 +100,10 @@
 	\begin{abstract}
 		% Intro is ok. Somehow improve it to let it be more like advertising the thesis instead of a Praktikumsbericht...
 		\noindent
-		The JUpiter ICy moons Explorer (JUICE) of the European Space Agency (ESA) has the purpose to investigate Jupiter and his icy moons Europa, Ganymede and Callisto. JUICE will investigate the Jupiter system as a potential habitable system because the three icy moons have subsurface oceans where life might be possible. On board of JUICE is the Particle Environment Package (PEP), which consists of six individual sensors measuring electrons, ions and neutral particles in an energy range from meV up to MeV. One of these six sensors is the Neutral gas and Ion mass spectrometer (NIM). The NIM instrument is designed to measure the chemical and isotope composition of the icy moons' exospheres during the flybys of JUICE on the icy moons and also during JUICE final destination on Ganymede. The chemical and isotope composition allow a better understanding of the formation processes involved in the formation of the icy moons and our solar system.\\
+		\notes{Proofread} The JUpiter ICy moons Explorer (JUICE) of the European Space Agency (ESA) has the purpose to investigate Jupiter and his icy moons Europa, Ganymede and Callisto in great detail. JUICE will investigate the Jupiter system as a potential habitable system because the three icy moons have subsurface oceans where life might be possible. On board of JUICE is the Particle Environment Package (PEP), which consists of six individual instruments measuring electrons, ions and neutral particles in an energy range from meV up to MeV. One of these six instruments is the Neutral gas and Ion mass spectrometer (NIM). The NIM instrument is designed to measure the chemical and isotope composition of the icy moons' exospheres during the flybys of JUICE on the icy moons and also during JUICE final destination on Ganymede. The chemical and isotope composition allow a better understanding origin and evolution processes involved in the formation processes of the icy moons and our solar system.\\
 		
 		\noindent
-		NIM is a time-of-flight mass spectrometer able to measure thermal neutral molecules and ionospheric ions. This contribution shows the journey from finalizing the flight design of the NIM instrument to the actual testing and delivery of the NIM Proto-Flight (PFM) sensor in December 2020 to the JUICE spacecraft. On this journey, different flight components were tested and analysed as they came available during the development and finalization of the Proto-Flight (PFM) and Flight-Spare (FS) sensor.	The two NIM sensors have a demonstrate mass resolution $m/\Delta m$ of 750 (FWHM) for the PFM and 850 for the FS. Both sensors have a SNR of almost 6 decades.\\
-		
-		% Hier könnte ihre Werbung stehen...
-		
+		NIM is a time-of-flight mass spectrometer able to measure thermal neutral molecules and ionospheric ions. This thesis shows the journey from finalising the flight design of the NIM instrument to the actual testing and delivery of the NIM Proto-Flight (PFM) instrument in December 2020 to the JUICE spacecraft. On this journey, different flight components were tested and analysed as they came available during the development and finalization of the PFM and Flight-Spare (FS) instrument. From the foreseen scientific scope for the NIM instrument, a list of measurement requirements was delivered. This work shows that NIM PFM and NIM FS meet all these requirements.
 		
 	\end{abstract}
 
@@ -124,37 +121,33 @@
 	\newpage
 	
 	\section*{List of Acronyms}
-
+	% tabular
 	% Introduction finished. Continue with Theory part with the abbreviations.	
-	\begin{tabular}{>{\bfseries}l|l}
+	\begin{tabular}{>{\bfseries}l|l|>{\bfseries}l|l} % Formatierung!!!
 		
-		ADC		& Analog-to-Digital Converter \\
-		ESA		& European Space Agency \\
-		FoV		& Field-of-View\\
-		FS		& Flight-Spare Model\\
-		FWHM  	& Full Width at Half Maximum \\ 
-		JDC		& Jovian plasma Dynamics and Composition analyzer \\
-		JEI		& Jovian Electrons and Ions\\
-		JENI	& Jovian Energetic Neutrals and Ions\\
-		JNA		& Jovian Neutrals Analyzer \\
-		JoEE	& Jovian Energetic Electrons \\
-		JUICE 	& JUpiter ICy moon Explorer \\ 
-		MCP		& Multi-Channel-Plate \\
-		MEAP	& Mars Environment Analog Platform \\
-		NIM	  	& Neutral Gas and Ion Mass Spectrometer \\
-		NGMS	& Neutral Gas Mass Spectrometer \\
-		P-BACE	& Polar Balloon Atmospheric Composition Experiment \\
-		PCB		& Printed Circuit Board \\
-		PEP   	& Particle Environment Package \\
-		PFM		& Proto-Flight Model \\
-		ROSINA	& Rosetta Orbiter Spectrometer for Ion and Neutral Analysis\\
-		RTG		& Radioisotope Thermoelectric Generators\\
-		RTOF	& Reflectron Time-Of-Flight mass spectrometer\\
-		S/C		& Spacecraft\\
-		SNR		& Signal-to-Noise Ratio \\
-		TF		& Time focus \\
-		TOF		& Time-Of-Flight \\
-
+		ADC		& Analogue-to-Digital Converter & NIM	  	& Neutral Gas and Ion Mass Spectrometer \\
+		CASYMIR	& CAlibration SYstem for the Mass
+				  spectrometer Instrument ROSINA & NIMS	& Near Infrared Mapping Spectrometer\\
+		CReMA	& Consolidated Report on Mission Analysis & NGMS	& Neutral Gas Mass Spectrometer \\
+		ESA		& European Space Agency & P-BACE	& Polar Balloon Atmospheric Composition Experiment \\
+		Fil		& Filament electrode & PCB		& Printed Circuit Board \\
+		FoV		& Field-of-View & PEP   	& Particle Environment Package \\
+		FS		& Flight-Spare Model & PFM		& Proto-Flight Model \\
+		FWHM  	& Full Width at Half Maximum & R		& Reflectron (ion-mirror) \\ 
+		HV		& High-Voltage & ROSINA	& Rosetta Orbiter Spectrometer for Ion and Neutral Analysis\\
+		i		& ion & RTG		& Radioisotope Thermoelectric Generators\\
+		IS		& Ion-Source & RTOF	& Reflectron Time-Of-Flight mass spectrometer\\
+		JDC		& Jovian plasma Dynamics and Composition analyser & S/C		& Spacecraft \\
+		JEI		& Jovian Electrons and Ions & SATANS	& Supersonic cATion and ANion Source \\
+		JENI	& Jovian Energetic Neutrals and Ions & SN		& Serial Number \\
+		JNA		& Jovian Neutrals Analyser & SNR		& Signal-to-Noise Ratio \\
+		JoEE	& Jovian Energetic Electrons & 	TF		& Time Focus \\
+		JUICE 	& JUpiter ICy moon Explorer & th		& thermal \\ 
+		LV 		& Low-Voltage & TOF		& Time-Of-Flight \\
+		MCP		& Multi-Channel-Plate & &\\
+		MEAP	& Mars Environment Analogue Platform & & \\
+		n		& neutral & & \\
+		
 	\end{tabular}
 	\newpage
 	\thispagestyle{empty}
