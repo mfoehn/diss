@@ -27,6 +27,7 @@
 \usepackage{nameref}
 \usepackage{wrapfig}
 \usepackage{breakurl}
+\usepackage{longtable}
 \usepackage{url}
 \usepackage{listings}
 \usepackage[utf8]{inputenc} % Umlaute
@@ -71,25 +72,28 @@
 \renewcommand{\arraystretch}{1.5} % Macht Abstand der einzelnen Zeilen in einer Tabelle grösser
 \fontfamily{ptm}\selectfont			% Setzt Schriftart auf Times NewRoman
 
-\begin{titlepage}
-	
-	\begin{flushright}
-		\includegraphics[width=0.25\textwidth]{Bilder/logo-uni.jpg}\\[2cm]    
-	\end{flushright}
-	
-	\begin{center} % Titelseite nach Unistandart einfügen ;)
-		\huge \bfseries Calibration of the Neutral Gas and Ion Mass Spectrometer for the JUpiter ICy moons Explorer \\[2cm]
-		\Large Inauguraldissertation der Philosophisch-naturwissenschaftlichen Fakultät der Universität Bern\\[1.5cm]
-		\Large vorgelegt von\\[0.1cm]
-		\Large Martina Föhn\\[0.8cm]
-		\Large 2021\\[1cm] % Date of the Defence
-		\Large Leiter der Arbeit\\[0.1cm]
-		\Large Prof. Dr. Peter Wurz\\[1cm]
-		\Large Physikalisches Institut der Universität Bern\\
-		
-	\end{center}
-\end{titlepage}
 
+\includepdf[pages={1-}]{Title_page.pdf}
+\begin{comment}
+	\begin{titlepage}
+		
+		\begin{flushright}
+			\includegraphics[width=0.25\textwidth]{Bilder/logo-uni.jpg}\\[2cm]    
+		\end{flushright}
+		
+		\begin{center} % Titelseite nach Unistandart einfügen ;)
+			\huge \bfseries Calibration of the Neutral Gas and Ion Mass Spectrometer for the JUpiter ICy moons Explorer \\[2cm]
+			\Large Inauguraldissertation der Philosophisch-naturwissenschaftlichen Fakultät der Universität Bern\\[1.5cm]
+			\Large vorgelegt von\\[0.1cm]
+			\Large Martina Föhn\\[0.8cm]
+			\Large 2021\\[1cm] % Date of the Defence
+			\Large Leiter der Arbeit\\[0.1cm]
+			\Large Prof. Dr. Peter Wurz\\[1cm]
+			\Large Physikalisches Institut der Universität Bern\\
+			
+		\end{center}
+	\end{titlepage}
+\end{comment}
 	%------------------------------------------------------------------------------
 	
 	\newpage
@@ -100,7 +104,7 @@
 	\begin{abstract}
 		% Intro is ok. Somehow improve it to let it be more like advertising the thesis instead of a Praktikumsbericht...
 		\noindent
-		\notes{Proofread} The JUpiter ICy moons Explorer (JUICE) of the European Space Agency (ESA) has the purpose to investigate Jupiter and his icy moons Europa, Ganymede and Callisto in great detail. JUICE will investigate the Jupiter system as a potential habitable system because the three icy moons have subsurface oceans where life might be possible. On board of JUICE is the Particle Environment Package (PEP), which consists of six individual instruments measuring electrons, ions and neutral particles in an energy range from meV up to MeV. One of these six instruments is the Neutral gas and Ion mass spectrometer (NIM). The NIM instrument is designed to measure the chemical and isotope composition of the icy moons' exospheres during the flybys of JUICE on the icy moons and also during JUICE final destination on Ganymede. The chemical and isotope composition allow a better understanding origin and evolution processes involved in the formation processes of the icy moons and our solar system.\\
+		The JUpiter ICy moons Explorer (JUICE) of the European Space Agency (ESA) has the purpose to investigate Jupiter and his icy moons Europa, Ganymede and Callisto in great detail. JUICE will investigate the Jupiter system as a potential habitable system because the three icy moons have subsurface oceans where life might be possible. On board of JUICE is the Particle Environment Package (PEP), which consists of six individual instruments measuring electrons, ions and neutral particles in an energy range from meV up to MeV. One of these six instruments is the Neutral gas and Ion mass spectrometer (NIM). The NIM instrument is designed to measure the chemical and isotope composition of the icy moons' exospheres during the flybys of JUICE on the icy moons and also during JUICE final destination on Ganymede. The chemical and isotope composition allow a better understanding of the origin and evolution processes involved in the formation processes of the icy moons and our solar system.\\
 		
 		\noindent
 		NIM is a time-of-flight mass spectrometer able to measure thermal neutral molecules and ionospheric ions. This thesis shows the journey from finalising the flight design of the NIM instrument to the actual testing and delivery of the NIM Proto-Flight (PFM) instrument in December 2020 to the JUICE spacecraft. On this journey, different flight components were tested and analysed as they came available during the development and finalization of the PFM and Flight-Spare (FS) instrument. From the foreseen scientific scope for the NIM instrument, a list of measurement requirements was delivered. This work shows that NIM PFM and NIM FS meet all these requirements.
@@ -121,14 +125,12 @@
 	\newpage
 	
 	\section*{List of Acronyms}
-	% tabular
-	% Introduction finished. Continue with Theory part with the abbreviations.	
-	\begin{tabular}{>{\bfseries}l|l|>{\bfseries}l|l} % Formatierung!!!
 		
-		ADC		& Analogue-to-Digital Converter & NIM	  	& Neutral Gas and Ion Mass Spectrometer \\
-		CASYMIR	& CAlibration SYstem for the Mass
-				  spectrometer Instrument ROSINA & NIMS	& Near Infrared Mapping Spectrometer\\
-		CReMA	& Consolidated Report on Mission Analysis & NGMS	& Neutral Gas Mass Spectrometer \\
+	\begin{small}
+	\begin{longtable}{>{\bfseries}m{2cm}|m{5cm}|>{\bfseries}m{2cm}|m{5cm}}
+		ADC		& Analogue-to-Digital Converter & NIM & Neutral Gas and Ion Mass Spectrometer \\
+		CASYMIR	& CAlibration SYstem for the Mass spectrometer In\-stru\-ment ROSINA & NIMS	& Near Infrared Mapping Spectrometer\\
+		CReMA	& Consolidated Report on Mission Analysis & NGMS & Neutral Gas Mass Spectrometer \\
 		ESA		& European Space Agency & P-BACE	& Polar Balloon Atmospheric Composition Experiment \\
 		Fil		& Filament electrode & PCB		& Printed Circuit Board \\
 		FoV		& Field-of-View & PEP   	& Particle Environment Package \\
@@ -147,8 +149,8 @@
 		MCP		& Multi-Channel-Plate & &\\
 		MEAP	& Mars Environment Analogue Platform & & \\
 		n		& neutral & & \\
-		
-	\end{tabular}
+	\end{longtable}
+	\end{small}
 	\newpage
 	\thispagestyle{empty}
 	\null
@@ -171,12 +173,12 @@
 	\newpage
 	\input{Experiments}
 	\clearpage
-	\input{Conclusion}
-	\newpage
-	\thispagestyle{empty}
-	\null
-	\newpage
-	\input{Outlook}
+%	\input{Conclusion}
+%	\newpage
+%	\thispagestyle{empty}
+%	\null
+%	\newpage
+	\input{Summary and Outlook}
 	\clearpage
 	\bibliography{Quellen}
 	\clearpage
