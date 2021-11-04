@@ -102,13 +102,11 @@
 	\newpage
 	\pagenumbering{roman}
 	\begin{abstract}
-		% Intro is ok. Somehow improve it to let it be more like advertising the thesis instead of a Praktikumsbericht...
 		\noindent
-		The JUpiter ICy moons Explorer (JUICE) of the European Space Agency (ESA) has the purpose to investigate Jupiter and his icy moons Europa, Ganymede and Callisto in great detail. JUICE will investigate the Jupiter system as a potential habitable system because the three icy moons have subsurface oceans where life might be possible. On board of JUICE is the Particle Environment Package (PEP), which consists of six individual instruments measuring electrons, ions and neutral particles in an energy range from meV up to MeV. One of these six instruments is the Neutral gas and Ion mass spectrometer (NIM). The NIM instrument is designed to measure the chemical and isotope composition of the icy moons' exospheres during the flybys of JUICE on the icy moons and also during JUICE final destination on Ganymede. The chemical and isotope composition allow a better understanding of the origin and evolution processes involved in the formation processes of the icy moons and our solar system.\\
+		The JUpiter ICy moons Explorer (JUICE) of the European Space Agency (ESA) has the purpose to investigate Jupiter and its icy moons Europa, Ganymede and Callisto in great detail. Among other scientific goals, JUICE will investigate the Jupiter system as a potential habitable system because the three icy moons have subsurface oceans where life might be possible. On board of JUICE is the Particle Environment Package (PEP), which consists of six individual instruments measuring electrons, ions and neutral particles in an energy range from meV up to MeV. One of these six instruments is the Neutral gas and Ion Mass spectrometer (NIM) from the University of Bern. The NIM instrument is designed to measure the chemical and isotope composition of the icy moons' exospheres during the flybys of JUICE of the icy moons and also during JUICE final destination in Ganymede's orbit. Knowing the chemical and isotope composition allows to investigate the origin and evolution processes involved in the formation processes of the icy moons, Jupiter and our solar system.\\
 		
 		\noindent
-		NIM is a time-of-flight mass spectrometer able to measure thermal neutral molecules and ionospheric ions. This thesis shows the journey from finalising the flight design of the NIM instrument to the actual testing and delivery of the NIM Proto-Flight (PFM) instrument in December 2020 to the JUICE spacecraft. On this journey, different flight components were tested and analysed as they came available during the development and finalization of the PFM and Flight-Spare (FS) instrument. From the foreseen scientific scope for the NIM instrument, a list of measurement requirements was delivered. This work shows that NIM PFM and NIM FS meet all these requirements.
-		
+		NIM is a time-of-flight mass spectrometer able to measure thermal neutral molecules and ionospheric ions. This thesis shows the journey from finalising the flight design of the NIM instrument to the actual testing, qualification, and calibration until delivery of the NIM Proto-Flight (PFM) instrument in December 2020 to the JUICE spacecraft. On this journey, different flight components were tested and analysed as they became available during the development and finalisation of the PFM and Flight-Spare (FS) instrument. From the foreseen scientific scope for the NIM instrument, a list of measurement requirements was delivered. This work shows that NIM PFM and NIM FS meet all these requirements.
 	\end{abstract}
 
 %----------------------------------------------------------------------------------
@@ -173,50 +171,57 @@
 	\newpage
 	\input{Experiments}
 	\clearpage
-%	\input{Conclusion}
-%	\newpage
-%	\thispagestyle{empty}
-%	\null
-%	\newpage
 	\input{Summary and Outlook}
 	\clearpage
 	\bibliography{Quellen}
 	\clearpage
 	\input{Appendix}
-	\clearpage
+	\newpage
+	\thispagestyle{empty}
+	\null
+	\newpage
 	
+	% From here Formating is finished if the rest on top matches.
 	\section*{Acknowledgement}
 	
-	% More details.
-	My thanks go to:
+	% Try to setup something like that to have a reason to keep the rest short.
 	
-	Prof. Dr. Peter Wurz for the opportunity to work on the NIM instrument giving me a very good insight on how such projects work. The work was very instructive from the physical and the technical point of view. I also appreciated the educational discussions.
-%	Enduring my shenanigans.
+	First of all I thank Prof. Peter Wurz for the great opportunity to work during the last four years in his team. This thesis gave me insight in a lot of different field ranging from mechanical to electrical engineering into project management. The work was diverse and educational in a lot of different aspects.
 	
-	Stefan Meyer who introduced me to the NIM instrument and made me familiar with all the other teams members.
-		
-	Harald Mischler and the team from the mechanic's workshop of the University of Bern and also to my office colleagues Georg Bodmer, Adrian Etter and Joël Gonseth for their technical support in the laboratory and the amusing discussions in our office.
-
-	Daniele Piazza, Michael Gerber and Stefan Brüngger from the mechanical construction.
+	I would also like to thank the members of the PEP NIM team on Fig.~\ref{fig:TeamPic} and also those who did not make it to the picture.
 	
-	Matthias Lüthi, Severin Oegschger, Andreas Nentwig, Michael Althaus, Philipp Fahrer and Hans~Peter Munz for the electronics workshop.
+	Special thanks go to Stefan Meyer who introduced me to the NIM instrument and for his support at the beginning of my thesis. André Galli as an office mate and also for the very amusing and educational discussions especially during the time writing this thesis.
 	
-	André Galli as an office mate and also for the very stimulating discussions especially during the time writing this thesis.
+	Harald Mischler, Georg Bodmer, Adrian Etter and Joël Gonseth for their technical support in the laboratory. Daniele Piazza, Michael Gerber and Stefan Brüngger from the construction office. Matthias Lüthi, Severin Oegschger, Andreas Nentwig, Michael Althaus, Philipp Fahrer and Hans~Peter Munz from the electronics.
 	
-	The Wabschli-WG namely Marc Trautmann, Jonathan Gasser, Viviane Tanner and Sabrina Waldburger.
+	The members of the Wabschli-WG, Dinierclub and the Friday beer for their distraction during the non-office hours and enduring my shenanigans.
 	
-	My family
+	My family for their support in the past years.
 	
-	The members of the Dinner's club, the Friday beer and the Alpweeked. Especially Lukas Jaun.
-
-	Colleagues at the institute for their
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width= .7\textwidth]{Team_Pic.jpg}
+		\caption{PEP NIM team with a few outliers missing ;).}
+		\label{fig:TeamPic}
+	\end{figure}
 	
 	\newpage
 	\thispagestyle{empty}
 	\null
 	\newpage
 	
-	\includepdf[pages=-]{MSc_Masterarbeit_erklaerung.pdf}
+	\includepdf[pages=-]{Erklaerung_PhD_Arbeit_211027.pdf}
+	\newpage
+	\thispagestyle{empty}
+	\null
+	\newpage
+	\includepdf[pages=-]{CV.pdf}
+	
+	\newpage
+	\thispagestyle{empty}
+	\null
+	\newpage
+	
 	
 \end{document}
 

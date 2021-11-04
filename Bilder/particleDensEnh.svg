@@ -15,7 +15,7 @@
    viewBox="0 0 4122.6665 5058.6665"
    sodipodi:docname="particleDensEnh.svg"
    inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)"
-   inkscape:export-filename="C:\Users\foehn\Dropbox\PhD\Bilder\Structure\fNIM_Sktech_201023.png"
+   inkscape:export-filename="\\titania.unibe.ch\UserHomes\foehn\My Documents\PhD\Latex\Bilder\particleDensEnh.png"
    inkscape:export-xdpi="200"
    inkscape:export-ydpi="200">
   <metadata
@@ -622,6 +622,17 @@
          style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
          transform="matrix(0.8,0,0,0.8,10,0)" />
     </marker>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath1428">
+      <rect
+         style="font-variation-settings:normal;opacity:0.52;vector-effect:none;fill:#0037ff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:37.7953;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:113.386, 113.386;stroke-dashoffset:0;stroke-opacity:0;stop-color:#000000;stop-opacity:1"
+         id="rect1430"
+         width="3609.8579"
+         height="2833.3982"
+         x="517.24792"
+         y="-470.36859" />
+    </clipPath>
   </defs>
   <sodipodi:namedview
      pagecolor="#ffffff"
@@ -637,17 +648,31 @@
      id="namedview4"
      showgrid="false"
      showguides="false"
-     inkscape:zoom="0.26340513"
-     inkscape:cx="1638.8576"
-     inkscape:cy="1348.0266"
+     inkscape:zoom="0.20763508"
+     inkscape:cx="2591.9556"
+     inkscape:cy="1772.3532"
      inkscape:window-x="717"
      inkscape:window-y="1573"
      inkscape:window-maximized="1"
      inkscape:current-layer="svg2"
      inkscape:document-rotation="0" />
+  <rect
+     style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#ff0000;stroke-width:37.7953;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:113.386, 113.386;stroke-dashoffset:0;stroke-opacity:0;stop-color:#000000;stop-opacity:1"
+     id="rect1546"
+     width="4132.2495"
+     height="3140.124"
+     x="380.47525"
+     y="491.24643"
+     inkscape:export-filename="C:\Users\foehn\Desktop\AnteZoomTest.png"
+     inkscape:export-xdpi="200"
+     inkscape:export-ydpi="200" />
   <g
      id="g1207"
-     transform="translate(4.5810736,1076.5523)">
+     transform="translate(-6.418926,1076.5523)"
+     clip-path="url(#clipPath1428)"
+     inkscape:export-filename="C:\Users\foehn\Desktop\AnteZoomTest.png"
+     inkscape:export-xdpi="200"
+     inkscape:export-ydpi="200">
     <image
        width="4122.6665"
        height="5058.6665"
@@ -885,13 +910,15 @@
      d="M 1175.79,3318.3249 V 3091.5497"
      id="path1001-0"
      inkscape:export-xdpi="200"
-     inkscape:export-ydpi="200" />
+     inkscape:export-ydpi="200"
+     inkscape:export-filename="C:\Users\foehn\Desktop\AnteZoomTest.png" />
   <path
      style="fill:none;stroke:#000000;stroke-width:6.59999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#marker2619)"
      d="M 1176.4765,3028.2126 V 2816.8605"
      id="path1001-5"
      inkscape:export-xdpi="200"
-     inkscape:export-ydpi="200" />
+     inkscape:export-ydpi="200"
+     inkscape:export-filename="C:\Users\foehn\Desktop\AnteZoomTest.png" />
   <text
      xml:space="preserve"
      style="font-style:normal;font-weight:normal;font-size:173.333px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
@@ -899,7 +926,8 @@
      y="2775.208"
      id="text1406"
      inkscape:export-xdpi="200"
-     inkscape:export-ydpi="200"><tspan
+     inkscape:export-ydpi="200"
+     inkscape:export-filename="C:\Users\foehn\Desktop\AnteZoomTest.png"><tspan
        sodipodi:role="line"
        id="tspan1404"
        x="1364.7893"
@@ -914,7 +942,8 @@
      y="2771.4705"
      id="text1406-3"
      inkscape:export-xdpi="200"
-     inkscape:export-ydpi="200"><tspan
+     inkscape:export-ydpi="200"
+     inkscape:export-filename="C:\Users\foehn\Desktop\AnteZoomTest.png"><tspan
        sodipodi:role="line"
        id="tspan1404-6"
        x="1052.4973"
@@ -924,7 +953,10 @@
    id="tspan5796">e</tspan></tspan></text>
   <g
      id="g2505"
-     transform="translate(367.48512,622.02817)">
+     transform="translate(367.48512,622.02817)"
+     inkscape:export-filename="C:\Users\foehn\Desktop\AnteZoomTest.png"
+     inkscape:export-xdpi="200"
+     inkscape:export-ydpi="200">
     <path
        style="fill:#ffffff;fill-opacity:0;stroke:#000000;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="path1269"
@@ -954,13 +986,17 @@
   <text
      xml:space="preserve"
      id="text1455"
-     style="fill:black;fill-opacity:1;stroke:none;font-family:sans-serif;font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect1457);" />
+     style="fill:black;fill-opacity:1;stroke:none;font-family:sans-serif;font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect1457);"
+     inkscape:export-filename="C:\Users\foehn\Desktop\AnteZoomTest.png"
+     inkscape:export-xdpi="200"
+     inkscape:export-ydpi="200" />
   <path
      style="fill:none;stroke:#000000;stroke-width:30.8;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:61.6, 61.6;stroke-dashoffset:0;stroke-opacity:1"
      d="M 2829.4187,3063.7482 H 1088.8291"
      id="path3414"
      inkscape:export-xdpi="200"
-     inkscape:export-ydpi="200" />
+     inkscape:export-ydpi="200"
+     inkscape:export-filename="C:\Users\foehn\Desktop\AnteZoomTest.png" />
   <rect
      style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#ff0000;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0;stop-color:#000000;stop-opacity:1"
      id="rect3890"
@@ -969,65 +1005,87 @@
      x="2007.0826"
      y="2739.908"
      inkscape:export-xdpi="200"
-     inkscape:export-ydpi="200" />
+     inkscape:export-ydpi="200"
+     inkscape:export-filename="C:\Users\foehn\Desktop\AnteZoomTest.png" />
   <path
      style="fill:none;stroke:#000000;stroke-width:4.00001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#marker2619-4)"
      d="m 2522.9828,1378.2246 174.3353,120.0706"
      id="path1001-5-0"
      inkscape:export-xdpi="200"
-     inkscape:export-ydpi="200" />
+     inkscape:export-ydpi="200"
+     inkscape:export-filename="C:\Users\foehn\Desktop\AnteZoomTest.png" />
   <path
      style="fill:none;stroke:#000000;stroke-width:4.00001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#marker2619-4-3)"
      d="m 2388.7375,1306.5044 -176.389,-117.0327"
      id="path1001-5-0-6"
      inkscape:export-xdpi="200"
-     inkscape:export-ydpi="200" />
+     inkscape:export-ydpi="200"
+     inkscape:export-filename="C:\Users\foehn\Desktop\AnteZoomTest.png" />
   <path
      style="fill:none;stroke:#000000;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker2671-1-9)"
      d="M 2307.5806,2730.0499 H 2101.6469"
      id="path1001-0-0"
      inkscape:export-xdpi="200"
-     inkscape:export-ydpi="200" />
+     inkscape:export-ydpi="200"
+     inkscape:export-filename="C:\Users\foehn\Desktop\AnteZoomTest.png" />
   <path
      style="fill:none;stroke:#000000;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#marker5080)"
      d="M 1988.8128,2731.5466 H 1782.8791"
      id="path1001-0-0-4"
      inkscape:export-xdpi="200"
-     inkscape:export-ydpi="200" />
+     inkscape:export-ydpi="200"
+     inkscape:export-filename="C:\Users\foehn\Desktop\AnteZoomTest.png" />
   <path
      style="fill:none;stroke:#000000;stroke-width:6.6;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker2671-1-3)"
      d="M 1473.9243,3337.9687 V 3147.6645"
      id="path1001-0-4"
      inkscape:export-xdpi="200"
-     inkscape:export-ydpi="200" />
+     inkscape:export-ydpi="200"
+     inkscape:export-filename="C:\Users\foehn\Desktop\AnteZoomTest.png" />
   <path
      style="fill:none;stroke:#000000;stroke-width:6.60001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#marker2619-3)"
      d="M 1476.7274,2980.2897 V 2813.6248"
      id="path1001-5-7"
      inkscape:export-xdpi="200"
-     inkscape:export-ydpi="200" />
+     inkscape:export-ydpi="200"
+     inkscape:export-filename="C:\Users\foehn\Desktop\AnteZoomTest.png" />
   <text
      xml:space="preserve"
      id="text1056"
-     style="fill:black;fill-opacity:1;stroke:none;font-family:sans-serif;font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect1058);" />
+     style="fill:black;fill-opacity:1;stroke:none;font-family:sans-serif;font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect1058);"
+     inkscape:export-filename="C:\Users\foehn\Desktop\AnteZoomTest.png"
+     inkscape:export-xdpi="200"
+     inkscape:export-ydpi="200" />
   <path
      style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:"
      d="m 2040.9639,2064.6341 -376.3686,-638.6"
-     id="path1072" />
+     id="path1072"
+     inkscape:export-filename="C:\Users\foehn\Desktop\AnteZoomTest.png"
+     inkscape:export-xdpi="200"
+     inkscape:export-ydpi="200" />
   <path
      style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker2067)"
      d="M 2042.3838,2065.3136 2035.1165,736.29338"
-     id="path1903" />
+     id="path1903"
+     inkscape:export-filename="C:\Users\foehn\Desktop\AnteZoomTest.png"
+     inkscape:export-xdpi="200"
+     inkscape:export-ydpi="200" />
   <rect
      style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#ffffff;stroke-width:37.7953;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:113.386, 113.386;stroke-dashoffset:0;stroke-opacity:0;stop-color:#000000;stop-opacity:1"
      id="rect2182"
      width="318.715"
      height="297.93808"
      x="1309.3132"
-     y="1069.5468" />
+     y="1069.5468"
+     inkscape:export-filename="C:\Users\foehn\Desktop\AnteZoomTest.png"
+     inkscape:export-xdpi="200"
+     inkscape:export-ydpi="200" />
   <g
      id="g1119-0"
-     transform="translate(369.60524,-126.73713)">
+     transform="translate(369.60524,-126.73713)"
+     inkscape:export-filename="C:\Users\foehn\Desktop\AnteZoomTest.png"
+     inkscape:export-xdpi="200"
+     inkscape:export-ydpi="200">
     <path
        style="fill:#ffffff;fill-opacity:0;stroke:#000000;stroke-width:6.6"
        id="path1054-9"
@@ -1053,7 +1111,10 @@
   <path
      style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#marker1913)"
      d="M 2024.7484,1307.534 910.24617,852.15087"
-     id="path1072-7" />
+     id="path1072-7"
+     inkscape:export-filename="C:\Users\foehn\Desktop\AnteZoomTest.png"
+     inkscape:export-xdpi="200"
+     inkscape:export-ydpi="200" />
   <image
      width="264.53763"
      height="263.37991"
@@ -1062,15 +1123,24 @@
      id="image2178"
      x="620.1571"
      y="768.29736"
-     style="stroke-width:3.45508" />
+     style="stroke-width:3.45508"
+     inkscape:export-filename="C:\Users\foehn\Desktop\AnteZoomTest.png"
+     inkscape:export-xdpi="200"
+     inkscape:export-ydpi="200" />
   <path
      style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#marker1913-1)"
      d="M 1646.3195,1399.5709 907.42913,1099.2036"
-     id="path1072-7-7" />
+     id="path1072-7-7"
+     inkscape:export-filename="C:\Users\foehn\Desktop\AnteZoomTest.png"
+     inkscape:export-xdpi="200"
+     inkscape:export-ydpi="200" />
   <path
      style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#marker1913-3)"
      d="M 1342.7846,1796.0153 911.70463,1622.6841"
-     id="path1072-7-0" />
+     id="path1072-7-0"
+     inkscape:export-filename="C:\Users\foehn\Desktop\AnteZoomTest.png"
+     inkscape:export-xdpi="200"
+     inkscape:export-ydpi="200" />
   <image
      width="264.53763"
      height="263.37991"
@@ -1079,23 +1149,38 @@
      id="image2178-0"
      x="581.45856"
      y="1394.8583"
-     style="stroke-width:3.45508" />
+     style="stroke-width:3.45508"
+     inkscape:export-filename="C:\Users\foehn\Desktop\AnteZoomTest.png"
+     inkscape:export-xdpi="200"
+     inkscape:export-ydpi="200" />
   <path
      style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#marker1913-3-5)"
      d="M 1301.1789,2028.7166 910.99616,1872.2672"
-     id="path1072-7-0-9" />
+     id="path1072-7-0-9"
+     inkscape:export-filename="C:\Users\foehn\Desktop\AnteZoomTest.png"
+     inkscape:export-xdpi="200"
+     inkscape:export-ydpi="200" />
   <path
      style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#marker1913-3-1)"
      d="M 1467.3026,1586.2696 915.5546,1363.1341"
-     id="path1072-7-0-2" />
+     id="path1072-7-0-2"
+     inkscape:export-filename="C:\Users\foehn\Desktop\AnteZoomTest.png"
+     inkscape:export-xdpi="200"
+     inkscape:export-ydpi="200" />
   <path
      style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#marker1913-3-5-5)"
      d="M 1317.3298,2272.1239 911.26832,2109.1204"
-     id="path1072-7-0-9-3" />
+     id="path1072-7-0-9-3"
+     inkscape:export-filename="C:\Users\foehn\Desktop\AnteZoomTest.png"
+     inkscape:export-xdpi="200"
+     inkscape:export-ydpi="200" />
   <path
      style="fill:none;stroke:#000000;stroke-width:4.99999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#marker1913-3-5-0)"
      d="M 1453.3691,2556.442 909.96395,2336.7431"
-     id="path1072-7-0-9-4" />
+     id="path1072-7-0-9-4"
+     inkscape:export-filename="C:\Users\foehn\Desktop\AnteZoomTest.png"
+     inkscape:export-xdpi="200"
+     inkscape:export-ydpi="200" />
   <image
      width="264.53763"
      height="263.37991"
@@ -1104,17 +1189,26 @@
      id="image2178-5"
      x="645.42633"
      y="2073.3633"
-     style="stroke-width:3.45508" />
+     style="stroke-width:3.45508"
+     inkscape:export-filename="C:\Users\foehn\Desktop\AnteZoomTest.png"
+     inkscape:export-xdpi="200"
+     inkscape:export-ydpi="200" />
   <text
      xml:space="preserve"
      id="text1207"
-     style="fill:black;fill-opacity:1;stroke:none;font-family:sans-serif;font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect1209);" />
+     style="fill:black;fill-opacity:1;stroke:none;font-family:sans-serif;font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect1209);"
+     inkscape:export-filename="C:\Users\foehn\Desktop\AnteZoomTest.png"
+     inkscape:export-xdpi="200"
+     inkscape:export-ydpi="200" />
   <text
      xml:space="preserve"
      style="font-style:normal;font-weight:normal;font-size:173.333px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
      x="2285.6123"
      y="1968.6367"
-     id="text1215"><tspan
+     id="text1215"
+     inkscape:export-filename="C:\Users\foehn\Desktop\AnteZoomTest.png"
+     inkscape:export-xdpi="200"
+     inkscape:export-ydpi="200"><tspan
        sodipodi:role="line"
        id="tspan1213"
        x="2285.6123"
@@ -1131,88 +1225,115 @@
      sodipodi:start="5.224149"
      sodipodi:end="5.3244004"
      sodipodi:arc-type="slice"
-     d="m 2276.7562,1649.1805 a 478.5918,478.5918 0 0 1 40.5857,25.552 l -274.9581,391.7245 z" />
+     d="m 2276.7562,1649.1805 a 478.5918,478.5918 0 0 1 40.5857,25.552 l -274.9581,391.7245 z"
+     inkscape:export-filename="C:\Users\foehn\Desktop\AnteZoomTest.png"
+     inkscape:export-xdpi="200"
+     inkscape:export-ydpi="200" />
   <path
      style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:"
      d="m 2042.3605,2066.9176 443.6239,-633.4054"
-     id="path1072-4" />
-  <g
-     id="g3499"
-     transform="translate(101.39308,-2686.9166)">
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:173.333px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
-       x="3390.4189"
-       y="3836.5076"
-       id="text2566"><tspan
-         sodipodi:role="line"
-         id="tspan2564"
-         x="3390.4189"
-         y="3836.5076"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:173.333px;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, '">x</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:173.333px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
-       x="3402.1528"
-       y="3560.9351"
-       id="text2566-5"><tspan
-         sodipodi:role="line"
-         id="tspan2564-0"
-         x="3402.1528"
-         y="3560.9351"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:173.333px;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, '">y</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:173.333px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
-       x="2978.2322"
-       y="3660.428"
-       id="text2566-6"><tspan
-         sodipodi:role="line"
-         id="tspan2564-2"
-         x="2978.2322"
-         y="3660.428"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:173.333px;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, '">z</tspan></text>
-    <path
-       style="fill:none;stroke:#000000;stroke-width:6.4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker1658)"
-       d="M 2879.1981,3654.3713 H 2597.8673"
-       id="path2594"
-       transform="translate(369.60524,-126.73713)" />
-    <path
-       style="fill:none;stroke:#000000;stroke-width:6.60001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#marker2619-3-7)"
-       d="M 3295.2751,3840.8469 V 3567.7691"
-       id="path1001-5-7-4"
-       inkscape:export-xdpi="200"
-       inkscape:export-ydpi="200" />
-    <path
-       style="fill:#ffffff;stroke:#000000;stroke-width:6.4;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       id="path3357"
-       sodipodi:type="arc"
-       sodipodi:cx="3300.2869"
-       sodipodi:cy="3528.8967"
-       sodipodi:rx="70.158882"
-       sodipodi:ry="70.158867"
-       sodipodi:start="4.7221189"
-       sodipodi:end="4.7176373"
-       sodipodi:arc-type="arc"
-       d="m 3300.9695,3458.7412 a 70.158882,70.158867 0 0 1 69.4736,70.7596 70.158882,70.158867 0 0 1 -70.6817,69.5528 70.158882,70.158867 0 0 1 -69.632,-70.6037 70.158882,70.158867 0 0 1 70.5257,-69.7111"
-       sodipodi:open="true" />
-    <path
-       style="fill:none;stroke:#000000;stroke-width:8.8;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 3255.3899,3477.5887 94.3706,106.0685"
-       id="path3375" />
-    <path
-       style="fill:none;stroke:#000000;stroke-width:8.8;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 3253.1938,3577.0811 96.6506,-97.2515"
-       id="path3377" />
-  </g>
+     id="path1072-4"
+     inkscape:export-filename="C:\Users\foehn\Desktop\AnteZoomTest.png"
+     inkscape:export-xdpi="200"
+     inkscape:export-ydpi="200" />
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-weight:normal;font-size:173.333px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+     x="3047.812"
+     y="1149.5909"
+     id="text2566"
+     inkscape:export-filename="C:\Users\foehn\Desktop\AnteZoomTest.png"
+     inkscape:export-xdpi="200"
+     inkscape:export-ydpi="200"><tspan
+       sodipodi:role="line"
+       id="tspan2564"
+       x="3047.812"
+       y="1149.5909"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:173.333px;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, '">x</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-weight:normal;font-size:173.333px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+     x="3027.5459"
+     y="866.01843"
+     id="text2566-5"
+     inkscape:export-filename="C:\Users\foehn\Desktop\AnteZoomTest.png"
+     inkscape:export-xdpi="200"
+     inkscape:export-ydpi="200"><tspan
+       sodipodi:role="line"
+       id="tspan2564-0"
+       x="3027.5459"
+       y="866.01843"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:173.333px;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, '">y</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-weight:normal;font-size:173.333px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+     x="3395.6252"
+     y="973.51135"
+     id="text2566-6"
+     inkscape:export-filename="C:\Users\foehn\Desktop\AnteZoomTest.png"
+     inkscape:export-xdpi="200"
+     inkscape:export-ydpi="200"><tspan
+       sodipodi:role="line"
+       id="tspan2564-2"
+       x="3395.6252"
+       y="973.51135"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:173.333px;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, '">z</tspan></text>
+  <path
+     style="fill:none;stroke:#000000;stroke-width:6.4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker1658)"
+     d="m 3212.4409,840.7176 h 281.3308"
+     id="path2594"
+     inkscape:export-filename="C:\Users\foehn\Desktop\AnteZoomTest.png"
+     inkscape:export-xdpi="200"
+     inkscape:export-ydpi="200" />
+  <path
+     style="fill:none;stroke:#000000;stroke-width:6.60001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#marker2619-3-7)"
+     d="M 3192.6682,1153.9303 V 880.8525"
+     id="path1001-5-7-4"
+     inkscape:export-xdpi="200"
+     inkscape:export-ydpi="200"
+     inkscape:export-filename="C:\Users\foehn\Desktop\AnteZoomTest.png" />
+  <path
+     style="fill:#ffffff;stroke:#000000;stroke-width:6.4;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     id="path3357"
+     sodipodi:type="arc"
+     sodipodi:cx="3197.6799"
+     sodipodi:cy="841.9801"
+     sodipodi:rx="70.158882"
+     sodipodi:ry="70.158867"
+     sodipodi:start="4.7221189"
+     sodipodi:end="4.7176373"
+     sodipodi:arc-type="arc"
+     sodipodi:open="true"
+     d="m 3198.3626,771.82456 a 70.158882,70.158867 0 0 1 69.4736,70.75957 70.158882,70.158867 0 0 1 -70.6817,69.55287 70.158882,70.158867 0 0 1 -69.632,-70.60372 70.158882,70.158867 0 0 1 70.5256,-69.71108"
+     inkscape:export-filename="C:\Users\foehn\Desktop\AnteZoomTest.png"
+     inkscape:export-xdpi="200"
+     inkscape:export-ydpi="200" />
+  <path
+     style="fill:none;stroke:#000000;stroke-width:8.8;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     d="m 3152.783,790.6721 94.3706,106.0685"
+     id="path3375"
+     inkscape:export-filename="C:\Users\foehn\Desktop\AnteZoomTest.png"
+     inkscape:export-xdpi="200"
+     inkscape:export-ydpi="200" />
+  <path
+     style="fill:none;stroke:#000000;stroke-width:8.8;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     d="m 3150.5869,890.1645 96.6506,-97.2515"
+     id="path3377"
+     inkscape:export-filename="C:\Users\foehn\Desktop\AnteZoomTest.png"
+     inkscape:export-xdpi="200"
+     inkscape:export-ydpi="200" />
   <path
      style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      d="m 2042.4098,2066.8954 364.3014,-652.6507"
-     id="path1072-4-1" />
+     id="path1072-4-1"
+     inkscape:export-filename="C:\Users\foehn\Desktop\AnteZoomTest.png"
+     inkscape:export-xdpi="200"
+     inkscape:export-ydpi="200" />
   <path
      style="fill:none;stroke:#000000;stroke-width:4.00001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#marker2619-4-4)"
      d="m 2234.0251,1767.1524 79.3556,105.6368"
      id="path1001-5-0-2"
      inkscape:export-xdpi="200"
-     inkscape:export-ydpi="200" />
+     inkscape:export-ydpi="200"
+     inkscape:export-filename="C:\Users\foehn\Desktop\AnteZoomTest.png" />
 </svg>
