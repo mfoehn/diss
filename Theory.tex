@@ -340,12 +340,12 @@
 	
 	NIM has an open source entrance where neutral particles and ions enter the ionisation region directly and a closed source entrance where particles enter the ionisation region after being thermalised in an antechamber. In this chapter the density enhancement of the closed source entrance is determined. The density enhancement model described in \cite{DensEnhan_Wurz_07} is used and adapted for the geometry of NIM's antechamber. The particle density $n_{cs}$ in the ionisation region is:
 	\begin{equation}
-		\frac{n_{cs}}{n_a} = \sqrt{\frac{T_a}{T_s}}\cdot\frac{k\cdot \sin^2\big(\frac{\omega}{2}\big)\cdot \cos^2\big(\frac{\omega}{2}\big)}{1-k\cdot \cos^2\big(\frac{\omega}{2}\big)}\frac{\big(F(S_1)+ F(S_2)\big)}{2} \frac{r_{aIs}^2\cdot a}{2\cdot r_{aHi}^2 + r_{aIs}^2\cdot a}
+		\frac{n_{cs}}{n_a} = \sqrt{\frac{T_a}{T_s}}\cdot\frac{k\cdot \sin^2\big(\frac{\omega}{2}\big)\cdot \cos^2\big(\frac{\omega}{2}\big)}{1-k\cdot \cos^2\big(\frac{\omega}{2}\big)}\cdot\frac{\big(F(S_1)+ F(S_2)\big)}{2} \cdot \frac{r_{aIs}^2\cdot a}{2\cdot r_{aHi}^2 + r_{aIs}^2\cdot a}
 		\label{eq:thDensEnhan}
 	\end{equation}
 	With:
 	\begin{equation}
-		F(S_i)) = e^{-S_i^2} + \pi^{1/2}\cdot S_i\cdot\big(1 + {\rm erf}(S_i)\big)
+		F(S_i) = e^{-S_i^2} + \pi^{1/2}\cdot S_i\cdot\big(1 + {\rm erf}(S_i)\big)
 		\label{eq:F(S)}
 	\end{equation}
 	% cos(chi) = cos(theta_0)cos(theta) +- sin(theta_0)sind(theta)cos(phi)
